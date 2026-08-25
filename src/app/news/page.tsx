@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { dynamicTitleMetadata } from "@/components/SEOHead";
 import { SiteShell } from "@/components/SiteChrome";
 import { getAllNews, articleWordCount } from "@/content/guides";
+import { buildHubMetadata } from "@/lib/site-metadata";
 import { siteConfig } from "@/site.config";
 
-export const metadata: Metadata = {
-  title: dynamicTitleMetadata({
-    pageType: "site",
-    name: "News",
-    keyword: `${siteConfig.name} crypto news`,
-  }),
-  description: `Crypto market structure and institutional news analysis from ${siteConfig.name}.`,
-};
+export const metadata: Metadata = buildHubMetadata({
+  title: "Crypto News",
+  description: `Crypto regulation, institutions, and protocol news with operator context from ${siteConfig.name}.`,
+  path: "/news",
+  keyword: "crypto news regulation DeFi",
+});
 
 export default function NewsIndexPage() {
   const items = getAllNews();

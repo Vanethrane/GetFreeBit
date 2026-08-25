@@ -116,7 +116,7 @@ export function HomeSearch({ className = "" }: HomeSearchProps) {
         <label className="sr-only" htmlFor="home-crypto-search">
           Search crypto terms, guides, how-tos, and news
         </label>
-        <div className="flex items-center gap-3 rounded-2xl border border-paper-line bg-paper-raised/90 px-4 py-3 shadow-card backdrop-blur-sm transition focus-within:border-voice focus-within:ring-2 focus-within:ring-voice/20">
+        <div className="search-panel flex items-center gap-3 rounded-2xl px-4 py-3 shadow-card backdrop-blur-sm transition focus-within:border-voice focus-within:ring-2 focus-within:ring-voice/20">
           <SearchIcon className="shrink-0 text-voice-dark" />
           <input
             id="home-crypto-search"

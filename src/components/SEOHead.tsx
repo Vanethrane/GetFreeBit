@@ -360,13 +360,11 @@ export function buildFaqItems(input: FaqPageInput): FaqItem[] {
   if (pageData?.length) {
     source = pageData;
   } else {
-    const pageType = input.pageType || (input.slug ? "guide" : "word");
+    const pageType = input.pageType || input.articleKind || (input.slug ? "guide" : "word");
     source =
       pageType === "word"
         ? faqCfg.word || []
-        : pageType === "guide" || pageType === "programmatic"
-          ? faqCfg.guide || []
-          : [];
+        : faqCfg.guide || [];
   }
 
   const items = source
@@ -426,9 +424,11 @@ export function buildHowToNode(
   };
 
   const howToName =
-    input.pageType === "guide"
-      ? `How to follow “${name}” on ${siteConfig.name}`
-      : `How to pronounce ${name}`;
+    input.articleKind === "howto" || input.pageType === "howto"
+      ? `How to ${name.replace(/^How to /i, "")}`
+      : input.pageType === "guide"
+        ? `How to follow “${name}” on ${siteConfig.name}`
+        : `How to pronounce ${name}`;
 
   return {
     "@type": "HowTo",
@@ -459,11 +459,19 @@ export function buildHowToNode(
   };
 }
 
-/** Merge SoftwareApplication, WebPage, BreadcrumbList, FAQPage, and HowTo into one @graph. */
+/** Merge editorial or SoftwareApplication graph with FAQPage and optional HowTo. */
 export function buildCombinedJsonLd(input: FaqPageInput): ProgrammaticJsonLdGraph {
-  const graph = buildProgrammaticJsonLd(input);
+  const graph = buildProgrammaticJsonLd({
+    ...input,
+    pageType: input.pageType || input.articleKind,
+    articleKind: input.articleKind,
+    publishedAt: input.publishedAt,
+  });
   const faqNode = buildFaqPageNode(input);
-  const howToNode = buildHowToNode(input);
+  const howToNode =
+    input.articleKind === "howto" || input.pageType === "howto"
+      ? buildHowToNode({ ...input, pageType: "howto" })
+      : null;
   const extras: Record<string, unknown>[] = [];
 
   const webPage = graph["@graph"].find(

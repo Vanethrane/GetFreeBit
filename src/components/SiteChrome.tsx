@@ -29,7 +29,7 @@ function SiteHeader() {
   const isHome = pathname === "/";
 
   return (
-    <header className="relative z-[1] space-y-3">
+    <header className="site-header relative z-[1] space-y-3">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <Link
           href="/"
@@ -46,7 +46,7 @@ function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className={`relative transition-colors hover:text-voice-dark after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-voice after:transition-[width] hover:after:w-full ${
+              className={`relative transition-colors hover:text-signal-dark after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-gradient-to-r after:from-signal after:to-voice after:transition-[width] hover:after:w-full ${
                 item.href === "/faucets" ? "font-medium text-voice-dark" : ""
               }`}
             >
@@ -62,7 +62,7 @@ function SiteHeader() {
 
 export function SiteFooter() {
   return (
-    <footer className="relative z-[1] mt-auto border-t border-paper-line pt-10">
+    <footer className="site-footer relative z-[1] mt-auto border-t border-transparent pt-10">
       <div className="grid gap-8 sm:grid-cols-3">
         <div>
           <p className="inline-flex items-center gap-2 font-display text-xl text-ink">
@@ -132,7 +132,7 @@ export function SiteShell({ children, homeLayout = false }: SiteShellProps) {
               <AdSlot slotType="banner" />
             </StableSlot>
           ) : null}
-          <div className="relative z-[1] flex-1" style={{ minHeight: "20rem", contain: "layout" }}>
+          <div className="site-content relative z-[1] flex-1" style={{ minHeight: "20rem", contain: "layout" }}>
             {children}
           </div>
           <StableSlot

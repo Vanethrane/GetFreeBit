@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { GuideRichText } from "@/components/GuideRichText";
 import { HeadMetadata } from "@/components/HeadMetadata";
 import { RelatedToolsConversions } from "@/components/RelatedToolsConversions";
@@ -14,11 +15,15 @@ const kindLabel: Record<ArticleKind, string> = {
   news: "News",
 };
 
-const kindIndex: Record<ArticleKind, { href: string; label: string }> = {
-  guide: { href: "/guides", label: "All guides" },
-  howto: { href: "/how-to", label: "All how-tos" },
-  news: { href: "/news", label: "All news" },
+const kindIndex: Record<ArticleKind, { href: string; label: string; hub: string }> = {
+  guide: { href: "/guides", label: "All guides", hub: "Guides" },
+  howto: { href: "/how-to", label: "All how-tos", hub: "How-tos" },
+  news: { href: "/news", label: "All news", hub: "News" },
 };
+
+function schemaPageType(kind: ArticleKind): "guide" | "howto" | "news" {
+  return kind;
+}
 
 export function ArticleView({ article }: { article: Article }) {
   const words = articleWordCount(article);
@@ -35,10 +40,19 @@ export function ArticleView({ article }: { article: Article }) {
         name={pageMeta?.name || article.title}
         description={article.description}
         path={path}
-        pageType="guide"
+        pageType={schemaPageType(article.kind)}
+        articleKind={article.kind}
+        publishedAt={article.publishedAt}
         readingMinutes={article.readingMinutes}
       />
       <article className="pb-12 pt-1">
+        <Breadcrumbs
+          items={[
+            { label: siteConfig.name, href: "/" },
+            { label: index.hub, href: index.href },
+            { label: article.title },
+          ]}
+        />
         <header className="mt-2">
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-voice">
             {kindLabel[article.kind]}
@@ -50,7 +64,8 @@ export function ArticleView({ article }: { article: Article }) {
             {article.description}
           </p>
           <p className="mt-2 text-xs text-ink-muted sm:text-sm">
-            {article.publishedAt} · {article.readingMinutes} min read · {words} words
+            <time dateTime={article.publishedAt}>{article.publishedAt}</time> ·{" "}
+            {article.readingMinutes} min read · {words} words
           </p>
         </header>
 

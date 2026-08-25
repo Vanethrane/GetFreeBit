@@ -55,7 +55,7 @@ export type ContentPillar =
   | "staking-yield"
   | "exchange-onboarding";
 
-/** Brand palette — wired into CSS variables, Tailwind, OG, and PWA theme. */
+/** Brand palette — cool slate + teal complement, warm amber accent dash */
 export type BrandColors = {
   ink: string;
   inkMuted: string;
@@ -65,6 +65,9 @@ export type BrandColors = {
   voice: string;
   voiceDark: string;
   voiceGlow: string;
+  signal: string;
+  signalDark: string;
+  signalGlow: string;
 };
 
 /** Desktop ad network slots (leave keys empty until you have placements). */
@@ -210,15 +213,20 @@ export const siteConfig = {
   domain: "https://www.getfreebit.com",
 
   /** One-line product pitch */
-  tagline: "Free crypto, yield, and Web3—explained like an operator, not a hype reel.",
+  tagline: "Faucets, yield, and Web3—explained like an operator, not a hype reel.",
+
+  /** Home hero — brand kicker + two-line headline */
+  heroEyebrow: "GetFreeBit",
+  heroTitleLead: "Free crypto,",
+  heroTitleAccent: "zero theater.",
 
   /** Default meta description */
   description:
     "Straight talk on faucets, airdrops, staking, and exchange onboarding. Real mechanics, risk callouts, and disclosed partner links—no get-rich-quick theater.",
 
-  /** Longer footer blurb */
+  /** Mission — footer and brand surfaces */
   footerBlurb:
-    "Operator-grade playbooks for micro-earnings, testnet farming, yield, and Web3 onboarding. Educate first. Disclose always. Hype never.",
+    "We explain crypto in plain English and help you navigate the space—wallets, earning, yield, and Web3—without hype or jargon.",
 
   /**
    * Required on monetized pages and tool outputs.
@@ -294,16 +302,19 @@ export const siteConfig = {
     { href: "/terms", label: "Terms of Service" },
   ] as const satisfies readonly NavLink[],
 
-  /** Cool slate + bullion amber — sharp, not neon */
+  /** Cool slate + teal complement — warm amber accent */
   colors: {
-    ink: "#0b1016",
-    inkMuted: "#5c6775",
-    paper: "#eef1f5",
-    paperRaised: "#ffffff",
-    paperLine: "#d0d7e0",
-    voice: "#d4922a",
-    voiceDark: "#a66b12",
-    voiceGlow: "#f4e6c8",
+    ink: "#0a1018",
+    inkMuted: "#526070",
+    paper: "#e4eaf2",
+    paperRaised: "#f8fafc",
+    paperLine: "#c5d0dc",
+    voice: "#c9842a",
+    voiceDark: "#9a6410",
+    voiceGlow: "#f2e6cc",
+    signal: "#1a6b5c",
+    signalDark: "#124a42",
+    signalGlow: "#d6ebe6",
   } satisfies BrandColors,
 
   /**
@@ -389,6 +400,9 @@ export function brandCssVariables(): string {
     `--voice:${c.voice}`,
     `--voice-dark:${c.voiceDark}`,
     `--voice-glow:${c.voiceGlow}`,
+    `--signal:${c.signal}`,
+    `--signal-dark:${c.signalDark}`,
+    `--signal-glow:${c.signalGlow}`,
   ].join(";");
 }
 

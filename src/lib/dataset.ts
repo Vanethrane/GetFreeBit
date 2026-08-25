@@ -1,4 +1,6 @@
 import dataset from "@/data/dataset.json";
+import { getArticlePageMeta, getArticleRelatedLinks } from "@/lib/article-meta";
+import { absoluteCanonicalUrl } from "@/lib/canonical";
 import { siteConfig } from "@/site.config";
 
 export type PageLanguageMeta = {
@@ -107,7 +109,7 @@ const toolAffiliates: Record<string, ToolAffiliate> = {
 
 /** Read language/accent metadata for a guide (or other) slug from dataset.json */
 export function getPageLanguageMeta(slug: string): PageLanguageMeta | null {
-  return data.pages[slug] ?? null;
+  return data.pages[slug] ?? getArticlePageMeta(slug);
 }
 
 export function getDatasetSchema(): DatasetSchema {
@@ -276,8 +278,12 @@ export function getRelatedToolsAndConversions(
   slug: string,
   limit = RELATED_LIMIT,
 ): RelatedLink[] {
-  const self = data.pages[slug];
+  const self = data.pages[slug] ?? getArticlePageMeta(slug);
   if (!self) return [];
+
+  if (!data.pages[slug]) {
+    return getArticleRelatedLinks(slug, limit);
+  }
 
   const targets = (relatedGraph().get(slug) || []).slice(0, limit);
   return targets.map((otherSlug) => {
@@ -319,7 +325,10 @@ export type ProgrammaticSchemaInput = {
   name: string;
   description: string;
   path: string;
-  pageType?: "word" | "guide" | "programmatic";
+  pageType?: "word" | "guide" | "howto" | "news" | "programmatic";
+  articleKind?: "guide" | "howto" | "news";
+  publishedAt?: string;
+  readingMinutes?: number;
 };
 
 export type ProgrammaticJsonLdGraph = {
@@ -328,9 +337,99 @@ export type ProgrammaticJsonLdGraph = {
 };
 
 function absoluteUrl(path: string): string {
-  if (path.startsWith("http")) return path;
-  const base = siteConfig.domain.replace(/\/$/, "");
-  return `${base}${path.startsWith("/") ? path : `/${path}`}`;
+  return absoluteCanonicalUrl(path, siteConfig.domain);
+}
+
+function hubForPageType(pageType: string): { name: string; path: string } {
+  if (pageType === "howto") return { name: "How-tos", path: "/how-to" };
+  if (pageType === "news") return { name: "News", path: "/news" };
+  return { name: "Guides", path: "/guides" };
+}
+
+/**
+ * Editorial JSON-LD — Article / NewsArticle + WebPage + BreadcrumbList (no SoftwareApplication).
+ */
+export function buildEditorialJsonLd(input: ProgrammaticSchemaInput): ProgrammaticJsonLdGraph {
+  const schema = data.schema;
+  const page = input.slug ? getPageLanguageMeta(input.slug) : undefined;
+  const name = page?.name?.trim() || input.name.trim();
+  const inLanguage = page?.inLanguage || schema.defaults.inLanguage;
+  const primaryKeyword = page?.primaryKeyword || name;
+  const url = absoluteUrl(input.path);
+  const pageType = input.pageType || input.articleKind || "guide";
+  const hub = hubForPageType(pageType);
+
+  const orgId = `${siteConfig.domain.replace(/\/$/, "")}/#organization`;
+  const webPageId = `${url}#webpage`;
+  const breadcrumbId = `${url}#breadcrumb`;
+  const articleId = `${url}#article`;
+  const articleType = pageType === "news" ? "NewsArticle" : "Article";
+
+  const articleNode: Record<string, unknown> = {
+    "@type": articleType,
+    "@id": articleId,
+    headline: name,
+    name,
+    description: input.description,
+    url,
+    inLanguage,
+    datePublished: input.publishedAt,
+    dateModified: input.publishedAt,
+    author: {
+      "@type": "Organization",
+      name: schema.softwareApplication.publisher.name,
+      url: schema.softwareApplication.publisher.url,
+    },
+    publisher: {
+      "@type": "Organization",
+      "@id": orgId,
+      name: schema.softwareApplication.publisher.name,
+      url: schema.softwareApplication.publisher.url,
+    },
+    keywords: [primaryKeyword, ...(page?.tags || [])].filter(Boolean).join(", "),
+    isPartOf: {
+      "@type": "WebSite",
+      name: schema.webPage?.isPartOf.name || siteConfig.name,
+      url: schema.webPage?.isPartOf.url || siteConfig.domain,
+    },
+  };
+
+  const breadcrumbList: Record<string, unknown> = {
+    "@type": "BreadcrumbList",
+    "@id": breadcrumbId,
+    itemListElement: [
+      { name: siteConfig.name, path: "/" },
+      { name: hub.name, path: hub.path },
+      { name, path: input.path },
+    ].map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: absoluteUrl(item.path),
+    })),
+  };
+
+  const webPage: Record<string, unknown> = {
+    "@type": "WebPage",
+    "@id": webPageId,
+    url,
+    name,
+    description: input.description,
+    inLanguage,
+    isPartOf: {
+      "@type": "WebSite",
+      name: schema.webPage?.isPartOf.name || siteConfig.name,
+      url: schema.webPage?.isPartOf.url || siteConfig.domain,
+    },
+    mainEntity: { "@id": articleId },
+    breadcrumb: { "@id": breadcrumbId },
+    keywords: [primaryKeyword, ...(page?.tags || [])].filter(Boolean).join(", "),
+  };
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [articleNode, webPage, breadcrumbList],
+  };
 }
 
 /**
@@ -338,6 +437,10 @@ function absoluteUrl(path: string): string {
  * BreadcrumbList — fields populated from dataset.json for server render.
  */
 export function buildProgrammaticJsonLd(input: ProgrammaticSchemaInput): ProgrammaticJsonLdGraph {
+  if (input.articleKind) {
+    return buildEditorialJsonLd(input);
+  }
+
   const schema = data.schema;
   const page = input.slug ? data.pages[input.slug] : undefined;
   const name = page?.name?.trim() || input.name.trim();
@@ -421,11 +524,23 @@ export function buildProgrammaticJsonLd(input: ProgrammaticSchemaInput): Program
           { name: crumb.wordsName, path: crumb.wordsPath },
           { name, path: input.path },
         ]
-      : [
-          { name: crumb.homeName, path: crumb.homePath },
-          { name: crumb.guidesName, path: crumb.guidesPath },
-          { name, path: input.path },
-        ];
+      : pageType === "howto"
+        ? [
+            { name: crumb.homeName, path: crumb.homePath },
+            { name: "How-tos", path: "/how-to" },
+            { name, path: input.path },
+          ]
+        : pageType === "news"
+          ? [
+              { name: crumb.homeName, path: crumb.homePath },
+              { name: "News", path: "/news" },
+              { name, path: input.path },
+            ]
+          : [
+              { name: crumb.homeName, path: crumb.homePath },
+              { name: crumb.guidesName, path: crumb.guidesPath },
+              { name, path: input.path },
+            ];
 
   const breadcrumbList: Record<string, unknown> = {
     "@type": "BreadcrumbList",

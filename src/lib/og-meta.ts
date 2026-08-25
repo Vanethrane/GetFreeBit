@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import dataset from "@/data/dataset.json";
 import { buildDynamicTitle } from "@/components/SEOHead";
-import { getPageLanguageMeta } from "@/lib/dataset";import { siteConfig } from "@/site.config";
+import { absoluteCanonicalUrl, canonicalPath } from "@/lib/canonical";
+import { getPageLanguageMeta } from "@/lib/dataset";
+import { siteConfig } from "@/site.config";
 
 type SocialCardConfig = {
   width: number;
@@ -42,7 +44,7 @@ export type OgMetaInput = {
   title: string;
   description: string;
   path: string;
-  pageType?: "guide" | "word" | "programmatic" | "site";
+  pageType?: "guide" | "howto" | "news" | "word" | "programmatic" | "site";
   publishedAt?: string;
   phonetic?: string;
   syllables?: number | null;
@@ -53,8 +55,7 @@ export type OgMetaInput = {
 
 function absoluteUrl(path: string): string {
   if (path.startsWith("http")) return path;
-  const base = siteConfig.domain.replace(/\/$/, "");
-  return `${base}${path.startsWith("/") ? path : `/${path}`}`;
+  return absoluteCanonicalUrl(path, siteConfig.domain);
 }
 
 /** Dynamic OG image URL — overlays keyword/title on the branded social card */
@@ -78,11 +79,15 @@ export function buildOgImageUrl(input: {
 export function buildProgrammaticSocialMetadata(input: OgMetaInput): Metadata {
   const page = input.slug ? getPageLanguageMeta(input.slug) : null;
   const pageType = input.pageType || (input.slug ? "guide" : "word");
+  const titlePageType =
+    pageType === "programmatic" || pageType === "howto" || pageType === "news"
+      ? "guide"
+      : pageType;
   const displayName = page?.name || input.title;
 
   const dynamic = buildDynamicTitle({
     slug: input.slug,
-    pageType: pageType === "programmatic" ? "guide" : pageType,
+    pageType: titlePageType === "programmatic" ? "guide" : titlePageType,
     name: displayName,
     keyword: page?.primaryKeyword || input.title,
     phonetic: input.phonetic,
@@ -107,18 +112,23 @@ export function buildProgrammaticSocialMetadata(input: OgMetaInput): Metadata {
   });
 
   const canonical = absoluteUrl(input.path);
+  const normalizedPath = canonicalPath(input.path);
+  const isArticle =
+    input.pageType === "guide" ||
+    input.pageType === "howto" ||
+    input.pageType === "news";
 
   return {
     title: { absolute: title },
     description,
-    alternates: { canonical: input.path },
+    alternates: { canonical: normalizedPath },
     openGraph: {
       title,
       description,
       url: canonical,
       siteName: socialCard.brandName,
       locale: page?.inLanguage === "en" ? "en_US" : page?.inLanguage || "en_US",
-      type: input.pageType === "guide" ? "article" : "website",
+      type: isArticle ? "article" : "website",
       ...(input.publishedAt ? { publishedTime: input.publishedAt } : {}),
       images: [
         {

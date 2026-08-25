@@ -296,7 +296,7 @@ export function GlobalSearchTrigger({ className = "" }: { className?: string }) 
       <button
         type="button"
         onClick={openSearch}
-        className={`inline-flex min-h-[2.5rem] w-full max-w-xl items-center gap-2 rounded-full border border-paper-line bg-paper-raised px-3 py-2 text-left text-sm text-ink-muted shadow-sm transition hover:border-voice hover:text-voice-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-voice ${className}`}
+        className={`search-panel inline-flex min-h-[2.5rem] w-full max-w-xl items-center gap-2 rounded-full px-3 py-2 text-left text-sm text-ink-muted transition hover:border-voice hover:text-voice-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-voice ${className}`}
         aria-label="Open search (Command K)"
       >
         <SearchIcon className="shrink-0" />

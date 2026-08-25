@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { dynamicTitleMetadata } from "@/components/SEOHead";
 import { SiteShell } from "@/components/SiteChrome";
 import { getAllHowtos, articleWordCount } from "@/content/guides";
+import { buildHubMetadata } from "@/lib/site-metadata";
 import { siteConfig } from "@/site.config";
 
-export const metadata: Metadata = {
-  title: dynamicTitleMetadata({
-    pageType: "site",
-    name: "How-tos",
-    keyword: `${siteConfig.name} crypto how to`,
-  }),
-  description: `Step-by-step crypto how-tos from ${siteConfig.name}—wallets, swaps, bridges, staking, and security.`,
-};
+export const metadata: Metadata = buildHubMetadata({
+  title: "Crypto How-tos",
+  description: `Step-by-step crypto how-tos from ${siteConfig.name}—wallets, faucets, swaps, bridges, staking, and security procedures.`,
+  path: "/how-to",
+  keyword: "crypto how to wallet staking",
+});
 
 export default function HowtosIndexPage() {
   const items = getAllHowtos();

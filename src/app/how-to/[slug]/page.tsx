@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: article.title,
     description: article.description,
     path: `/how-to/${article.slug}`,
-    pageType: "guide",
+    pageType: "howto",
     publishedAt: article.publishedAt,
     readingMinutes: article.readingMinutes,
   });

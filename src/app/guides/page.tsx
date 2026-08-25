@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { dynamicTitleMetadata } from "@/components/SEOHead";
 import { SiteShell } from "@/components/SiteChrome";
 import { getAllGuides, articleWordCount } from "@/content/guides";
+import { buildHubMetadata } from "@/lib/site-metadata";
 import { siteConfig } from "@/site.config";
 
-export const metadata: Metadata = {
-  title: dynamicTitleMetadata({
-    pageType: "site",
-    name: "Guides",
-    keyword: `${siteConfig.name} crypto guides`,
-  }),
-  description: `Educational crypto guides from ${siteConfig.name}—blockchain, DeFi, wallets, and security fundamentals.`,
-};
+export const metadata: Metadata = buildHubMetadata({
+  title: "Crypto Guides",
+  description: `Educational crypto guides from ${siteConfig.name}—blockchain, DeFi, wallets, staking, and security fundamentals with risk callouts.`,
+  path: "/guides",
+  keyword: "crypto guides blockchain DeFi",
+});
 
 export default function GuidesIndexPage() {
   const guides = getAllGuides();

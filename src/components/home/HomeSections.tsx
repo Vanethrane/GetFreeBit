@@ -25,7 +25,7 @@ function PathKindBadge({ kind }: { kind: HomePathKind }) {
 
 function PathTile({ path }: { path: HomePath }) {
   return (
-    <Link href={path.href} className="path-tile group block rounded-xl border border-paper-line bg-paper-raised/80 px-4 py-3.5">
+    <Link href={path.href} className="path-tile group block rounded-xl px-4 py-3.5">
       <span className="flex items-start justify-between gap-2">
         <span className="font-semibold text-ink transition-colors group-hover:text-voice-dark">
           {path.label}
@@ -39,7 +39,7 @@ function PathTile({ path }: { path: HomePath }) {
 
 export function HomePopularPaths() {
   return (
-    <section aria-labelledby="popular-paths-heading" className="border-t border-paper-line py-10">
+    <section aria-labelledby="popular-paths-heading" className="section-scene border-t border-transparent py-10">
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
           <h2 id="popular-paths-heading" className="font-display text-2xl tracking-tight text-ink">
@@ -66,7 +66,7 @@ export function HomeEarnStrip() {
     <section aria-labelledby="earn-strip-heading" className="py-8">
       <Link
         href="/faucets"
-        className="earn-strip group flex flex-col gap-2 rounded-2xl border border-paper-line bg-paper-raised/70 px-5 py-4 transition hover:border-voice/35 sm:flex-row sm:items-center sm:justify-between"
+        className="earn-strip group flex flex-col gap-2 rounded-2xl border px-5 py-4 transition sm:flex-row sm:items-center sm:justify-between"
       >
         <div>
           <p id="earn-strip-heading" className="text-xs font-semibold uppercase tracking-[0.22em] text-voice-dark">
@@ -90,7 +90,7 @@ export function HomeEarnStrip() {
 
 export function HomeOperatorPicks() {
   return (
-    <section aria-labelledby="operator-picks-heading" className="border-t border-paper-line py-10">
+    <section aria-labelledby="operator-picks-heading" className="section-scene border-t border-transparent py-10">
       <h2 id="operator-picks-heading" className="font-display text-2xl tracking-tight text-ink">
         Operator picks
       </h2>
@@ -121,7 +121,7 @@ type DeskCounts = Partial<Record<string, number>>;
 
 export function HomeDeskTiles({ counts }: { counts?: DeskCounts }) {
   return (
-    <section aria-labelledby="desks-heading" className="border-t border-paper-line py-10">
+    <section aria-labelledby="desks-heading" className="section-scene border-t border-transparent py-10">
       <h2 id="desks-heading" className="font-display text-2xl tracking-tight text-ink">
         Desks
       </h2>
@@ -135,7 +135,7 @@ export function HomeDeskTiles({ counts }: { counts?: DeskCounts }) {
             <li key={desk.href}>
               <Link
                 href={desk.href}
-                className="path-tile group flex h-full flex-col rounded-xl border border-paper-line bg-paper-raised/80 px-4 py-4"
+                className="path-tile group flex h-full flex-col rounded-xl px-4 py-4"
               >
                 <span className="flex items-baseline justify-between gap-2">
                   <span className="font-display text-xl text-ink group-hover:text-voice-dark">

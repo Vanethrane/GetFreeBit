@@ -8,16 +8,22 @@ import {
   hasReferralCode,
   referralStatusLabel,
 } from "@/lib/faucet-referrals";
+import { buildHubMetadata } from "@/lib/site-metadata";
 import { siteConfig } from "@/site.config";
 
 export const metadata: Metadata = {
+  ...buildHubMetadata({
+    title: "US Crypto Faucet Referrals",
+    description:
+      "Compare US-accessible crypto faucets and micro-earning platforms—withdrawal minimums, FaucetPay routing, referral commissions, and risk notes before you register.",
+    path: "/faucets",
+    keyword: "crypto faucet referrals USA FaucetPay",
+  }),
   title: dynamicTitleMetadata({
     pageType: "site",
     name: "Faucet Referrals",
-    keyword: `${siteConfig.name} crypto faucet referral codes USA`,
+    keyword: "best crypto faucets USA",
   }),
-  description:
-    "US-accessible crypto faucets and micro-earning platforms with referral programs—FaucetPay, Cointiply, CoinPayU, and more. Compare commissions, coins, and withdrawal floors before you register.",
 };
 
 export default function FaucetsPage() {

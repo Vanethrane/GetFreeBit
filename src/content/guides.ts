@@ -13,10 +13,16 @@ export const ALL_GUIDES: Article[] = [...GUIDES, ...GUIDES_SEO];
 export const ALL_HOWTOS: Article[] = [...HOWTOS, ...HOWTOS_SEO];
 export const ALL_NEWS: Article[] = NEWS;
 
-export const ALL_ARTICLES: Article[] = [...GUIDES, ...HOWTOS, ...NEWS];
+export const ALL_ARTICLES: Article[] = [...ALL_GUIDES, ...ALL_HOWTOS, ...ALL_NEWS];
+
+export function findArticleBySlug(slug: string): Article | undefined {
+  return ALL_ARTICLES.find((a) => a.slug === slug);
+}
 
 export function getArticle(kind: ArticleKind, slug: string): Article | undefined {
-  return ALL_ARTICLES.find((a) => a.kind === kind && a.slug === slug);
+  const pool =
+    kind === "guide" ? ALL_GUIDES : kind === "howto" ? ALL_HOWTOS : ALL_NEWS;
+  return pool.find((a) => a.slug === slug);
 }
 
 export function getGuide(slug: string): Article | undefined {

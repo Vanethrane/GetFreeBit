@@ -22,13 +22,19 @@ const config: Config = {
           dark: colors.voiceDark,
           glow: colors.voiceGlow,
         },
+        signal: {
+          DEFAULT: colors.signal,
+          dark: colors.signalDark,
+          glow: colors.signalGlow,
+        },
       },
       fontFamily: {
         display: ["Fraunces", "Georgia", "serif"],
         sans: ["Outfit", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        card: `0 18px 40px -28px ${colors.ink}73`,
+        card: `0 20px 44px -30px color-mix(in srgb, ${colors.ink} 40%, transparent)`,
+        "card-hover": `0 22px 48px -28px color-mix(in srgb, ${colors.signal} 22%, ${colors.ink} 18%)`,
       },
     },
   },

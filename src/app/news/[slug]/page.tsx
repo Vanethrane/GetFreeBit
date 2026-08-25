@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: article.title,
     description: article.description,
     path: `/news/${article.slug}`,
-    pageType: "guide",
+    pageType: "news",
     publishedAt: article.publishedAt,
     readingMinutes: article.readingMinutes,
   });
