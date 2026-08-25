@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-outfit), system-ui, sans-serif;
+  /* Brand tokens — defaults; layout critical CSS / site.config override these */
+  --ink: #1c1712;
+  --ink-muted: #5c5348;
+  --paper: #f6f1e8;
+  --paper-raised: #fffaf3;
+  --paper-line: #e4d9c8;
+  --voice: #0d6e66;
+  --voice-dark: #0a524c;
+  --voice-glow: #e8f4f2;
+  --ad-banner-h: 60px;
+  --ad-inline-h: 90px;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --ad-banner-h: 300px;
+    --ad-inline-h: 600px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--voice);
+  color: var(--paper-raised);
+}
+
+.contain-layout {
+  contain: layout;
+}
+
+.stable-slot {
+  contain: layout;
+  width: 100%;
+}
+
+/* PWA install banner (pwa-install.js) */
+.pwa-banner {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  z-index: 140;
+  display: flex;
+  width: min(calc(100vw - 2rem), 28rem);
+  transform: translateX(-50%);
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border: 1px solid var(--paper-line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--paper-raised) 96%, transparent);
+  padding: 0.65rem 0.65rem 0.65rem 1rem;
+  box-shadow: 0 18px 40px -28px color-mix(in srgb, var(--ink) 45%, transparent);
+  backdrop-filter: blur(6px);
+}
+.pwa-banner-text {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: var(--ink);
+}
+.pwa-banner-actions {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.35rem;
+}
+.pwa-banner-install {
+  border: 0;
+  border-radius: 999px;
+  background: var(--voice);
+  color: var(--paper-raised);
+  padding: 0.45rem 0.85rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.pwa-banner-install:hover {
+  background: var(--voice-dark);
+}
+.pwa-banner-close {
+  border: 0;
+  background: transparent;
+  color: var(--ink-muted);
+  padding: 0.25rem 0.45rem;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .pwa-banner {
+    bottom: 4.75rem;
+  }
+}

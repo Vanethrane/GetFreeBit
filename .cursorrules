@@ -1,0 +1,39 @@
+# GetFreeBit.com — Cursor rules
+
+## Stack
+- Next.js App Router (TypeScript), Tailwind CSS, SEO-first programmatic pages.
+- Brand, ads, affiliates, and disclosure copy live in `src/site.config.ts`.
+- Dataset / SEO templates live in `src/data/dataset.json`.
+- Content strategy & voice: `.cursor/rules/getfreebit-engine.mdc` (always apply).
+
+## Brand
+- Site: **GetFreeBit** · Domain: `https://www.getfreebit.com`
+- Niche: free crypto earnings, yield, Web3 onboarding (four pillars in the engine rule).
+- Never hardcode brand name, colors, domain, or affiliate URLs in components — use `siteConfig`.
+
+## Non-negotiables
+- Never edit build-engine / programmatic page logic unless explicitly asked:
+  - `src/app/guides/[slug]/page.tsx`
+  - `src/app/w/[word]/page.tsx`
+  - `src/lib/dataset.ts`
+  - `scripts/lib/word-html.mjs`, `scripts/lib/word-seo.mjs`
+- Monetized UI must surface `siteConfig.affiliateDisclosure`.
+- No get-rich-quick copy, unverified token claims, or undisclosed tracking links.
+
+## SEO / schema.org
+- Use existing helpers (`SEOHead`, `HeadMetadata`, dataset graph builders).
+- Supported: **SoftwareApplication**, **FAQPage**, **HowTo** (Calculator when the niche needs it).
+- Do not invent JSON-LD shapes that break `scripts/assert-faq-schema.mjs` or `scripts/assert-seo-titles.mjs`.
+
+## Dataset workflow
+- Do not hand-write huge `dataset.json` payloads in chat.
+- Generate with `scripts/generate_dataset.py`, overwrite `src/data/dataset.json`.
+- Slugs, `primaryKeyword`, tags, and FAQs must map to a GetFreeBit pillar.
+
+## Deployment
+- Prefer Cloudflare Pages (GitHub connected).
+- `NEXT_PUBLIC_SITE_URL` must match `siteConfig.domain`.
+
+## Editing hygiene
+- Change only files required for the request.
+- Match existing chrome, ads slots, guides, and SEO patterns.

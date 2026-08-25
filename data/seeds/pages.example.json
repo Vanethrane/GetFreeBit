@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Bitcoin Halving Explained",
+    "slug": "bitcoin-halving-explained",
+    "primaryKeyword": "bitcoin halving",
+    "parentCategory": "guides",
+    "tags": ["bitcoin", "halving", "supply"],
+    "kind": "guide",
+    "description": "A plain-language overview of Bitcoin’s issuance schedule and why halvings matter for supply."
+  },
+  {
+    "name": "BTC to USD Converter",
+    "slug": "btc-to-usd-converter",
+    "primaryKeyword": "BTC to USD converter",
+    "parentCategory": "tools",
+    "tags": ["bitcoin", "converter", "calculator"],
+    "kind": "tool",
+    "description": "Convert bitcoin amounts to USD using a simple calculator-style page."
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "name": "getfreebit",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node node_modules/next/dist/bin/next dev --turbopack",
+    "sitemap": "node scripts/build-sitemap.mjs",
+    "build": "node scripts/build-sitemap.mjs && node scripts/build-global-search-index.mjs && node scripts/build-pwa.mjs && node node_modules/next/dist/bin/next build",
+    "start": "node node_modules/next/dist/bin/next start",
+    "assert:inbound": "node scripts/assert-inbound-links.mjs",
+    "search:index": "node scripts/build-global-search-index.mjs",
+    "global-search:index": "node scripts/build-global-search-index.mjs",
+    "pwa:build": "node scripts/build-pwa.mjs",
+    "assert:seo-titles": "node scripts/assert-seo-titles.mjs",
+    "ads:txt": "node scripts/fetch-ads-txt.mjs",
+    "assert:faq": "node scripts/assert-faq-schema.mjs",
+    "dataset:generate": "python scripts/generate_dataset.py --mode template --seed data/seeds/pages.example.json",
+    "serve": "node scripts/serve.mjs"
+  },
+  "dependencies": {
+    "next": "^15.5.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "optionalDependencies": {
+    "@aws-sdk/client-s3": "^3.879.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.9.2"
+  }
+}
