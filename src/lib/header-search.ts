@@ -24,13 +24,16 @@ type DatasetPage = {
 
 type DatasetFile = {
   pages: Record<string, DatasetPage>;
-  toolAffiliates: Record<
+  toolAffiliates?: Record<
     string,
     { id: string; label: string; title: string; description: string; href: string; cta: string }
   >;
 };
 
-const data = dataset as DatasetFile;
+const data = {
+  pages: (dataset as DatasetFile).pages ?? {},
+  toolAffiliates: (dataset as DatasetFile).toolAffiliates ?? {},
+};
 
 /** Word-directory categories on the static site (map to ./{slug}/). */
 export const WORD_CATEGORIES: { slug: string; label: string; terms: string[] }[] = [
