@@ -1,14 +1,16 @@
 import type { Article, ArticleKind } from "./types";
 import { articleWordCount } from "./types";
 import { GUIDES } from "./articles-guides";
+import { GUIDES_SEO } from "./articles-guides-seo";
 import { HOWTOS } from "./articles-howtos";
+import { HOWTOS_SEO } from "./articles-howtos-seo";
 import { NEWS } from "./articles-news";
 
 export type { Article, ArticleKind, Guide, GuideSection } from "./types";
 export { articleWordCount, guideWordCount } from "./types";
 
-export const ALL_GUIDES: Article[] = GUIDES;
-export const ALL_HOWTOS: Article[] = HOWTOS;
+export const ALL_GUIDES: Article[] = [...GUIDES, ...GUIDES_SEO];
+export const ALL_HOWTOS: Article[] = [...HOWTOS, ...HOWTOS_SEO];
 export const ALL_NEWS: Article[] = NEWS;
 
 export const ALL_ARTICLES: Article[] = [...GUIDES, ...HOWTOS, ...NEWS];

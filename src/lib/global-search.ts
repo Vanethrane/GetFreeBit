@@ -72,11 +72,16 @@ function scoreMeta(query: string, entry: GlobalMetaEntry): number {
   if (label === query) score += 120;
   if (entry.id.endsWith(`:${query.replace(/\s+/g, "-")}`)) score += 110;
 
+  if (entry.type === "term") {
+    if (label === query) score += 40;
+    else if (label.startsWith(query)) score += 25;
+  }
+
   for (const term of entry.terms) {
-    if (term === query) score += 90;
-    else if (term.startsWith(query)) score += 55;
+    if (term === query) score += entry.type === "term" ? 100 : 90;
+    else if (term.startsWith(query)) score += entry.type === "term" ? 65 : 55;
     else if (query.startsWith(term) && term.length >= 3) score += 40;
-    else if (term.includes(query)) score += 28;
+    else if (term.includes(query)) score += entry.type === "term" ? 35 : 28;
   }
 
   const tokens = query.split(/\s+/).filter((t) => t.length >= 2);

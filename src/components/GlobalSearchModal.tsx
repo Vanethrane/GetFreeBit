@@ -170,7 +170,7 @@ function GlobalSearchModal({ index, loading }: GlobalSearchModalProps) {
                 navigate(results[active]);
               }
             }}
-            placeholder="Search guides, how-tos, and news…"
+            placeholder="Search crypto terms, guides, how-tos, news…"
             autoComplete="off"
             spellCheck={false}
             className="min-w-0 flex-1 bg-transparent text-base text-ink outline-none placeholder:text-ink-muted/80"
@@ -185,11 +185,11 @@ function GlobalSearchModal({ index, loading }: GlobalSearchModalProps) {
             <p className="px-4 py-6 text-sm text-ink-muted">Loading search index…</p>
           ) : showEmptyHint ? (
             <div className="px-4 py-6 text-sm text-ink-muted">
-              <p>Type to search guides, how-tos, and news instantly.</p>
+              <p>Type to search crypto terms or articles across guides, how-tos, and news.</p>
               <p className="mt-2 text-xs">
-                Try <span className="text-ink">wallet</span>,{" "}
-                <span className="text-ink">staking</span>, or{" "}
-                <span className="text-ink">airdrop</span>
+                Try <span className="text-ink">staking</span>,{" "}
+                <span className="text-ink">gas</span>, or{" "}
+                <span className="text-ink">wallet</span>
               </p>
             </div>
           ) : results.length === 0 && q.length > 0 ? (
@@ -227,7 +227,7 @@ function GlobalSearchModal({ index, loading }: GlobalSearchModalProps) {
         <div className="flex items-center justify-between border-t border-paper-line px-4 py-2 text-[0.65rem] text-ink-muted">
           <span>
             {index
-              ? `${index.meta?.length ?? 0} guides, how-tos & news`
+              ? `${index.meta?.length ?? 0} terms & articles`
               : "—"}
           </span>
           {elapsedMs > 0 ? (
@@ -300,7 +300,7 @@ export function GlobalSearchTrigger({ className = "" }: { className?: string }) 
         aria-label="Open search (Command K)"
       >
         <SearchIcon className="shrink-0" />
-        <span className="min-w-0 flex-1 truncate">Search guides, how-tos, news…</span>
+        <span className="min-w-0 flex-1 truncate">Search crypto terms & articles…</span>
         <kbd className="hidden shrink-0 rounded-md border border-paper-line bg-paper px-1.5 py-0.5 text-[0.65rem] font-medium text-ink-muted sm:inline">
           ⌘K
         </kbd>

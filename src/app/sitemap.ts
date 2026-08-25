@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/guides",
     "/how-to",
+    "/faucets",
     "/news",
     "/about",
     "/contact",

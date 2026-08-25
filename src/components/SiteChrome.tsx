@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { AdSlot } from "@/components/ads";
 import { GlobalSearchProvider } from "@/components/GlobalSearchProvider";
 import { GlobalSearchTrigger } from "@/components/GlobalSearchModal";
@@ -21,7 +24,10 @@ function BrandMark({ className = "" }: { className?: string }) {
   );
 }
 
-export function SiteHeader() {
+function SiteHeader() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
   return (
     <header className="relative z-[1] space-y-3">
       <div className="flex flex-wrap items-center justify-between gap-4">
@@ -32,19 +38,24 @@ export function SiteHeader() {
           <BrandMark />
           <span className="transition-colors group-hover:text-voice-dark">{siteConfig.name}</span>
         </Link>
-        <nav aria-label="Primary" className="flex flex-wrap items-center gap-5 text-sm font-medium text-ink-muted">
+        <nav
+          aria-label="Primary"
+          className="flex flex-wrap items-center gap-4 text-sm font-medium text-ink-muted sm:gap-5"
+        >
           {siteConfig.primaryNav.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="relative transition-colors hover:text-voice-dark after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-voice after:transition-[width] hover:after:w-full"
+              className={`relative transition-colors hover:text-voice-dark after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-voice after:transition-[width] hover:after:w-full ${
+                item.href === "/faucets" ? "font-medium text-voice-dark" : ""
+              }`}
             >
               {item.label}
             </Link>
           ))}
         </nav>
       </div>
-      <GlobalSearchTrigger className="w-full max-w-xl" />
+      {!isHome ? <GlobalSearchTrigger className="w-full max-w-xl" /> : null}
     </header>
   );
 }
@@ -100,19 +111,27 @@ export function SiteFooter() {
   );
 }
 
-export function SiteShell({ children }: { children: React.ReactNode }) {
+type SiteShellProps = {
+  children: React.ReactNode;
+  /** Home uses in-page search; skip top banner so hero stays clean */
+  homeLayout?: boolean;
+};
+
+export function SiteShell({ children, homeLayout = false }: SiteShellProps) {
   return (
     <GlobalSearchProvider>
       <HistoryProvider>
         <div className="site-shell mx-auto flex min-h-screen w-full max-w-3xl flex-col px-6 py-8">
           <SiteHeader />
-          <StableSlot
-            minHeight="90px"
-            className="ad-slot-top relative z-[1] mt-4 border-b border-paper-line pb-4"
-            aria-label="Advertisement"
-          >
-            <AdSlot slotType="banner" />
-          </StableSlot>
+          {!homeLayout ? (
+            <StableSlot
+              minHeight="90px"
+              className="ad-slot-top relative z-[1] mt-4 border-b border-paper-line pb-4"
+              aria-label="Advertisement"
+            >
+              <AdSlot slotType="banner" />
+            </StableSlot>
+          ) : null}
           <div className="relative z-[1] flex-1" style={{ minHeight: "20rem", contain: "layout" }}>
             {children}
           </div>

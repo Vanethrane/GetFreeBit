@@ -19,6 +19,9 @@ export default function NotFound() {
           <Link href="/how-to" className="text-voice-dark underline underline-offset-4">
             How-tos
           </Link>
+          <Link href="/faucets" className="text-voice-dark underline underline-offset-4">
+            Faucets
+          </Link>
           <Link href="/news" className="text-voice-dark underline underline-offset-4">
             News
           </Link>

@@ -1,11 +1,14 @@
 import dataset from "@/data/dataset.json";
 import { ALL_ARTICLES, type ArticleKind } from "@/content/guides";
+import { buildGlossarySearchEntries } from "@/lib/glossary-search";
 
 export type HeaderSearchEntry = {
   id: string;
-  type: "guide" | "howto" | "news" | "tool" | "category";
+  type: "guide" | "howto" | "news" | "tool" | "category" | "term";
   label: string;
   hint: string;
+  /** Optional subtitle — glossary definition snippet for term rows */
+  detail?: string;
   /** App-router path (Next.js) */
   href: string;
   /** Static GitHub Pages path (relative to site root) */
@@ -80,9 +83,9 @@ function collectTerms(...parts: (string | undefined)[]): string[] {
   return [...out];
 }
 
-/** Build a client-side search index from editorial articles + dataset.json hubs. */
+/** Build a client-side search index from glossary terms + editorial articles + dataset hubs. */
 export function buildHeaderSearchIndex(): HeaderSearchEntry[] {
-  const entries: HeaderSearchEntry[] = [];
+  const entries: HeaderSearchEntry[] = [...buildGlossarySearchEntries()];
 
   for (const article of ALL_ARTICLES) {
     const base = articleBasePath(article.kind);
@@ -169,11 +172,16 @@ function scoreEntry(query: string, entry: HeaderSearchEntry): number {
   if (label === query) score += 120;
   if (entry.id.endsWith(`:${query.replace(/\s+/g, "-")}`)) score += 110;
 
+  if (entry.type === "term") {
+    if (label === query) score += 40;
+    else if (label.startsWith(query)) score += 25;
+  }
+
   for (const term of entry.terms) {
-    if (term === query) score += 90;
-    else if (term.startsWith(query)) score += 55;
+    if (term === query) score += entry.type === "term" ? 100 : 90;
+    else if (term.startsWith(query)) score += entry.type === "term" ? 65 : 55;
     else if (query.startsWith(term) && term.length >= 3) score += 40;
-    else if (term.includes(query)) score += 28;
+    else if (term.includes(query)) score += entry.type === "term" ? 35 : 28;
   }
 
   const tokens = query.split(/\s+/).filter((t) => t.length >= 2);
@@ -195,12 +203,22 @@ export function searchHeaderIndex(
   const q = normalizeSearchQuery(query);
   if (q.length < 1) return [];
 
-  return index
+  const ranked = index
     .map((entry) => ({ entry, score: scoreEntry(q, entry) }))
     .filter((row) => row.score > 0)
-    .sort((a, b) => b.score - a.score || a.entry.label.localeCompare(b.entry.label))
-    .slice(0, limit)
-    .map((row) => row.entry);
+    .sort((a, b) => b.score - a.score || a.entry.label.localeCompare(b.entry.label));
+
+  const picked: HeaderSearchEntry[] = [];
+  const seenId = new Set<string>();
+
+  for (const row of ranked) {
+    if (picked.length >= limit) break;
+    if (seenId.has(row.entry.id)) continue;
+    seenId.add(row.entry.id);
+    picked.push(row.entry);
+  }
+
+  return picked;
 }
 
 export type ResolveSearchOptions = {
@@ -221,7 +239,9 @@ export function resolveHeaderSearch(
 
   const results = searchHeaderIndex(q, index, 12);
   const exact =
+    results.find((r) => r.type === "term" && r.label.toLowerCase() === q) ||
     results.find((r) => r.label.toLowerCase() === q) ||
+    results.find((r) => r.id === `term:${q.replace(/\s+/g, "-")}`) ||
     results.find((r) => r.id === `guide:${q.replace(/\s+/g, "-")}`) ||
     results.find((r) => r.terms.includes(q));
 

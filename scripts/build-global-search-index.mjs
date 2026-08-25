@@ -6,6 +6,7 @@ import { readFileSync, writeFileSync, mkdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import { loadArticleSearchEntries } from "./lib/article-index.mjs";
+import { loadGlossarySearchEntries } from "./lib/glossary-index.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const dataset = JSON.parse(readFileSync(join(ROOT, "src/data/dataset.json"), "utf8"));
@@ -36,6 +37,10 @@ function collectTerms(...parts) {
 
 function buildMeta() {
   const meta = [];
+
+  for (const term of loadGlossarySearchEntries(ROOT)) {
+    meta.push(term);
+  }
 
   for (const article of loadArticleSearchEntries(ROOT)) {
     meta.push({
@@ -116,5 +121,5 @@ writeFileSync(join(outDir, "global-search-index.json"), JSON.stringify(payload))
 writeFileSync(join(ROOT, "assets/global-search-index.json"), JSON.stringify(payload));
 
 console.log(
-  `Wrote public/global-search-index.json — ${payload.meta.length} guides, how-tos & news entries`,
+  `Wrote public/global-search-index.json — ${payload.meta.length} terms, guides, how-tos & news entries`,
 );

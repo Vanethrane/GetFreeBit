@@ -1,4 +1,11 @@
 import Link from "next/link";
+import {
+  HomeDeskTiles,
+  HomeEarnStrip,
+  HomeOperatorPicks,
+  HomePopularPaths,
+} from "@/components/home/HomeSections";
+import { HomeSearch } from "@/components/HomeSearch";
 import { SiteShell } from "@/components/SiteChrome";
 import { getAllGuides, getAllHowtos, getAllNews } from "@/content/guides";
 import { siteConfig } from "@/site.config";
@@ -8,89 +15,48 @@ export default function HomePage() {
   const latestHowtos = getAllHowtos().slice(0, 2);
   const latestNews = getAllNews().slice(0, 2);
 
+  const deskCounts = {
+    "/guides": getAllGuides().length,
+    "/how-to": getAllHowtos().length,
+    "/news": getAllNews().length,
+  };
+
   return (
-    <SiteShell>
-      <section className="relative flex flex-1 flex-col justify-center py-16 sm:py-20">
+    <SiteShell homeLayout>
+      <section className="relative py-10 sm:py-12">
         <p className="anim-rise text-xs font-semibold uppercase tracking-[0.28em] text-voice-dark">
           Operator-grade crypto education
         </p>
-        <h1 className="anim-rise-delay mt-4 max-w-xl font-display text-5xl leading-[1.02] tracking-tight text-ink sm:text-6xl">
+        <h1 className="anim-rise-delay mt-3 font-display text-4xl leading-[1.05] tracking-tight text-ink sm:text-5xl">
           {siteConfig.name}
         </h1>
-        <div className="hero-rule mt-5" aria-hidden="true" />
-        <p className="anim-rise-delay-2 mt-5 max-w-lg text-lg leading-relaxed text-ink-muted sm:text-xl">
+        <div className="hero-rule mt-4" aria-hidden="true" />
+        <p className="anim-rise-delay-2 mt-4 max-w-lg text-base leading-relaxed text-ink-muted sm:text-lg">
           {siteConfig.tagline}
         </p>
-        <div className="anim-rise-delay-2 mt-9 flex flex-wrap gap-3">
-          <Link
-            href="/guides"
-            className="cta-primary inline-flex items-center justify-center rounded-lg bg-voice px-6 py-3 text-sm font-semibold text-paper-raised hover:bg-voice-dark"
-          >
-            Read guides
-          </Link>
-          <Link
-            href="/how-to"
-            className="inline-flex items-center justify-center rounded-lg border border-paper-line bg-paper-raised/80 px-6 py-3 text-sm font-medium text-ink backdrop-blur-sm hover:border-voice"
-          >
-            Start a how-to
-          </Link>
+        <div className="anim-rise-delay-2 mt-7">
+          <HomeSearch className="max-w-2xl" />
         </div>
       </section>
 
-      <section className="border-t border-paper-line py-12">
-        <h2 className="font-display text-2xl tracking-tight text-ink">Three desks</h2>
-        <p className="mt-2 max-w-xl text-sm leading-relaxed text-ink-muted">
-          Learn the systems, execute the steps, track what institutions are doing.
-        </p>
-        <ul className="mt-7 space-y-3">
-          {[
-            {
-              href: "/guides",
-              label: "Guides",
-              summary: "How blockchain, tokens, DeFi, and security models actually work.",
-            },
-            {
-              href: "/how-to",
-              label: "How-tos",
-              summary: "Wallets, swaps, bridges, staking, taxes—procedures with risk checks.",
-            },
-            {
-              href: "/news",
-              label: "News",
-              summary: "Regulation, institutions, and protocol shifts with operator context.",
-            },
-          ].map((item, i) => (
-            <li key={item.href}>
-              <Link
-                href={item.href}
-                className="pillar-row group flex gap-4 rounded-lg border border-transparent px-3 py-3"
-              >
-                <span className="mt-0.5 w-7 shrink-0 font-display text-sm text-voice">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <span>
-                  <span className="block font-semibold text-ink group-hover:text-voice-dark">
-                    {item.label}
-                  </span>
-                  <span className="mt-1 block text-sm leading-relaxed text-ink-muted">
-                    {item.summary}
-                  </span>
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <HomePopularPaths />
+      <HomeEarnStrip />
+      <HomeOperatorPicks />
+      <HomeDeskTiles counts={deskCounts} />
 
-      <section className="border-t border-paper-line py-12">
-        <h2 className="font-display text-2xl tracking-tight text-ink">Fresh from the desk</h2>
+      <section aria-labelledby="fresh-heading" className="border-t border-paper-line py-10">
+        <h2 id="fresh-heading" className="font-display text-2xl tracking-tight text-ink">
+          Fresh from the desk
+        </h2>
         <div className="mt-6 space-y-8">
           <DeskBlock title="Guides" href="/guides" items={latestGuides} base="/guides" />
           <DeskBlock title="How-tos" href="/how-to" items={latestHowtos} base="/how-to" />
           <DeskBlock title="News" href="/news" items={latestNews} base="/news" />
         </div>
-        <p className="mt-8 text-xs leading-relaxed text-ink-muted">
-          {siteConfig.affiliateDisclosure}
+        <p className="mt-8 text-center text-sm text-ink-muted">
+          <Link href="/guides" className="font-medium text-voice-dark underline-offset-4 hover:underline">
+            Browse all content
+          </Link>
         </p>
       </section>
     </SiteShell>

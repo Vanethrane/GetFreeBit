@@ -9,7 +9,10 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "../..");
 
 const ARTICLE_FILES = [
   { kind: "guide", path: "src/content/articles-guides.ts" },
+  { kind: "guide", path: "src/content/articles-guides-seo.ts" },
+  { kind: "guide", path: "src/content/articles-guides-seo.ts" },
   { kind: "howto", path: "src/content/articles-howtos.ts" },
+  { kind: "howto", path: "src/content/articles-howtos-seo.ts" },
   { kind: "news", path: "src/content/articles-news.ts" },
 ];
 
