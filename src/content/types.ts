@@ -1,22 +1,31 @@
-export type GuideSection = {
+export type ArticleSection = {
   heading: string;
   paragraphs: string[];
 };
 
-export type Guide = {
+export type ArticleKind = "guide" | "howto" | "news";
+
+export type Article = {
   slug: string;
+  kind: ArticleKind;
   title: string;
   description: string;
   publishedAt: string;
   readingMinutes: number;
-  sections: GuideSection[];
+  sections: ArticleSection[];
 };
 
-export function guideWordCount(guide: Guide): number {
+/** @deprecated Prefer Article — kept for gradual migration */
+export type GuideSection = ArticleSection;
+export type Guide = Article;
+
+export function articleWordCount(article: Article): number {
   const text = [
-    guide.title,
-    guide.description,
-    ...guide.sections.flatMap((s) => [s.heading, ...s.paragraphs]),
+    article.title,
+    article.description,
+    ...article.sections.flatMap((s) => [s.heading, ...s.paragraphs]),
   ].join(" ");
   return text.trim().split(/\s+/).filter(Boolean).length;
 }
+
+export const guideWordCount = articleWordCount;

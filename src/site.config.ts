@@ -230,27 +230,27 @@ export const siteConfig = {
   pillars: [
     {
       id: "faucets-micro" as const satisfies ContentPillar,
-      label: "Faucets & Micro-Earnings",
+      label: "Guides",
       href: "/guides",
-      summary: "Legitimate faucets, claim automation, FaucetPay routing, time-vs-reward math.",
+      summary: "How blockchain, tokens, DeFi, and security models actually work.",
     },
     {
       id: "airdrop-testnet" as const satisfies ContentPillar,
-      label: "Airdrop & Testnet Farming",
-      href: "/guides",
-      summary: "Eligibility checklists, gas tips, Sybil-prevention, step-by-step testnet flows.",
+      label: "How-tos",
+      href: "/how-to",
+      summary: "Wallets, swaps, bridges, staking, and security procedures.",
     },
     {
       id: "staking-yield" as const satisfies ContentPillar,
-      label: "Staking, Savings & Yield",
-      href: "/guides",
-      summary: "Native staking, LSDs, lending APYs, and risk-adjusted comparisons.",
+      label: "News",
+      href: "/news",
+      summary: "Regulation, institutions, and protocol shifts with operator context.",
     },
     {
       id: "exchange-onboarding" as const satisfies ContentPillar,
-      label: "Exchange & Web3 Onboarding",
-      href: "/guides",
-      summary: "Tier-1 bonuses, hardware wallets, cashback cards, and crypto debit.",
+      label: "Start here",
+      href: "/how-to/how-to-create-your-first-self-custody-crypto-wallet",
+      summary: "Create a self-custody wallet the careful way—then explore the rest.",
     },
   ],
 
@@ -269,6 +269,8 @@ export const siteConfig = {
   /** Primary header navigation */
   primaryNav: [
     { href: "/guides", label: "Guides" },
+    { href: "/how-to", label: "How-tos" },
+    { href: "/news", label: "News" },
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
   ] as const satisfies readonly NavLink[],
@@ -277,6 +279,8 @@ export const siteConfig = {
   footerProductNav: [
     { href: "/", label: "Home" },
     { href: "/guides", label: "Guides" },
+    { href: "/how-to", label: "How-tos" },
+    { href: "/news", label: "News" },
     { href: "/about", label: "About" },
   ] as const satisfies readonly NavLink[],
 

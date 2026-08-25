@@ -1,13 +1,13 @@
 {
   "name": "GetFreeBit",
   "short_name": "GetFreeBit",
-  "description": "Earn free crypto. Optimize yield. Navigate Web3 safely.",
+  "description": "Free crypto, yield, and Web3—explained like an operator, not a hype reel.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "background_color": "#f3f5f7",
-  "theme_color": "#c9842a",
+  "background_color": "#eef1f5",
+  "theme_color": "#d4922a",
   "categories": [
     "finance",
     "utilities"

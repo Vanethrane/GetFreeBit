@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { SiteShell } from "@/components/SiteChrome";
-import { getAllGuides } from "@/content/guides";
+import { getAllGuides, getAllHowtos, getAllNews } from "@/content/guides";
 import { siteConfig } from "@/site.config";
 
 export default function HomePage() {
-  const latestGuides = getAllGuides().slice(0, 3);
+  const latestGuides = getAllGuides().slice(0, 2);
+  const latestHowtos = getAllHowtos().slice(0, 2);
+  const latestNews = getAllNews().slice(0, 2);
 
   return (
     <SiteShell>
@@ -24,27 +26,43 @@ export default function HomePage() {
             href="/guides"
             className="cta-primary inline-flex items-center justify-center rounded-lg bg-voice px-6 py-3 text-sm font-semibold text-paper-raised hover:bg-voice-dark"
           >
-            Enter the guides
+            Read guides
           </Link>
           <Link
-            href="/about"
+            href="/how-to"
             className="inline-flex items-center justify-center rounded-lg border border-paper-line bg-paper-raised/80 px-6 py-3 text-sm font-medium text-ink backdrop-blur-sm hover:border-voice"
           >
-            How we earn trust
+            Start a how-to
           </Link>
         </div>
       </section>
 
       <section className="border-t border-paper-line py-12">
-        <h2 className="font-display text-2xl tracking-tight text-ink">Four pillars. Zero fluff.</h2>
+        <h2 className="font-display text-2xl tracking-tight text-ink">Three desks</h2>
         <p className="mt-2 max-w-xl text-sm leading-relaxed text-ink-muted">
-          Every article maps to a lane—so you always know what problem you are solving.
+          Learn the systems, execute the steps, track what institutions are doing.
         </p>
         <ul className="mt-7 space-y-3">
-          {siteConfig.pillars.map((pillar, i) => (
-            <li key={pillar.id}>
+          {[
+            {
+              href: "/guides",
+              label: "Guides",
+              summary: "How blockchain, tokens, DeFi, and security models actually work.",
+            },
+            {
+              href: "/how-to",
+              label: "How-tos",
+              summary: "Wallets, swaps, bridges, staking, taxes—procedures with risk checks.",
+            },
+            {
+              href: "/news",
+              label: "News",
+              summary: "Regulation, institutions, and protocol shifts with operator context.",
+            },
+          ].map((item, i) => (
+            <li key={item.href}>
               <Link
-                href={pillar.href}
+                href={item.href}
                 className="pillar-row group flex gap-4 rounded-lg border border-transparent px-3 py-3"
               >
                 <span className="mt-0.5 w-7 shrink-0 font-display text-sm text-voice">
@@ -52,10 +70,10 @@ export default function HomePage() {
                 </span>
                 <span>
                   <span className="block font-semibold text-ink group-hover:text-voice-dark">
-                    {pillar.label}
+                    {item.label}
                   </span>
                   <span className="mt-1 block text-sm leading-relaxed text-ink-muted">
-                    {pillar.summary}
+                    {item.summary}
                   </span>
                 </span>
               </Link>
@@ -65,31 +83,52 @@ export default function HomePage() {
       </section>
 
       <section className="border-t border-paper-line py-12">
-        <div className="flex items-end justify-between gap-4">
-          <h2 className="font-display text-2xl tracking-tight text-ink">Fresh from the desk</h2>
-          <Link href="/guides" className="text-sm font-medium text-voice-dark underline underline-offset-4">
-            All guides
-          </Link>
+        <h2 className="font-display text-2xl tracking-tight text-ink">Fresh from the desk</h2>
+        <div className="mt-6 space-y-8">
+          <DeskBlock title="Guides" href="/guides" items={latestGuides} base="/guides" />
+          <DeskBlock title="How-tos" href="/how-to" items={latestHowtos} base="/how-to" />
+          <DeskBlock title="News" href="/news" items={latestNews} base="/news" />
         </div>
-        <ul className="mt-5 space-y-1">
-          {latestGuides.map((guide) => (
-            <li key={guide.slug}>
-              <Link
-                href={`/guides/${guide.slug}`}
-                className="block border-b border-paper-line py-4 transition-colors hover:border-voice/40"
-              >
-                <span className="font-semibold text-ink hover:text-voice-dark">{guide.title}</span>
-                <span className="mt-1 block text-sm leading-relaxed text-ink-muted">
-                  {guide.description}
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
         <p className="mt-8 text-xs leading-relaxed text-ink-muted">
           {siteConfig.affiliateDisclosure}
         </p>
       </section>
     </SiteShell>
+  );
+}
+
+function DeskBlock({
+  title,
+  href,
+  items,
+  base,
+}: {
+  title: string;
+  href: string;
+  base: string;
+  items: { slug: string; title: string; description: string }[];
+}) {
+  return (
+    <div>
+      <div className="flex items-end justify-between gap-4">
+        <h3 className="font-display text-xl text-ink">{title}</h3>
+        <Link href={href} className="text-sm font-medium text-voice-dark underline underline-offset-4">
+          View all
+        </Link>
+      </div>
+      <ul className="mt-3 space-y-1">
+        {items.map((item) => (
+          <li key={item.slug}>
+            <Link
+              href={`${base}/${item.slug}`}
+              className="block border-b border-paper-line py-3 transition-colors hover:border-voice/40"
+            >
+              <span className="font-semibold text-ink">{item.title}</span>
+              <span className="mt-1 block text-sm text-ink-muted">{item.description}</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }

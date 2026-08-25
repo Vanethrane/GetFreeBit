@@ -4,7 +4,6 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import {
   getHeaderSearchIndex,
-  guessWordCategorySlug,
   normalizeSearchQuery,
   resolveHeaderSearch,
   searchHeaderIndex,
@@ -73,11 +72,11 @@ export function HeaderSearch({ className = "" }: HeaderSearchProps) {
         navigate(visible[active]);
       }}
     >
-      <label className="sr-only" htmlFor="speakur-header-search">
-        Search guides, tools, and topics
+      <label className="sr-only" htmlFor="getfreebit-header-search">
+        Search guides, how-tos, and news
       </label>
       <input
-        id="speakur-header-search"
+        id="getfreebit-header-search"
         type="search"
         value={query}
         onChange={(event) => setQuery(event.target.value)}
@@ -94,7 +93,7 @@ export function HeaderSearch({ className = "" }: HeaderSearchProps) {
             setOpen(false);
           }
         }}
-        placeholder="Search guides, tools, words…"
+        placeholder="Search guides, how-tos, and news…"
         autoComplete="off"
         spellCheck={false}
         className="w-full rounded-full border border-paper-line bg-paper-raised py-2 pl-4 pr-10 text-sm text-ink shadow-sm outline-none ring-voice/25 placeholder:text-ink-muted/80 focus:ring-2"

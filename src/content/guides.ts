@@ -1,38 +1,55 @@
-import { GUIDES as GUIDES_A } from "./guides-part-a";
-import { GUIDES_B } from "./guides-part-b";
-import { GUIDES_C } from "./guides-part-c";
-import { GUIDE_EXPANSIONS } from "./guide-expansions";
-import { GUIDE_EXPANSIONS_B } from "./guide-expansions-b";
-import { GUIDE_EXPANSIONS_C } from "./guide-expansions-c";
-import type { Guide } from "./types";
-import { guideWordCount } from "./types";
+import type { Article, ArticleKind } from "./types";
+import { articleWordCount } from "./types";
+import { GUIDES } from "./articles-guides";
+import { HOWTOS } from "./articles-howtos";
+import { NEWS } from "./articles-news";
 
-export type { Guide } from "./types";
-export { guideWordCount } from "./types";
+export type { Article, ArticleKind, Guide, GuideSection } from "./types";
+export { articleWordCount, guideWordCount } from "./types";
 
-function withExpansions(guide: Guide): Guide {
-  const extra = [
-    ...(GUIDE_EXPANSIONS[guide.slug] ?? []),
-    ...(GUIDE_EXPANSIONS_B[guide.slug] ?? []),
-    ...(GUIDE_EXPANSIONS_C[guide.slug] ?? []),
-  ];
-  if (extra.length === 0) return guide;
-  return { ...guide, sections: [...guide.sections, ...extra] };
+export const ALL_GUIDES: Article[] = GUIDES;
+export const ALL_HOWTOS: Article[] = HOWTOS;
+export const ALL_NEWS: Article[] = NEWS;
+
+export const ALL_ARTICLES: Article[] = [...GUIDES, ...HOWTOS, ...NEWS];
+
+export function getArticle(kind: ArticleKind, slug: string): Article | undefined {
+  return ALL_ARTICLES.find((a) => a.kind === kind && a.slug === slug);
 }
 
-export const ALL_GUIDES: Guide[] = [...GUIDES_A, ...GUIDES_B, ...GUIDES_C].map(withExpansions);
-
-export function getGuide(slug: string): Guide | undefined {
-  return ALL_GUIDES.find((guide) => guide.slug === slug);
+export function getGuide(slug: string): Article | undefined {
+  return getArticle("guide", slug);
 }
 
-export function getAllGuides(): Guide[] {
+export function getHowto(slug: string): Article | undefined {
+  return getArticle("howto", slug);
+}
+
+export function getNews(slug: string): Article | undefined {
+  return getArticle("news", slug);
+}
+
+export function getAllGuides(): Article[] {
   return [...ALL_GUIDES].sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1));
 }
 
-export function assertGuideLengths(minWords = 500): { slug: string; words: number }[] {
-  return ALL_GUIDES.map((guide) => ({
-    slug: guide.slug,
-    words: guideWordCount(guide),
+export function getAllHowtos(): Article[] {
+  return [...ALL_HOWTOS].sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1));
+}
+
+export function getAllNews(): Article[] {
+  return [...ALL_NEWS].sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1));
+}
+
+export function assertArticleLengths(minWords = 500): { slug: string; kind: ArticleKind; words: number }[] {
+  return ALL_ARTICLES.map((a) => ({
+    slug: a.slug,
+    kind: a.kind,
+    words: articleWordCount(a),
   })).filter((row) => row.words < minWords);
+}
+
+/** @deprecated */
+export function assertGuideLengths(minWords = 500) {
+  return assertArticleLengths(minWords).map(({ slug, words }) => ({ slug, words }));
 }

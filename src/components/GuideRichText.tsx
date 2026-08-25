@@ -10,14 +10,14 @@ type GuideRichTextProps = {
 /**
  * Renders guide paragraph markup:
  * - [[term]] → glossary hover definition
- * - [label](/guides/slug) → internal guide link
+ * - [label](/guides/slug) | /how-to/slug | /news/slug → internal link
  */
 export function GuideRichText({ text, className }: GuideRichTextProps) {
   return <p className={className}>{parseInline(text)}</p>;
 }
 
 const TOKEN =
-  /(\[\[([^\]]+)\]\])|(\[([^\]]+)\]\((\/guides\/[a-z0-9-/]+)\))/gi;
+  /(\[\[([^\]]+)\]\])|(\[([^\]]+)\]\((\/(?:guides|how-to|news)\/[a-z0-9-/]+)\))/gi;
 
 function parseInline(text: string): ReactNode[] {
   const nodes: ReactNode[] = [];

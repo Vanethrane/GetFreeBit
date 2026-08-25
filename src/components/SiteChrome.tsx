@@ -1,13 +1,10 @@
 import Link from "next/link";
-import { uniqueSeedWords } from "@/lib/words";
 import { AdSlot } from "@/components/ads";
 import { GlobalSearchProvider } from "@/components/GlobalSearchProvider";
 import { GlobalSearchTrigger } from "@/components/GlobalSearchModal";
 import { HistoryProvider } from "@/components/HistoryDrawer";
 import { StableSlot } from "@/components/StableSlot";
 import { siteConfig } from "@/site.config";
-
-export const HARD_WORDS = uniqueSeedWords().slice(0, 8);
 
 function BrandMark({ className = "" }: { className?: string }) {
   return (
@@ -130,27 +127,6 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
         </div>
       </HistoryProvider>
     </GlobalSearchProvider>
-  );
-}
-
-export function PopularWords() {
-  return (
-    <div>
-      <p className="text-sm font-medium uppercase tracking-[0.18em] text-ink-muted">
-        People look up
-      </p>
-      <div className="mt-3 flex flex-wrap gap-2">
-        {HARD_WORDS.map((word) => (
-          <Link
-            key={word}
-            href={`/w/${word}`}
-            className="rounded-lg border border-paper-line bg-paper-raised px-4 py-2 text-sm text-ink hover:border-voice hover:text-voice-dark"
-          >
-            {word}
-          </Link>
-        ))}
-      </div>
-    </div>
   );
 }
 

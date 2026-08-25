@@ -1,8 +1,9 @@
 import dataset from "@/data/dataset.json";
+import { ALL_ARTICLES, type ArticleKind } from "@/content/guides";
 
 export type HeaderSearchEntry = {
   id: string;
-  type: "guide" | "tool" | "category" | "word-category";
+  type: "guide" | "howto" | "news" | "tool" | "category";
   label: string;
   hint: string;
   /** App-router path (Next.js) */
@@ -35,31 +36,28 @@ const data = {
   toolAffiliates: (dataset as DatasetFile).toolAffiliates ?? {},
 };
 
-/** Word-directory categories on the static site (map to ./{slug}/). */
-export const WORD_CATEGORIES: { slug: string; label: string; terms: string[] }[] = [
-  { slug: "medical", label: "Medical pronunciations", terms: ["medical", "medicine", "health", "clinical"] },
-  { slug: "food", label: "Food & drink", terms: ["food", "drink", "culinary", "recipe", "restaurant"] },
-  { slug: "everyday", label: "Everyday English", terms: ["everyday", "common", "english", "daily"] },
-  { slug: "science", label: "Science", terms: ["science", "scientific", "research", "physics", "biology"] },
-  { slug: "business", label: "Business", terms: ["business", "finance", "marketing", "corporate"] },
-  { slug: "places", label: "Places", terms: ["places", "geography", "cities", "countries"] },
-  { slug: "names", label: "Names", terms: ["names", "people", "given names"] },
-  { slug: "brands", label: "Brands", terms: ["brands", "company", "product"] },
-  { slug: "animals", label: "Animals", terms: ["animals", "pets", "wildlife"] },
-  { slug: "arts", label: "Arts & culture", terms: ["arts", "culture", "music", "theatre"] },
-  { slug: "sports", label: "Sports", terms: ["sports", "athletics", "fitness"] },
-  { slug: "tech", label: "Tech", terms: ["tech", "technology", "software", "digital"] },
-  { slug: "nature", label: "Nature", terms: ["nature", "environment", "weather"] },
-  { slug: "law", label: "Law", terms: ["law", "legal", "court"] },
-  { slug: "mythology", label: "Mythology", terms: ["mythology", "myth", "legend"] },
-];
-
 const DATASET_CATEGORY_LABEL: Record<string, string> = {
+  "faucets-micro": "Faucets & micro-earnings",
+  "airdrop-testnet": "Airdrops & testnets",
+  "staking-yield": "Staking & yield",
+  "exchange-onboarding": "Exchange onboarding",
   "speech-tech": "Speech tech",
   "accents-localization": "Accents & localization",
   "learning-teaching": "Learning & teaching",
   "publishing-ops": "Publishing & ops",
 };
+
+function articleBasePath(kind: ArticleKind): string {
+  if (kind === "howto") return "/how-to";
+  if (kind === "news") return "/news";
+  return "/guides";
+}
+
+function articleHint(kind: ArticleKind): string {
+  if (kind === "howto") return "How-to";
+  if (kind === "news") return "News";
+  return "Guide";
+}
 
 function slugifyGuidePath(slug: string, meta: DatasetPage): string {
   return meta.path || `/guides/${slug}`;
@@ -82,9 +80,27 @@ function collectTerms(...parts: (string | undefined)[]): string[] {
   return [...out];
 }
 
-/** Build a client-side search index from dataset.json (+ word category hubs). */
+/** Build a client-side search index from editorial articles + dataset.json hubs. */
 export function buildHeaderSearchIndex(): HeaderSearchEntry[] {
   const entries: HeaderSearchEntry[] = [];
+
+  for (const article of ALL_ARTICLES) {
+    const base = articleBasePath(article.kind);
+    entries.push({
+      id: `${article.kind}:${article.slug}`,
+      type: article.kind,
+      label: article.title,
+      hint: articleHint(article.kind),
+      href: `${base}/${article.slug}`,
+      staticHref: `${base}/${article.slug}`,
+      terms: collectTerms(
+        article.slug,
+        article.title,
+        article.description,
+        article.kind,
+      ),
+    });
+  }
 
   for (const [slug, meta] of Object.entries(data.pages)) {
     const href = slugifyGuidePath(slug, meta);
@@ -131,22 +147,10 @@ export function buildHeaderSearchIndex(): HeaderSearchEntry[] {
       id: `category:${cat}`,
       type: "category",
       label: DATASET_CATEGORY_LABEL[cat] || cat.replace(/-/g, " "),
-      hint: "Guide category",
+      hint: "Topic",
       href,
       staticHref: staticGuideHref(slug),
       terms: collectTerms(cat, DATASET_CATEGORY_LABEL[cat], ...(meta.tags || [])),
-    });
-  }
-
-  for (const cat of WORD_CATEGORIES) {
-    entries.push({
-      id: `wordcat:${cat.slug}`,
-      type: "word-category",
-      label: cat.label,
-      hint: "Word directory",
-      href: `/guides/commonly-mispronounced-english-words`,
-      staticHref: `/${cat.slug}/`,
-      terms: collectTerms(cat.slug, cat.label, ...cat.terms),
     });
   }
 
@@ -199,37 +203,13 @@ export function searchHeaderIndex(
     .map((row) => row.entry);
 }
 
-/** Lightweight category guess for unknown word queries (mirrors static on-demand rules). */
-export function guessWordCategorySlug(word: string): string {
-  const w = word.toLowerCase();
-  const rules: [string, RegExp][] = [
-    ["medical", /osis$|itis$|ectomy$|ology$|emia$|pathy$|phobia$|therapy$|clinic|patient|surgery|vaccine|symptom/],
-    ["food", /berry$|latte|espresso|sauce|cheese|bread|wine|spice|fruit|meat|soup|cake|tea$|coffee/],
-    ["science", /ology$|metry$|scopy$|particle|atom|cell|gene|quantum|species|planet|chemical/],
-    ["business", /market|finance|equity|revenue|vendor|client|strategy|portfolio|synergy|analytic/],
-    ["tech", /algorithm|software|browser|server|database|encrypt|cyber|javascript|python|docker|cloud/],
-    ["sports", /ball|sport|olympi|athlet|gym|swim|ski|marathon|boxing|tennis|golf|hockey|soccer/],
-    ["arts", /ballet|opera|symphony|orchestra|poem|theatre|cinema|sculpt|genre|metaphor|sonnet/],
-    ["nature", /mountain|river|ocean|forest|desert|glacier|volcano|hurricane|climate|weather/],
-    ["law", /court|judge|jury|lawyer|attorney|statute|felony|subpoena|verdict|contract/],
-    ["mythology", /zeus|odin|thor|apollo|athena|dragon|phoenix|unicorn|mythology|legend/],
-    ["animals", /dog|cat|bird|fish|horse|lion|tiger|elephant|whale|snake|butterfly|eagle/],
-  ];
-  for (const [slug, re] of rules) {
-    if (re.test(w)) return slug;
-  }
-  return "everyday";
-}
-
 export type ResolveSearchOptions = {
   /** When true, emit root-relative static-site URLs */
   staticSite?: boolean;
-  /** Optional word-index hit `{ word, path }` from SPEAKUR_WORD_INDEX */
-  wordHit?: { word: string; path: string } | null;
 };
 
 /**
- * Resolve a query to the best destination — never returns a bare 404 target when a category hub fits.
+ * Resolve a query to the best destination — never returns a bare 404 target when a hub fits.
  */
 export function resolveHeaderSearch(
   query: string,
@@ -251,28 +231,6 @@ export function resolveHeaderSearch(
 
   if (results.length > 0) {
     return options.staticSite ? results[0].staticHref : results[0].href;
-  }
-
-  const wordLike = /^[a-z][a-z0-9'-]*$/i.test(q);
-  if (wordLike) {
-    if (options.wordHit) {
-      const p = options.wordHit.path.startsWith("/")
-        ? options.wordHit.path
-        : `/${options.wordHit.path.replace(/^\.?\//, "")}`;
-      return p.endsWith("/") ? p : `${p}/`;
-    }
-
-    const category = guessWordCategorySlug(q);
-    if (options.staticSite) {
-      return `/${category}/${encodeURIComponent(q)}/`;
-    }
-
-    const catEntry =
-      index.find((e) => e.id === `wordcat:${category}`) ||
-      index.find((e) => e.type === "category");
-    if (catEntry) return catEntry.href;
-
-    return "/guides/commonly-mispronounced-english-words";
   }
 
   const categoryFallback = index.find((e) => e.type === "category");

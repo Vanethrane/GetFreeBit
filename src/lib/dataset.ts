@@ -389,7 +389,7 @@ export function buildProgrammaticJsonLd(input: ProgrammaticSchemaInput): Program
       url: schema.softwareApplication.publisher.url,
     },
     featureList: schema.softwareApplication.featureList,
-    keywords: [name, primaryKeyword, language, accent, parentCategory, "pronunciation"]
+    keywords: [name, primaryKeyword, language, accent, parentCategory, "crypto"]
       .filter(Boolean)
       .join(", "),
   };

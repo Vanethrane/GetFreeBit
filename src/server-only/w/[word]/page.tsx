@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { HeadMetadata } from "@/components/HeadMetadata";
-import { PopularWords, SiteShell } from "@/components/SiteChrome";
+import { SiteShell } from "@/components/SiteChrome";
 import { WordResult } from "@/components/WordResult";
 import { lookupPronunciation } from "@/lib/pronounce";
 import { buildProgrammaticSocialMetadata } from "@/lib/og-meta";
@@ -66,22 +66,19 @@ export default async function WordPage({ params }: PageProps) {
       <div className="pt-1">
         <WordResult result={result} />
       </div>
-      <div className="mt-10">
-        <PopularWords />
-      </div>
       <p className="mt-12 text-sm text-ink-muted">
         <Link
           href="/guides"
           className="underline decoration-paper-line underline-offset-4 hover:text-voice-dark"
         >
-          Read pronunciation guides
+          Browse crypto guides
         </Link>
         {" · "}
         <Link
           href="/"
           className="underline decoration-paper-line underline-offset-4 hover:text-voice-dark"
         >
-          Back to search
+          Home
         </Link>
       </p>
     </SiteShell>

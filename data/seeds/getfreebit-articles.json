@@ -1,0 +1,644 @@
+[
+  {
+    "name": "What Blockchain Technology Is and How It Works",
+    "slug": "what-blockchain-technology-is-and-how-it-works",
+    "primaryKeyword": "What Blockchain Technology Is and How It Works",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "guide"
+    ],
+    "kind": "guide",
+    "description": "A clear walkthrough of blocks, hashes, consensus, and distributed ledgers—so you can evaluate crypto products without treating “blockchain” as a buzzword.",
+    "path": "/guides/what-blockchain-technology-is-and-how-it-works"
+  },
+  {
+    "name": "Understanding Cryptocurrencies, Tokens, and Altcoins",
+    "slug": "understanding-cryptocurrencies-tokens-and-altcoins",
+    "primaryKeyword": "Understanding Cryptocurrencies, Tokens, and Altcoins",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "guide"
+    ],
+    "kind": "guide",
+    "description": "How native coins, issued tokens, and altcoins differ—and how to read supply, utility, and risk without collapsing everything into “crypto.”",
+    "path": "/guides/understanding-cryptocurrencies-tokens-and-altcoins"
+  },
+  {
+    "name": "The Difference Between Proof of Work and Proof of Stake",
+    "slug": "the-difference-between-proof-of-work-and-proof-of-stake",
+    "primaryKeyword": "The Difference Between Proof of Work and Proof of Stake",
+    "parentCategory": "staking-yield",
+    "tags": [
+      "guide"
+    ],
+    "kind": "guide",
+    "description": "How PoW and PoS select block producers, what they cost to attack, and what those differences mean for fees, energy, and staking risk.",
+    "path": "/guides/the-difference-between-proof-of-work-and-proof-of-stake"
+  },
+  {
+    "name": "How Bitcoin Functions as a Decentralized Peer-to-Peer Network",
+    "slug": "how-bitcoin-functions-as-a-decentralized-peer-to-peer-network",
+    "primaryKeyword": "How Bitcoin Functions as a Decentralized Peer-to-Peer Network",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "guide"
+    ],
+    "kind": "guide",
+    "description": "How Bitcoin nodes relay transactions, mine blocks, and enforce consensus rules without a central operator—and what that means for users moving value.",
+    "path": "/guides/how-bitcoin-functions-as-a-decentralized-peer-to-peer-network"
+  },
+  {
+    "name": "What Ethereum Smart Contracts Are and How They Execute Automatically",
+    "slug": "what-ethereum-smart-contracts-are-and-how-they-execute-automatically",
+    "primaryKeyword": "What Ethereum Smart Contracts Are and How They Execute Automatically",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "guide"
+    ],
+    "kind": "guide",
+    "description": "How Ethereum contracts store code and state, run when called by transactions, and why “automatic” still depends on gas, bugs, and human-controlled admin keys.",
+    "path": "/guides/what-ethereum-smart-contracts-are-and-how-they-execute-automatically"
+  },
+  {
+    "name": "Explaining Layer 1 vs Layer 2 Scaling Solutions",
+    "slug": "explaining-layer-1-vs-layer-2-scaling-solutions",
+    "primaryKeyword": "Explaining Layer 1 vs Layer 2 Scaling Solutions",
+    "parentCategory": "airdrop-testnet",
+    "tags": [
+      "guide"
+    ],
+    "kind": "guide",
+    "description": "What L1 and L2 mean for security, fees, and bridges—and how to choose where to transact without stranding funds.",
+    "path": "/guides/explaining-layer-1-vs-layer-2-scaling-solutions"
+  },
+  {
+    "name": "What Public and Private Keys Are in Digital Cryptography",
+    "slug": "what-public-and-private-keys-are-in-digital-cryptography",
+    "primaryKeyword": "What Public and Private Keys Are in Digital Cryptography",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "guide"
+    ],
+    "kind": "guide",
+    "description": "How keypairs sign and verify crypto transactions, how seed phrases derive keys, and how to avoid the phishing patterns that steal them.",
+    "path": "/guides/what-public-and-private-keys-are-in-digital-cryptography"
+  },
+  {
+    "name": "How Decentralized Finance (DeFi) Replaces Traditional Intermediaries",
+    "slug": "how-decentralized-finance-defi-replaces-traditional-intermediaries",
+    "primaryKeyword": "How Decentralized Finance (DeFi) Replaces Traditional Intermediaries",
+    "parentCategory": "staking-yield",
+    "tags": [
+      "guide",
+      "DeFi"
+    ],
+    "kind": "guide",
+    "description": "How AMMs, lending markets, and on-chain settlement substitute for brokers and banks—and which risks those intermediaries used to absorb.",
+    "path": "/guides/how-decentralized-finance-defi-replaces-traditional-intermediaries"
+  },
+  {
+    "name": "Understanding Crypto Wallets: Hot Wallets vs Cold Storage",
+    "slug": "understanding-crypto-wallets-hot-wallets-vs-cold-storage",
+    "primaryKeyword": "Understanding Crypto Wallets",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "guide",
+      "wallet",
+      "self-custody"
+    ],
+    "kind": "guide",
+    "description": "How hot wallets and cold storage differ in connectivity and attack surface—and how to split balances between spending money and savings.",
+    "path": "/guides/understanding-crypto-wallets-hot-wallets-vs-cold-storage"
+  },
+  {
+    "name": "What Gas Fees Are and Why They Change Based on Network Congestion",
+    "slug": "what-gas-fees-are-and-why-they-change-based-on-network-congestion",
+    "primaryKeyword": "What Gas Fees Are and Why They Change Based on Network Congestion",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "guide",
+      "gas"
+    ],
+    "kind": "guide",
+    "description": "How gas metering, base fees, and priority tips respond to block demand—and how to plan transactions when networks get busy.",
+    "path": "/guides/what-gas-fees-are-and-why-they-change-based-on-network-congestion"
+  },
+  {
+    "name": "How Stablecoins Maintain Their Peg to Fiat Currencies",
+    "slug": "how-stablecoins-maintain-their-peg-to-fiat-currencies",
+    "primaryKeyword": "How Stablecoins Maintain Their Peg to Fiat Currencies",
+    "parentCategory": "staking-yield",
+    "tags": [
+      "guide"
+    ],
+    "kind": "guide",
+    "description": "Fiat-reserved, crypto-collateralized, and algorithmic peg designs—what keeps $1 tokens near $1, and what breaks under stress.",
+    "path": "/guides/how-stablecoins-maintain-their-peg-to-fiat-currencies"
+  },
+  {
+    "name": "What Non-Fungible Tokens (NFTs) Are and How On-Chain Ownership Works",
+    "slug": "what-non-fungible-tokens-nfts-are-and-how-on-chain-ownership-works",
+    "primaryKeyword": "What Non-Fungible Tokens (NFTs) Are and How On-Chain Ownership Works",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "guide",
+      "NFT"
+    ],
+    "kind": "guide",
+    "description": "How NFT standards encode unique ownership on-chain, what metadata lives off-chain, and which rights a token does—and does not—grant.",
+    "path": "/guides/what-non-fungible-tokens-nfts-are-and-how-on-chain-ownership-works"
+  },
+  {
+    "name": "Explaining Liquidity Pools and Automated Market Makers (AMMs)",
+    "slug": "explaining-liquidity-pools-and-automated-market-makers-amms",
+    "primaryKeyword": "Explaining Liquidity Pools and Automated Market Makers (AMMs)",
+    "parentCategory": "staking-yield",
+    "tags": [
+      "guide",
+      "DeFi"
+    ],
+    "kind": "guide",
+    "description": "How constant-product and related AMM formulas price swaps, how LPs earn fees, and why impermanent loss appears when prices move.",
+    "path": "/guides/explaining-liquidity-pools-and-automated-market-makers-amms"
+  },
+  {
+    "name": "What Crypto Staking Is and How Yield Is Generated",
+    "slug": "what-crypto-staking-is-and-how-yield-is-generated",
+    "primaryKeyword": "What Crypto Staking Is and How Yield Is Generated",
+    "parentCategory": "staking-yield",
+    "tags": [
+      "guide",
+      "staking"
+    ],
+    "kind": "guide",
+    "description": "How proof-of-stake rewards, liquid staking, and DeFi “staking” tabs differ—and which risks produce the APY you see.",
+    "path": "/guides/what-crypto-staking-is-and-how-yield-is-generated"
+  },
+  {
+    "name": "Understanding Zero-Knowledge Proofs (ZKPs) and Their Role in Privacy",
+    "slug": "understanding-zero-knowledge-proofs-zkps-and-their-role-in-privacy",
+    "primaryKeyword": "Understanding Zero-Knowledge Proofs (ZKPs) and Their Role in Privacy",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "guide"
+    ],
+    "kind": "guide",
+    "description": "What zero-knowledge proofs show without revealing underlying data, how ZK rollups use validity proofs, and where privacy guarantees stop.",
+    "path": "/guides/understanding-zero-knowledge-proofs-zkps-and-their-role-in-privacy"
+  },
+  {
+    "name": "What Real-World Asset (RWA) Tokenization Means for Traditional Finance",
+    "slug": "what-real-world-asset-rwa-tokenization-means-for-traditional-finance",
+    "primaryKeyword": "What Real-World Asset (RWA) Tokenization Means for Traditional Finance",
+    "parentCategory": "staking-yield",
+    "tags": [
+      "guide",
+      "institutional"
+    ],
+    "kind": "guide",
+    "description": "How tokenizing treasuries, credit, and other off-chain assets works on-chain—and which legal and oracle risks remain outside the ledger.",
+    "path": "/guides/what-real-world-asset-rwa-tokenization-means-for-traditional-finance"
+  },
+  {
+    "name": "How Decentralized Autonomous Organizations (DAOs) Manage Governance",
+    "slug": "how-decentralized-autonomous-organizations-daos-manage-governance",
+    "primaryKeyword": "How Decentralized Autonomous Organizations (DAOs) Manage Governance",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "guide",
+      "DAO"
+    ],
+    "kind": "guide",
+    "description": "How token voting, delegates, and timelocks steer protocols—and why turnout, whales, and multisigs still shape outcomes.",
+    "path": "/guides/how-decentralized-autonomous-organizations-daos-manage-governance"
+  },
+  {
+    "name": "Understanding Blockchain Consensus Mechanisms Beyond PoW and PoS",
+    "slug": "understanding-blockchain-consensus-mechanisms-beyond-pow-and-pos",
+    "primaryKeyword": "Understanding Blockchain Consensus Mechanisms Beyond PoW and PoS",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "guide"
+    ],
+    "kind": "guide",
+    "description": "A tour of BFT-style, hybrid, DAG, and permissioned consensus families—and how to evaluate finality and decentralization claims.",
+    "path": "/guides/understanding-blockchain-consensus-mechanisms-beyond-pow-and-pos"
+  },
+  {
+    "name": "What Sybil Attacks, 51% Attacks, and Smart Contract Exploits Are",
+    "slug": "what-sybil-attacks-51-percent-attacks-and-smart-contract-exploits-are",
+    "primaryKeyword": "What Sybil Attacks, 51% Attacks, and Smart Contract Exploits Are",
+    "parentCategory": "airdrop-testnet",
+    "tags": [
+      "guide"
+    ],
+    "kind": "guide",
+    "description": "Clear definitions of Sybil identity attacks, majority hash/stake attacks, and smart-contract exploits—plus how users reduce exposure.",
+    "path": "/guides/what-sybil-attacks-51-percent-attacks-and-smart-contract-exploits-are"
+  },
+  {
+    "name": "How Crypto Mining Works and What Mining Rewards Are",
+    "slug": "how-crypto-mining-works-and-what-mining-rewards-are",
+    "primaryKeyword": "How Crypto Mining Works and What Mining Rewards Are",
+    "parentCategory": "staking-yield",
+    "tags": [
+      "guide"
+    ],
+    "kind": "guide",
+    "description": "How proof-of-work miners compete for blocks, what subsidies and fees pay them, and why home mining rarely matches industrial economics.",
+    "path": "/guides/how-crypto-mining-works-and-what-mining-rewards-are"
+  },
+  {
+    "name": "What Mempools Are and How Transactions Get Validated",
+    "slug": "what-mempools-are-and-how-transactions-get-validated",
+    "primaryKeyword": "What Mempools Are and How Transactions Get Validated",
+    "parentCategory": "airdrop-testnet",
+    "tags": [
+      "guide"
+    ],
+    "kind": "guide",
+    "description": "How pending transactions enter mempools, pass validation checks, and get selected into blocks—plus stuck-tx and replacement basics.",
+    "path": "/guides/what-mempools-are-and-how-transactions-get-validated"
+  },
+  {
+    "name": "Understanding Crypto Tokenomics: Supply Caps, Inflation, and Token Burns",
+    "slug": "understanding-crypto-tokenomics-supply-caps-inflation-and-token-burns",
+    "primaryKeyword": "Understanding Crypto Tokenomics",
+    "parentCategory": "staking-yield",
+    "tags": [
+      "guide"
+    ],
+    "kind": "guide",
+    "description": "How max supply, emissions, unlocks, and burns shape token value narratives—and how to read them without hype.",
+    "path": "/guides/understanding-crypto-tokenomics-supply-caps-inflation-and-token-burns"
+  },
+  {
+    "name": "What Cross-Chain Bridges Are and How They Transfer Data Between Blockchains",
+    "slug": "what-cross-chain-bridges-are-and-how-they-transfer-data-between-blockchains",
+    "primaryKeyword": "What Cross-Chain Bridges Are and How They Transfer Data Between Blockchains",
+    "parentCategory": "airdrop-testnet",
+    "tags": [
+      "guide",
+      "bridge"
+    ],
+    "kind": "guide",
+    "description": "How lock-mint, burn-mint, and light-client bridges move value and messages across chains—and why bridges are high-value attack targets.",
+    "path": "/guides/what-cross-chain-bridges-are-and-how-they-transfer-data-between-blockchains"
+  },
+  {
+    "name": "Explaining Central Bank Digital Currencies (CBDCs) vs Decentralized Crypto",
+    "slug": "explaining-central-bank-digital-currencies-cbdcs-vs-decentralized-crypto",
+    "primaryKeyword": "Explaining Central Bank Digital Currencies (CBDCs) vs Decentralized Crypto",
+    "parentCategory": "staking-yield",
+    "tags": [
+      "guide"
+    ],
+    "kind": "guide",
+    "description": "How CBDCs differ from bitcoin and public smart-contract platforms in issuance, privacy, programmability, and custody assumptions.",
+    "path": "/guides/explaining-central-bank-digital-currencies-cbdcs-vs-decentralized-crypto"
+  },
+  {
+    "name": "How AI Agents Are Interacting with On-Chain Infrastructure and Smart Contracts",
+    "slug": "how-ai-agents-are-interacting-with-on-chain-infrastructure-and-smart-contracts",
+    "primaryKeyword": "How AI Agents Are Interacting with On-Chain Infrastructure and Smart Contracts",
+    "parentCategory": "airdrop-testnet",
+    "tags": [
+      "guide"
+    ],
+    "kind": "guide",
+    "description": "How autonomous agents use wallets, RPCs, and contracts to trade or operate on-chain—and which security boundaries humans must still set.",
+    "path": "/guides/how-ai-agents-are-interacting-with-on-chain-infrastructure-and-smart-contracts"
+  },
+  {
+    "name": "How to Create Your First Self-Custody Crypto Wallet",
+    "slug": "how-to-create-your-first-self-custody-crypto-wallet",
+    "primaryKeyword": "How to Create Your First Self-Custody Crypto Wallet",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "how-to",
+      "wallet",
+      "self-custody"
+    ],
+    "kind": "howto",
+    "description": "Install a reputable browser or mobile wallet, create a new seed phrase offline from strangers, fund with a test amount, and verify your address on a block explorer before treating it as home base.",
+    "path": "/how-to/how-to-create-your-first-self-custody-crypto-wallet"
+  },
+  {
+    "name": "How to Safely Store and Back Up Your Seed Phrase",
+    "slug": "how-to-safely-store-and-back-up-your-seed-phrase",
+    "primaryKeyword": "How to Safely Store and Back Up Your Seed Phrase",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "how-to",
+      "wallet",
+      "self-custody"
+    ],
+    "kind": "howto",
+    "description": "Back up a 12- or 24-word seed with offline redundancy, verify restores on a throwaway device, and avoid the digital and social failure modes that empty wallets.",
+    "path": "/how-to/how-to-safely-store-and-back-up-your-seed-phrase"
+  },
+  {
+    "name": "How to Buy Crypto on a Centralized Exchange Using Fiat Currency",
+    "slug": "how-to-buy-crypto-on-a-centralized-exchange-using-fiat-currency",
+    "primaryKeyword": "How to Buy Crypto on a Centralized Exchange Using Fiat Currency",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "how-to"
+    ],
+    "kind": "howto",
+    "description": "Complete KYC on a reputable CEX, deposit fiat, place a spot order, withdraw a test amount to self-custody, and keep records without treating the exchange as a bank forever.",
+    "path": "/how-to/how-to-buy-crypto-on-a-centralized-exchange-using-fiat-currency"
+  },
+  {
+    "name": "How to Send and Receive Crypto Transactions Without Losing Funds",
+    "slug": "how-to-send-and-receive-crypto-transactions-without-losing-funds",
+    "primaryKeyword": "How to Send and Receive Crypto Transactions Without Losing Funds",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "how-to"
+    ],
+    "kind": "howto",
+    "description": "Verify network, address, memo, and test amounts before every transfer; confirm inclusion on a block explorer; and recover from stuck nonces without panic signing.",
+    "path": "/how-to/how-to-send-and-receive-crypto-transactions-without-losing-funds"
+  },
+  {
+    "name": "How to Use a Decentralized Exchange (DEX) to Swap Tokens",
+    "slug": "how-to-use-a-decentralized-exchange-dex-to-swap-tokens",
+    "primaryKeyword": "How to Use a Decentralized Exchange (DEX) to Swap Tokens",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "how-to",
+      "DeFi"
+    ],
+    "kind": "howto",
+    "description": "Connect a burn-capable wallet, verify token contracts, set slippage consciously, approve minimally, swap on a liquid pool, and revoke leftover allowances when done.",
+    "path": "/how-to/how-to-use-a-decentralized-exchange-dex-to-swap-tokens"
+  },
+  {
+    "name": "How to Transfer Tokens Across Different Blockchains via a Cross-Chain Bridge",
+    "slug": "how-to-transfer-tokens-across-different-blockchains-via-a-cross-chain-bridge",
+    "primaryKeyword": "How to Transfer Tokens Across Different Blockchains via a Cross-Chain Bridge",
+    "parentCategory": "airdrop-testnet",
+    "tags": [
+      "how-to",
+      "bridge"
+    ],
+    "kind": "howto",
+    "description": "Prefer canonical bridges when practical, verify chain IDs and asset representations, send test amounts, track both legs on explorers, and budget time for optimistic withdrawal delays.",
+    "path": "/how-to/how-to-transfer-tokens-across-different-blockchains-via-a-cross-chain-bridge"
+  },
+  {
+    "name": "How to Stake Tokens to Earn Network Rewards",
+    "slug": "how-to-stake-tokens-to-earn-network-rewards",
+    "primaryKeyword": "How to Stake Tokens to Earn Network Rewards",
+    "parentCategory": "staking-yield",
+    "tags": [
+      "how-to"
+    ],
+    "kind": "howto",
+    "description": "Choose native staking versus liquid staking, understand unbonding and slash risk, stake through official flows, and track rewards without chasing unsustainable APY screenshots.",
+    "path": "/how-to/how-to-stake-tokens-to-earn-network-rewards"
+  },
+  {
+    "name": "How to Set Up a Hardware Wallet for Maximum Cold-Storage Security",
+    "slug": "how-to-set-up-a-hardware-wallet-for-maximum-cold-storage-security",
+    "primaryKeyword": "How to Set Up a Hardware Wallet for Maximum Cold-Storage Security",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "how-to",
+      "wallet",
+      "self-custody",
+      "institutional"
+    ],
+    "kind": "howto",
+    "description": "Buy from trusted channels, initialize offline with a verified seed backup, enable PIN and optional passphrase, and practice verifying addresses on-device before moving long-term funds.",
+    "path": "/how-to/how-to-set-up-a-hardware-wallet-for-maximum-cold-storage-security"
+  },
+  {
+    "name": "How to Read a Blockchain Explorer to Track Pending and Completed Transactions",
+    "slug": "how-to-read-a-blockchain-explorer-to-track-pending-and-completed-transactions",
+    "primaryKeyword": "How to Read a Blockchain Explorer to Track Pending and Completed Transactions",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "how-to"
+    ],
+    "kind": "howto",
+    "description": "Look up tx hashes and addresses on the correct explorer, interpret pending, success, and failure states, decode token transfers, and spot red flags in approvals and counterparties.",
+    "path": "/how-to/how-to-read-a-blockchain-explorer-to-track-pending-and-completed-transactions"
+  },
+  {
+    "name": "How to Revoke Token Approvals to Protect Wallet Allowance Limits",
+    "slug": "how-to-revoke-token-approvals-to-protect-wallet-allowance-limits",
+    "primaryKeyword": "How to Revoke Token Approvals to Protect Wallet Allowance Limits",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "how-to",
+      "wallet",
+      "self-custody"
+    ],
+    "kind": "howto",
+    "description": "Inventory ERC-20 allowances, revoke unused or unlimited spenders, verify on a block explorer, and rebuild safer approve-then-swap habits for future DEX use.",
+    "path": "/how-to/how-to-revoke-token-approvals-to-protect-wallet-allowance-limits"
+  },
+  {
+    "name": "How to Mint, Buy, and Transfer an NFT Using a Decentralized Marketplace",
+    "slug": "how-to-mint-buy-and-transfer-an-nft-using-a-decentralized-marketplace",
+    "primaryKeyword": "How to Mint, Buy, and Transfer an NFT Using a Decentralized Marketplace",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "how-to",
+      "NFT"
+    ],
+    "kind": "howto",
+    "description": "Verify collections and contracts, mint or buy with simulation-aware signing, transfer only to known addresses, and avoid signature phishing disguised as NFT claims.",
+    "path": "/how-to/how-to-mint-buy-and-transfer-an-nft-using-a-decentralized-marketplace"
+  },
+  {
+    "name": "How to Provide Liquidity to an Automated Market Maker Pool",
+    "slug": "how-to-provide-liquidity-to-an-automated-market-maker-pool",
+    "primaryKeyword": "How to Provide Liquidity to an Automated Market Maker Pool",
+    "parentCategory": "staking-yield",
+    "tags": [
+      "how-to",
+      "DeFi"
+    ],
+    "kind": "howto",
+    "description": "Choose a pool and fee tier, deposit balanced assets, track fees versus impermanent loss, and withdraw deliberately without treating LP tokens as risk-free yield.",
+    "path": "/how-to/how-to-provide-liquidity-to-an-automated-market-maker-pool"
+  },
+  {
+    "name": "How to Identify and Avoid Common Crypto Phishing and Wallet Scams",
+    "slug": "how-to-identify-and-avoid-common-crypto-phishing-and-wallet-scams",
+    "primaryKeyword": "How to Identify and Avoid Common Crypto Phishing and Wallet Scams",
+    "parentCategory": "airdrop-testnet",
+    "tags": [
+      "how-to",
+      "wallet",
+      "self-custody"
+    ],
+    "kind": "howto",
+    "description": "Recognize fake support, airdrop claim sites, malicious approvals, and address-poisoning patterns, and build verification habits that keep seed phrases and signatures offline from attackers.",
+    "path": "/how-to/how-to-identify-and-avoid-common-crypto-phishing-and-wallet-scams"
+  },
+  {
+    "name": "How to Calculate Capital Gains and Prepare Crypto Taxes",
+    "slug": "how-to-calculate-capital-gains-and-prepare-crypto-taxes",
+    "primaryKeyword": "How to Calculate Capital Gains and Prepare Crypto Taxes",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "how-to",
+      "taxes"
+    ],
+    "kind": "howto",
+    "description": "Export exchange and wallet histories, establish cost basis per disposal, separate income-like rewards, and prepare filings with jurisdiction-aware caution—not tax advice.",
+    "path": "/how-to/how-to-calculate-capital-gains-and-prepare-crypto-taxes"
+  },
+  {
+    "name": "How to Set Up a Multisig Wallet for Shared Funds and DAO Treasuries",
+    "slug": "how-to-set-up-a-multisig-wallet-for-shared-funds-and-dao-treasuries",
+    "primaryKeyword": "How to Set Up a Multisig Wallet for Shared Funds and DAO Treasuries",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "how-to",
+      "wallet",
+      "self-custody",
+      "DAO"
+    ],
+    "kind": "howto",
+    "description": "Choose an M-of-N threshold, onboard signer devices safely, deploy or create the multisig, run a test transaction, and document policies that prevent single-key failure without freezing funds forever.",
+    "path": "/how-to/how-to-set-up-a-multisig-wallet-for-shared-funds-and-dao-treasuries"
+  },
+  {
+    "name": "How to Deposit Crypto Assets into DeFi Lending Platforms to Earn Interest",
+    "slug": "how-to-deposit-crypto-assets-into-defi-lending-platforms-to-earn-interest",
+    "primaryKeyword": "How to Deposit Crypto Assets into DeFi Lending Platforms to Earn Interest",
+    "parentCategory": "staking-yield",
+    "tags": [
+      "how-to",
+      "DeFi"
+    ],
+    "kind": "howto",
+    "description": "Evaluate protocol risk and oracles, supply assets from a dedicated wallet, monitor health if borrowing, and withdraw with gas reserved—without treating variable APY as guaranteed income.",
+    "path": "/how-to/how-to-deposit-crypto-assets-into-defi-lending-platforms-to-earn-interest"
+  },
+  {
+    "name": "How to Adjust Gas Fees and Priority Gas Rules Manually to Speed Up Transactions",
+    "slug": "how-to-adjust-gas-fees-and-priority-gas-rules-manually-to-speed-up-transactions",
+    "primaryKeyword": "How to Adjust Gas Fees and Priority Gas Rules Manually to Speed Up Transactions",
+    "parentCategory": "staking-yield",
+    "tags": [
+      "how-to",
+      "gas"
+    ],
+    "kind": "howto",
+    "description": "Read EIP-1559 base fee and tips, set priority fees intentionally, speed up or cancel stuck nonces, and avoid overpaying during congestion without spamming duplicate transactions.",
+    "path": "/how-to/how-to-adjust-gas-fees-and-priority-gas-rules-manually-to-speed-up-transactions"
+  },
+  {
+    "name": "How to Connect a Wallet to Decentralized Applications (dApps) Securely",
+    "slug": "how-to-connect-a-wallet-to-decentralized-applications-dapps-securely",
+    "primaryKeyword": "How to Connect a Wallet to Decentralized Applications (dApps) Securely",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "how-to",
+      "wallet",
+      "self-custody",
+      "institutional"
+    ],
+    "kind": "howto",
+    "description": "Use role-separated wallets, verify URLs and chain IDs, read connection and signature prompts, disconnect after sessions, and keep vault keys away from experimental contracts.",
+    "path": "/how-to/how-to-connect-a-wallet-to-decentralized-applications-dapps-securely"
+  },
+  {
+    "name": "How to Analyze On-Chain Wallet Data and Metrics Using Tools like Dune or Etherscan",
+    "slug": "how-to-analyze-on-chain-wallet-data-and-metrics-using-tools-like-dune-or-etherscan",
+    "primaryKeyword": "How to Analyze On-Chain Wallet Data and Metrics Using Tools like Dune or Ethersc",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "how-to",
+      "wallet",
+      "self-custody"
+    ],
+    "kind": "howto",
+    "description": "Build an explorer-first workflow for a single address, then escalate to Dune-style dashboards for protocol metrics—while treating labels and third-party charts as hypotheses to verify.",
+    "path": "/how-to/how-to-analyze-on-chain-wallet-data-and-metrics-using-tools-like-dune-or-etherscan"
+  },
+  {
+    "name": "How to Participate in DAO Governance Proposals and On-Chain Voting",
+    "slug": "how-to-participate-in-dao-governance-proposals-and-on-chain-voting",
+    "primaryKeyword": "How to Participate in DAO Governance Proposals and On-Chain Voting",
+    "parentCategory": "exchange-onboarding",
+    "tags": [
+      "how-to",
+      "DAO"
+    ],
+    "kind": "howto",
+    "description": "Obtain voting power honestly, research proposals on official forums, cast on-chain or delegated votes with simulation-aware signing, and document conflicts without treating governance as free money.",
+    "path": "/how-to/how-to-participate-in-dao-governance-proposals-and-on-chain-voting"
+  },
+  {
+    "name": "SEC Proposes 'Regulation Crypto Assets' Framework to Standardize Digital Securities Rules",
+    "slug": "sec-proposes-regulation-crypto-assets-framework",
+    "primaryKeyword": "SEC Proposes 'Regulation Crypto Assets' Framework to Standardize Digital Securit",
+    "parentCategory": "staking-yield",
+    "tags": [
+      "news",
+      "institutional"
+    ],
+    "kind": "news",
+    "description": "Analysis of the SEC’s August 2026 Regulation Crypto Assets proposal—what tailored offering exemptions, disclosures, and investment-contract safe harbors would mean for builders and investors, and what to watch as comments close.",
+    "path": "/news/sec-proposes-regulation-crypto-assets-framework"
+  },
+  {
+    "name": "Mastercard Acquires Crypto Infrastructure Provider BVNK in Major Institutional Expansion",
+    "slug": "mastercard-acquires-crypto-infrastructure-provider-bvnk",
+    "primaryKeyword": "Mastercard Acquires Crypto Infrastructure Provider BVNK in Major Institutional E",
+    "parentCategory": "staking-yield",
+    "tags": [
+      "news",
+      "institutional"
+    ],
+    "kind": "news",
+    "description": "Mastercard completed its BVNK acquisition on August 3, 2026, in a deal valued at up to about $1.8 billion. What the stablecoin and fiat-on-chain rails mean for B2B payments and Visa competition—without the hype.",
+    "path": "/news/mastercard-acquires-crypto-infrastructure-provider-bvnk"
+  },
+  {
+    "name": "U.S. Lawmakers Push Forward on Broader Market Structure Reform via CLARITY Act",
+    "slug": "us-lawmakers-push-forward-market-structure-reform-clarity-act",
+    "primaryKeyword": "U.S. Lawmakers Push Forward on Broader Market Structure Reform via CLARITY Act",
+    "parentCategory": "staking-yield",
+    "tags": [
+      "news",
+      "institutional"
+    ],
+    "kind": "news",
+    "description": "The Digital Asset Market Clarity Act remains a central U.S. market-structure fight in 2026. What SEC–CFTC lane-drawing tries to fix for spot crypto and registration—and why legislative status can still stall.",
+    "path": "/news/us-lawmakers-push-forward-market-structure-reform-clarity-act"
+  },
+  {
+    "name": "Tokenized Real-World Financial Assets Surge Past $19 Billion Target as Banks Onboard",
+    "slug": "tokenized-real-world-financial-assets-surge-past-19-billion",
+    "primaryKeyword": "Tokenized Real-World Financial Assets Surge Past $19 Billion Target as Banks Onb",
+    "parentCategory": "staking-yield",
+    "tags": [
+      "news"
+    ],
+    "kind": "news",
+    "description": "Industry trackers show tokenized RWAs clearing earlier $19B milestones and moving into the low tens of billions by mid-2026. Methodology caveats, bank onboarding, and oracle–legal–redemption risks explained.",
+    "path": "/news/tokenized-real-world-financial-assets-surge-past-19-billion"
+  },
+  {
+    "name": "Major DeFi Protocols Move Toward Fee-Sharing Initiatives and Direct Value Accrual Models",
+    "slug": "major-defi-protocols-move-toward-fee-sharing-and-value-accrual",
+    "primaryKeyword": "Major DeFi Protocols Move Toward Fee-Sharing Initiatives and Direct Value Accrua",
+    "parentCategory": "staking-yield",
+    "tags": [
+      "news",
+      "DeFi",
+      "institutional"
+    ],
+    "kind": "news",
+    "description": "Fee switches, buybacks, burns, and builder codes are reshaping DeFi token economics in 2026. How the mechanics work, what governance trades off, and why “yield” promises still deserve skepticism.",
+    "path": "/news/major-defi-protocols-move-toward-fee-sharing-and-value-accrual"
+  }
+]

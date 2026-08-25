@@ -4,11 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useGlobalSearch } from "@/components/GlobalSearchProvider";
 import { useHistoryOptional } from "@/components/HistoryDrawer";
-import {
-  buildGuideRecord,
-  buildPronunciationRecord,
-  buildToolRecord,
-} from "@/lib/history-store";
+import { buildGuideRecord, buildToolRecord } from "@/lib/history-store";
 import {
   loadGlobalSearchIndex,
   resolveGlobalSearchHref,
@@ -94,12 +90,6 @@ function GlobalSearchModal({ index, loading }: GlobalSearchModalProps) {
   }, [open]);
 
   function recordNavigation(entry: GlobalSearchResult) {
-    if (entry.type === "word") {
-      history?.recordItem(
-        buildPronunciationRecord(entry.label, entry.hint),
-      );
-      return;
-    }
     if (entry.type === "tool") {
       history?.recordItem(
         buildToolRecord(entry.label, entry.href, entry.hint, entry.id),
@@ -180,7 +170,7 @@ function GlobalSearchModal({ index, loading }: GlobalSearchModalProps) {
                 navigate(results[active]);
               }
             }}
-            placeholder="Search 10,000+ words, guides, and tools…"
+            placeholder="Search guides, how-tos, and news…"
             autoComplete="off"
             spellCheck={false}
             className="min-w-0 flex-1 bg-transparent text-base text-ink outline-none placeholder:text-ink-muted/80"
@@ -195,11 +185,11 @@ function GlobalSearchModal({ index, loading }: GlobalSearchModalProps) {
             <p className="px-4 py-6 text-sm text-ink-muted">Loading search index…</p>
           ) : showEmptyHint ? (
             <div className="px-4 py-6 text-sm text-ink-muted">
-              <p>Type to search words, guides, and tools instantly.</p>
+              <p>Type to search guides, how-tos, and news instantly.</p>
               <p className="mt-2 text-xs">
-                Try <span className="text-ink">epitome</span>,{" "}
-                <span className="text-ink">IPA</span>, or{" "}
-                <span className="text-ink">Japanese toolkit</span>
+                Try <span className="text-ink">wallet</span>,{" "}
+                <span className="text-ink">staking</span>, or{" "}
+                <span className="text-ink">airdrop</span>
               </p>
             </div>
           ) : results.length === 0 && q.length > 0 ? (
@@ -208,7 +198,7 @@ function GlobalSearchModal({ index, loading }: GlobalSearchModalProps) {
             <>
               {isFallback ? (
                 <p className="border-b border-paper-line bg-amber-50 px-4 py-2 text-xs text-amber-900">
-                  No exact matches — showing the 3 closest tools
+                  No exact matches — showing the closest articles
                 </p>
               ) : null}
               <ul ref={listRef} role="listbox" aria-label="Search results" className="py-1">
@@ -237,7 +227,7 @@ function GlobalSearchModal({ index, loading }: GlobalSearchModalProps) {
         <div className="flex items-center justify-between border-t border-paper-line px-4 py-2 text-[0.65rem] text-ink-muted">
           <span>
             {index
-              ? `${(index.wordCount ?? index.words.length).toLocaleString()} words · ${index.meta?.length ?? 0} guides & tools`
+              ? `${index.meta?.length ?? 0} guides, how-tos & news`
               : "—"}
           </span>
           {elapsedMs > 0 ? (
@@ -310,7 +300,7 @@ export function GlobalSearchTrigger({ className = "" }: { className?: string }) 
         aria-label="Open search (Command K)"
       >
         <SearchIcon className="shrink-0" />
-        <span className="min-w-0 flex-1 truncate">Search words, guides, tools…</span>
+        <span className="min-w-0 flex-1 truncate">Search guides, how-tos, news…</span>
         <kbd className="hidden shrink-0 rounded-md border border-paper-line bg-paper px-1.5 py-0.5 text-[0.65rem] font-medium text-ink-muted sm:inline">
           ⌘K
         </kbd>

@@ -236,8 +236,16 @@ def row_to_page(row: dict[str, Any], brand: dict[str, str]) -> tuple[str, dict[s
     name = str(row.get("name") or row.get("title") or "Untitled").strip()
     slug = str(row.get("slug") or slugify(name))
     kind = str(row.get("kind") or "guide").lower()
-    prefix = "/guides" if kind == "guide" else "/tools"
-    path = str(row.get("path") or f"{prefix}/{slug}")
+    if row.get("path"):
+        path = str(row["path"])
+    elif kind == "howto":
+        path = f"/how-to/{slug}"
+    elif kind == "news":
+        path = f"/news/{slug}"
+    elif kind == "tool":
+        path = f"/tools/{slug}"
+    else:
+        path = f"/guides/{slug}"
     tags = row.get("tags") or []
     if isinstance(tags, str):
         tags = [t.strip() for t in tags.split("|") if t.strip()]

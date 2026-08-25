@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { ExportShare } from "@/components/ExportShare";
-import { SearchBox } from "@/components/SearchBox";
 import { QuickCopyButton } from "@/components/QuickCopyButton";
 import { StableSlot } from "@/components/StableSlot";
 import { getToolAffiliateForLanguage } from "@/lib/dataset";
@@ -14,13 +13,11 @@ type GuidePrimaryToolProps = {
   shareDetail?: string;
   language?: string;
   accent?: string;
-  /** Optional seed query for the pronunciation search */
-  seedQuery?: string;
 };
 
 /**
  * Above-the-fold tool strip for programmatic guide [slug] pages.
- * Search + conversion CTA + quick copy stay visible without scrolling on mobile.
+ * Conversion CTA + quick copy stay visible without scrolling on mobile.
  */
 export function GuidePrimaryTool({
   copyText,
@@ -30,7 +27,6 @@ export function GuidePrimaryTool({
   shareDetail,
   language,
   accent,
-  seedQuery = "",
 }: GuidePrimaryToolProps) {
   const tool = language ? getToolAffiliateForLanguage(language) : null;
   const external = tool ? /^https?:\/\//i.test(tool.href) : false;
@@ -39,18 +35,26 @@ export function GuidePrimaryTool({
     <StableSlot minHeight="9.5rem" className="guide-primary-tool-slot">
       <section
         className="rounded-2xl border border-voice/25 bg-voice-glow/40 p-3 shadow-card sm:p-4"
-        aria-label="Try site tools"
+        aria-label="Explore related content"
       >
         <div className="flex flex-wrap items-center justify-between gap-2">
           <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-voice-dark">
-            Try it now
+            Explore more
           </p>
           <QuickCopyButton text={copyText} historyHref={historyHref} />
         </div>
 
-        <div className="mt-2">
-          <SearchBox initialQuery={seedQuery} autoFocus={false} compact />
-        </div>
+        <p className="mt-2 text-sm text-ink-muted">
+          Press{" "}
+          <kbd className="rounded border border-paper-line bg-paper px-1 py-0.5 text-xs">
+            ⌘K
+          </kbd>{" "}
+          to search guides, how-tos, and news — or browse{" "}
+          <Link href="/how-to" className="text-voice-dark underline underline-offset-4">
+            how-tos
+          </Link>
+          .
+        </p>
 
         <ExportShare
           className="mt-3"

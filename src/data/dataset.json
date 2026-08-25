@@ -3,7 +3,7 @@
   "schema": {
     "softwareApplication": {
       "applicationCategory": "WebApplication",
-      "applicationSubCategory": "Crypto",
+      "applicationSubCategory": "Tools",
       "operatingSystem": "Web",
       "softwareVersion": "1.0",
       "offers": {
@@ -15,7 +15,7 @@
         "url": "https://www.getfreebit.com"
       },
       "featureList": [
-        "crypto tools and calculators",
+        "tools tools and calculators",
         "Free reference pages",
         "FAQ and HowTo structured data"
       ],
@@ -51,7 +51,7 @@
         "currency": "USD",
         "value": "0"
       },
-      "tool": "GetFreeBit crypto tools",
+      "tool": "GetFreeBit tools tools",
       "stepTemplates": [
         {
           "name": "Open the page",
@@ -80,10 +80,10 @@
       "width": 1200,
       "height": 630,
       "brandName": "GetFreeBit",
-      "tagline": "Earn free crypto. Optimize yield. Navigate Web3 safely.",
-      "background": "#9a6418",
-      "surface": "#c9842a",
-      "accent": "#f3e6d0",
+      "tagline": "Free crypto, yield, and Web3—explained like an operator, not a hype reel.",
+      "background": "#a66b12",
+      "surface": "#d4922a",
+      "accent": "#f4e6c8",
       "ink": "#ffffff",
       "muted": "#b7d4cf",
       "twitterCard": "summary_large_image",
@@ -155,703 +155,1195 @@
     }
   },
   "pages": {
-    "faucetpay-setup-and-payout-routing": {
+    "what-blockchain-technology-is-and-how-it-works": {
       "language": "English",
       "accent": "neutral",
-      "name": "FaucetPay Setup and Payout Routing",
-      "applicationCategory": "WebApplication",
-      "inLanguage": "en",
-      "parentCategory": "faucets-micro",
-      "tags": [
-        "faucet",
-        "FaucetPay",
-        "micro-wallet"
-      ],
-      "primaryKeyword": "FaucetPay setup",
-      "path": "/guides/faucetpay-setup-and-payout-routing",
-      "faq": [
-        {
-          "question": "What is FaucetPay Setup and Payout Routing?",
-          "answer": "How to set up FaucetPay, route faucet payouts, and sweep to self-custody without losing dust to fees."
-        },
-        {
-          "question": "Is FaucetPay Setup and Payout Routing free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “FaucetPay Setup and Payout Routing” at https://www.getfreebit.com/guides/faucetpay-setup-and-payout-routing."
-        }
-      ]
-    },
-    "evaluating-crypto-faucets-time-vs-reward": {
-      "language": "English",
-      "accent": "neutral",
-      "name": "Evaluating Crypto Faucets: Time vs Reward",
-      "applicationCategory": "WebApplication",
-      "inLanguage": "en",
-      "parentCategory": "faucets-micro",
-      "tags": [
-        "faucet",
-        "ROI",
-        "micro-earnings"
-      ],
-      "primaryKeyword": "crypto faucet ROI",
-      "path": "/guides/evaluating-crypto-faucets-time-vs-reward",
-      "faq": [
-        {
-          "question": "What is Evaluating Crypto Faucets: Time vs Reward?",
-          "answer": "A practical framework for measuring faucet payouts against your time, captchas, and withdrawal minimums."
-        },
-        {
-          "question": "Is Evaluating Crypto Faucets: Time vs Reward free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Evaluating Crypto Faucets: Time vs Reward” at https://www.getfreebit.com/guides/evaluating-crypto-faucets-time-vs-reward."
-        }
-      ]
-    },
-    "offerwalls-and-micro-earning-without-scams": {
-      "language": "English",
-      "accent": "neutral",
-      "name": "Offerwalls and Micro-Earning Without Scams",
-      "applicationCategory": "WebApplication",
-      "inLanguage": "en",
-      "parentCategory": "faucets-micro",
-      "tags": [
-        "offerwall",
-        "Cointiply",
-        "surveys"
-      ],
-      "primaryKeyword": "crypto offerwall",
-      "path": "/guides/offerwalls-and-micro-earning-without-scams",
-      "faq": [
-        {
-          "question": "What is Offerwalls and Micro-Earning Without Scams?",
-          "answer": "How offerwalls pay, which tasks reverse, and how to avoid account bans and phishing funnels."
-        },
-        {
-          "question": "Is Offerwalls and Micro-Earning Without Scams free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Offerwalls and Micro-Earning Without Scams” at https://www.getfreebit.com/guides/offerwalls-and-micro-earning-without-scams."
-        }
-      ]
-    },
-    "freebitcoin-style-faucets-risk-math": {
-      "language": "English",
-      "accent": "neutral",
-      "name": "FreeBitcoin-Style Faucets: Risk Math",
-      "applicationCategory": "WebApplication",
-      "inLanguage": "en",
-      "parentCategory": "faucets-micro",
-      "tags": [
-        "faucet",
-        "lottery",
-        "gambling"
-      ],
-      "primaryKeyword": "FreeBitco.in risks",
-      "path": "/guides/freebitcoin-style-faucets-risk-math",
-      "faq": [
-        {
-          "question": "What is FreeBitcoin-Style Faucets: Risk Math?",
-          "answer": "Separate hourly faucet drip from multiply/lottery EV so you do not mistake gambling for earning."
-        },
-        {
-          "question": "Is FreeBitcoin-Style Faucets: Risk Math free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “FreeBitcoin-Style Faucets: Risk Math” at https://www.getfreebit.com/guides/freebitcoin-style-faucets-risk-math."
-        }
-      ]
-    },
-    "testnet-wallet-hygiene-for-airdrop-farming": {
-      "language": "English",
-      "accent": "neutral",
-      "name": "Testnet Wallet Hygiene for Airdrop Farming",
-      "applicationCategory": "WebApplication",
-      "inLanguage": "en",
-      "parentCategory": "airdrop-testnet",
-      "tags": [
-        "testnet",
-        "airdrop",
-        "Sybil"
-      ],
-      "primaryKeyword": "testnet wallet hygiene",
-      "path": "/guides/testnet-wallet-hygiene-for-airdrop-farming",
-      "faq": [
-        {
-          "question": "What is Testnet Wallet Hygiene for Airdrop Farming?",
-          "answer": "Separate burn wallets, never reuse main seeds, and practice protocol flows without contaminating mainnet keys."
-        },
-        {
-          "question": "Is Testnet Wallet Hygiene for Airdrop Farming free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Testnet Wallet Hygiene for Airdrop Farming” at https://www.getfreebit.com/guides/testnet-wallet-hygiene-for-airdrop-farming."
-        }
-      ]
-    },
-    "airdrop-eligibility-checklist": {
-      "language": "English",
-      "accent": "neutral",
-      "name": "Airdrop Eligibility Checklist",
-      "applicationCategory": "WebApplication",
-      "inLanguage": "en",
-      "parentCategory": "airdrop-testnet",
-      "tags": [
-        "airdrop",
-        "points",
-        "eligibility"
-      ],
-      "primaryKeyword": "airdrop eligibility",
-      "path": "/guides/airdrop-eligibility-checklist",
-      "faq": [
-        {
-          "question": "What is Airdrop Eligibility Checklist?",
-          "answer": "A criteria checklist for on-chain usage, funding trails, and Sybil filters before you spend gas farming."
-        },
-        {
-          "question": "Is Airdrop Eligibility Checklist free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Airdrop Eligibility Checklist” at https://www.getfreebit.com/guides/airdrop-eligibility-checklist."
-        }
-      ]
-    },
-    "gas-optimization-for-farming": {
-      "language": "English",
-      "accent": "neutral",
-      "name": "Gas Optimization for Farming",
-      "applicationCategory": "WebApplication",
-      "inLanguage": "en",
-      "parentCategory": "airdrop-testnet",
-      "tags": [
-        "gas",
-        "L2",
-        "farming"
-      ],
-      "primaryKeyword": "gas optimization airdrop",
-      "path": "/guides/gas-optimization-for-farming",
-      "faq": [
-        {
-          "question": "What is Gas Optimization for Farming?",
-          "answer": "Batch actions on L2s, avoid peak gwei, and know when farming costs exceed expected airdrop value."
-        },
-        {
-          "question": "Is Gas Optimization for Farming free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Gas Optimization for Farming” at https://www.getfreebit.com/guides/gas-optimization-for-farming."
-        }
-      ]
-    },
-    "sybil-resistance-what-farmers-miss": {
-      "language": "English",
-      "accent": "neutral",
-      "name": "Sybil Resistance: What Farmers Miss",
-      "applicationCategory": "WebApplication",
-      "inLanguage": "en",
-      "parentCategory": "airdrop-testnet",
-      "tags": [
-        "Sybil",
-        "airdrop",
-        "clustering"
-      ],
-      "primaryKeyword": "Sybil resistance airdrops",
-      "path": "/guides/sybil-resistance-what-farmers-miss",
-      "faq": [
-        {
-          "question": "What is Sybil Resistance: What Farmers Miss?",
-          "answer": "How protocols cluster wallets and why copy-paste farms often earn less than one organic account."
-        },
-        {
-          "question": "Is Sybil Resistance: What Farmers Miss free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Sybil Resistance: What Farmers Miss” at https://www.getfreebit.com/guides/sybil-resistance-what-farmers-miss."
-        }
-      ]
-    },
-    "native-eth-staking-vs-liquid-staking": {
-      "language": "English",
-      "accent": "neutral",
-      "name": "Native ETH Staking vs Liquid Staking",
-      "applicationCategory": "WebApplication",
-      "inLanguage": "en",
-      "parentCategory": "staking-yield",
-      "tags": [
-        "staking",
-        "LSD",
-        "ETH"
-      ],
-      "primaryKeyword": "ETH staking vs LSD",
-      "path": "/guides/native-eth-staking-vs-liquid-staking",
-      "faq": [
-        {
-          "question": "What is Native ETH Staking vs Liquid Staking?",
-          "answer": "Compare 32 ETH validators, staking-as-a-service, and liquid staking derivatives with exit and smart-contract risk."
-        },
-        {
-          "question": "Is Native ETH Staking vs Liquid Staking free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Native ETH Staking vs Liquid Staking” at https://www.getfreebit.com/guides/native-eth-staking-vs-liquid-staking."
-        }
-      ]
-    },
-    "lending-yield-and-liquidation-risk": {
-      "language": "English",
-      "accent": "neutral",
-      "name": "Lending Yield and Liquidation Risk",
-      "applicationCategory": "WebApplication",
-      "inLanguage": "en",
-      "parentCategory": "staking-yield",
-      "tags": [
-        "lending",
-        "liquidation",
-        "health factor"
-      ],
-      "primaryKeyword": "DeFi lending liquidation",
-      "path": "/guides/lending-yield-and-liquidation-risk",
-      "faq": [
-        {
-          "question": "What is Lending Yield and Liquidation Risk?",
-          "answer": "How supply APY is earned, how health factors work, and how to size collateral buffers."
-        },
-        {
-          "question": "Is Lending Yield and Liquidation Risk free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Lending Yield and Liquidation Risk” at https://www.getfreebit.com/guides/lending-yield-and-liquidation-risk."
-        }
-      ]
-    },
-    "impermanent-loss-with-real-numbers": {
-      "language": "English",
-      "accent": "neutral",
-      "name": "Impermanent Loss with Real Numbers",
-      "applicationCategory": "WebApplication",
-      "inLanguage": "en",
-      "parentCategory": "staking-yield",
-      "tags": [
-        "IL",
-        "AMM",
-        "LP"
-      ],
-      "primaryKeyword": "impermanent loss example",
-      "path": "/guides/impermanent-loss-with-real-numbers",
-      "faq": [
-        {
-          "question": "What is Impermanent Loss with Real Numbers?",
-          "answer": "Walk through AMM inventory math so LP fees are not confused with risk-free yield."
-        },
-        {
-          "question": "Is Impermanent Loss with Real Numbers free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Impermanent Loss with Real Numbers” at https://www.getfreebit.com/guides/impermanent-loss-with-real-numbers."
-        }
-      ]
-    },
-    "restaking-and-lrt-risk-stack": {
-      "language": "English",
-      "accent": "neutral",
-      "name": "Restaking and LRT Risk Stack",
-      "applicationCategory": "WebApplication",
-      "inLanguage": "en",
-      "parentCategory": "staking-yield",
-      "tags": [
-        "restaking",
-        "LRT",
-        "slash"
-      ],
-      "primaryKeyword": "restaking LRT risks",
-      "path": "/guides/restaking-and-lrt-risk-stack",
-      "faq": [
-        {
-          "question": "What is Restaking and LRT Risk Stack?",
-          "answer": "Layered risks in restaking and liquid restaking tokens beyond headline APY."
-        },
-        {
-          "question": "Is Restaking and LRT Risk Stack free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Restaking and LRT Risk Stack” at https://www.getfreebit.com/guides/restaking-and-lrt-risk-stack."
-        }
-      ]
-    },
-    "stablecoin-yield-what-youre-actually-paid-for": {
-      "language": "English",
-      "accent": "neutral",
-      "name": "Stablecoin Yield: What You Are Paid For",
-      "applicationCategory": "WebApplication",
-      "inLanguage": "en",
-      "parentCategory": "staking-yield",
-      "tags": [
-        "stablecoin",
-        "APY",
-        "RWA"
-      ],
-      "primaryKeyword": "stablecoin yield risk",
-      "path": "/guides/stablecoin-yield-what-youre-actually-paid-for",
-      "faq": [
-        {
-          "question": "What is Stablecoin Yield: What You Are Paid For?",
-          "answer": "Map stablecoin rates to credit, peg, and smart-contract risk instead of chasing the top APY."
-        },
-        {
-          "question": "Is Stablecoin Yield: What You Are Paid For free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Stablecoin Yield: What You Are Paid For” at https://www.getfreebit.com/guides/stablecoin-yield-what-youre-actually-paid-for."
-        }
-      ]
-    },
-    "first-cex-account-kyc-2fa-withdrawals": {
-      "language": "English",
-      "accent": "neutral",
-      "name": "First CEX Account: KYC, 2FA, Withdrawals",
+      "name": "What Blockchain Technology Is and How It Works",
       "applicationCategory": "WebApplication",
       "inLanguage": "en",
       "parentCategory": "exchange-onboarding",
       "tags": [
-        "CEX",
-        "KYC",
-        "2FA"
+        "guide"
       ],
-      "primaryKeyword": "crypto exchange KYC 2FA",
-      "path": "/guides/first-cex-account-kyc-2fa-withdrawals",
+      "primaryKeyword": "What Blockchain Technology Is and How It Works",
+      "path": "/guides/what-blockchain-technology-is-and-how-it-works",
       "faq": [
         {
-          "question": "What is First CEX Account: KYC, 2FA, Withdrawals?",
-          "answer": "Open a Tier-1 exchange safely: identity, authenticator apps, allowlists, and first withdrawals."
+          "question": "What is What Blockchain Technology Is and How It Works?",
+          "answer": "A clear walkthrough of blocks, hashes, consensus, and distributed ledgers—so you can evaluate crypto products without treating “blockchain” as a buzzword."
         },
         {
-          "question": "Is First CEX Account: KYC, 2FA, Withdrawals free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “First CEX Account: KYC, 2FA, Withdrawals” at https://www.getfreebit.com/guides/first-cex-account-kyc-2fa-withdrawals."
+          "question": "Is What Blockchain Technology Is and How It Works free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “What Blockchain Technology Is and How It Works” at https://www.getfreebit.com/guides/what-blockchain-technology-is-and-how-it-works."
         }
       ]
     },
-    "self-custody-withdrawal-checklist": {
+    "understanding-cryptocurrencies-tokens-and-altcoins": {
       "language": "English",
       "accent": "neutral",
-      "name": "Self-Custody Withdrawal Checklist",
+      "name": "Understanding Cryptocurrencies, Tokens, and Altcoins",
       "applicationCategory": "WebApplication",
       "inLanguage": "en",
       "parentCategory": "exchange-onboarding",
       "tags": [
-        "self-custody",
-        "withdrawal",
-        "test amount"
+        "guide"
       ],
-      "primaryKeyword": "withdraw to self-custody",
-      "path": "/guides/self-custody-withdrawal-checklist",
+      "primaryKeyword": "Understanding Cryptocurrencies, Tokens, and Altcoins",
+      "path": "/guides/understanding-cryptocurrencies-tokens-and-altcoins",
       "faq": [
         {
-          "question": "What is Self-Custody Withdrawal Checklist?",
-          "answer": "Network selection, memos, test amounts, and explorer confirmation when leaving an exchange."
+          "question": "What is Understanding Cryptocurrencies, Tokens, and Altcoins?",
+          "answer": "How native coins, issued tokens, and altcoins differ—and how to read supply, utility, and risk without collapsing everything into “crypto.”"
         },
         {
-          "question": "Is Self-Custody Withdrawal Checklist free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Self-Custody Withdrawal Checklist” at https://www.getfreebit.com/guides/self-custody-withdrawal-checklist."
+          "question": "Is Understanding Cryptocurrencies, Tokens, and Altcoins free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Understanding Cryptocurrencies, Tokens, and Altcoins” at https://www.getfreebit.com/guides/understanding-cryptocurrencies-tokens-and-altcoins."
         }
       ]
     },
-    "hardware-wallet-setup-and-passphrase": {
+    "the-difference-between-proof-of-work-and-proof-of-stake": {
       "language": "English",
       "accent": "neutral",
-      "name": "Hardware Wallet Setup and Passphrase",
-      "applicationCategory": "WebApplication",
-      "inLanguage": "en",
-      "parentCategory": "exchange-onboarding",
-      "tags": [
-        "hardware wallet",
-        "seed phrase",
-        "passphrase"
-      ],
-      "primaryKeyword": "hardware wallet setup",
-      "path": "/guides/hardware-wallet-setup-and-passphrase",
-      "faq": [
-        {
-          "question": "What is Hardware Wallet Setup and Passphrase?",
-          "answer": "Initialize a hardware wallet, verify seed backups, and understand hidden passphrase wallets."
-        },
-        {
-          "question": "Is Hardware Wallet Setup and Passphrase free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Hardware Wallet Setup and Passphrase” at https://www.getfreebit.com/guides/hardware-wallet-setup-and-passphrase."
-        }
-      ]
-    },
-    "crypto-debit-cards-cashback-math": {
-      "language": "English",
-      "accent": "neutral",
-      "name": "Crypto Debit Cards: Cashback Math",
-      "applicationCategory": "WebApplication",
-      "inLanguage": "en",
-      "parentCategory": "exchange-onboarding",
-      "tags": [
-        "cards",
-        "cashback",
-        "fees"
-      ],
-      "primaryKeyword": "crypto debit card cashback",
-      "path": "/guides/crypto-debit-cards-cashback-math",
-      "faq": [
-        {
-          "question": "What is Crypto Debit Cards: Cashback Math?",
-          "answer": "Compare card cashback to spreads, staking locks, and FX fees before ordering metal."
-        },
-        {
-          "question": "Is Crypto Debit Cards: Cashback Math free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Crypto Debit Cards: Cashback Math” at https://www.getfreebit.com/guides/crypto-debit-cards-cashback-math."
-        }
-      ]
-    },
-    "reading-etherscan-like-an-operator": {
-      "language": "English",
-      "accent": "neutral",
-      "name": "Reading Etherscan Like an Operator",
-      "applicationCategory": "WebApplication",
-      "inLanguage": "en",
-      "parentCategory": "exchange-onboarding",
-      "tags": [
-        "Etherscan",
-        "block explorer",
-        "approvals"
-      ],
-      "primaryKeyword": "how to read Etherscan",
-      "path": "/guides/reading-etherscan-like-an-operator",
-      "faq": [
-        {
-          "question": "What is Reading Etherscan Like an Operator?",
-          "answer": "Decode txs, internal transfers, token approvals, and contract creators on a block explorer."
-        },
-        {
-          "question": "Is Reading Etherscan Like an Operator free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Reading Etherscan Like an Operator” at https://www.getfreebit.com/guides/reading-etherscan-like-an-operator."
-        }
-      ]
-    },
-    "bridging-without-losing-funds": {
-      "language": "English",
-      "accent": "neutral",
-      "name": "Bridging Without Losing Funds",
-      "applicationCategory": "WebApplication",
-      "inLanguage": "en",
-      "parentCategory": "airdrop-testnet",
-      "tags": [
-        "bridge",
-        "L2",
-        "canonical"
-      ],
-      "primaryKeyword": "crypto bridge safely",
-      "path": "/guides/bridging-without-losing-funds",
-      "faq": [
-        {
-          "question": "What is Bridging Without Losing Funds?",
-          "answer": "Canonical vs third-party bridges, optimistic withdrawal delays, and address/chain ID checks."
-        },
-        {
-          "question": "Is Bridging Without Losing Funds free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Bridging Without Losing Funds” at https://www.getfreebit.com/guides/bridging-without-losing-funds."
-        }
-      ]
-    },
-    "dex-swaps-slippage-mev-and-approvals": {
-      "language": "English",
-      "accent": "neutral",
-      "name": "DEX Swaps: Slippage, MEV, Approvals",
+      "name": "The Difference Between Proof of Work and Proof of Stake",
       "applicationCategory": "WebApplication",
       "inLanguage": "en",
       "parentCategory": "staking-yield",
       "tags": [
-        "DEX",
-        "slippage",
-        "MEV"
+        "guide"
       ],
-      "primaryKeyword": "DEX swap slippage MEV",
-      "path": "/guides/dex-swaps-slippage-mev-and-approvals",
+      "primaryKeyword": "The Difference Between Proof of Work and Proof of Stake",
+      "path": "/guides/the-difference-between-proof-of-work-and-proof-of-stake",
       "faq": [
         {
-          "question": "What is DEX Swaps: Slippage, MEV, Approvals?",
-          "answer": "Set slippage, understand sandwiches, and manage ERC-20 approvals when swapping on a DEX."
+          "question": "What is The Difference Between Proof of Work and Proof of Stake?",
+          "answer": "How PoW and PoS select block producers, what they cost to attack, and what those differences mean for fees, energy, and staking risk."
         },
         {
-          "question": "Is DEX Swaps: Slippage, MEV, Approvals free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “DEX Swaps: Slippage, MEV, Approvals” at https://www.getfreebit.com/guides/dex-swaps-slippage-mev-and-approvals."
+          "question": "Is The Difference Between Proof of Work and Proof of Stake free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “The Difference Between Proof of Work and Proof of Stake” at https://www.getfreebit.com/guides/the-difference-between-proof-of-work-and-proof-of-stake."
         }
       ]
     },
-    "spot-vs-perps-funding-and-liquidation": {
+    "how-bitcoin-functions-as-a-decentralized-peer-to-peer-network": {
       "language": "English",
       "accent": "neutral",
-      "name": "Spot vs Perps: Funding and Liquidation",
+      "name": "How Bitcoin Functions as a Decentralized Peer-to-Peer Network",
       "applicationCategory": "WebApplication",
       "inLanguage": "en",
       "parentCategory": "exchange-onboarding",
       "tags": [
-        "spot",
-        "perps",
-        "funding"
+        "guide"
       ],
-      "primaryKeyword": "spot vs perpetual futures",
-      "path": "/guides/spot-vs-perps-funding-and-liquidation",
+      "primaryKeyword": "How Bitcoin Functions as a Decentralized Peer-to-Peer Network",
+      "path": "/guides/how-bitcoin-functions-as-a-decentralized-peer-to-peer-network",
       "faq": [
         {
-          "question": "What is Spot vs Perps: Funding and Liquidation?",
-          "answer": "How funding rates and liquidations differ from spot ownership—when leverage is not earning."
+          "question": "What is How Bitcoin Functions as a Decentralized Peer-to-Peer Network?",
+          "answer": "How Bitcoin nodes relay transactions, mine blocks, and enforce consensus rules without a central operator—and what that means for users moving value."
         },
         {
-          "question": "Is Spot vs Perps: Funding and Liquidation free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Spot vs Perps: Funding and Liquidation” at https://www.getfreebit.com/guides/spot-vs-perps-funding-and-liquidation."
+          "question": "Is How Bitcoin Functions as a Decentralized Peer-to-Peer Network free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How Bitcoin Functions as a Decentralized Peer-to-Peer Network” at https://www.getfreebit.com/guides/how-bitcoin-functions-as-a-decentralized-peer-to-peer-network."
         }
       ]
     },
-    "layer-2-fees-blobs-and-when-to-bridge": {
+    "what-ethereum-smart-contracts-are-and-how-they-execute-automatically": {
       "language": "English",
       "accent": "neutral",
-      "name": "Layer 2 Fees, Blobs, and When to Bridge",
+      "name": "What Ethereum Smart Contracts Are and How They Execute Automatically",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "guide"
+      ],
+      "primaryKeyword": "What Ethereum Smart Contracts Are and How They Execute Automatically",
+      "path": "/guides/what-ethereum-smart-contracts-are-and-how-they-execute-automatically",
+      "faq": [
+        {
+          "question": "What is What Ethereum Smart Contracts Are and How They Execute Automatically?",
+          "answer": "How Ethereum contracts store code and state, run when called by transactions, and why “automatic” still depends on gas, bugs, and human-controlled admin keys."
+        },
+        {
+          "question": "Is What Ethereum Smart Contracts Are and How They Execute Automatically free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “What Ethereum Smart Contracts Are and How They Execute Automatically” at https://www.getfreebit.com/guides/what-ethereum-smart-contracts-are-and-how-they-execute-automatically."
+        }
+      ]
+    },
+    "explaining-layer-1-vs-layer-2-scaling-solutions": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Explaining Layer 1 vs Layer 2 Scaling Solutions",
       "applicationCategory": "WebApplication",
       "inLanguage": "en",
       "parentCategory": "airdrop-testnet",
       "tags": [
-        "L2",
-        "blob",
+        "guide"
+      ],
+      "primaryKeyword": "Explaining Layer 1 vs Layer 2 Scaling Solutions",
+      "path": "/guides/explaining-layer-1-vs-layer-2-scaling-solutions",
+      "faq": [
+        {
+          "question": "What is Explaining Layer 1 vs Layer 2 Scaling Solutions?",
+          "answer": "What L1 and L2 mean for security, fees, and bridges—and how to choose where to transact without stranding funds."
+        },
+        {
+          "question": "Is Explaining Layer 1 vs Layer 2 Scaling Solutions free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Explaining Layer 1 vs Layer 2 Scaling Solutions” at https://www.getfreebit.com/guides/explaining-layer-1-vs-layer-2-scaling-solutions."
+        }
+      ]
+    },
+    "what-public-and-private-keys-are-in-digital-cryptography": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "What Public and Private Keys Are in Digital Cryptography",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "guide"
+      ],
+      "primaryKeyword": "What Public and Private Keys Are in Digital Cryptography",
+      "path": "/guides/what-public-and-private-keys-are-in-digital-cryptography",
+      "faq": [
+        {
+          "question": "What is What Public and Private Keys Are in Digital Cryptography?",
+          "answer": "How keypairs sign and verify crypto transactions, how seed phrases derive keys, and how to avoid the phishing patterns that steal them."
+        },
+        {
+          "question": "Is What Public and Private Keys Are in Digital Cryptography free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “What Public and Private Keys Are in Digital Cryptography” at https://www.getfreebit.com/guides/what-public-and-private-keys-are-in-digital-cryptography."
+        }
+      ]
+    },
+    "how-decentralized-finance-defi-replaces-traditional-intermediaries": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How Decentralized Finance (DeFi) Replaces Traditional Intermediaries",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "guide",
+        "DeFi"
+      ],
+      "primaryKeyword": "How Decentralized Finance (DeFi) Replaces Traditional Intermediaries",
+      "path": "/guides/how-decentralized-finance-defi-replaces-traditional-intermediaries",
+      "faq": [
+        {
+          "question": "What is How Decentralized Finance (DeFi) Replaces Traditional Intermediaries?",
+          "answer": "How AMMs, lending markets, and on-chain settlement substitute for brokers and banks—and which risks those intermediaries used to absorb."
+        },
+        {
+          "question": "Is How Decentralized Finance (DeFi) Replaces Traditional Intermediaries free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How Decentralized Finance (DeFi) Replaces Traditional Intermediaries” at https://www.getfreebit.com/guides/how-decentralized-finance-defi-replaces-traditional-intermediaries."
+        }
+      ]
+    },
+    "understanding-crypto-wallets-hot-wallets-vs-cold-storage": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Understanding Crypto Wallets: Hot Wallets vs Cold Storage",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "guide",
+        "wallet",
+        "self-custody"
+      ],
+      "primaryKeyword": "Understanding Crypto Wallets",
+      "path": "/guides/understanding-crypto-wallets-hot-wallets-vs-cold-storage",
+      "faq": [
+        {
+          "question": "What is Understanding Crypto Wallets: Hot Wallets vs Cold Storage?",
+          "answer": "How hot wallets and cold storage differ in connectivity and attack surface—and how to split balances between spending money and savings."
+        },
+        {
+          "question": "Is Understanding Crypto Wallets: Hot Wallets vs Cold Storage free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Understanding Crypto Wallets: Hot Wallets vs Cold Storage” at https://www.getfreebit.com/guides/understanding-crypto-wallets-hot-wallets-vs-cold-storage."
+        }
+      ]
+    },
+    "what-gas-fees-are-and-why-they-change-based-on-network-congestion": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "What Gas Fees Are and Why They Change Based on Network Congestion",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "guide",
         "gas"
       ],
-      "primaryKeyword": "Ethereum L2 fees blobs",
-      "path": "/guides/layer-2-fees-blobs-and-when-to-bridge",
+      "primaryKeyword": "What Gas Fees Are and Why They Change Based on Network Congestion",
+      "path": "/guides/what-gas-fees-are-and-why-they-change-based-on-network-congestion",
       "faq": [
         {
-          "question": "What is Layer 2 Fees, Blobs, and When to Bridge?",
-          "answer": "Why L2 fees fell after blobs and how to decide when bridging to Arbitrum/Base/Optimism pays off."
+          "question": "What is What Gas Fees Are and Why They Change Based on Network Congestion?",
+          "answer": "How gas metering, base fees, and priority tips respond to block demand—and how to plan transactions when networks get busy."
         },
         {
-          "question": "Is Layer 2 Fees, Blobs, and When to Bridge free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Layer 2 Fees, Blobs, and When to Bridge” at https://www.getfreebit.com/guides/layer-2-fees-blobs-and-when-to-bridge."
+          "question": "Is What Gas Fees Are and Why They Change Based on Network Congestion free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “What Gas Fees Are and Why They Change Based on Network Congestion” at https://www.getfreebit.com/guides/what-gas-fees-are-and-why-they-change-based-on-network-congestion."
         }
       ]
     },
-    "spotting-honeypots-and-rug-pulls": {
+    "how-stablecoins-maintain-their-peg-to-fiat-currencies": {
       "language": "English",
       "accent": "neutral",
-      "name": "Spotting Honeypots and Rug Pulls",
+      "name": "How Stablecoins Maintain Their Peg to Fiat Currencies",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "guide"
+      ],
+      "primaryKeyword": "How Stablecoins Maintain Their Peg to Fiat Currencies",
+      "path": "/guides/how-stablecoins-maintain-their-peg-to-fiat-currencies",
+      "faq": [
+        {
+          "question": "What is How Stablecoins Maintain Their Peg to Fiat Currencies?",
+          "answer": "Fiat-reserved, crypto-collateralized, and algorithmic peg designs—what keeps $1 tokens near $1, and what breaks under stress."
+        },
+        {
+          "question": "Is How Stablecoins Maintain Their Peg to Fiat Currencies free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How Stablecoins Maintain Their Peg to Fiat Currencies” at https://www.getfreebit.com/guides/how-stablecoins-maintain-their-peg-to-fiat-currencies."
+        }
+      ]
+    },
+    "what-non-fungible-tokens-nfts-are-and-how-on-chain-ownership-works": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "What Non-Fungible Tokens (NFTs) Are and How On-Chain Ownership Works",
       "applicationCategory": "WebApplication",
       "inLanguage": "en",
       "parentCategory": "exchange-onboarding",
       "tags": [
-        "honeypot",
-        "rug pull",
-        "token"
+        "guide",
+        "NFT"
       ],
-      "primaryKeyword": "honeypot rug pull checklist",
-      "path": "/guides/spotting-honeypots-and-rug-pulls",
+      "primaryKeyword": "What Non-Fungible Tokens (NFTs) Are and How On-Chain Ownership Works",
+      "path": "/guides/what-non-fungible-tokens-nfts-are-and-how-on-chain-ownership-works",
       "faq": [
         {
-          "question": "What is Spotting Honeypots and Rug Pulls?",
-          "answer": "Contract red flags, liquidity locks, and sell tests before touching unverified tokens."
+          "question": "What is What Non-Fungible Tokens (NFTs) Are and How On-Chain Ownership Works?",
+          "answer": "How NFT standards encode unique ownership on-chain, what metadata lives off-chain, and which rights a token does—and does not—grant."
         },
         {
-          "question": "Is Spotting Honeypots and Rug Pulls free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Spotting Honeypots and Rug Pulls” at https://www.getfreebit.com/guides/spotting-honeypots-and-rug-pulls."
+          "question": "Is What Non-Fungible Tokens (NFTs) Are and How On-Chain Ownership Works free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “What Non-Fungible Tokens (NFTs) Are and How On-Chain Ownership Works” at https://www.getfreebit.com/guides/what-non-fungible-tokens-nfts-are-and-how-on-chain-ownership-works."
         }
       ]
     },
-    "crypto-records-for-taxes-without-panic": {
+    "explaining-liquidity-pools-and-automated-market-makers-amms": {
       "language": "English",
       "accent": "neutral",
-      "name": "Crypto Records for Taxes Without Panic",
+      "name": "Explaining Liquidity Pools and Automated Market Makers (AMMs)",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "guide",
+        "DeFi"
+      ],
+      "primaryKeyword": "Explaining Liquidity Pools and Automated Market Makers (AMMs)",
+      "path": "/guides/explaining-liquidity-pools-and-automated-market-makers-amms",
+      "faq": [
+        {
+          "question": "What is Explaining Liquidity Pools and Automated Market Makers (AMMs)?",
+          "answer": "How constant-product and related AMM formulas price swaps, how LPs earn fees, and why impermanent loss appears when prices move."
+        },
+        {
+          "question": "Is Explaining Liquidity Pools and Automated Market Makers (AMMs) free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Explaining Liquidity Pools and Automated Market Makers (AMMs)” at https://www.getfreebit.com/guides/explaining-liquidity-pools-and-automated-market-makers-amms."
+        }
+      ]
+    },
+    "what-crypto-staking-is-and-how-yield-is-generated": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "What Crypto Staking Is and How Yield Is Generated",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "guide",
+        "staking"
+      ],
+      "primaryKeyword": "What Crypto Staking Is and How Yield Is Generated",
+      "path": "/guides/what-crypto-staking-is-and-how-yield-is-generated",
+      "faq": [
+        {
+          "question": "What is What Crypto Staking Is and How Yield Is Generated?",
+          "answer": "How proof-of-stake rewards, liquid staking, and DeFi “staking” tabs differ—and which risks produce the APY you see."
+        },
+        {
+          "question": "Is What Crypto Staking Is and How Yield Is Generated free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “What Crypto Staking Is and How Yield Is Generated” at https://www.getfreebit.com/guides/what-crypto-staking-is-and-how-yield-is-generated."
+        }
+      ]
+    },
+    "understanding-zero-knowledge-proofs-zkps-and-their-role-in-privacy": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Understanding Zero-Knowledge Proofs (ZKPs) and Their Role in Privacy",
       "applicationCategory": "WebApplication",
       "inLanguage": "en",
       "parentCategory": "exchange-onboarding",
       "tags": [
-        "taxes",
-        "lots",
-        "Koinly"
+        "guide"
       ],
-      "primaryKeyword": "crypto tax records",
-      "path": "/guides/crypto-records-for-taxes-without-panic",
+      "primaryKeyword": "Understanding Zero-Knowledge Proofs (ZKPs) and Their Role in Privacy",
+      "path": "/guides/understanding-zero-knowledge-proofs-zkps-and-their-role-in-privacy",
       "faq": [
         {
-          "question": "What is Crypto Records for Taxes Without Panic?",
-          "answer": "What to export from exchanges and wallets so cost basis is reconstructable later."
+          "question": "What is Understanding Zero-Knowledge Proofs (ZKPs) and Their Role in Privacy?",
+          "answer": "What zero-knowledge proofs show without revealing underlying data, how ZK rollups use validity proofs, and where privacy guarantees stop."
         },
         {
-          "question": "Is Crypto Records for Taxes Without Panic free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Crypto Records for Taxes Without Panic” at https://www.getfreebit.com/guides/crypto-records-for-taxes-without-panic."
+          "question": "Is Understanding Zero-Knowledge Proofs (ZKPs) and Their Role in Privacy free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Understanding Zero-Knowledge Proofs (ZKPs) and Their Role in Privacy” at https://www.getfreebit.com/guides/understanding-zero-knowledge-proofs-zkps-and-their-role-in-privacy."
         }
       ]
     },
-    "multisig-basics-for-shared-funds": {
+    "what-real-world-asset-rwa-tokenization-means-for-traditional-finance": {
       "language": "English",
       "accent": "neutral",
-      "name": "Multisig Basics for Shared Funds",
+      "name": "What Real-World Asset (RWA) Tokenization Means for Traditional Finance",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "guide",
+        "institutional"
+      ],
+      "primaryKeyword": "What Real-World Asset (RWA) Tokenization Means for Traditional Finance",
+      "path": "/guides/what-real-world-asset-rwa-tokenization-means-for-traditional-finance",
+      "faq": [
+        {
+          "question": "What is What Real-World Asset (RWA) Tokenization Means for Traditional Finance?",
+          "answer": "How tokenizing treasuries, credit, and other off-chain assets works on-chain—and which legal and oracle risks remain outside the ledger."
+        },
+        {
+          "question": "Is What Real-World Asset (RWA) Tokenization Means for Traditional Finance free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “What Real-World Asset (RWA) Tokenization Means for Traditional Finance” at https://www.getfreebit.com/guides/what-real-world-asset-rwa-tokenization-means-for-traditional-finance."
+        }
+      ]
+    },
+    "how-decentralized-autonomous-organizations-daos-manage-governance": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How Decentralized Autonomous Organizations (DAOs) Manage Governance",
       "applicationCategory": "WebApplication",
       "inLanguage": "en",
       "parentCategory": "exchange-onboarding",
       "tags": [
-        "multisig",
-        "Safe",
-        "treasury"
+        "guide",
+        "DAO"
       ],
-      "primaryKeyword": "crypto multisig setup",
-      "path": "/guides/multisig-basics-for-shared-funds",
+      "primaryKeyword": "How Decentralized Autonomous Organizations (DAOs) Manage Governance",
+      "path": "/guides/how-decentralized-autonomous-organizations-daos-manage-governance",
       "faq": [
         {
-          "question": "What is Multisig Basics for Shared Funds?",
-          "answer": "When 2-of-3 beats a single hot key for teams, DAOs, and household treasuries."
+          "question": "What is How Decentralized Autonomous Organizations (DAOs) Manage Governance?",
+          "answer": "How token voting, delegates, and timelocks steer protocols—and why turnout, whales, and multisigs still shape outcomes."
         },
         {
-          "question": "Is Multisig Basics for Shared Funds free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Multisig Basics for Shared Funds” at https://www.getfreebit.com/guides/multisig-basics-for-shared-funds."
+          "question": "Is How Decentralized Autonomous Organizations (DAOs) Manage Governance free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How Decentralized Autonomous Organizations (DAOs) Manage Governance” at https://www.getfreebit.com/guides/how-decentralized-autonomous-organizations-daos-manage-governance."
         }
       ]
     },
-    "dca-bitcoin-practically": {
+    "understanding-blockchain-consensus-mechanisms-beyond-pow-and-pos": {
       "language": "English",
       "accent": "neutral",
-      "name": "DCA Bitcoin Practically",
+      "name": "Understanding Blockchain Consensus Mechanisms Beyond PoW and PoS",
       "applicationCategory": "WebApplication",
       "inLanguage": "en",
       "parentCategory": "exchange-onboarding",
       "tags": [
-        "DCA",
-        "bitcoin",
-        "spot"
+        "guide"
       ],
-      "primaryKeyword": "bitcoin DCA plan",
-      "path": "/guides/dca-bitcoin-practically",
+      "primaryKeyword": "Understanding Blockchain Consensus Mechanisms Beyond PoW and PoS",
+      "path": "/guides/understanding-blockchain-consensus-mechanisms-beyond-pow-and-pos",
       "faq": [
         {
-          "question": "What is DCA Bitcoin Practically?",
-          "answer": "Build a boring BTC purchase schedule with fee-aware venues and self-custody exits."
+          "question": "What is Understanding Blockchain Consensus Mechanisms Beyond PoW and PoS?",
+          "answer": "A tour of BFT-style, hybrid, DAG, and permissioned consensus families—and how to evaluate finality and decentralization claims."
         },
         {
-          "question": "Is DCA Bitcoin Practically free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “DCA Bitcoin Practically” at https://www.getfreebit.com/guides/dca-bitcoin-practically."
+          "question": "Is Understanding Blockchain Consensus Mechanisms Beyond PoW and PoS free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Understanding Blockchain Consensus Mechanisms Beyond PoW and PoS” at https://www.getfreebit.com/guides/understanding-blockchain-consensus-mechanisms-beyond-pow-and-pos."
         }
       ]
     },
-    "rpc-phishing-and-transaction-simulation": {
+    "what-sybil-attacks-51-percent-attacks-and-smart-contract-exploits-are": {
       "language": "English",
       "accent": "neutral",
-      "name": "RPC Phishing and Transaction Simulation",
-      "applicationCategory": "WebApplication",
-      "inLanguage": "en",
-      "parentCategory": "exchange-onboarding",
-      "tags": [
-        "phishing",
-        "RPC",
-        "simulation"
-      ],
-      "primaryKeyword": "wallet phishing simulation",
-      "path": "/guides/rpc-phishing-and-transaction-simulation",
-      "faq": [
-        {
-          "question": "What is RPC Phishing and Transaction Simulation?",
-          "answer": "Fake dapps, malicious RPCs, and why you must read simulation results before signing."
-        },
-        {
-          "question": "Is RPC Phishing and Transaction Simulation free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “RPC Phishing and Transaction Simulation” at https://www.getfreebit.com/guides/rpc-phishing-and-transaction-simulation."
-        }
-      ]
-    },
-    "points-programs-and-tge-expectations": {
-      "language": "English",
-      "accent": "neutral",
-      "name": "Points Programs and TGE Expectations",
+      "name": "What Sybil Attacks, 51% Attacks, and Smart Contract Exploits Are",
       "applicationCategory": "WebApplication",
       "inLanguage": "en",
       "parentCategory": "airdrop-testnet",
       "tags": [
-        "points",
-        "TGE",
-        "airdrop"
+        "guide"
       ],
-      "primaryKeyword": "crypto points program TGE",
-      "path": "/guides/points-programs-and-tge-expectations",
+      "primaryKeyword": "What Sybil Attacks, 51% Attacks, and Smart Contract Exploits Are",
+      "path": "/guides/what-sybil-attacks-51-percent-attacks-and-smart-contract-exploits-are",
       "faq": [
         {
-          "question": "What is Points Programs and TGE Expectations?",
-          "answer": "Treat points as marketing scoreboards—model gas spend against uncertain conversion."
+          "question": "What is What Sybil Attacks, 51% Attacks, and Smart Contract Exploits Are?",
+          "answer": "Clear definitions of Sybil identity attacks, majority hash/stake attacks, and smart-contract exploits—plus how users reduce exposure."
         },
         {
-          "question": "Is Points Programs and TGE Expectations free on GetFreeBit?",
-          "answer": "Yes. GetFreeBit hosts a free page for “Points Programs and TGE Expectations” at https://www.getfreebit.com/guides/points-programs-and-tge-expectations."
+          "question": "Is What Sybil Attacks, 51% Attacks, and Smart Contract Exploits Are free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “What Sybil Attacks, 51% Attacks, and Smart Contract Exploits Are” at https://www.getfreebit.com/guides/what-sybil-attacks-51-percent-attacks-and-smart-contract-exploits-are."
+        }
+      ]
+    },
+    "how-crypto-mining-works-and-what-mining-rewards-are": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How Crypto Mining Works and What Mining Rewards Are",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "guide"
+      ],
+      "primaryKeyword": "How Crypto Mining Works and What Mining Rewards Are",
+      "path": "/guides/how-crypto-mining-works-and-what-mining-rewards-are",
+      "faq": [
+        {
+          "question": "What is How Crypto Mining Works and What Mining Rewards Are?",
+          "answer": "How proof-of-work miners compete for blocks, what subsidies and fees pay them, and why home mining rarely matches industrial economics."
+        },
+        {
+          "question": "Is How Crypto Mining Works and What Mining Rewards Are free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How Crypto Mining Works and What Mining Rewards Are” at https://www.getfreebit.com/guides/how-crypto-mining-works-and-what-mining-rewards-are."
+        }
+      ]
+    },
+    "what-mempools-are-and-how-transactions-get-validated": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "What Mempools Are and How Transactions Get Validated",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "airdrop-testnet",
+      "tags": [
+        "guide"
+      ],
+      "primaryKeyword": "What Mempools Are and How Transactions Get Validated",
+      "path": "/guides/what-mempools-are-and-how-transactions-get-validated",
+      "faq": [
+        {
+          "question": "What is What Mempools Are and How Transactions Get Validated?",
+          "answer": "How pending transactions enter mempools, pass validation checks, and get selected into blocks—plus stuck-tx and replacement basics."
+        },
+        {
+          "question": "Is What Mempools Are and How Transactions Get Validated free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “What Mempools Are and How Transactions Get Validated” at https://www.getfreebit.com/guides/what-mempools-are-and-how-transactions-get-validated."
+        }
+      ]
+    },
+    "understanding-crypto-tokenomics-supply-caps-inflation-and-token-burns": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Understanding Crypto Tokenomics: Supply Caps, Inflation, and Token Burns",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "guide"
+      ],
+      "primaryKeyword": "Understanding Crypto Tokenomics",
+      "path": "/guides/understanding-crypto-tokenomics-supply-caps-inflation-and-token-burns",
+      "faq": [
+        {
+          "question": "What is Understanding Crypto Tokenomics: Supply Caps, Inflation, and Token Burns?",
+          "answer": "How max supply, emissions, unlocks, and burns shape token value narratives—and how to read them without hype."
+        },
+        {
+          "question": "Is Understanding Crypto Tokenomics: Supply Caps, Inflation, and Token Burns free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Understanding Crypto Tokenomics: Supply Caps, Inflation, and Token Burns” at https://www.getfreebit.com/guides/understanding-crypto-tokenomics-supply-caps-inflation-and-token-burns."
+        }
+      ]
+    },
+    "what-cross-chain-bridges-are-and-how-they-transfer-data-between-blockchains": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "What Cross-Chain Bridges Are and How They Transfer Data Between Blockchains",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "airdrop-testnet",
+      "tags": [
+        "guide",
+        "bridge"
+      ],
+      "primaryKeyword": "What Cross-Chain Bridges Are and How They Transfer Data Between Blockchains",
+      "path": "/guides/what-cross-chain-bridges-are-and-how-they-transfer-data-between-blockchains",
+      "faq": [
+        {
+          "question": "What is What Cross-Chain Bridges Are and How They Transfer Data Between Blockchains?",
+          "answer": "How lock-mint, burn-mint, and light-client bridges move value and messages across chains—and why bridges are high-value attack targets."
+        },
+        {
+          "question": "Is What Cross-Chain Bridges Are and How They Transfer Data Between Blockchains free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “What Cross-Chain Bridges Are and How They Transfer Data Between Blockchains” at https://www.getfreebit.com/guides/what-cross-chain-bridges-are-and-how-they-transfer-data-between-blockchains."
+        }
+      ]
+    },
+    "explaining-central-bank-digital-currencies-cbdcs-vs-decentralized-crypto": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Explaining Central Bank Digital Currencies (CBDCs) vs Decentralized Crypto",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "guide"
+      ],
+      "primaryKeyword": "Explaining Central Bank Digital Currencies (CBDCs) vs Decentralized Crypto",
+      "path": "/guides/explaining-central-bank-digital-currencies-cbdcs-vs-decentralized-crypto",
+      "faq": [
+        {
+          "question": "What is Explaining Central Bank Digital Currencies (CBDCs) vs Decentralized Crypto?",
+          "answer": "How CBDCs differ from bitcoin and public smart-contract platforms in issuance, privacy, programmability, and custody assumptions."
+        },
+        {
+          "question": "Is Explaining Central Bank Digital Currencies (CBDCs) vs Decentralized Crypto free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Explaining Central Bank Digital Currencies (CBDCs) vs Decentralized Crypto” at https://www.getfreebit.com/guides/explaining-central-bank-digital-currencies-cbdcs-vs-decentralized-crypto."
+        }
+      ]
+    },
+    "how-ai-agents-are-interacting-with-on-chain-infrastructure-and-smart-contracts": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How AI Agents Are Interacting with On-Chain Infrastructure and Smart Contracts",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "airdrop-testnet",
+      "tags": [
+        "guide"
+      ],
+      "primaryKeyword": "How AI Agents Are Interacting with On-Chain Infrastructure and Smart Contracts",
+      "path": "/guides/how-ai-agents-are-interacting-with-on-chain-infrastructure-and-smart-contracts",
+      "faq": [
+        {
+          "question": "What is How AI Agents Are Interacting with On-Chain Infrastructure and Smart Contracts?",
+          "answer": "How autonomous agents use wallets, RPCs, and contracts to trade or operate on-chain—and which security boundaries humans must still set."
+        },
+        {
+          "question": "Is How AI Agents Are Interacting with On-Chain Infrastructure and Smart Contracts free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How AI Agents Are Interacting with On-Chain Infrastructure and Smart Contracts” at https://www.getfreebit.com/guides/how-ai-agents-are-interacting-with-on-chain-infrastructure-and-smart-contracts."
+        }
+      ]
+    },
+    "how-to-create-your-first-self-custody-crypto-wallet": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Create Your First Self-Custody Crypto Wallet",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "how-to",
+        "wallet",
+        "self-custody"
+      ],
+      "primaryKeyword": "How to Create Your First Self-Custody Crypto Wallet",
+      "path": "/how-to/how-to-create-your-first-self-custody-crypto-wallet",
+      "faq": [
+        {
+          "question": "What is How to Create Your First Self-Custody Crypto Wallet?",
+          "answer": "Install a reputable browser or mobile wallet, create a new seed phrase offline from strangers, fund with a test amount, and verify your address on a block explorer before treating it as home base."
+        },
+        {
+          "question": "Is How to Create Your First Self-Custody Crypto Wallet free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Create Your First Self-Custody Crypto Wallet” at https://www.getfreebit.com/how-to/how-to-create-your-first-self-custody-crypto-wallet."
+        }
+      ]
+    },
+    "how-to-safely-store-and-back-up-your-seed-phrase": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Safely Store and Back Up Your Seed Phrase",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "how-to",
+        "wallet",
+        "self-custody"
+      ],
+      "primaryKeyword": "How to Safely Store and Back Up Your Seed Phrase",
+      "path": "/how-to/how-to-safely-store-and-back-up-your-seed-phrase",
+      "faq": [
+        {
+          "question": "What is How to Safely Store and Back Up Your Seed Phrase?",
+          "answer": "Back up a 12- or 24-word seed with offline redundancy, verify restores on a throwaway device, and avoid the digital and social failure modes that empty wallets."
+        },
+        {
+          "question": "Is How to Safely Store and Back Up Your Seed Phrase free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Safely Store and Back Up Your Seed Phrase” at https://www.getfreebit.com/how-to/how-to-safely-store-and-back-up-your-seed-phrase."
+        }
+      ]
+    },
+    "how-to-buy-crypto-on-a-centralized-exchange-using-fiat-currency": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Buy Crypto on a Centralized Exchange Using Fiat Currency",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "how-to"
+      ],
+      "primaryKeyword": "How to Buy Crypto on a Centralized Exchange Using Fiat Currency",
+      "path": "/how-to/how-to-buy-crypto-on-a-centralized-exchange-using-fiat-currency",
+      "faq": [
+        {
+          "question": "What is How to Buy Crypto on a Centralized Exchange Using Fiat Currency?",
+          "answer": "Complete KYC on a reputable CEX, deposit fiat, place a spot order, withdraw a test amount to self-custody, and keep records without treating the exchange as a bank forever."
+        },
+        {
+          "question": "Is How to Buy Crypto on a Centralized Exchange Using Fiat Currency free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Buy Crypto on a Centralized Exchange Using Fiat Currency” at https://www.getfreebit.com/how-to/how-to-buy-crypto-on-a-centralized-exchange-using-fiat-currency."
+        }
+      ]
+    },
+    "how-to-send-and-receive-crypto-transactions-without-losing-funds": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Send and Receive Crypto Transactions Without Losing Funds",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "how-to"
+      ],
+      "primaryKeyword": "How to Send and Receive Crypto Transactions Without Losing Funds",
+      "path": "/how-to/how-to-send-and-receive-crypto-transactions-without-losing-funds",
+      "faq": [
+        {
+          "question": "What is How to Send and Receive Crypto Transactions Without Losing Funds?",
+          "answer": "Verify network, address, memo, and test amounts before every transfer; confirm inclusion on a block explorer; and recover from stuck nonces without panic signing."
+        },
+        {
+          "question": "Is How to Send and Receive Crypto Transactions Without Losing Funds free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Send and Receive Crypto Transactions Without Losing Funds” at https://www.getfreebit.com/how-to/how-to-send-and-receive-crypto-transactions-without-losing-funds."
+        }
+      ]
+    },
+    "how-to-use-a-decentralized-exchange-dex-to-swap-tokens": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Use a Decentralized Exchange (DEX) to Swap Tokens",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "how-to",
+        "DeFi"
+      ],
+      "primaryKeyword": "How to Use a Decentralized Exchange (DEX) to Swap Tokens",
+      "path": "/how-to/how-to-use-a-decentralized-exchange-dex-to-swap-tokens",
+      "faq": [
+        {
+          "question": "What is How to Use a Decentralized Exchange (DEX) to Swap Tokens?",
+          "answer": "Connect a burn-capable wallet, verify token contracts, set slippage consciously, approve minimally, swap on a liquid pool, and revoke leftover allowances when done."
+        },
+        {
+          "question": "Is How to Use a Decentralized Exchange (DEX) to Swap Tokens free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Use a Decentralized Exchange (DEX) to Swap Tokens” at https://www.getfreebit.com/how-to/how-to-use-a-decentralized-exchange-dex-to-swap-tokens."
+        }
+      ]
+    },
+    "how-to-transfer-tokens-across-different-blockchains-via-a-cross-chain-bridge": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Transfer Tokens Across Different Blockchains via a Cross-Chain Bridge",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "airdrop-testnet",
+      "tags": [
+        "how-to",
+        "bridge"
+      ],
+      "primaryKeyword": "How to Transfer Tokens Across Different Blockchains via a Cross-Chain Bridge",
+      "path": "/how-to/how-to-transfer-tokens-across-different-blockchains-via-a-cross-chain-bridge",
+      "faq": [
+        {
+          "question": "What is How to Transfer Tokens Across Different Blockchains via a Cross-Chain Bridge?",
+          "answer": "Prefer canonical bridges when practical, verify chain IDs and asset representations, send test amounts, track both legs on explorers, and budget time for optimistic withdrawal delays."
+        },
+        {
+          "question": "Is How to Transfer Tokens Across Different Blockchains via a Cross-Chain Bridge free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Transfer Tokens Across Different Blockchains via a Cross-Chain Bridge” at https://www.getfreebit.com/how-to/how-to-transfer-tokens-across-different-blockchains-via-a-cross-chain-bridge."
+        }
+      ]
+    },
+    "how-to-stake-tokens-to-earn-network-rewards": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Stake Tokens to Earn Network Rewards",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "how-to"
+      ],
+      "primaryKeyword": "How to Stake Tokens to Earn Network Rewards",
+      "path": "/how-to/how-to-stake-tokens-to-earn-network-rewards",
+      "faq": [
+        {
+          "question": "What is How to Stake Tokens to Earn Network Rewards?",
+          "answer": "Choose native staking versus liquid staking, understand unbonding and slash risk, stake through official flows, and track rewards without chasing unsustainable APY screenshots."
+        },
+        {
+          "question": "Is How to Stake Tokens to Earn Network Rewards free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Stake Tokens to Earn Network Rewards” at https://www.getfreebit.com/how-to/how-to-stake-tokens-to-earn-network-rewards."
+        }
+      ]
+    },
+    "how-to-set-up-a-hardware-wallet-for-maximum-cold-storage-security": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Set Up a Hardware Wallet for Maximum Cold-Storage Security",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "how-to",
+        "wallet",
+        "self-custody",
+        "institutional"
+      ],
+      "primaryKeyword": "How to Set Up a Hardware Wallet for Maximum Cold-Storage Security",
+      "path": "/how-to/how-to-set-up-a-hardware-wallet-for-maximum-cold-storage-security",
+      "faq": [
+        {
+          "question": "What is How to Set Up a Hardware Wallet for Maximum Cold-Storage Security?",
+          "answer": "Buy from trusted channels, initialize offline with a verified seed backup, enable PIN and optional passphrase, and practice verifying addresses on-device before moving long-term funds."
+        },
+        {
+          "question": "Is How to Set Up a Hardware Wallet for Maximum Cold-Storage Security free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Set Up a Hardware Wallet for Maximum Cold-Storage Security” at https://www.getfreebit.com/how-to/how-to-set-up-a-hardware-wallet-for-maximum-cold-storage-security."
+        }
+      ]
+    },
+    "how-to-read-a-blockchain-explorer-to-track-pending-and-completed-transactions": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Read a Blockchain Explorer to Track Pending and Completed Transactions",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "how-to"
+      ],
+      "primaryKeyword": "How to Read a Blockchain Explorer to Track Pending and Completed Transactions",
+      "path": "/how-to/how-to-read-a-blockchain-explorer-to-track-pending-and-completed-transactions",
+      "faq": [
+        {
+          "question": "What is How to Read a Blockchain Explorer to Track Pending and Completed Transactions?",
+          "answer": "Look up tx hashes and addresses on the correct explorer, interpret pending, success, and failure states, decode token transfers, and spot red flags in approvals and counterparties."
+        },
+        {
+          "question": "Is How to Read a Blockchain Explorer to Track Pending and Completed Transactions free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Read a Blockchain Explorer to Track Pending and Completed Transactions” at https://www.getfreebit.com/how-to/how-to-read-a-blockchain-explorer-to-track-pending-and-completed-transactions."
+        }
+      ]
+    },
+    "how-to-revoke-token-approvals-to-protect-wallet-allowance-limits": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Revoke Token Approvals to Protect Wallet Allowance Limits",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "how-to",
+        "wallet",
+        "self-custody"
+      ],
+      "primaryKeyword": "How to Revoke Token Approvals to Protect Wallet Allowance Limits",
+      "path": "/how-to/how-to-revoke-token-approvals-to-protect-wallet-allowance-limits",
+      "faq": [
+        {
+          "question": "What is How to Revoke Token Approvals to Protect Wallet Allowance Limits?",
+          "answer": "Inventory ERC-20 allowances, revoke unused or unlimited spenders, verify on a block explorer, and rebuild safer approve-then-swap habits for future DEX use."
+        },
+        {
+          "question": "Is How to Revoke Token Approvals to Protect Wallet Allowance Limits free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Revoke Token Approvals to Protect Wallet Allowance Limits” at https://www.getfreebit.com/how-to/how-to-revoke-token-approvals-to-protect-wallet-allowance-limits."
+        }
+      ]
+    },
+    "how-to-mint-buy-and-transfer-an-nft-using-a-decentralized-marketplace": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Mint, Buy, and Transfer an NFT Using a Decentralized Marketplace",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "how-to",
+        "NFT"
+      ],
+      "primaryKeyword": "How to Mint, Buy, and Transfer an NFT Using a Decentralized Marketplace",
+      "path": "/how-to/how-to-mint-buy-and-transfer-an-nft-using-a-decentralized-marketplace",
+      "faq": [
+        {
+          "question": "What is How to Mint, Buy, and Transfer an NFT Using a Decentralized Marketplace?",
+          "answer": "Verify collections and contracts, mint or buy with simulation-aware signing, transfer only to known addresses, and avoid signature phishing disguised as NFT claims."
+        },
+        {
+          "question": "Is How to Mint, Buy, and Transfer an NFT Using a Decentralized Marketplace free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Mint, Buy, and Transfer an NFT Using a Decentralized Marketplace” at https://www.getfreebit.com/how-to/how-to-mint-buy-and-transfer-an-nft-using-a-decentralized-marketplace."
+        }
+      ]
+    },
+    "how-to-provide-liquidity-to-an-automated-market-maker-pool": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Provide Liquidity to an Automated Market Maker Pool",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "how-to",
+        "DeFi"
+      ],
+      "primaryKeyword": "How to Provide Liquidity to an Automated Market Maker Pool",
+      "path": "/how-to/how-to-provide-liquidity-to-an-automated-market-maker-pool",
+      "faq": [
+        {
+          "question": "What is How to Provide Liquidity to an Automated Market Maker Pool?",
+          "answer": "Choose a pool and fee tier, deposit balanced assets, track fees versus impermanent loss, and withdraw deliberately without treating LP tokens as risk-free yield."
+        },
+        {
+          "question": "Is How to Provide Liquidity to an Automated Market Maker Pool free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Provide Liquidity to an Automated Market Maker Pool” at https://www.getfreebit.com/how-to/how-to-provide-liquidity-to-an-automated-market-maker-pool."
+        }
+      ]
+    },
+    "how-to-identify-and-avoid-common-crypto-phishing-and-wallet-scams": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Identify and Avoid Common Crypto Phishing and Wallet Scams",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "airdrop-testnet",
+      "tags": [
+        "how-to",
+        "wallet",
+        "self-custody"
+      ],
+      "primaryKeyword": "How to Identify and Avoid Common Crypto Phishing and Wallet Scams",
+      "path": "/how-to/how-to-identify-and-avoid-common-crypto-phishing-and-wallet-scams",
+      "faq": [
+        {
+          "question": "What is How to Identify and Avoid Common Crypto Phishing and Wallet Scams?",
+          "answer": "Recognize fake support, airdrop claim sites, malicious approvals, and address-poisoning patterns, and build verification habits that keep seed phrases and signatures offline from attackers."
+        },
+        {
+          "question": "Is How to Identify and Avoid Common Crypto Phishing and Wallet Scams free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Identify and Avoid Common Crypto Phishing and Wallet Scams” at https://www.getfreebit.com/how-to/how-to-identify-and-avoid-common-crypto-phishing-and-wallet-scams."
+        }
+      ]
+    },
+    "how-to-calculate-capital-gains-and-prepare-crypto-taxes": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Calculate Capital Gains and Prepare Crypto Taxes",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "how-to",
+        "taxes"
+      ],
+      "primaryKeyword": "How to Calculate Capital Gains and Prepare Crypto Taxes",
+      "path": "/how-to/how-to-calculate-capital-gains-and-prepare-crypto-taxes",
+      "faq": [
+        {
+          "question": "What is How to Calculate Capital Gains and Prepare Crypto Taxes?",
+          "answer": "Export exchange and wallet histories, establish cost basis per disposal, separate income-like rewards, and prepare filings with jurisdiction-aware caution—not tax advice."
+        },
+        {
+          "question": "Is How to Calculate Capital Gains and Prepare Crypto Taxes free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Calculate Capital Gains and Prepare Crypto Taxes” at https://www.getfreebit.com/how-to/how-to-calculate-capital-gains-and-prepare-crypto-taxes."
+        }
+      ]
+    },
+    "how-to-set-up-a-multisig-wallet-for-shared-funds-and-dao-treasuries": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Set Up a Multisig Wallet for Shared Funds and DAO Treasuries",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "how-to",
+        "wallet",
+        "self-custody",
+        "DAO"
+      ],
+      "primaryKeyword": "How to Set Up a Multisig Wallet for Shared Funds and DAO Treasuries",
+      "path": "/how-to/how-to-set-up-a-multisig-wallet-for-shared-funds-and-dao-treasuries",
+      "faq": [
+        {
+          "question": "What is How to Set Up a Multisig Wallet for Shared Funds and DAO Treasuries?",
+          "answer": "Choose an M-of-N threshold, onboard signer devices safely, deploy or create the multisig, run a test transaction, and document policies that prevent single-key failure without freezing funds forever."
+        },
+        {
+          "question": "Is How to Set Up a Multisig Wallet for Shared Funds and DAO Treasuries free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Set Up a Multisig Wallet for Shared Funds and DAO Treasuries” at https://www.getfreebit.com/how-to/how-to-set-up-a-multisig-wallet-for-shared-funds-and-dao-treasuries."
+        }
+      ]
+    },
+    "how-to-deposit-crypto-assets-into-defi-lending-platforms-to-earn-interest": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Deposit Crypto Assets into DeFi Lending Platforms to Earn Interest",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "how-to",
+        "DeFi"
+      ],
+      "primaryKeyword": "How to Deposit Crypto Assets into DeFi Lending Platforms to Earn Interest",
+      "path": "/how-to/how-to-deposit-crypto-assets-into-defi-lending-platforms-to-earn-interest",
+      "faq": [
+        {
+          "question": "What is How to Deposit Crypto Assets into DeFi Lending Platforms to Earn Interest?",
+          "answer": "Evaluate protocol risk and oracles, supply assets from a dedicated wallet, monitor health if borrowing, and withdraw with gas reserved—without treating variable APY as guaranteed income."
+        },
+        {
+          "question": "Is How to Deposit Crypto Assets into DeFi Lending Platforms to Earn Interest free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Deposit Crypto Assets into DeFi Lending Platforms to Earn Interest” at https://www.getfreebit.com/how-to/how-to-deposit-crypto-assets-into-defi-lending-platforms-to-earn-interest."
+        }
+      ]
+    },
+    "how-to-adjust-gas-fees-and-priority-gas-rules-manually-to-speed-up-transactions": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Adjust Gas Fees and Priority Gas Rules Manually to Speed Up Transactions",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "how-to",
+        "gas"
+      ],
+      "primaryKeyword": "How to Adjust Gas Fees and Priority Gas Rules Manually to Speed Up Transactions",
+      "path": "/how-to/how-to-adjust-gas-fees-and-priority-gas-rules-manually-to-speed-up-transactions",
+      "faq": [
+        {
+          "question": "What is How to Adjust Gas Fees and Priority Gas Rules Manually to Speed Up Transactions?",
+          "answer": "Read EIP-1559 base fee and tips, set priority fees intentionally, speed up or cancel stuck nonces, and avoid overpaying during congestion without spamming duplicate transactions."
+        },
+        {
+          "question": "Is How to Adjust Gas Fees and Priority Gas Rules Manually to Speed Up Transactions free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Adjust Gas Fees and Priority Gas Rules Manually to Speed Up Transactions” at https://www.getfreebit.com/how-to/how-to-adjust-gas-fees-and-priority-gas-rules-manually-to-speed-up-transactions."
+        }
+      ]
+    },
+    "how-to-connect-a-wallet-to-decentralized-applications-dapps-securely": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Connect a Wallet to Decentralized Applications (dApps) Securely",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "how-to",
+        "wallet",
+        "self-custody",
+        "institutional"
+      ],
+      "primaryKeyword": "How to Connect a Wallet to Decentralized Applications (dApps) Securely",
+      "path": "/how-to/how-to-connect-a-wallet-to-decentralized-applications-dapps-securely",
+      "faq": [
+        {
+          "question": "What is How to Connect a Wallet to Decentralized Applications (dApps) Securely?",
+          "answer": "Use role-separated wallets, verify URLs and chain IDs, read connection and signature prompts, disconnect after sessions, and keep vault keys away from experimental contracts."
+        },
+        {
+          "question": "Is How to Connect a Wallet to Decentralized Applications (dApps) Securely free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Connect a Wallet to Decentralized Applications (dApps) Securely” at https://www.getfreebit.com/how-to/how-to-connect-a-wallet-to-decentralized-applications-dapps-securely."
+        }
+      ]
+    },
+    "how-to-analyze-on-chain-wallet-data-and-metrics-using-tools-like-dune-or-etherscan": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Analyze On-Chain Wallet Data and Metrics Using Tools like Dune or Etherscan",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "how-to",
+        "wallet",
+        "self-custody"
+      ],
+      "primaryKeyword": "How to Analyze On-Chain Wallet Data and Metrics Using Tools like Dune or Ethersc",
+      "path": "/how-to/how-to-analyze-on-chain-wallet-data-and-metrics-using-tools-like-dune-or-etherscan",
+      "faq": [
+        {
+          "question": "What is How to Analyze On-Chain Wallet Data and Metrics Using Tools like Dune or Etherscan?",
+          "answer": "Build an explorer-first workflow for a single address, then escalate to Dune-style dashboards for protocol metrics—while treating labels and third-party charts as hypotheses to verify."
+        },
+        {
+          "question": "Is How to Analyze On-Chain Wallet Data and Metrics Using Tools like Dune or Etherscan free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Analyze On-Chain Wallet Data and Metrics Using Tools like Dune or Etherscan” at https://www.getfreebit.com/how-to/how-to-analyze-on-chain-wallet-data-and-metrics-using-tools-like-dune-or-etherscan."
+        }
+      ]
+    },
+    "how-to-participate-in-dao-governance-proposals-and-on-chain-voting": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "How to Participate in DAO Governance Proposals and On-Chain Voting",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "how-to",
+        "DAO"
+      ],
+      "primaryKeyword": "How to Participate in DAO Governance Proposals and On-Chain Voting",
+      "path": "/how-to/how-to-participate-in-dao-governance-proposals-and-on-chain-voting",
+      "faq": [
+        {
+          "question": "What is How to Participate in DAO Governance Proposals and On-Chain Voting?",
+          "answer": "Obtain voting power honestly, research proposals on official forums, cast on-chain or delegated votes with simulation-aware signing, and document conflicts without treating governance as free money."
+        },
+        {
+          "question": "Is How to Participate in DAO Governance Proposals and On-Chain Voting free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “How to Participate in DAO Governance Proposals and On-Chain Voting” at https://www.getfreebit.com/how-to/how-to-participate-in-dao-governance-proposals-and-on-chain-voting."
+        }
+      ]
+    },
+    "sec-proposes-regulation-crypto-assets-framework": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "SEC Proposes 'Regulation Crypto Assets' Framework to Standardize Digital Securities Rules",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "news",
+        "institutional"
+      ],
+      "primaryKeyword": "SEC Proposes 'Regulation Crypto Assets' Framework to Standardize Digital Securit",
+      "path": "/news/sec-proposes-regulation-crypto-assets-framework",
+      "faq": [
+        {
+          "question": "What is SEC Proposes 'Regulation Crypto Assets' Framework to Standardize Digital Securities Rules?",
+          "answer": "Analysis of the SEC’s August 2026 Regulation Crypto Assets proposal—what tailored offering exemptions, disclosures, and investment-contract safe harbors would mean for builders and investors, and what to watch as comments close."
+        },
+        {
+          "question": "Is SEC Proposes 'Regulation Crypto Assets' Framework to Standardize Digital Securities Rules free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “SEC Proposes 'Regulation Crypto Assets' Framework to Standardize Digital Securities Rules” at https://www.getfreebit.com/news/sec-proposes-regulation-crypto-assets-framework."
+        }
+      ]
+    },
+    "mastercard-acquires-crypto-infrastructure-provider-bvnk": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Mastercard Acquires Crypto Infrastructure Provider BVNK in Major Institutional Expansion",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "news",
+        "institutional"
+      ],
+      "primaryKeyword": "Mastercard Acquires Crypto Infrastructure Provider BVNK in Major Institutional E",
+      "path": "/news/mastercard-acquires-crypto-infrastructure-provider-bvnk",
+      "faq": [
+        {
+          "question": "What is Mastercard Acquires Crypto Infrastructure Provider BVNK in Major Institutional Expansion?",
+          "answer": "Mastercard completed its BVNK acquisition on August 3, 2026, in a deal valued at up to about $1.8 billion. What the stablecoin and fiat-on-chain rails mean for B2B payments and Visa competition—without the hype."
+        },
+        {
+          "question": "Is Mastercard Acquires Crypto Infrastructure Provider BVNK in Major Institutional Expansion free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Mastercard Acquires Crypto Infrastructure Provider BVNK in Major Institutional Expansion” at https://www.getfreebit.com/news/mastercard-acquires-crypto-infrastructure-provider-bvnk."
+        }
+      ]
+    },
+    "us-lawmakers-push-forward-market-structure-reform-clarity-act": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "U.S. Lawmakers Push Forward on Broader Market Structure Reform via CLARITY Act",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "news",
+        "institutional"
+      ],
+      "primaryKeyword": "U.S. Lawmakers Push Forward on Broader Market Structure Reform via CLARITY Act",
+      "path": "/news/us-lawmakers-push-forward-market-structure-reform-clarity-act",
+      "faq": [
+        {
+          "question": "What is U.S. Lawmakers Push Forward on Broader Market Structure Reform via CLARITY Act?",
+          "answer": "The Digital Asset Market Clarity Act remains a central U.S. market-structure fight in 2026. What SEC–CFTC lane-drawing tries to fix for spot crypto and registration—and why legislative status can still stall."
+        },
+        {
+          "question": "Is U.S. Lawmakers Push Forward on Broader Market Structure Reform via CLARITY Act free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “U.S. Lawmakers Push Forward on Broader Market Structure Reform via CLARITY Act” at https://www.getfreebit.com/news/us-lawmakers-push-forward-market-structure-reform-clarity-act."
+        }
+      ]
+    },
+    "tokenized-real-world-financial-assets-surge-past-19-billion": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Tokenized Real-World Financial Assets Surge Past $19 Billion Target as Banks Onboard",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "news"
+      ],
+      "primaryKeyword": "Tokenized Real-World Financial Assets Surge Past $19 Billion Target as Banks Onb",
+      "path": "/news/tokenized-real-world-financial-assets-surge-past-19-billion",
+      "faq": [
+        {
+          "question": "What is Tokenized Real-World Financial Assets Surge Past $19 Billion Target as Banks Onboard?",
+          "answer": "Industry trackers show tokenized RWAs clearing earlier $19B milestones and moving into the low tens of billions by mid-2026. Methodology caveats, bank onboarding, and oracle–legal–redemption risks explained."
+        },
+        {
+          "question": "Is Tokenized Real-World Financial Assets Surge Past $19 Billion Target as Banks Onboard free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Tokenized Real-World Financial Assets Surge Past $19 Billion Target as Banks Onboard” at https://www.getfreebit.com/news/tokenized-real-world-financial-assets-surge-past-19-billion."
+        }
+      ]
+    },
+    "major-defi-protocols-move-toward-fee-sharing-and-value-accrual": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Major DeFi Protocols Move Toward Fee-Sharing Initiatives and Direct Value Accrual Models",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "news",
+        "DeFi",
+        "institutional"
+      ],
+      "primaryKeyword": "Major DeFi Protocols Move Toward Fee-Sharing Initiatives and Direct Value Accrua",
+      "path": "/news/major-defi-protocols-move-toward-fee-sharing-and-value-accrual",
+      "faq": [
+        {
+          "question": "What is Major DeFi Protocols Move Toward Fee-Sharing Initiatives and Direct Value Accrual Models?",
+          "answer": "Fee switches, buybacks, burns, and builder codes are reshaping DeFi token economics in 2026. How the mechanics work, what governance trades off, and why “yield” promises still deserve skepticism."
+        },
+        {
+          "question": "Is Major DeFi Protocols Move Toward Fee-Sharing Initiatives and Direct Value Accrual Models free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Major DeFi Protocols Move Toward Fee-Sharing Initiatives and Direct Value Accrual Models” at https://www.getfreebit.com/news/major-defi-protocols-move-toward-fee-sharing-and-value-accrual."
         }
       ]
     }

@@ -446,7 +446,7 @@ export function buildHowToNode(
     tool: [
       {
         "@type": "HowToTool",
-        name: howTo.tool || `${siteConfig.name} pronunciation search`,
+        name: howTo.tool || `${siteConfig.name} crypto guides`,
       },
     ],
     step: steps.map((tpl, index) => ({

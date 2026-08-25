@@ -17,7 +17,7 @@
     "assert:seo-titles": "node scripts/assert-seo-titles.mjs",
     "ads:txt": "node scripts/fetch-ads-txt.mjs",
     "assert:faq": "node scripts/assert-faq-schema.mjs",
-    "dataset:generate": "python scripts/generate_dataset.py --mode template --seed data/seeds/pages.example.json",
+    "dataset:generate": "npx tsx scripts/generate-article-seed.mts && python scripts/generate_dataset.py --mode template --seed data/seeds/getfreebit-articles.json",
     "serve": "node scripts/serve.mjs"
   },
   "dependencies": {
