@@ -113,3 +113,50 @@ body {
     bottom: 4.75rem;
   }
 }
+
+/* Inline glossary terms in guides — definition on hover/focus */
+.glossary-term {
+  position: relative;
+  color: var(--voice-dark);
+  font-weight: 500;
+  border-bottom: 1px dotted color-mix(in srgb, var(--voice) 70%, transparent);
+  cursor: help;
+}
+
+.glossary-term:hover,
+.glossary-term:focus-visible {
+  color: var(--voice);
+  outline: none;
+}
+
+.glossary-term::after {
+  content: attr(data-definition);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 0.45rem);
+  z-index: 30;
+  width: max(12rem, min(18rem, 70vw));
+  transform: translateX(-50%) translateY(0.15rem);
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--paper-line);
+  border-radius: 0.5rem;
+  background: var(--paper-raised);
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: left;
+  box-shadow: 0 12px 28px -18px color-mix(in srgb, var(--ink) 50%, transparent);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.12s ease, transform 0.12s ease, visibility 0.12s;
+}
+
+.glossary-term:hover::after,
+.glossary-term:focus-visible::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+

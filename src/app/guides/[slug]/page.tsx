@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GuidePrimaryTool } from "@/components/GuidePrimaryTool";
+import { GuideRichText } from "@/components/GuideRichText";
 import { HeadMetadata } from "@/components/HeadMetadata";
 import { RelatedToolsConversions } from "@/components/RelatedToolsConversions";
 import { SiteShell, Prose } from "@/components/SiteChrome";
@@ -96,7 +97,7 @@ export default async function GuideSlugPage({ params }: PageProps) {
             <section key={section.heading}>
               <h2>{section.heading}</h2>
               {section.paragraphs.map((paragraph) => (
-                <p key={paragraph.slice(0, 48)}>{paragraph}</p>
+                <GuideRichText key={paragraph.slice(0, 48)} text={paragraph} />
               ))}
             </section>
           ))}
@@ -110,7 +111,7 @@ export default async function GuideSlugPage({ params }: PageProps) {
           </Link>
           {" · "}
           <Link href="/" className="underline underline-offset-4 hover:text-voice-dark">
-            Pronunciation search
+            Home
           </Link>
         </p>
       </article>

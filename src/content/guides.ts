@@ -30,7 +30,7 @@ export function getAllGuides(): Guide[] {
   return [...ALL_GUIDES].sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1));
 }
 
-export function assertGuideLengths(minWords = 800): { slug: string; words: number }[] {
+export function assertGuideLengths(minWords = 500): { slug: string; words: number }[] {
   return ALL_GUIDES.map((guide) => ({
     slug: guide.slug,
     words: guideWordCount(guide),

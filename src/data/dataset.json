@@ -2,8 +2,8 @@
   "version": 2,
   "schema": {
     "softwareApplication": {
-      "applicationCategory": "MultimediaApplication",
-      "applicationSubCategory": "Pronunciation",
+      "applicationCategory": "WebApplication",
+      "applicationSubCategory": "Crypto",
       "operatingSystem": "Web",
       "softwareVersion": "1.0",
       "offers": {
@@ -11,40 +11,39 @@
         "priceCurrency": "USD"
       },
       "publisher": {
-        "name": "Your Site",
-        "url": "https://www.example.com"
+        "name": "GetFreeBit",
+        "url": "https://www.getfreebit.com"
       },
       "featureList": [
-        "IPA phonetic spelling",
-        "Click-to-play pronunciation audio",
-        "US and UK accent labels",
-        "Syllable guidance"
+        "crypto tools and calculators",
+        "Free reference pages",
+        "FAQ and HowTo structured data"
       ],
       "parameterDescriptions": {
-        "name": "App or word/phrase name shown on the programmatic page",
-        "operatingSystem": "Deployment surface — always Web for Your Site",
+        "name": "App or page name shown on the programmatic page",
+        "operatingSystem": "Deployment surface — always Web",
         "applicationCategory": "Schema.org SoftwareApplication category",
         "inLanguage": "BCP-47 language of the page content"
       }
     },
     "webPage": {
       "isPartOf": {
-        "name": "Your Site",
-        "url": "https://www.example.com"
+        "name": "GetFreeBit",
+        "url": "https://www.getfreebit.com"
       },
       "parameterDescriptions": {
-        "name": "WebPage name matching the guide or word title",
+        "name": "WebPage name matching the guide or tool title",
         "description": "Meta description used for search snippets",
         "breadcrumb": "BreadcrumbList id referenced from this WebPage"
       }
     },
     "breadcrumb": {
-      "homeName": "Your Site",
+      "homeName": "GetFreeBit",
       "homePath": "/",
       "guidesName": "Guides",
       "guidesPath": "/guides",
-      "wordsName": "Words",
-      "wordsPath": "/words"
+      "wordsName": "Tools",
+      "wordsPath": "/tools"
     },
     "howTo": {
       "totalTime": "PT2M",
@@ -52,28 +51,24 @@
         "currency": "USD",
         "value": "0"
       },
-      "tool": "Your Site pronunciation search",
+      "tool": "GetFreeBit crypto tools",
       "stepTemplates": [
         {
-          "name": "Open the pronunciation page",
-          "text": "Open the Your Site page for “{{name}}” on {{url}}."
+          "name": "Open the page",
+          "text": "Open the GetFreeBit page for “{{name}}” on {{url}}."
         },
         {
-          "name": "Read the phonetic spelling",
-          "text": "Read the IPA / phonetic spelling shown for “{{name}}” so you know which sounds to aim for."
+          "name": "Review the data",
+          "text": "Read the key figures, definitions, or steps shown for “{{name}}”."
         },
         {
-          "name": "Play the audio",
-          "text": "Click Play to hear free reference audio for “{{name}}” in the labeled accent."
-        },
-        {
-          "name": "Repeat and practice",
-          "text": "Say “{{name}}” aloud, matching stress and vowels. Replay Slow if available until it feels natural."
+          "name": "Apply the result",
+          "text": "Use the output or checklist for “{{name}}” in your workflow."
         }
       ]
     },
     "defaults": {
-      "language": "English Voiceover",
+      "language": "English",
       "accent": "neutral",
       "inLanguage": "en"
     },
@@ -84,37 +79,44 @@
     "socialCard": {
       "width": 1200,
       "height": 630,
-      "brandName": "Your Site",
-      "tagline": "Your site tagline goes here",
-      "background": "#0a524c",
-      "surface": "#0d6e66",
-      "accent": "#e8f4f2",
-      "ink": "#fffaf3",
+      "brandName": "GetFreeBit",
+      "tagline": "Earn free crypto. Optimize yield. Navigate Web3 safely.",
+      "background": "#9a6418",
+      "surface": "#c9842a",
+      "accent": "#f3e6d0",
+      "ink": "#ffffff",
       "muted": "#b7d4cf",
       "twitterCard": "summary_large_image",
       "endpointPath": "/og"
     },
     "titleGenerator": {
       "maxLength": 60,
-      "brand": "Your Site",
+      "brand": "GetFreeBit",
       "brandSeparator": " · ",
       "actionVerbs": {
-        "word": ["Instant Audio", "Try Free", "Hear Free", "Free IPA"],
-        "guide": ["Try Free", "Free Guide", "Instant Tips"],
-        "site": ["Try Free", "Instant Search", "Free Audio"]
+        "word": [
+          "Try Free",
+          "Instant",
+          "Free Tool"
+        ],
+        "guide": [
+          "Free Guide",
+          "Try Free",
+          "Instant Tips"
+        ],
+        "site": [
+          "Try Free",
+          "Instant Search"
+        ]
       },
       "templates": {
         "word": [
-          "{name} · {hook} · {accents} {yearShort}",
-          "Say {name} · {hook} {yearShort}",
-          "Pronounce {name} · {hook} · {price}",
-          "{keyword} · {hook} · {spec}"
+          "{name} · {hook} · {yearShort}",
+          "{keyword} · {hook} · {price}"
         ],
         "guide": [
           "{keyword} · {hook} {yearShort}",
-          "{name} · {hook} · {readMin}min",
-          "{keyword} Guide · {hook} {yearShort}",
-          "{name} · {hook} · {price}"
+          "{name} · {hook} · {readMin}min"
         ],
         "site": [
           "{name} · {hook} {yearShort}",
@@ -126,307 +128,732 @@
       "minQuestions": 2,
       "maxQuestions": 3,
       "categoryLabels": {
-        "speech-tech": "speech technology",
-        "accents-localization": "accents and localization",
-        "learning-teaching": "language learning",
-        "publishing-ops": "publishing and SEO"
+        "tools": "tools and calculators",
+        "guides": "guides",
+        "crypto": "crypto and markets"
       },
       "word": [
         {
-          "question": "How do you pronounce {{name}}?",
-          "answer": "Open the Your Site page for “{{name}}” at {{url}}. Read the IPA phonetic spelling{{phoneticSuffix}} and click Play for free US or UK reference audio. Dictionary clips play first when available; otherwise Your Site uses click-gated text-to-speech that caches after your first play."
+          "question": "What is {{name}}?",
+          "answer": "Open the GetFreeBit page for “{{name}}” at {{url}} for a free overview and related tools."
         },
         {
-          "question": "Is {{name}} pronunciation audio free on Your Site?",
-          "answer": "Yes. Your Site provides {{priceLabel}} pronunciation lookup for “{{name}}” in {{year}}. IPA text is server-rendered in HTML, and audio generates only after you click Play—keeping pages fast while staying free for learners and creators."
-        },
-        {
-          "question": "Does Your Site show US and UK accents for {{name}}?",
-          "answer": "When clips exist, Your Site labels US and UK audio for “{{name}}”. You can replay at a slower rate to practice stress and vowels{{syllableSuffix}}. Both accents help learners and localization teams align on a consistent spoken form."
+          "question": "Is {{name}} free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit provides free reference pages for “{{name}}” with structured FAQ markup."
         }
       ],
       "guide": [
         {
           "question": "What is {{primaryKeyword}}?",
-          "answer": "“{{primaryKeyword}}” is the focus of Your Site’s guide “{{name}}.” The article explains practical pronunciation, speech, and audio concepts for {{parentCategoryLabel}}—written for learners, teachers, marketers, and engineers who need clearer spoken-language standards."
+          "answer": "“{{primaryKeyword}}” is covered in GetFreeBit’s guide “{{name}}.”"
         },
         {
           "question": "Who should read the {{name}} guide?",
-          "answer": "This guide suits teams working on {{language}} voice content and {{parentCategoryLabel}} workflows. Expect actionable advice on accents, intelligibility, localization, or speech tech—not generic definitions—so you can improve real audio decisions."
-        },
-        {
-          "question": "How do I practice terms from this {{primaryKeyword}} guide?",
-          "answer": "Read the guide at {{url}}, note any tricky terms, then look them up in Your Site’s {{priceLabel}} pronunciation search. Each word page shows IPA, syllable cues, and click-to-play US/UK audio so you can hear terminology aloud while studying the topic."
+          "answer": "This guide suits readers exploring {{parentCategoryLabel}} topics and practical next steps."
         }
       ]
     }
   },
   "pages": {
-    "how-ai-speech-synthesis-works": {
-      "language": "English Voiceover",
+    "faucetpay-setup-and-payout-routing": {
+      "language": "English",
       "accent": "neutral",
-      "name": "How AI Speech Synthesis Works",
-      "applicationCategory": "MultimediaApplication",
+      "name": "FaucetPay Setup and Payout Routing",
+      "applicationCategory": "WebApplication",
       "inLanguage": "en",
-      "parentCategory": "speech-tech",
-      "tags": ["tts", "synthesis", "vocoder", "ai-audio", "caching"],
-      "primaryKeyword": "AI speech synthesis",
-      "path": "/guides/how-ai-speech-synthesis-works",
+      "parentCategory": "faucets-micro",
+      "tags": [
+        "faucet",
+        "FaucetPay",
+        "micro-wallet"
+      ],
+      "primaryKeyword": "FaucetPay setup",
+      "path": "/guides/faucetpay-setup-and-payout-routing",
       "faq": [
         {
-          "question": "How does AI speech synthesis work in simple terms?",
-          "answer": "AI speech synthesis converts text into audible speech using models trained on recorded voice data. Modern systems predict acoustic features or waveforms, then a vocoder renders the final clip. Your Site uses synthesis only after you click Play, then caches audio so repeat listens stay fast and free."
+          "question": "What is FaucetPay Setup and Payout Routing?",
+          "answer": "How to set up FaucetPay, route faucet payouts, and sweep to self-custody without losing dust to fees."
         },
         {
-          "question": "Is AI-generated pronunciation audio free on Your Site?",
-          "answer": "Your Site prioritizes free dictionary clips when they exist. If no clip is available, click-gated TTS generates audio on demand and caches it—avoiding cost on every page view while keeping playback free for users in 2026."
+          "question": "Is FaucetPay Setup and Payout Routing free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “FaucetPay Setup and Payout Routing” at https://www.getfreebit.com/guides/faucetpay-setup-and-payout-routing."
         }
       ]
     },
-    "linguistic-accents-in-global-marketing": {
-      "language": "English Voiceover",
-      "accent": "multi",
-      "name": "Linguistic Accents in Global Marketing",
-      "applicationCategory": "MultimediaApplication",
-      "inLanguage": "en",
-      "parentCategory": "accents-localization",
-      "tags": ["accents", "marketing", "localization", "brand-voice", "us-uk"],
-      "primaryKeyword": "accents in global marketing",
-      "path": "/guides/linguistic-accents-in-global-marketing"
-    },
-    "guide-to-audio-localization": {
-      "language": "Japanese",
-      "accent": "standard",
-      "name": "Guide to Audio Localization",
-      "applicationCategory": "MultimediaApplication",
-      "inLanguage": "en",
-      "parentCategory": "accents-localization",
-      "tags": ["localization", "dubbing", "voices", "multilingual", "marketing"],
-      "primaryKeyword": "audio localization guide",
-      "path": "/guides/guide-to-audio-localization"
-    },
-    "how-to-read-ipa-phonetic-symbols": {
-      "language": "English Voiceover",
-      "accent": "ipa",
-      "name": "How to Read IPA Phonetic Symbols",
-      "applicationCategory": "MultimediaApplication",
-      "inLanguage": "en",
-      "parentCategory": "learning-teaching",
-      "tags": ["ipa", "phonetics", "learners", "syllables", "practice"],
-      "primaryKeyword": "read IPA phonetic symbols",
-      "path": "/guides/how-to-read-ipa-phonetic-symbols"
-    },
-    "us-vs-uk-pronunciation-differences": {
-      "language": "English Voiceover",
-      "accent": "us-uk",
-      "name": "US vs UK Pronunciation Differences",
-      "applicationCategory": "MultimediaApplication",
-      "inLanguage": "en",
-      "parentCategory": "accents-localization",
-      "tags": ["us-uk", "accents", "pronunciation", "learners", "ipa"],
-      "primaryKeyword": "US vs UK pronunciation",
-      "path": "/guides/us-vs-uk-pronunciation-differences"
-    },
-    "why-pronunciation-matters-for-learners": {
-      "language": "English Voiceover",
-      "accent": "learner",
-      "name": "Why Pronunciation Matters for Learners",
-      "applicationCategory": "MultimediaApplication",
-      "inLanguage": "en",
-      "parentCategory": "learning-teaching",
-      "tags": ["learners", "practice", "classroom", "intelligibility", "esl"],
-      "primaryKeyword": "why pronunciation matters for learners",
-      "path": "/guides/why-pronunciation-matters-for-learners"
-    },
-    "building-a-pronunciation-practice-routine": {
-      "language": "English Voiceover",
-      "accent": "practice",
-      "name": "Building a Pronunciation Practice Routine",
-      "applicationCategory": "MultimediaApplication",
-      "inLanguage": "en",
-      "parentCategory": "learning-teaching",
-      "tags": ["practice", "learners", "routine", "syllables", "classroom"],
-      "primaryKeyword": "pronunciation practice routine",
-      "path": "/guides/building-a-pronunciation-practice-routine"
-    },
-    "speech-to-text-vs-text-to-speech": {
-      "language": "English Voiceover",
+    "evaluating-crypto-faucets-time-vs-reward": {
+      "language": "English",
       "accent": "neutral",
-      "name": "Speech-to-Text vs Text-to-Speech",
-      "applicationCategory": "MultimediaApplication",
+      "name": "Evaluating Crypto Faucets: Time vs Reward",
+      "applicationCategory": "WebApplication",
       "inLanguage": "en",
-      "parentCategory": "speech-tech",
-      "tags": ["stt", "tts", "synthesis", "ai-audio", "product"],
-      "primaryKeyword": "speech-to-text vs text-to-speech",
-      "path": "/guides/speech-to-text-vs-text-to-speech"
+      "parentCategory": "faucets-micro",
+      "tags": [
+        "faucet",
+        "ROI",
+        "micro-earnings"
+      ],
+      "primaryKeyword": "crypto faucet ROI",
+      "path": "/guides/evaluating-crypto-faucets-time-vs-reward",
+      "faq": [
+        {
+          "question": "What is Evaluating Crypto Faucets: Time vs Reward?",
+          "answer": "A practical framework for measuring faucet payouts against your time, captchas, and withdrawal minimums."
+        },
+        {
+          "question": "Is Evaluating Crypto Faucets: Time vs Reward free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Evaluating Crypto Faucets: Time vs Reward” at https://www.getfreebit.com/guides/evaluating-crypto-faucets-time-vs-reward."
+        }
+      ]
     },
-    "caching-audio-for-cost-efficient-tts": {
-      "language": "English Voiceover",
+    "offerwalls-and-micro-earning-without-scams": {
+      "language": "English",
       "accent": "neutral",
-      "name": "Caching Audio for Cost-Efficient TTS",
-      "applicationCategory": "MultimediaApplication",
+      "name": "Offerwalls and Micro-Earning Without Scams",
+      "applicationCategory": "WebApplication",
       "inLanguage": "en",
-      "parentCategory": "speech-tech",
-      "tags": ["caching", "tts", "cost", "click-gating", "seo"],
-      "primaryKeyword": "caching audio for cost-efficient TTS",
-      "path": "/guides/caching-audio-for-cost-efficient-tts"
+      "parentCategory": "faucets-micro",
+      "tags": [
+        "offerwall",
+        "Cointiply",
+        "surveys"
+      ],
+      "primaryKeyword": "crypto offerwall",
+      "path": "/guides/offerwalls-and-micro-earning-without-scams",
+      "faq": [
+        {
+          "question": "What is Offerwalls and Micro-Earning Without Scams?",
+          "answer": "How offerwalls pay, which tasks reverse, and how to avoid account bans and phishing funnels."
+        },
+        {
+          "question": "Is Offerwalls and Micro-Earning Without Scams free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Offerwalls and Micro-Earning Without Scams” at https://www.getfreebit.com/guides/offerwalls-and-micro-earning-without-scams."
+        }
+      ]
     },
-    "choosing-voices-for-brand-consistency": {
-      "language": "English Voiceover",
-      "accent": "brand",
-      "name": "Choosing Voices for Brand Consistency",
-      "applicationCategory": "MultimediaApplication",
-      "inLanguage": "en",
-      "parentCategory": "accents-localization",
-      "tags": ["brand-voice", "voices", "marketing", "tts", "localization"],
-      "primaryKeyword": "voices for brand consistency",
-      "path": "/guides/choosing-voices-for-brand-consistency"
-    },
-    "subtitles-captions-and-dubbing-compared": {
-      "language": "Japanese",
-      "accent": "dubbing",
-      "name": "Subtitles, Captions, and Dubbing Compared",
-      "applicationCategory": "MultimediaApplication",
-      "inLanguage": "en",
-      "parentCategory": "accents-localization",
-      "tags": ["dubbing", "captions", "localization", "accessibility", "multilingual"],
-      "primaryKeyword": "subtitles captions and dubbing compared",
-      "path": "/guides/subtitles-captions-and-dubbing-compared"
-    },
-    "teaching-pronunciation-in-the-classroom": {
-      "language": "English Voiceover",
-      "accent": "classroom",
-      "name": "Teaching Pronunciation in the Classroom",
-      "applicationCategory": "MultimediaApplication",
-      "inLanguage": "en",
-      "parentCategory": "learning-teaching",
-      "tags": ["classroom", "teaching", "learners", "practice", "esl"],
-      "primaryKeyword": "teaching pronunciation in the classroom",
-      "path": "/guides/teaching-pronunciation-in-the-classroom"
-    },
-    "commonly-mispronounced-english-words": {
-      "language": "English Voiceover",
-      "accent": "us",
-      "name": "Commonly Mispronounced English Words",
-      "applicationCategory": "MultimediaApplication",
-      "inLanguage": "en",
-      "parentCategory": "learning-teaching",
-      "tags": ["mispronounced", "learners", "us-uk", "ipa", "practice"],
-      "primaryKeyword": "commonly mispronounced English words",
-      "path": "/guides/commonly-mispronounced-english-words"
-    },
-    "science-of-syllables-and-stress": {
-      "language": "English Voiceover",
-      "accent": "linguistic",
-      "name": "Science of Syllables and Stress",
-      "applicationCategory": "MultimediaApplication",
-      "inLanguage": "en",
-      "parentCategory": "learning-teaching",
-      "tags": ["syllables", "stress", "ipa", "phonetics", "learners"],
-      "primaryKeyword": "syllables and word stress",
-      "path": "/guides/science-of-syllables-and-stress"
-    },
-    "accessibility-audio-for-dyslexia-and-esl": {
-      "language": "English Voiceover",
-      "accent": "accessible",
-      "name": "Accessibility Audio for Dyslexia and ESL",
-      "applicationCategory": "MultimediaApplication",
-      "inLanguage": "en",
-      "parentCategory": "learning-teaching",
-      "tags": ["accessibility", "esl", "learners", "audio", "captions"],
-      "primaryKeyword": "accessibility audio for dyslexia and ESL",
-      "path": "/guides/accessibility-audio-for-dyslexia-and-esl"
-    },
-    "on-demand-tts-and-click-gating": {
-      "language": "English Voiceover",
+    "freebitcoin-style-faucets-risk-math": {
+      "language": "English",
       "accent": "neutral",
-      "name": "On-Demand TTS and Click Gating",
-      "applicationCategory": "MultimediaApplication",
+      "name": "FreeBitcoin-Style Faucets: Risk Math",
+      "applicationCategory": "WebApplication",
       "inLanguage": "en",
-      "parentCategory": "speech-tech",
-      "tags": ["click-gating", "tts", "caching", "cost", "product"],
-      "primaryKeyword": "on-demand TTS and click gating",
-      "path": "/guides/on-demand-tts-and-click-gating"
+      "parentCategory": "faucets-micro",
+      "tags": [
+        "faucet",
+        "lottery",
+        "gambling"
+      ],
+      "primaryKeyword": "FreeBitco.in risks",
+      "path": "/guides/freebitcoin-style-faucets-risk-math",
+      "faq": [
+        {
+          "question": "What is FreeBitcoin-Style Faucets: Risk Math?",
+          "answer": "Separate hourly faucet drip from multiply/lottery EV so you do not mistake gambling for earning."
+        },
+        {
+          "question": "Is FreeBitcoin-Style Faucets: Risk Math free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “FreeBitcoin-Style Faucets: Risk Math” at https://www.getfreebit.com/guides/freebitcoin-style-faucets-risk-math."
+        }
+      ]
     },
-    "programmatic-seo-for-dictionary-sites": {
-      "language": "English Voiceover",
-      "accent": "seo",
-      "name": "Programmatic SEO for Dictionary Sites",
-      "applicationCategory": "MultimediaApplication",
+    "testnet-wallet-hygiene-for-airdrop-farming": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Testnet Wallet Hygiene for Airdrop Farming",
+      "applicationCategory": "WebApplication",
       "inLanguage": "en",
-      "parentCategory": "publishing-ops",
-      "tags": ["seo", "programmatic", "caching", "internal-links", "privacy"],
-      "primaryKeyword": "programmatic SEO for dictionary sites",
-      "path": "/guides/programmatic-seo-for-dictionary-sites"
+      "parentCategory": "airdrop-testnet",
+      "tags": [
+        "testnet",
+        "airdrop",
+        "Sybil"
+      ],
+      "primaryKeyword": "testnet wallet hygiene",
+      "path": "/guides/testnet-wallet-hygiene-for-airdrop-farming",
+      "faq": [
+        {
+          "question": "What is Testnet Wallet Hygiene for Airdrop Farming?",
+          "answer": "Separate burn wallets, never reuse main seeds, and practice protocol flows without contaminating mainnet keys."
+        },
+        {
+          "question": "Is Testnet Wallet Hygiene for Airdrop Farming free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Testnet Wallet Hygiene for Airdrop Farming” at https://www.getfreebit.com/guides/testnet-wallet-hygiene-for-airdrop-farming."
+        }
+      ]
     },
-    "privacy-cookies-and-responsible-ad-tech": {
-      "language": "English Voiceover",
-      "accent": "policy",
-      "name": "Privacy, Cookies, and Responsible Ad Tech",
-      "applicationCategory": "MultimediaApplication",
+    "airdrop-eligibility-checklist": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Airdrop Eligibility Checklist",
+      "applicationCategory": "WebApplication",
       "inLanguage": "en",
-      "parentCategory": "publishing-ops",
-      "tags": ["privacy", "cookies", "ads", "seo", "policy"],
-      "primaryKeyword": "privacy cookies and responsible ad tech",
-      "path": "/guides/privacy-cookies-and-responsible-ad-tech"
-    }
-  },
-  "toolAffiliates": {
-    "Japanese": {
-      "id": "jp-voice-toolkit",
-      "label": "Japanese voice toolkit",
-      "title": "Practice Japanese pronunciation with a free trial toolkit",
-      "description": "Matched to this page’s Japanese target language — drills, pitch accent cues, and native reference clips.",
-      "href": "https://www.example.com/go/japanese-voice-toolkit?ref=site-guide",
-      "cta": "Open Japanese toolkit"
+      "parentCategory": "airdrop-testnet",
+      "tags": [
+        "airdrop",
+        "points",
+        "eligibility"
+      ],
+      "primaryKeyword": "airdrop eligibility",
+      "path": "/guides/airdrop-eligibility-checklist",
+      "faq": [
+        {
+          "question": "What is Airdrop Eligibility Checklist?",
+          "answer": "A criteria checklist for on-chain usage, funding trails, and Sybil filters before you spend gas farming."
+        },
+        {
+          "question": "Is Airdrop Eligibility Checklist free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Airdrop Eligibility Checklist” at https://www.getfreebit.com/guides/airdrop-eligibility-checklist."
+        }
+      ]
     },
-    "English Voiceover": {
-      "id": "en-voiceover-studio",
-      "label": "English voiceover studio",
-      "title": "English voiceover tools for clear US & UK reads",
-      "description": "Matched to this page’s English Voiceover target — studio voices, accent labels, and click-gated TTS caching patterns.",
-      "href": "https://www.example.com/go/english-voiceover-studio?ref=site-guide",
-      "cta": "Try English studio"
+    "gas-optimization-for-farming": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Gas Optimization for Farming",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "airdrop-testnet",
+      "tags": [
+        "gas",
+        "L2",
+        "farming"
+      ],
+      "primaryKeyword": "gas optimization airdrop",
+      "path": "/guides/gas-optimization-for-farming",
+      "faq": [
+        {
+          "question": "What is Gas Optimization for Farming?",
+          "answer": "Batch actions on L2s, avoid peak gwei, and know when farming costs exceed expected airdrop value."
+        },
+        {
+          "question": "Is Gas Optimization for Farming free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Gas Optimization for Farming” at https://www.getfreebit.com/guides/gas-optimization-for-farming."
+        }
+      ]
     },
-    "Spanish": {
-      "id": "es-pronunciation-lab",
-      "label": "Spanish pronunciation lab",
-      "title": "Spanish pronunciation lab for learners and localizers",
-      "description": "Target-language match for Spanish pages — stress drills and regional accent notes.",
-      "href": "https://www.example.com/go/spanish-pronunciation-lab?ref=site-guide",
-      "cta": "Open Spanish lab"
+    "sybil-resistance-what-farmers-miss": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Sybil Resistance: What Farmers Miss",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "airdrop-testnet",
+      "tags": [
+        "Sybil",
+        "airdrop",
+        "clustering"
+      ],
+      "primaryKeyword": "Sybil resistance airdrops",
+      "path": "/guides/sybil-resistance-what-farmers-miss",
+      "faq": [
+        {
+          "question": "What is Sybil Resistance: What Farmers Miss?",
+          "answer": "How protocols cluster wallets and why copy-paste farms often earn less than one organic account."
+        },
+        {
+          "question": "Is Sybil Resistance: What Farmers Miss free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Sybil Resistance: What Farmers Miss” at https://www.getfreebit.com/guides/sybil-resistance-what-farmers-miss."
+        }
+      ]
     },
-    "Korean": {
-      "id": "ko-speech-coach",
-      "label": "Korean speech coach",
-      "title": "Korean speech coach with sound-batch practice",
-      "description": "Mapped for Korean target language pages — hangul sound batches and listening loops.",
-      "href": "https://www.example.com/go/korean-speech-coach?ref=site-guide",
-      "cta": "Start Korean coach"
+    "native-eth-staking-vs-liquid-staking": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Native ETH Staking vs Liquid Staking",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "staking",
+        "LSD",
+        "ETH"
+      ],
+      "primaryKeyword": "ETH staking vs LSD",
+      "path": "/guides/native-eth-staking-vs-liquid-staking",
+      "faq": [
+        {
+          "question": "What is Native ETH Staking vs Liquid Staking?",
+          "answer": "Compare 32 ETH validators, staking-as-a-service, and liquid staking derivatives with exit and smart-contract risk."
+        },
+        {
+          "question": "Is Native ETH Staking vs Liquid Staking free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Native ETH Staking vs Liquid Staking” at https://www.getfreebit.com/guides/native-eth-staking-vs-liquid-staking."
+        }
+      ]
     },
-    "Mandarin": {
-      "id": "zh-tone-trainer",
-      "label": "Mandarin tone trainer",
-      "title": "Mandarin tone trainer for clearer speech",
-      "description": "For Mandarin target pages — tone pairs, pinyin anchors, and listen-repeat loops.",
-      "href": "https://www.example.com/go/mandarin-tone-trainer?ref=site-guide",
-      "cta": "Open tone trainer"
+    "lending-yield-and-liquidation-risk": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Lending Yield and Liquidation Risk",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "lending",
+        "liquidation",
+        "health factor"
+      ],
+      "primaryKeyword": "DeFi lending liquidation",
+      "path": "/guides/lending-yield-and-liquidation-risk",
+      "faq": [
+        {
+          "question": "What is Lending Yield and Liquidation Risk?",
+          "answer": "How supply APY is earned, how health factors work, and how to size collateral buffers."
+        },
+        {
+          "question": "Is Lending Yield and Liquidation Risk free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Lending Yield and Liquidation Risk” at https://www.getfreebit.com/guides/lending-yield-and-liquidation-risk."
+        }
+      ]
     },
-    "French": {
-      "id": "fr-liaison-lab",
-      "label": "French liaison lab",
-      "title": "French liaison & pronunciation lab",
-      "description": "For French target language pages — liaison patterns and café-to-boardroom registers.",
-      "href": "https://www.example.com/go/french-liaison-lab?ref=site-guide",
-      "cta": "Open French lab"
+    "impermanent-loss-with-real-numbers": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Impermanent Loss with Real Numbers",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "IL",
+        "AMM",
+        "LP"
+      ],
+      "primaryKeyword": "impermanent loss example",
+      "path": "/guides/impermanent-loss-with-real-numbers",
+      "faq": [
+        {
+          "question": "What is Impermanent Loss with Real Numbers?",
+          "answer": "Walk through AMM inventory math so LP fees are not confused with risk-free yield."
+        },
+        {
+          "question": "Is Impermanent Loss with Real Numbers free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Impermanent Loss with Real Numbers” at https://www.getfreebit.com/guides/impermanent-loss-with-real-numbers."
+        }
+      ]
     },
-    "default": {
-      "id": "site-tools-default",
-      "label": "Your Site tools",
-      "title": "Pronunciation tools for this language",
-      "description": "No dedicated affiliate is mapped for this language yet — explore Your Site guides and word directories instead.",
-      "href": "https://www.example.com/guides",
-      "cta": "Browse guides"
+    "restaking-and-lrt-risk-stack": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Restaking and LRT Risk Stack",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "restaking",
+        "LRT",
+        "slash"
+      ],
+      "primaryKeyword": "restaking LRT risks",
+      "path": "/guides/restaking-and-lrt-risk-stack",
+      "faq": [
+        {
+          "question": "What is Restaking and LRT Risk Stack?",
+          "answer": "Layered risks in restaking and liquid restaking tokens beyond headline APY."
+        },
+        {
+          "question": "Is Restaking and LRT Risk Stack free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Restaking and LRT Risk Stack” at https://www.getfreebit.com/guides/restaking-and-lrt-risk-stack."
+        }
+      ]
+    },
+    "stablecoin-yield-what-youre-actually-paid-for": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Stablecoin Yield: What You Are Paid For",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "stablecoin",
+        "APY",
+        "RWA"
+      ],
+      "primaryKeyword": "stablecoin yield risk",
+      "path": "/guides/stablecoin-yield-what-youre-actually-paid-for",
+      "faq": [
+        {
+          "question": "What is Stablecoin Yield: What You Are Paid For?",
+          "answer": "Map stablecoin rates to credit, peg, and smart-contract risk instead of chasing the top APY."
+        },
+        {
+          "question": "Is Stablecoin Yield: What You Are Paid For free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Stablecoin Yield: What You Are Paid For” at https://www.getfreebit.com/guides/stablecoin-yield-what-youre-actually-paid-for."
+        }
+      ]
+    },
+    "first-cex-account-kyc-2fa-withdrawals": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "First CEX Account: KYC, 2FA, Withdrawals",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "CEX",
+        "KYC",
+        "2FA"
+      ],
+      "primaryKeyword": "crypto exchange KYC 2FA",
+      "path": "/guides/first-cex-account-kyc-2fa-withdrawals",
+      "faq": [
+        {
+          "question": "What is First CEX Account: KYC, 2FA, Withdrawals?",
+          "answer": "Open a Tier-1 exchange safely: identity, authenticator apps, allowlists, and first withdrawals."
+        },
+        {
+          "question": "Is First CEX Account: KYC, 2FA, Withdrawals free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “First CEX Account: KYC, 2FA, Withdrawals” at https://www.getfreebit.com/guides/first-cex-account-kyc-2fa-withdrawals."
+        }
+      ]
+    },
+    "self-custody-withdrawal-checklist": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Self-Custody Withdrawal Checklist",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "self-custody",
+        "withdrawal",
+        "test amount"
+      ],
+      "primaryKeyword": "withdraw to self-custody",
+      "path": "/guides/self-custody-withdrawal-checklist",
+      "faq": [
+        {
+          "question": "What is Self-Custody Withdrawal Checklist?",
+          "answer": "Network selection, memos, test amounts, and explorer confirmation when leaving an exchange."
+        },
+        {
+          "question": "Is Self-Custody Withdrawal Checklist free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Self-Custody Withdrawal Checklist” at https://www.getfreebit.com/guides/self-custody-withdrawal-checklist."
+        }
+      ]
+    },
+    "hardware-wallet-setup-and-passphrase": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Hardware Wallet Setup and Passphrase",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "hardware wallet",
+        "seed phrase",
+        "passphrase"
+      ],
+      "primaryKeyword": "hardware wallet setup",
+      "path": "/guides/hardware-wallet-setup-and-passphrase",
+      "faq": [
+        {
+          "question": "What is Hardware Wallet Setup and Passphrase?",
+          "answer": "Initialize a hardware wallet, verify seed backups, and understand hidden passphrase wallets."
+        },
+        {
+          "question": "Is Hardware Wallet Setup and Passphrase free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Hardware Wallet Setup and Passphrase” at https://www.getfreebit.com/guides/hardware-wallet-setup-and-passphrase."
+        }
+      ]
+    },
+    "crypto-debit-cards-cashback-math": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Crypto Debit Cards: Cashback Math",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "cards",
+        "cashback",
+        "fees"
+      ],
+      "primaryKeyword": "crypto debit card cashback",
+      "path": "/guides/crypto-debit-cards-cashback-math",
+      "faq": [
+        {
+          "question": "What is Crypto Debit Cards: Cashback Math?",
+          "answer": "Compare card cashback to spreads, staking locks, and FX fees before ordering metal."
+        },
+        {
+          "question": "Is Crypto Debit Cards: Cashback Math free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Crypto Debit Cards: Cashback Math” at https://www.getfreebit.com/guides/crypto-debit-cards-cashback-math."
+        }
+      ]
+    },
+    "reading-etherscan-like-an-operator": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Reading Etherscan Like an Operator",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "Etherscan",
+        "block explorer",
+        "approvals"
+      ],
+      "primaryKeyword": "how to read Etherscan",
+      "path": "/guides/reading-etherscan-like-an-operator",
+      "faq": [
+        {
+          "question": "What is Reading Etherscan Like an Operator?",
+          "answer": "Decode txs, internal transfers, token approvals, and contract creators on a block explorer."
+        },
+        {
+          "question": "Is Reading Etherscan Like an Operator free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Reading Etherscan Like an Operator” at https://www.getfreebit.com/guides/reading-etherscan-like-an-operator."
+        }
+      ]
+    },
+    "bridging-without-losing-funds": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Bridging Without Losing Funds",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "airdrop-testnet",
+      "tags": [
+        "bridge",
+        "L2",
+        "canonical"
+      ],
+      "primaryKeyword": "crypto bridge safely",
+      "path": "/guides/bridging-without-losing-funds",
+      "faq": [
+        {
+          "question": "What is Bridging Without Losing Funds?",
+          "answer": "Canonical vs third-party bridges, optimistic withdrawal delays, and address/chain ID checks."
+        },
+        {
+          "question": "Is Bridging Without Losing Funds free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Bridging Without Losing Funds” at https://www.getfreebit.com/guides/bridging-without-losing-funds."
+        }
+      ]
+    },
+    "dex-swaps-slippage-mev-and-approvals": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "DEX Swaps: Slippage, MEV, Approvals",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "staking-yield",
+      "tags": [
+        "DEX",
+        "slippage",
+        "MEV"
+      ],
+      "primaryKeyword": "DEX swap slippage MEV",
+      "path": "/guides/dex-swaps-slippage-mev-and-approvals",
+      "faq": [
+        {
+          "question": "What is DEX Swaps: Slippage, MEV, Approvals?",
+          "answer": "Set slippage, understand sandwiches, and manage ERC-20 approvals when swapping on a DEX."
+        },
+        {
+          "question": "Is DEX Swaps: Slippage, MEV, Approvals free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “DEX Swaps: Slippage, MEV, Approvals” at https://www.getfreebit.com/guides/dex-swaps-slippage-mev-and-approvals."
+        }
+      ]
+    },
+    "spot-vs-perps-funding-and-liquidation": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Spot vs Perps: Funding and Liquidation",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "spot",
+        "perps",
+        "funding"
+      ],
+      "primaryKeyword": "spot vs perpetual futures",
+      "path": "/guides/spot-vs-perps-funding-and-liquidation",
+      "faq": [
+        {
+          "question": "What is Spot vs Perps: Funding and Liquidation?",
+          "answer": "How funding rates and liquidations differ from spot ownership—when leverage is not earning."
+        },
+        {
+          "question": "Is Spot vs Perps: Funding and Liquidation free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Spot vs Perps: Funding and Liquidation” at https://www.getfreebit.com/guides/spot-vs-perps-funding-and-liquidation."
+        }
+      ]
+    },
+    "layer-2-fees-blobs-and-when-to-bridge": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Layer 2 Fees, Blobs, and When to Bridge",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "airdrop-testnet",
+      "tags": [
+        "L2",
+        "blob",
+        "gas"
+      ],
+      "primaryKeyword": "Ethereum L2 fees blobs",
+      "path": "/guides/layer-2-fees-blobs-and-when-to-bridge",
+      "faq": [
+        {
+          "question": "What is Layer 2 Fees, Blobs, and When to Bridge?",
+          "answer": "Why L2 fees fell after blobs and how to decide when bridging to Arbitrum/Base/Optimism pays off."
+        },
+        {
+          "question": "Is Layer 2 Fees, Blobs, and When to Bridge free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Layer 2 Fees, Blobs, and When to Bridge” at https://www.getfreebit.com/guides/layer-2-fees-blobs-and-when-to-bridge."
+        }
+      ]
+    },
+    "spotting-honeypots-and-rug-pulls": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Spotting Honeypots and Rug Pulls",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "honeypot",
+        "rug pull",
+        "token"
+      ],
+      "primaryKeyword": "honeypot rug pull checklist",
+      "path": "/guides/spotting-honeypots-and-rug-pulls",
+      "faq": [
+        {
+          "question": "What is Spotting Honeypots and Rug Pulls?",
+          "answer": "Contract red flags, liquidity locks, and sell tests before touching unverified tokens."
+        },
+        {
+          "question": "Is Spotting Honeypots and Rug Pulls free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Spotting Honeypots and Rug Pulls” at https://www.getfreebit.com/guides/spotting-honeypots-and-rug-pulls."
+        }
+      ]
+    },
+    "crypto-records-for-taxes-without-panic": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Crypto Records for Taxes Without Panic",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "taxes",
+        "lots",
+        "Koinly"
+      ],
+      "primaryKeyword": "crypto tax records",
+      "path": "/guides/crypto-records-for-taxes-without-panic",
+      "faq": [
+        {
+          "question": "What is Crypto Records for Taxes Without Panic?",
+          "answer": "What to export from exchanges and wallets so cost basis is reconstructable later."
+        },
+        {
+          "question": "Is Crypto Records for Taxes Without Panic free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Crypto Records for Taxes Without Panic” at https://www.getfreebit.com/guides/crypto-records-for-taxes-without-panic."
+        }
+      ]
+    },
+    "multisig-basics-for-shared-funds": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Multisig Basics for Shared Funds",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "multisig",
+        "Safe",
+        "treasury"
+      ],
+      "primaryKeyword": "crypto multisig setup",
+      "path": "/guides/multisig-basics-for-shared-funds",
+      "faq": [
+        {
+          "question": "What is Multisig Basics for Shared Funds?",
+          "answer": "When 2-of-3 beats a single hot key for teams, DAOs, and household treasuries."
+        },
+        {
+          "question": "Is Multisig Basics for Shared Funds free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Multisig Basics for Shared Funds” at https://www.getfreebit.com/guides/multisig-basics-for-shared-funds."
+        }
+      ]
+    },
+    "dca-bitcoin-practically": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "DCA Bitcoin Practically",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "DCA",
+        "bitcoin",
+        "spot"
+      ],
+      "primaryKeyword": "bitcoin DCA plan",
+      "path": "/guides/dca-bitcoin-practically",
+      "faq": [
+        {
+          "question": "What is DCA Bitcoin Practically?",
+          "answer": "Build a boring BTC purchase schedule with fee-aware venues and self-custody exits."
+        },
+        {
+          "question": "Is DCA Bitcoin Practically free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “DCA Bitcoin Practically” at https://www.getfreebit.com/guides/dca-bitcoin-practically."
+        }
+      ]
+    },
+    "rpc-phishing-and-transaction-simulation": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "RPC Phishing and Transaction Simulation",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "exchange-onboarding",
+      "tags": [
+        "phishing",
+        "RPC",
+        "simulation"
+      ],
+      "primaryKeyword": "wallet phishing simulation",
+      "path": "/guides/rpc-phishing-and-transaction-simulation",
+      "faq": [
+        {
+          "question": "What is RPC Phishing and Transaction Simulation?",
+          "answer": "Fake dapps, malicious RPCs, and why you must read simulation results before signing."
+        },
+        {
+          "question": "Is RPC Phishing and Transaction Simulation free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “RPC Phishing and Transaction Simulation” at https://www.getfreebit.com/guides/rpc-phishing-and-transaction-simulation."
+        }
+      ]
+    },
+    "points-programs-and-tge-expectations": {
+      "language": "English",
+      "accent": "neutral",
+      "name": "Points Programs and TGE Expectations",
+      "applicationCategory": "WebApplication",
+      "inLanguage": "en",
+      "parentCategory": "airdrop-testnet",
+      "tags": [
+        "points",
+        "TGE",
+        "airdrop"
+      ],
+      "primaryKeyword": "crypto points program TGE",
+      "path": "/guides/points-programs-and-tge-expectations",
+      "faq": [
+        {
+          "question": "What is Points Programs and TGE Expectations?",
+          "answer": "Treat points as marketing scoreboards—model gas spend against uncertain conversion."
+        },
+        {
+          "question": "Is Points Programs and TGE Expectations free on GetFreeBit?",
+          "answer": "Yes. GetFreeBit hosts a free page for “Points Programs and TGE Expectations” at https://www.getfreebit.com/guides/points-programs-and-tge-expectations."
+        }
+      ]
     }
   }
 }

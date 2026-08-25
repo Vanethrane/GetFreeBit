@@ -83,13 +83,27 @@ type DatasetFile = {
   version: number;
   schema: DatasetSchema;
   pages: Record<string, PageLanguageMeta>;
-  toolAffiliates: Record<string, ToolAffiliate>;
+  toolAffiliates?: Record<string, ToolAffiliate>;
 };
 
 const data = dataset as DatasetFile;
 
 const RELATED_LIMIT = data.schema.internalLinks?.relatedLimit ?? 6;
 const MIN_INBOUND = data.schema.internalLinks?.minInbound ?? 3;
+
+const DEFAULT_TOOL_AFFILIATE: ToolAffiliate = {
+  id: "guides",
+  label: "Guides",
+  title: "Browse GetFreeBit guides",
+  description: "How-tos for faucets, airdrops, yield, and onboarding.",
+  href: "/guides",
+  cta: "View guides",
+};
+
+const toolAffiliates: Record<string, ToolAffiliate> = {
+  default: DEFAULT_TOOL_AFFILIATE,
+  ...(data.toolAffiliates ?? {}),
+};
 
 /** Read language/accent metadata for a guide (or other) slug from dataset.json */
 export function getPageLanguageMeta(slug: string): PageLanguageMeta | null {
@@ -106,18 +120,18 @@ export function listDatasetPageSlugs(): string[] {
 
 /** Map a target language string to its affiliate referral tool */
 export function getToolAffiliateForLanguage(language: string): ToolAffiliate {
-  const exact = data.toolAffiliates[language];
+  const exact = toolAffiliates[language];
   if (exact) return exact;
   const normalized = language.trim().toLowerCase();
-  const hit = Object.entries(data.toolAffiliates).find(
+  const hit = Object.entries(toolAffiliates).find(
     ([key]) => key.toLowerCase() === normalized,
   );
   if (hit) return hit[1];
-  return data.toolAffiliates.default;
+  return toolAffiliates.default;
 }
 
 export function listDatasetLanguages(): string[] {
-  return Object.keys(data.toolAffiliates).filter((key) => key !== "default");
+  return Object.keys(toolAffiliates).filter((key) => key !== "default");
 }
 
 function pageHref(slug: string, meta: PageLanguageMeta): string {

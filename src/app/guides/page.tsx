@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   title: dynamicTitleMetadata({
     pageType: "site",
     name: "Guides",
-    keyword: `${siteConfig.name} guides`,
+    keyword: `${siteConfig.name} crypto guides`,
   }),
-  description: `Long-form ${siteConfig.name} editorial guides. Replace this copy for your niche.`,
+  description: `${siteConfig.name} how-to guides for faucets, airdrops, staking yield, and exchange onboarding—with risks called out plainly.`,
 };
 
 export default function GuidesIndexPage() {
@@ -20,13 +20,13 @@ export default function GuidesIndexPage() {
   return (
     <SiteShell>
       <section className="py-12">
-        <p className="text-sm font-medium uppercase tracking-[0.2em] text-voice">Editorial</p>
+        <p className="text-sm font-medium uppercase tracking-[0.2em] text-voice">How-to library</p>
         <h1 className="mt-3 font-display text-4xl tracking-tight text-ink sm:text-5xl">
           Guides
         </h1>
         <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-muted">
-          {guides.length} long-form articles. Each guide is server-rendered HTML for readers and
-          search engines. Swap this sample content for your own niche.
+          {guides.length} educational walkthroughs across faucets, testnets, yield, and onboarding.
+          Hover highlighted terms for definitions; follow in-article links to related playbooks.
         </p>
 
         <ul className="mt-10 space-y-4">
@@ -34,7 +34,7 @@ export default function GuidesIndexPage() {
             <li key={guide.slug}>
               <Link
                 href={`/guides/${guide.slug}`}
-                className="block rounded-2xl border border-paper-line bg-paper-raised p-5 shadow-card transition hover:border-voice"
+                className="block border-b border-paper-line py-5 transition hover:text-voice-dark"
               >
                 <p className="text-xs uppercase tracking-wide text-ink-muted">
                   {guide.publishedAt} · {guide.readingMinutes} min · {guideWordCount(guide)} words
@@ -45,6 +45,9 @@ export default function GuidesIndexPage() {
             </li>
           ))}
         </ul>
+        <p className="mt-10 text-xs leading-relaxed text-ink-muted">
+          {siteConfig.affiliateDisclosure}
+        </p>
       </section>
     </SiteShell>
   );
