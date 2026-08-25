@@ -25,8 +25,8 @@ export default function GuidesIndexPage() {
           Guides
         </h1>
         <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-muted">
-          {guides.length} educational walkthroughs across faucets, testnets, yield, and onboarding.
-          Hover highlighted terms for definitions; follow in-article links to related playbooks.
+          {guides.length} operator-style walkthroughs—faucets, testnets, yield, and onboarding.
+          Hover gold terms for definitions; follow in-article links between playbooks.
         </p>
 
         <ul className="mt-10 space-y-4">

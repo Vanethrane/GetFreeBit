@@ -210,15 +210,15 @@ export const siteConfig = {
   domain: "https://www.getfreebit.com",
 
   /** One-line product pitch */
-  tagline: "Earn free crypto. Optimize yield. Navigate Web3 safely.",
+  tagline: "Free crypto, yield, and Web3—explained like an operator, not a hype reel.",
 
   /** Default meta description */
   description:
-    "Authoritative guides to faucets, airdrops, staking yields, and exchange onboarding—with clear risks, payout math, and verified partner offers.",
+    "Straight talk on faucets, airdrops, staking, and exchange onboarding. Real mechanics, risk callouts, and disclosed partner links—no get-rich-quick theater.",
 
   /** Longer footer blurb */
   footerBlurb:
-    "Transparent playbooks for micro-earnings, testnet farming, yield, and Web3 onboarding. Educate first; monetize only with disclosed partner links.",
+    "Operator-grade playbooks for micro-earnings, testnet farming, yield, and Web3 onboarding. Educate first. Disclose always. Hype never.",
 
   /**
    * Required on monetized pages and tool outputs.
@@ -288,16 +288,16 @@ export const siteConfig = {
     { href: "/terms", label: "Terms of Service" },
   ] as const satisfies readonly NavLink[],
 
-  /** Cool slate + amber (bitcoin-adjacent) — not cream/terracotta or purple defaults */
+  /** Cool slate + bullion amber — sharp, not neon */
   colors: {
-    ink: "#0f1419",
-    inkMuted: "#5a6570",
-    paper: "#f3f5f7",
+    ink: "#0b1016",
+    inkMuted: "#5c6775",
+    paper: "#eef1f5",
     paperRaised: "#ffffff",
-    paperLine: "#d5dbe3",
-    voice: "#c9842a",
-    voiceDark: "#9a6418",
-    voiceGlow: "#f3e6d0",
+    paperLine: "#d0d7e0",
+    voice: "#d4922a",
+    voiceDark: "#a66b12",
+    voiceGlow: "#f4e6c8",
   } satisfies BrandColors,
 
   /**

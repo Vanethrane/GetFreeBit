@@ -1,6 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Site icon">
-  <rect width="512" height="512" rx="96" fill="#0d6e66"/>
-  <path fill="#fffaf3" d="M256 96c-61.9 0-112 50.1-112 112v48c0 61.9 50.1 112 112 112s112-50.1 112-112v-48c0-61.9-50.1-112-112-112zm0 48a64 64 0 0 1 64 64v48a64 64 0 0 1-128 0v-48a64 64 0 0 1 64-64z"/>
-  <path fill="#fffaf3" d="M160 352h192v32H160z"/>
-  <path fill="#e8f4f2" d="M224 384h64v48h-64z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="GetFreeBit">
+  <defs>
+    <linearGradient id="coin" x1="0.15" y1="0.1" x2="0.9" y2="0.95">
+      <stop offset="0%" stop-color="#f0c36a"/>
+      <stop offset="45%" stop-color="#d4922a"/>
+      <stop offset="100%" stop-color="#8a5610"/>
+    </linearGradient>
+    <linearGradient id="face" x1="0.2" y1="0.15" x2="0.85" y2="0.9">
+      <stop offset="0%" stop-color="#f7e0a8"/>
+      <stop offset="100%" stop-color="#c9842a"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0b1016"/>
+  <circle cx="32" cy="32" r="22" fill="url(#coin)"/>
+  <circle cx="32" cy="32" r="18.5" fill="url(#face)"/>
+  <circle cx="32" cy="32" r="18.5" fill="none" stroke="#8a5610" stroke-opacity="0.35" stroke-width="1.2"/>
+  <g stroke="#8a5610" stroke-opacity="0.45" stroke-width="1.4" stroke-linecap="round">
+    <path d="M32 11.5v2.2M32 50.3v2.2M11.5 32h2.2M50.3 32h2.2"/>
+    <path d="M18.2 18.2l1.6 1.6M44.2 44.2l1.6 1.6M44.2 18.2l-1.6 1.6M18.2 44.2l-1.6 1.6"/>
+  </g>
+  <path
+    fill="#0b1016"
+    d="M29.2 20.5h2.1v-2.4h2.2v2.4h.7c3.7 0 6.1 1.7 6.1 4.5 0 2.1-1.2 3.5-3.1 4.1 2.3.6 3.7 2.2 3.7 4.6 0 3.2-2.6 5.2-6.7 5.2h-.7v2.5h-2.2v-2.5h-2.1v-2.5h2.1V23h-2.1v-2.5zm4.3 7.7h.9c1.8 0 2.9-.8 2.9-2.1s-1.1-2-2.9-2h-.9v4.1zm0 7.8h1.1c2 0 3.2-.9 3.2-2.4s-1.2-2.3-3.2-2.3h-1.1v4.7z"
+  />
+  <path fill="#0b1016" d="M33.4 18.1h2.1v2.4h-2.1zM33.4 43.5h2.1v2.4h-2.1z"/>
 </svg>

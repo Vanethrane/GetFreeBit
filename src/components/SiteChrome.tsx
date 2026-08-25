@@ -9,16 +9,39 @@ import { siteConfig } from "@/site.config";
 
 export const HARD_WORDS = uniqueSeedWords().slice(0, 8);
 
+function BrandMark({ className = "" }: { className?: string }) {
+  return (
+    <span className={`brand-mark ${className}`} aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="9" fill="currentColor" fillOpacity="0.2" />
+        <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5" />
+        <path
+          d="M10.4 6.8h1.1V5.6h1.2v1.2h.4c2 0 3.3.9 3.3 2.4 0 1.1-.6 1.9-1.7 2.2 1.2.3 2 1.2 2 2.5 0 1.7-1.4 2.8-3.6 2.8h-.4v1.3h-1.2v-1.3h-1.1v-1.3h1.1V8.1h-1.1V6.8zm2.3 4.1h.5c1 0 1.5-.4 1.5-1.1s-.5-1.1-1.5-1.1h-.5v2.2zm0 4.2h.6c1.1 0 1.7-.5 1.7-1.3s-.6-1.2-1.7-1.2h-.6v2.5z"
+          fill="currentColor"
+        />
+      </svg>
+    </span>
+  );
+}
+
 export function SiteHeader() {
   return (
-    <header className="space-y-3">
+    <header className="relative z-[1] space-y-3">
       <div className="flex flex-wrap items-center justify-between gap-4">
-        <Link href="/" className="font-display text-2xl tracking-tight text-ink">
-          {siteConfig.name}
+        <Link
+          href="/"
+          className="group inline-flex items-center gap-2.5 font-display text-2xl tracking-tight text-ink"
+        >
+          <BrandMark />
+          <span className="transition-colors group-hover:text-voice-dark">{siteConfig.name}</span>
         </Link>
-        <nav aria-label="Primary" className="flex flex-wrap items-center gap-4 text-sm text-ink-muted">
+        <nav aria-label="Primary" className="flex flex-wrap items-center gap-5 text-sm font-medium text-ink-muted">
           {siteConfig.primaryNav.map((item) => (
-            <Link key={item.href} href={item.href} className="hover:text-voice-dark">
+            <Link
+              key={item.href}
+              href={item.href}
+              className="relative transition-colors hover:text-voice-dark after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-voice after:transition-[width] hover:after:w-full"
+            >
               {item.label}
             </Link>
           ))}
@@ -31,10 +54,13 @@ export function SiteHeader() {
 
 export function SiteFooter() {
   return (
-    <footer className="mt-auto border-t border-paper-line pt-10">
+    <footer className="relative z-[1] mt-auto border-t border-paper-line pt-10">
       <div className="grid gap-8 sm:grid-cols-3">
         <div>
-          <p className="font-display text-xl text-ink">{siteConfig.name}</p>
+          <p className="inline-flex items-center gap-2 font-display text-xl text-ink">
+            <BrandMark className="!h-7 !w-7" />
+            {siteConfig.name}
+          </p>
           <p className="mt-2 max-w-xs text-sm leading-relaxed text-ink-muted">
             {siteConfig.footerBlurb}
           </p>
@@ -81,21 +107,21 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
   return (
     <GlobalSearchProvider>
       <HistoryProvider>
-        <div className="mx-auto flex min-h-screen w-full max-w-3xl flex-col px-6 py-8">
+        <div className="site-shell mx-auto flex min-h-screen w-full max-w-3xl flex-col px-6 py-8">
           <SiteHeader />
           <StableSlot
             minHeight="90px"
-            className="ad-slot-top mt-4 border-b border-paper-line pb-4"
+            className="ad-slot-top relative z-[1] mt-4 border-b border-paper-line pb-4"
             aria-label="Advertisement"
           >
             <AdSlot slotType="banner" />
           </StableSlot>
-          <div className="flex-1" style={{ minHeight: "20rem", contain: "layout" }}>
+          <div className="relative z-[1] flex-1" style={{ minHeight: "20rem", contain: "layout" }}>
             {children}
           </div>
           <StableSlot
             minHeight="90px"
-            className="ad-slot-bottom mt-8 border-t border-paper-line pt-4"
+            className="ad-slot-bottom relative z-[1] mt-8 border-t border-paper-line pt-4"
             aria-label="Advertisement"
           >
             <AdSlot slotType="inline" />
@@ -118,7 +144,7 @@ export function PopularWords() {
           <Link
             key={word}
             href={`/w/${word}`}
-            className="rounded-full border border-paper-line bg-paper-raised px-4 py-2 text-sm text-ink hover:border-voice hover:text-voice-dark"
+            className="rounded-lg border border-paper-line bg-paper-raised px-4 py-2 text-sm text-ink hover:border-voice hover:text-voice-dark"
           >
             {word}
           </Link>
