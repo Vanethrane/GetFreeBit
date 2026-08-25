@@ -1,0 +1,2 @@
+# Ads.txt — replace with your network lines when ready
+# ownerdomain=example.com

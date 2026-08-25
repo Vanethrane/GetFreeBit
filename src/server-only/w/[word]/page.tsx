@@ -6,7 +6,6 @@ import { PopularWords, SiteShell } from "@/components/SiteChrome";
 import { WordResult } from "@/components/WordResult";
 import { lookupPronunciation } from "@/lib/pronounce";
 import { buildProgrammaticSocialMetadata } from "@/lib/og-meta";
-import { uniqueSeedWords } from "@/lib/words";
 
 type PageProps = {
   params: Promise<{ word: string }>;
@@ -14,11 +13,11 @@ type PageProps = {
 
 /** Cache forever at the CDN after first render — no paid TTS on crawl/render. */
 export const revalidate = false;
+export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return uniqueSeedWords()
-    .slice(0, 200)
-    .map((word) => ({ word }));
+  // Speakur word pages are optional for GetFreeBit static export.
+  return [] as { word: string }[];
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -35,7 +34,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description,
     path: `/w/${encodeURIComponent(decoded.toLowerCase())}`,
     pageType: "word",
-    phonetic: result?.phonetic,
+    phonetic: result?.phonetic ?? undefined,
     syllables: result?.syllables ?? null,
     accent: result?.phonetics?.some((p) => p.accent === "uk") ? "us-uk" : "us",
   });
@@ -61,7 +60,7 @@ export default async function WordPage({ params }: PageProps) {
         description={description}
         path={`/w/${encodeURIComponent(result.word.toLowerCase())}`}
         pageType="word"
-        phonetic={result.phonetic}
+        phonetic={result.phonetic ?? undefined}
         syllables={result.syllables ?? null}
       />
       <div className="pt-1">

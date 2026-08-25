@@ -413,7 +413,7 @@ export function buildHowToNode(
 ): Record<string, unknown> | null {
   const howTo = schema.howTo;
   const steps = howTo?.stepTemplates;
-  if (!steps?.length) return null;
+  if (!howTo || !steps?.length) return null;
 
   const url = absolutePageUrl(input.path);
   const name = input.name.trim();

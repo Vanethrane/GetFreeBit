@@ -263,6 +263,9 @@ export const siteConfig = {
    */
   googleSearchConsoleId: "",
 
+  /** Impact.com site verification (meta name=impact-site-verification). */
+  impactSiteVerification: "c48ddf07-85cc-4f1e-9e7a-3f91dcb64410",
+
   /** Primary header navigation */
   primaryNav: [
     { href: "/guides", label: "Guides" },

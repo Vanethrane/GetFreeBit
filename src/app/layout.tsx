@@ -58,6 +58,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${outfit.variable} ${fraunces.variable}`}>
       <head>
+        {siteConfig.impactSiteVerification ? (
+          <meta
+            // Exact Impact format: name + value (not content)
+            {...({
+              name: "impact-site-verification",
+              value: siteConfig.impactSiteVerification,
+            } as Record<string, string>)}
+          />
+        ) : null}
         {/* Critical CSS inlined for sub-500ms first paint */}
         <style
           dangerouslySetInnerHTML={{

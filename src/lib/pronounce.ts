@@ -82,7 +82,8 @@ async function relatedWords(word: string): Promise<string[]> {
     const data = (await response.json()) as Array<{ word?: string }>;
     return data
       .map((item) => item.word?.toLowerCase())
-      .filter((w): w is string => Boolean(w) && w !== word.toLowerCase() && /^[a-z][a-z'-]*$/i.test(w))
+      .filter((w): w is string => typeof w === "string" && w.length > 0)
+      .filter((w) => w !== word.toLowerCase() && /^[a-z][a-z'-]*$/i.test(w))
       .slice(0, 8);
   } catch {
     return [];
@@ -97,7 +98,7 @@ export async function lookupPronunciation(query: string): Promise<PronounceResul
   const response = await fetch(dictUrl, { next: { revalidate: 86400 } });
   if (response.status === 404) return null;
   if (!response.ok) {
-    throw new Error("Pronunciation lookup failed");
+    return null;
   }
 
   const entries = (await response.json()) as DictionaryEntry[];

@@ -1,14 +1,14 @@
 import type { MetadataRoute } from "next";
 import { ALL_GUIDES } from "@/content/guides";
-import { sitemapChunkCount } from "@/lib/words";
 import { siteConfig } from "@/site.config";
 
-/** Sitemap index: core pages, guides, trust pages, and chunked word sitemaps. */
+export const dynamic = "force-static";
+
+/** Core pages + guides for static export. */
 export default function sitemap(): MetadataRoute.Sitemap {
   const base =
     (process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.domain).replace(/\/$/, "");
   const now = new Date();
-  const chunks = sitemapChunkCount();
 
   const staticRoutes = ["", "/guides", "/about", "/contact", "/privacy", "/terms"];
 
@@ -25,15 +25,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(guide.publishedAt),
       changeFrequency: "monthly",
       priority: 0.75,
-    });
-  }
-
-  for (let i = 0; i < chunks; i += 1) {
-    entries.push({
-      url: `${base}/sitemaps/${i + 1}.xml`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.5,
     });
   }
 
