@@ -9,8 +9,7 @@ export function ContactForm() {
   const [topic, setTopic] = useState("general");
   const [message, setMessage] = useState("");
 
-  const host = siteConfig.domain.replace(/^https?:\/\//i, "").replace(/\/$/, "");
-  const contactEmail = `hello@${host.replace(/^www\./, "")}`;
+  const contactEmail = siteConfig.contactEmail;
 
   function onSubmit(event: React.FormEvent) {
     event.preventDefault();

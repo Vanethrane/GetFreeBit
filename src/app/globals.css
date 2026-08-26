@@ -348,6 +348,67 @@ body::before {
   border-color: color-mix(in srgb, var(--voice) 38%, var(--signal) 12%) !important;
 }
 
+.mission-scene {
+  position: relative;
+}
+
+.mission-panel {
+  border-color: color-mix(in srgb, var(--signal) 28%, var(--paper-line));
+  background:
+    radial-gradient(
+      120% 80% at 100% 0%,
+      color-mix(in srgb, var(--signal-glow) 55%, transparent) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      90% 70% at 0% 100%,
+      color-mix(in srgb, var(--voice-glow) 45%, transparent) 0%,
+      transparent 50%
+    ),
+    linear-gradient(
+      165deg,
+      color-mix(in srgb, var(--paper-raised) 92%, var(--signal-glow)) 0%,
+      var(--paper-raised) 48%,
+      color-mix(in srgb, var(--paper-raised) 88%, var(--voice-glow)) 100%
+    );
+  box-shadow:
+    0 24px 48px -36px color-mix(in srgb, var(--signal) 35%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 55%, transparent);
+}
+
+.mission-panel::after {
+  content: "";
+  position: absolute;
+  right: -8%;
+  top: -20%;
+  width: 42%;
+  height: 70%;
+  pointer-events: none;
+  background: radial-gradient(
+    closest-side,
+    color-mix(in srgb, var(--signal) 12%, transparent),
+    transparent 70%
+  );
+  animation: mission-glow 8s ease-in-out infinite alternate;
+}
+
+@keyframes mission-glow {
+  from {
+    opacity: 0.55;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(-2%, 3%, 0) scale(1.05);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mission-panel::after {
+    animation: none;
+  }
+}
+
 .cta-primary {
   transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
   box-shadow: 0 8px 20px -14px color-mix(in srgb, var(--voice) 50%, transparent);

@@ -4,9 +4,6 @@ import { SiteShell } from "@/components/SiteChrome";
 import { ContactForm } from "@/components/ContactForm";
 import { siteConfig } from "@/site.config";
 
-const host = siteConfig.domain.replace(/^https?:\/\//i, "").replace(/\/$/, "");
-const contactEmail = `hello@${host.replace(/^www\./, "")}`;
-
 export const metadata: Metadata = {
   title: dynamicTitleMetadata({
     pageType: "site",
@@ -17,6 +14,8 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
+  const contactEmail = siteConfig.contactEmail;
+
   return (
     <SiteShell>
       <article className="py-12">

@@ -242,6 +242,9 @@ export const siteConfig = {
   /** Canonical origin — no trailing slash */
   domain: "https://www.getfreebit.com",
 
+  /** Public contact email (contact page, mailto forms, PayPal donate fallback) */
+  contactEmail: "vanethrane@gmail.com",
+
   /** One-line product pitch */
   tagline: "Faucets, yield, and Web3—explained like an operator, not a hype reel.",
 
@@ -256,7 +259,27 @@ export const siteConfig = {
 
   /** Mission — footer and brand surfaces */
   footerBlurb:
-    "We explain crypto in plain English and help you navigate the space—wallets, earning, yield, and Web3—without hype or jargon.",
+    "A free resource for the crypto community—plain-English guides so anyone can earn, secure, and navigate Web3 without the hype.",
+
+  /**
+   * Home mission + optional donations. Leave bitcoinAddress empty until you have a receive address.
+   * PayPal uses a donate link to the public contact email when paypalUrl is empty.
+   */
+  donations: {
+    eyebrow: "Our mission",
+    title: "Free for the community. Built for operators.",
+    body:
+      "GetFreeBit is a free public resource for the crypto community—guides, how-tos, and desks that explain faucets, yield, and Web3 in plain English. No membership wall. No get-rich-quick theater. Just mechanics, risk callouts, and paths you can actually follow.",
+    supportTitle: "Keep the desk online",
+    supportBody:
+      "If a guide saved you time, fees, or a costly mistake, chip in. Donations help cover hosting, research, and writing so the library stays free for the next reader.",
+    /** On-chain BTC receive address — paste when ready */
+    bitcoinAddress: "",
+    /** Full PayPal donate / paypal.me URL. Empty → donate link to siteConfig.contactEmail */
+    paypalUrl: "https://paypal.me/technivorous",
+    bitcoinLabel: "Donate Bitcoin",
+    paypalLabel: "Donate with PayPal",
+  },
 
   /**
    * Required on monetized pages and tool outputs.

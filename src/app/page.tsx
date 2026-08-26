@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import {
   HomeDeskTiles,
   HomeEarnStrip,
+  HomeMissionSupport,
   HomeOperatorPicks,
   HomePopularPaths,
 } from "@/components/home/HomeSections";
@@ -47,6 +48,7 @@ export default function HomePage() {
       </section>
 
       <HomePopularPaths />
+      <HomeMissionSupport />
       <HomeEarnStrip />
       <HomeOperatorPicks />
       <HomeDeskTiles counts={deskCounts} />
