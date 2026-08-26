@@ -21,16 +21,17 @@ export default function HomePage() {
     <SiteShell homeLayout>
       <SiteJsonLd />
 
-      <section className="hero-scene relative pb-6 pt-8 sm:pb-8 sm:pt-10">
-        <p className="anim-rise text-xs font-semibold uppercase tracking-[0.28em] text-voice-dark">
-          {siteConfig.heroEyebrow}
-        </p>
-        <h1 className="anim-rise-delay mt-3 max-w-3xl font-display text-4xl leading-[1.05] tracking-tight text-ink sm:text-5xl lg:text-[3.15rem]">
-          <span className="block">{siteConfig.heroTitleLead}</span>
-          <span className="block text-signal">{siteConfig.heroTitleAccent}</span>
+      <section className="hero-scene relative pb-3 pt-4 sm:pb-4 sm:pt-5">
+        <h1 className="anim-rise font-display text-2xl leading-snug tracking-tight text-ink sm:text-3xl">
+          <span className="block text-sm font-semibold uppercase tracking-[0.22em] text-voice-dark sm:text-base">
+            {siteConfig.name}
+          </span>
+          <span className="mt-1.5 block">
+            {siteConfig.heroTitleLead}{" "}
+            <span className="text-signal">{siteConfig.heroTitleAccent}</span>
+          </span>
         </h1>
-        <div className="hero-rule mt-4" aria-hidden="true" />
-        <p className="anim-rise-delay-2 mt-4 max-w-xl text-base leading-relaxed text-ink-muted sm:text-lg">
+        <p className="anim-rise-delay mt-2 max-w-2xl text-sm leading-snug text-ink-muted sm:text-[0.95rem]">
           {siteConfig.tagline}
         </p>
       </section>
