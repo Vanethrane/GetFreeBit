@@ -1,0 +1,549 @@
+{
+  "schemaVersion": 1,
+  "indexId": "bitcoin-faucet-payout",
+  "family": "getfreebit-indexes",
+  "pillar": "faucets-micro",
+  "asset": "BTC",
+  "edition": "August 2026",
+  "title": "Bitcoin Faucet Payout Index — August 2026",
+  "path": "/indexes/bitcoin-faucet-payout",
+  "downloadJsonPath": "/indexes/bitcoin-faucet-payout.json",
+  "downloadCsvPath": "/indexes/bitcoin-faucet-payout.csv",
+  "publishedAt": "2026-08-26",
+  "checkedAt": "2026-08-26",
+  "timezone": "UTC",
+  "summary": "Editioned snapshot of documented Bitcoin faucet and micro-wallet payout rails. Figures are taken from public official pages fetched on 2026-08-26. Typical claim amounts and sats/hour rates that require a logged-in dashboard or a timed trial are left unverified.",
+  "citation": {
+    "text": "GetFreeBit, “Bitcoin Faucet Payout Index — August 2026” (checked 2026-08-26), https://www.getfreebit.com/indexes/bitcoin-faucet-payout/",
+    "apa": "GetFreeBit. (2026, August 26). Bitcoin Faucet Payout Index — August 2026. https://www.getfreebit.com/indexes/bitcoin-faucet-payout/"
+  },
+  "fieldCatalog": [
+    {
+      "id": "faucet",
+      "label": "Faucet",
+      "description": "Platform name and official URL (untracked)."
+    },
+    {
+      "id": "payout",
+      "label": "Typical BTC payout",
+      "description": "What a typical BTC claim pays, with unit and the claim interval that figure applies to."
+    },
+    {
+      "id": "minimumWithdrawal",
+      "label": "Minimum withdrawal",
+      "description": "Lowest documented BTC (or BTC-equivalent) cashout floor."
+    },
+    {
+      "id": "withdrawalMethod",
+      "label": "Withdrawal method",
+      "description": "Rails listed on public docs: on-chain, FaucetPay Direct Transfer, Lightning, and others."
+    },
+    {
+      "id": "fees",
+      "label": "Fees",
+      "description": "Withdrawal, network, or platform fees stated on public pages."
+    },
+    {
+      "id": "frequency",
+      "label": "Frequency",
+      "description": "How often a faucet claim can be made, per public docs."
+    },
+    {
+      "id": "averageEarningRate",
+      "label": "Average earning rate",
+      "description": "Comparable unit (prefer sats/hour or sats/day) only when measured or published. This edition did not run timed trials."
+    },
+    {
+      "id": "lastChecked",
+      "label": "Last checked",
+      "description": "ISO date of the source fetch for this row."
+    },
+    {
+      "id": "status",
+      "label": "Status",
+      "description": "online / degraded / offline / unverified, based on the public check."
+    },
+    {
+      "id": "usUsers",
+      "label": "US users",
+      "description": "Whether public docs state a US geo-block. Absence of a block is not a legal opinion."
+    },
+    {
+      "id": "pairsWithFaucetPay",
+      "label": "Pairs with FaucetPay",
+      "description": "Whether current public docs list FaucetPay as a withdrawal rail."
+    }
+  ],
+  "methodology": {
+    "checkedAt": "2026-08-26",
+    "edition": "August 2026",
+    "whatWasChecked": [
+      "Official public pages and help centers for the live GetFreeBit faucet-desk partners (FaucetPay, Cointiply, RewardJoy/CoinPayU, Fire Faucet, FaucetCrypto).",
+      "FaucetPay withdrawal fee and minimum table at faucetpay.io/fees.",
+      "Cointiply Labs help articles on coin value, Daily Free Coins, cashout minimums, and fees.",
+      "Fire Faucet FAQ (firefaucet.win/faq) covering the 30-minute faucet, Auto Faucet/Fuel, and withdrawal rules.",
+      "FaucetCrypto Mintlify knowledge base on coins, faucet claims, country availability, and withdrawal minimums/fees.",
+      "HTTP reachability of freebitco.in (historical hourly BTC faucet listed on the desk but not a live partner)."
+    ],
+    "how": [
+      "Fetched public HTML/help pages on 2026-08-26 (UTC) with a standard browser user-agent. No accounts were created. No dashboards that require login were used.",
+      "Recorded only figures that appear on those pages. Converted BTC amounts to satoshis with the exact ratio 1 BTC = 100,000,000 sats. Did not convert USD-pegged platform coins to sats (that depends on the live BTC price at payout).",
+      "Partner/affiliate hrefs are resolved from site.config.ts or the existing faucet-referrals catalog. Official URLs in this file are untracked homepages."
+    ],
+    "notMeasured": [
+      "No 30-day or even 24-hour earning trial was run. Average earning rate (sats/hour or sats/day) is unverified for every row.",
+      "Typical per-claim satoshi amounts that only appear after login (captcha rolls, ACP conversion, FaucetCrypto “Get Reward” coins) are unverified.",
+      "Exact Fire Faucet BTC network minimums (the FAQ says hover the battery icon on the logged-in withdrawal page).",
+      "Exact FaucetCrypto BTC coin floor (docs say BTC requires “a little bit more” than 1,000 Coins).",
+      "RewardJoy/CoinPayU cashout numbers: public pages returned an ad-blocker interstitial to this checker, so numeric fields are unverified.",
+      "Lightning Network payouts: not listed on FaucetPay’s public fee table; not claimed elsewhere without a source."
+    ],
+    "limitations": [
+      "This is a documentation snapshot, not a live APY or income forecast. Offerwalls, PTC, and games can dominate faucet-claim math.",
+      "FaucetPay is a custodial micro-wallet and faucet directory, not itself a timed BTC faucet. It is in the table because it is the cashout rail most of the desk routes through.",
+      "Platform “Coins” are USD-pegged internal units. They are not satoshis.",
+      "Status “online” means the public site responded with documentation, not that a withdrawal succeeded today.",
+      "Skip clones and sites with no public terms. This edition does not add unaudited “best faucet” directories."
+    ]
+  },
+  "faqs": [
+    {
+      "question": "What does this index measure?",
+      "answer": "It records publicly documented Bitcoin faucet and micro-wallet payout rules: typical claim size when published, claim interval, withdrawal minimum, method, fees, and operational status. It is a citable snapshot for August 2026, not a ranking of “best faucets.”"
+    },
+    {
+      "question": "Did GetFreeBit measure sats per hour?",
+      "answer": "No. This edition did not run a timed earning trial. Average earning rate is unverified for every row. If a later edition publishes sats/hour, it will state the exact window, account level, and whether offerwalls were included."
+    },
+    {
+      "question": "Why are some cells marked unverified?",
+      "answer": "A field is unverified when the official page does not publish a number, the figure is behind login, or the public site blocked the fetch (for example RewardJoy’s ad-blocker interstitial). Unverified is preferred over an invented satoshi figure."
+    },
+    {
+      "question": "How should other sites cite this dataset?",
+      "answer": "Cite the edition and check date, not a generic “GetFreeBit faucets” URL. Example: GetFreeBit, “Bitcoin Faucet Payout Index — August 2026” (checked 2026-08-26), https://www.getfreebit.com/indexes/bitcoin-faucet-payout/. Machine-readable copies are at the JSON and CSV download links on that page."
+    }
+  ],
+  "rows": [
+    {
+      "id": "faucetpay",
+      "role": "payout-rail",
+      "partnerId": "faucetpay",
+      "faucetReferralId": "faucetpay",
+      "faucet": {
+        "name": "FaucetPay",
+        "officialUrl": "https://faucetpay.io"
+      },
+      "payout": {
+        "amount": null,
+        "unit": null,
+        "interval": null,
+        "display": null,
+        "verification": "not_applicable",
+        "sourceUrl": "https://faucetpay.io/",
+        "notes": "Micro-wallet and faucet directory (homepage: 600+ faucets, 20+ coins). Not a timed BTC claim faucet; no typical claim satoshi is published on the pages checked."
+      },
+      "minimumWithdrawal": {
+        "amount": 0.0012,
+        "unit": "BTC",
+        "sats": 120000,
+        "display": "0.0012 BTC (120,000 sats) on-chain normal; 0.0045 BTC (450,000 sats) priority; no minimum for FaucetPay Direct Transfer",
+        "verification": "verified",
+        "sourceUrl": "https://faucetpay.io/fees",
+        "notes": "Table values on faucetpay.io/fees fetched 2026-08-26. Direct Transfer between FaucetPay users is described as free and off-chain."
+      },
+      "withdrawalMethod": {
+        "value": "On-chain BTC (normal or priority); FaucetPay Direct Transfer",
+        "verification": "verified",
+        "sourceUrl": "https://faucetpay.io/fees",
+        "notes": "Lightning is not listed on the public per-coin fee table."
+      },
+      "fees": {
+        "value": "On-chain normal 0.00001000 BTC (1,000 sats); priority 0.00005000 BTC (5,000 sats); Direct Transfer free. Fees marked dynamic with network congestion.",
+        "verification": "verified",
+        "sourceUrl": "https://faucetpay.io/fees",
+        "notes": "Help article “Why are Bitcoin fees so large?” explains UTXO/dust deposits; last updated 2021-12-21 on faq.faucetpay.io."
+      },
+      "frequency": {
+        "value": null,
+        "verification": "not_applicable",
+        "sourceUrl": "https://faucetpay.io/",
+        "notes": "Not a claim-interval faucet. Third-party faucets that pay into FaucetPay set their own timers."
+      },
+      "averageEarningRate": {
+        "amount": null,
+        "unit": "sats/hour",
+        "display": null,
+        "verification": "unverified",
+        "sourceUrl": null,
+        "notes": "No timed trial. Homepage marketing figures (claims paid, users online) are not an earning rate."
+      },
+      "lastChecked": "2026-08-26",
+      "status": "online",
+      "usUsers": {
+        "value": "No US geo-block stated on the public home or fees pages checked.",
+        "verification": "unverified",
+        "sourceUrl": "https://faucetpay.io/",
+        "notes": "Absence of a published country list is not an eligibility guarantee. Custodial wallet — enable 2FA; sweep to self-custody."
+      },
+      "pairsWithFaucetPay": {
+        "value": true,
+        "verification": "verified",
+        "sourceUrl": "https://faucetpay.io/",
+        "notes": "This row is the FaucetPay rail."
+      },
+      "notes": "Treat FaucetPay as a batching layer. On-chain BTC cashout from this rail is expensive relative to faucet dust; the fees page lists cheaper exits on LTC, DOGE, and others.",
+      "risks": "Custodial. Direct Transfer never hits the chain. On-chain BTC minimum (0.0012 BTC) is far above typical faucet drips."
+    },
+    {
+      "id": "cointiply",
+      "role": "claim-faucet",
+      "partnerId": "cointiply",
+      "faucetReferralId": "cointiply",
+      "faucet": {
+        "name": "Cointiply",
+        "officialUrl": "https://cointiply.com"
+      },
+      "payout": {
+        "amount": null,
+        "unit": "coins",
+        "interval": "daily",
+        "display": null,
+        "verification": "unverified",
+        "sourceUrl": "https://labs.cointiply.com/help/types-of-missions-how-to-complete-feature-misions",
+        "notes": "Help docs describe Daily Free Coins as a captcha + Roll on Earn paths. The coin amount per roll is not published on the public help pages checked."
+      },
+      "minimumWithdrawal": {
+        "amount": 50000,
+        "unit": "coins",
+        "sats": null,
+        "display": "50,000 Coins for Bitcoin (USD-equivalent $5 at 10,000 Coins = $1); 30,000 Coins for DOGE, Dash, Litecoin",
+        "verification": "verified",
+        "sourceUrl": "https://labs.cointiply.com/help/common-withdrawal-questions-answers",
+        "notes": "Sats received at cashout depend on BTC’s price. Coins are USD-pegged, not satoshis. Confirmed on Labs help: What are Coins?; Common Withdrawal Questions."
+      },
+      "withdrawalMethod": {
+        "value": "On-chain to BTC, LTC, DOGE, or DASH wallet via Cashout",
+        "verification": "verified",
+        "sourceUrl": "https://labs.cointiply.com/help/common-withdrawal-questions-answers",
+        "notes": "Public help describes Cashout to a personal wallet. FaucetPay is not listed on the withdrawal articles checked."
+      },
+      "fees": {
+        "value": "Cointiply currently covers blockchain transaction fees",
+        "verification": "verified",
+        "sourceUrl": "https://labs.cointiply.com/help/does-cointiply-charge-transaction-fees-for-withdrawals-",
+        "notes": "Receiving wallets/exchanges may still impose deposit minimums. Processing typically 24–72 hours; BTC confirmations can take longer in congestion (help: When do I get paid?)."
+      },
+      "frequency": {
+        "value": "Daily Free Coins roll (plus offers, PTC, surveys, games)",
+        "verification": "verified",
+        "sourceUrl": "https://labs.cointiply.com/help/types-of-missions-how-to-complete-feature-misions",
+        "notes": "Daily Streak requires earning at least 300 Coins in a day and claiming the streak reward (help: How Does the Cointiply Daily Streak Work?)."
+      },
+      "averageEarningRate": {
+        "amount": null,
+        "unit": "sats/hour",
+        "display": null,
+        "verification": "unverified",
+        "sourceUrl": "https://labs.cointiply.com/",
+        "notes": "Labs states 10,000 Coins = $1 and that users earn from offers, surveys, the faucet, and games. No sats/hour figure is published."
+      },
+      "lastChecked": "2026-08-26",
+      "status": "online",
+      "usUsers": {
+        "value": "No country-block list found on the Labs help articles checked.",
+        "verification": "unverified",
+        "sourceUrl": "https://labs.cointiply.com/",
+        "notes": "Surveys and offers still geo-target. Not a legal US-availability opinion."
+      },
+      "pairsWithFaucetPay": {
+        "value": false,
+        "verification": "unverified",
+        "sourceUrl": "https://labs.cointiply.com/help/common-withdrawal-questions-answers",
+        "notes": "Current public cashout docs describe direct crypto to your wallet. They do not document a FaucetPay option. Older third-party reviews may be stale."
+      },
+      "notes": "Internal Coins: 10,000 = $1 USD (Labs help). Bitcoin cashout floor is 50,000 Coins. Terms can hold withdrawals for review; help also notes 5% annual interest on balances over 35,000 Coins when enabled.",
+      "risks": "Offerwall reversals. Custodial balance until cashout. Verification can be required on a withdrawal (30-day window or coins return to balance)."
+    },
+    {
+      "id": "firefaucet",
+      "role": "claim-faucet",
+      "partnerId": null,
+      "faucetReferralId": "firefaucet",
+      "faucet": {
+        "name": "Fire Faucet",
+        "officialUrl": "https://firefaucet.win"
+      },
+      "payout": {
+        "amount": null,
+        "unit": "ACP",
+        "interval": "PT30M",
+        "display": null,
+        "verification": "unverified",
+        "sourceUrl": "https://firefaucet.win/faq/",
+        "notes": "FAQ documents a 30-minute faucet and an Auto Faucet that converts ACP into chosen cryptos. Per-claim BTC sats and ACP-per-claim are not published on the public FAQ."
+      },
+      "minimumWithdrawal": {
+        "amount": null,
+        "unit": "USD",
+        "sats": null,
+        "display": "Varies by coin and network; FAQ range about $2.50–$25. Exact BTC sats only on the logged-in withdrawal page (battery icon per network).",
+        "verification": "verified",
+        "sourceUrl": "https://firefaucet.win/faq/",
+        "notes": "Range is official. Exact BTC mainnet vs other-network floors were not visible without login, so sats are unverified."
+      },
+      "withdrawalMethod": {
+        "value": "On-chain to a wallet on the networks listed per coin (FAQ examples: Mainnet, BSC, Polygon); gift cards also mentioned",
+        "verification": "verified",
+        "sourceUrl": "https://firefaucet.win/faq/",
+        "notes": "The 2026-08-26 FAQ does not mention FaucetPay. Older reviews that list FaucetPay minimums were not used."
+      },
+      "fees": {
+        "value": "Withdrawals: platform covers network and processing fees. Instant Conversion of ACP: 5% fee. Crypto-to-crypto exchange on the Wallet page: free.",
+        "verification": "verified",
+        "sourceUrl": "https://firefaucet.win/faq/",
+        "notes": "Daily withdrawal pace: $10/day default, $25/day Prime. A coin whose minimum exceeds the daily cap can still be withdrawn in full."
+      },
+      "frequency": {
+        "value": "30-minute faucet claim; Auto Faucet burns 1 Fuel per minute while running; daily bonus and Daily Tasks also documented",
+        "verification": "verified",
+        "sourceUrl": "https://firefaucet.win/faq/",
+        "notes": "Base Fuel recharges with level. First withdrawals may take 48–72 hours; later batches around 00:00 UTC."
+      },
+      "averageEarningRate": {
+        "amount": null,
+        "unit": "sats/hour",
+        "display": null,
+        "verification": "unverified",
+        "sourceUrl": "https://firefaucet.win/faq/",
+        "notes": "Auto Faucet USD value is described as independent of which crypto you pick; ACP cost per cycle varies. No sats/hour published. Weekend Happy Hour: +50% Auto Faucet for one hour at 02:00 and 14:00 UTC Saturday and Sunday."
+      },
+      "lastChecked": "2026-08-26",
+      "status": "online",
+      "usUsers": {
+        "value": "FAQ: open to users across the world. VPNs/proxies temporarily block earning pages.",
+        "verification": "verified",
+        "sourceUrl": "https://firefaucet.win/faq/",
+        "notes": "World-open is not a US-specific legal review. Gift-card catalogs can still vary by country."
+      },
+      "pairsWithFaucetPay": {
+        "value": false,
+        "verification": "unverified",
+        "sourceUrl": "https://firefaucet.win/faq/",
+        "notes": "Not listed on the current public FAQ. Do not assume a FaucetPay rail from older write-ups."
+      },
+      "notes": "Balances are stored as USD value (FAQ). Completing offerwalls still depends on third-party providers. v5 Auto Faucet runs on Fire Faucet servers, not a browser miner (FAQ).",
+      "risks": "VPN use blocks earning. Offer chargebacks. First cashouts delayed for security checks. Custodial until withdrawal confirms."
+    },
+    {
+      "id": "faucetcrypto",
+      "role": "claim-faucet",
+      "partnerId": null,
+      "faucetReferralId": "faucetcrypto",
+      "faucet": {
+        "name": "FaucetCrypto",
+        "officialUrl": "https://faucetcrypto.com"
+      },
+      "payout": {
+        "amount": null,
+        "unit": "coins",
+        "interval": null,
+        "display": null,
+        "verification": "unverified",
+        "sourceUrl": "https://faucetcrypto.mintlify.app/get-started/what-is-faucetcrypto",
+        "notes": "Knowledge base describes a classic faucet claim: wait for an interval, then “Get Reward.” Interval length and coins-per-claim are not stated on the public articles checked."
+      },
+      "minimumWithdrawal": {
+        "amount": 1000,
+        "unit": "coins",
+        "sats": null,
+        "display": "1,000 Coins for most assets; Bitcoin (and Polygon, Tron) “requires a little bit more.” 25,000 Coins = $1, so 1,000 Coins is $0.04 USD-equivalent — BTC floor is higher and login-gated.",
+        "verification": "verified",
+        "sourceUrl": "https://faucetcrypto.mintlify.app/withdrawals/what-is-the-minimum-withdraw-amount-and-fees",
+        "notes": "Exact BTC coin minimum was not on the public KB. Do not treat 1,000 Coins as the BTC floor."
+      },
+      "withdrawalMethod": {
+        "value": "On-chain to an external wallet (network selected at cashout). KB warns against microwallets, Payeer, and exchange deposit addresses with high minimums.",
+        "verification": "verified",
+        "sourceUrl": "https://faucetcrypto.mintlify.app/withdrawals/what-wallet-can-i-withdraw-my-crypto-to",
+        "notes": "Whether FaucetPay still appears as a destination was not visible without login. Official wallet article advises against microwallets."
+      },
+      "fees": {
+        "value": "50 Coins for most assets; BTC, TRX, Polygon, BSC, and ETC “could be higher… but not much.” Deducted from the withdrawn amount.",
+        "verification": "verified",
+        "sourceUrl": "https://faucetcrypto.mintlify.app/withdrawals/what-is-the-minimum-withdraw-amount-and-fees",
+        "notes": "Batch payouts: requests sit in a pool (Processing) then broadcast (Completed). If the pool threshold is not met, auto-broadcast after 24 hours (how-long article)."
+      },
+      "frequency": {
+        "value": "Periodical faucet claim interval (length not published on public KB); also PTC, social jobs, offerwalls, contests",
+        "verification": "unverified",
+        "sourceUrl": "https://faucetcrypto.mintlify.app/get-started/what-is-faucetcrypto",
+        "notes": "Third-party reviews quote 25–40 minute timers. Those numbers were not on the official KB fetched 2026-08-26, so frequency stays unverified."
+      },
+      "averageEarningRate": {
+        "amount": null,
+        "unit": "sats/hour",
+        "display": null,
+        "verification": "unverified",
+        "sourceUrl": "https://faucetcrypto.mintlify.app/get-started/how-much-can-i-earn-on-faucetcrypto",
+        "notes": "Official answer: earnings depend on time, location, and tasks; “no fixed limits.” Not a sats/hour series."
+      },
+      "lastChecked": "2026-08-26",
+      "status": "online",
+      "usUsers": {
+        "value": "Available worldwide except China, Cuba, Iran, and Venezuela. Some offers still geo-restrict.",
+        "verification": "verified",
+        "sourceUrl": "https://faucetcrypto.mintlify.app/get-started/is-faucetcrypto-supported-in-my-country",
+        "notes": "United States is not on the exception list."
+      },
+      "pairsWithFaucetPay": {
+        "value": false,
+        "verification": "unverified",
+        "sourceUrl": "https://faucetcrypto.mintlify.app/withdrawals/what-wallet-can-i-withdraw-my-crypto-to",
+        "notes": "KB: do not withdraw to microwallets. That is a warning, not a confirmed UI toggle. Unverified whether FaucetPay remains a listed destination."
+      },
+      "notes": "Internal Coins: 25,000 = $1 (What are Coins?). Leveling, items, and offerwalls sit alongside the faucet claim.",
+      "risks": "Offerwall chargebacks. Batch delay up to 24h before broadcast. Sending dust to an exchange or microwallet can be unrecoverable (official warning)."
+    },
+    {
+      "id": "rewardjoy",
+      "role": "claim-faucet",
+      "partnerId": null,
+      "faucetReferralId": "coinpayu",
+      "faucet": {
+        "name": "RewardJoy (CoinPayU)",
+        "officialUrl": "https://www.rewardjoy.com"
+      },
+      "payout": {
+        "amount": null,
+        "unit": null,
+        "interval": null,
+        "display": null,
+        "verification": "unverified",
+        "sourceUrl": "https://www.rewardjoy.com/",
+        "notes": "Public site returned an ad-blocker interstitial to this checker. Typical BTC claim amount was not readable. Google Play listing (com.coinpayu.earn.bitcoin) describes games, surveys, apps, and crypto/PayPal/gift-card rewards after the CoinPayU rebrand — still not a satoshi figure."
+      },
+      "minimumWithdrawal": {
+        "amount": null,
+        "unit": null,
+        "sats": null,
+        "display": null,
+        "verification": "unverified",
+        "sourceUrl": "https://www.rewardjoy.com/terms",
+        "notes": "Terms/privacy URLs also served the ad-blocker wall. No official minimum recorded this edition."
+      },
+      "withdrawalMethod": {
+        "value": null,
+        "verification": "unverified",
+        "sourceUrl": "https://play.google.com/store/apps/details?id=com.coinpayu.earn.bitcoin",
+        "notes": "Play listing mentions PayPal, gift cards, and cryptocurrency including Bitcoin. FaucetPay not confirmed on a page we could fully read."
+      },
+      "fees": {
+        "value": null,
+        "verification": "unverified",
+        "sourceUrl": "https://www.rewardjoy.com/",
+        "notes": "Not visible behind the interstitial."
+      },
+      "frequency": {
+        "value": null,
+        "verification": "unverified",
+        "sourceUrl": "https://www.rewardjoy.com/",
+        "notes": "Not visible behind the interstitial. Do not copy stale CoinPayU hourly-faucet timers without a current official source."
+      },
+      "averageEarningRate": {
+        "amount": null,
+        "unit": "sats/hour",
+        "display": null,
+        "verification": "unverified",
+        "sourceUrl": null,
+        "notes": "No trial; no public rate."
+      },
+      "lastChecked": "2026-08-26",
+      "status": "online",
+      "usUsers": {
+        "value": null,
+        "verification": "unverified",
+        "sourceUrl": "https://www.rewardjoy.com/",
+        "notes": "No public geo policy readable this check."
+      },
+      "pairsWithFaucetPay": {
+        "value": null,
+        "verification": "unverified",
+        "sourceUrl": "https://www.rewardjoy.com/",
+        "notes": "Not confirmed on a fully readable official page this edition."
+      },
+      "notes": "Included because it is a live GetFreeBit faucet-desk partner (CoinPayU signup still listed). coinpayu.com remains a related domain. Numeric payout fields are explicitly unverified.",
+      "risks": "Ad-blocker required to use the site (their own interstitial). Offerwall chargebacks typical of PTC/GPT products. Bookmark official domains only."
+    },
+    {
+      "id": "freebitco",
+      "role": "claim-faucet",
+      "partnerId": null,
+      "faucetReferralId": "freebitco",
+      "faucet": {
+        "name": "FreeBitco.in",
+        "officialUrl": "https://freebitco.in"
+      },
+      "payout": {
+        "amount": null,
+        "unit": "sats",
+        "interval": null,
+        "display": null,
+        "verification": "unverified",
+        "sourceUrl": "https://freebitco.in/",
+        "notes": "Origin returned HTTP 502 on 2026-08-26. No live claim amount recorded. Historical hourly-roll figures from third-party articles are not used."
+      },
+      "minimumWithdrawal": {
+        "amount": null,
+        "unit": "BTC",
+        "sats": null,
+        "display": null,
+        "verification": "unverified",
+        "sourceUrl": "https://cointiply.com/blog/freebitco-in-announces-shutdown-withdrawal-freeze/",
+        "notes": "Cointiply’s 2025-12-23 post quotes FreeBitco.in’s on-site shutdown notice: withdrawals paused pending manual review, with an expected window “early 2026” and no guarantee. This index does not copy unaudited historical 30,000-sat floors."
+      },
+      "withdrawalMethod": {
+        "value": "Withdrawals frozen per shutdown notice quoted 2025-12-23; site HTTP 502 on 2026-08-26",
+        "verification": "verified",
+        "sourceUrl": "https://cointiply.com/blog/freebitco-in-announces-shutdown-withdrawal-freeze/",
+        "notes": "Primary origin was not serving HTML to this checker. Status relies on the HTTP 502 plus Cointiply’s screenshot of the official notice."
+      },
+      "fees": {
+        "value": null,
+        "verification": "unverified",
+        "sourceUrl": "https://freebitco.in/",
+        "notes": "No live fee table fetched."
+      },
+      "frequency": {
+        "value": null,
+        "verification": "unverified",
+        "sourceUrl": "https://freebitco.in/",
+        "notes": "Hourly-roll history is widely reported; not confirmed on a live official page this edition."
+      },
+      "averageEarningRate": {
+        "amount": null,
+        "unit": "sats/hour",
+        "display": null,
+        "verification": "unverified",
+        "sourceUrl": null,
+        "notes": "Offline / not paying on this check."
+      },
+      "lastChecked": "2026-08-26",
+      "status": "offline",
+      "usUsers": {
+        "value": null,
+        "verification": "unverified",
+        "sourceUrl": "https://freebitco.in/",
+        "notes": "Irrelevant while withdrawals are frozen and the origin fails."
+      },
+      "pairsWithFaucetPay": {
+        "value": null,
+        "verification": "unverified",
+        "sourceUrl": null,
+        "notes": "Not confirmed on a live official page this edition."
+      },
+      "notes": "Listed as a documented offline row so citations do not treat FreeBitco.in as a current paying BTC faucet. GetFreeBit does not currently run a live partner link for it.",
+      "risks": "Do not deposit. Shutdown notice asked users not to send funds to deposit addresses. A visible third-party “how to withdraw” page is not evidence the faucet is paying."
+    }
+  ]
+}

@@ -42,6 +42,17 @@ export default function FaucetsPage() {
           commissions. We list mechanics and risks first—register only when the time-vs-reward
           math makes sense for you.
         </p>
+        <p className="mt-4 max-w-2xl text-sm leading-relaxed text-ink">
+          Original research (not a “best faucets” ranking):{" "}
+          <Link
+            href="/indexes/bitcoin-faucet-payout"
+            className="font-medium text-voice-dark underline underline-offset-2"
+          >
+            Bitcoin Faucet Payout Index — August 2026
+          </Link>
+          . Sourced withdrawal floors, fees, and status — unverified cells stay blank rather than
+          invented.
+        </p>
 
         <div className="mt-6 rounded-xl border border-amber-200/80 bg-amber-50/90 px-4 py-3 text-sm leading-relaxed text-amber-950">
           <strong className="font-semibold">US availability:</strong> Every platform below is
@@ -153,8 +164,12 @@ export default function FaucetsPage() {
         <section className="mt-12 border-t border-paper-line pt-10">
           <h2 className="font-display text-2xl text-ink">Quick comparison</h2>
           <p className="mt-2 text-sm text-ink-muted">
-            Snapshot for planning—not live APY promises. Verify thresholds on each site before
-            you size your routine.
+            Snapshot for planning—not live APY promises. For sourced BTC withdrawal floors and
+            fees, use the{" "}
+            <Link href="/indexes/bitcoin-faucet-payout" className="text-voice-dark underline underline-offset-2">
+              Bitcoin Faucet Payout Index — August 2026
+            </Link>
+            .
           </p>
           <div className="mt-5 overflow-x-auto">
             <table className="w-full min-w-[640px] border-collapse text-left text-sm">
