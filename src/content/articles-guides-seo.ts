@@ -54,7 +54,7 @@ export const GUIDES_SEO: Article[] = [
     description:
       "Why micro-wallets sit between faucets and self-custody, how internal transfers and multi-coin balances work, and when to sweep to your own keys.",
     publishedAt: "2026-08-03",
-    readingMinutes: 6,
+    readingMinutes: 7,
     sections: [
       {
         heading: "The problem faucets create",
@@ -88,6 +88,15 @@ export const GUIDES_SEO: Article[] = [
           "Bottom line: FaucetPay routing amortizes fees and simplifies multi-site earning. Use it as a pipe, not a destination—and keep keys you actually own downstream.",
         ],
       },
+      {
+        heading: "Operational cadence that keeps routing honest",
+        paragraphs: [
+          "Treat the micro-wallet as a **throughput meter**, not a scoreboard. Once a week, export or screenshot balances by coin, note pending external withdrawals, and compare against the claim log from your faucet sites. Discrepancies usually mean a wrong coin address, a delayed PTC credit, or a site that changed rails without updating its UI—catch those before you scale the stack. Pair this habit with [How to Set Up FaucetPay and Route Faucet Payouts](/how-to/how-to-set-up-faucetpay-and-route-faucet-payouts) so the first week of routing is documented, not improvised.",
+          "Decide in advance what “enough to sweep” means in USD at a conservative price. Below that floor, leave dust alone rather than paying network fees that erase the week’s work. Above it, prefer one outbound transfer on a quiet [[gas]] window over drip withdrawals that multiply fixed costs. If you hold multiple coins inside FaucetPay, convert only what you understand: a dusty alt with thin liquidity can lose more to spread than you gained on the faucet that paid it.",
+          "Security ops matter as much as fee math. Keep recovery email access hardened, rotate the password if you ever typed it on a borrowed device, and never approve browser extensions that promise “auto-claim” automation for FaucetPay sessions. Credential thieves target micro-earning accounts because users underestimate the balance after months of quiet claims. If you suspect compromise, freeze external faucet payouts first, then change credentials and rebuild the payout address map from bookmarked official URLs only.",
+          "Finally, keep self-custody downstream scheduled. A micro-wallet that always “almost” hits your sweep threshold is a psychological trap: balances grow until a freeze or hack hurts. Calendar the sweep the same way you calendar claims—routing works when both ends of the pipe are intentional.",
+        ],
+      },
     ],
   },
   {
@@ -97,7 +106,7 @@ export const GUIDES_SEO: Article[] = [
     description:
       "On-chain usage, holding periods, testnet participation, and Sybil filters—how projects score wallets before a token generation event.",
     publishedAt: "2026-08-05",
-    readingMinutes: 6,
+    readingMinutes: 7,
     sections: [
       {
         heading: "Airdrops are allocation policies, not gifts",
@@ -131,6 +140,15 @@ export const GUIDES_SEO: Article[] = [
           "Bottom line: eligibility is a weighted scorecard, not a checkbox quest. Organic, documented usage beats copy-paste farms—and Sybil filters are designed to prove that.",
         ],
       },
+      {
+        heading: "Translating scorecards into a gas budget",
+        paragraphs: [
+          "Before you farm another rumor, write a one-page thesis: which behaviors the protocol publicly rewards, which chains matter, and what a *conservative* circulating-supply scenario implies for a mid-tier wallet. If break-even requires fantasy [[TGE]] valuations or assumes you sit in the top percentile of a leaderboard you cannot verify, the thesis fails on paper—stop there. Use [How to Track Airdrop Eligibility with On-Chain Tools](/how-to/how-to-track-airdrop-eligibility-with-on-chain-tools) to audit gaps against real txs instead of Discord screenshots.",
+          "Cap cumulative [[gas]] as a hard stop-loss, denominated in USD at today’s prices—not “points needed.” When spend hits the cap, pause even if quests remain unfinished. Teams change criteria; your fees do not refund. Prefer fewer protocols with coherent histories over spraying identical swaps across every new L2 that tweets a points dashboard.",
+          "Separate identity risk from capital risk. A burn wallet with documented usage can still be linked to you via KYC claim portals, exchange deposits, or ENS reuse. Plan claim hygiene early: which address will claim, whether you will bridge rewards to a CEX, and how you will avoid signing unlimited [[approval]]s on lookalike claim sites. Phishing spikes hardest in the week after an [[airdrop]] announcement—bookmark official URLs now, not when FOMO peaks.",
+          "Revisit eligibility monthly. If your log shows volume without retention, or retention without diversity, adjust behavior deliberately—or exit. Eligibility farming is optional labor; treating it like a job without a payroll is how operators burn gas and morale.",
+        ],
+      },
     ],
   },
   {
@@ -140,7 +158,7 @@ export const GUIDES_SEO: Article[] = [
     description:
       "Separate burn wallets, faucet hygiene, and key isolation so testnet and mainnet experiments do not merge into one recoverable disaster.",
     publishedAt: "2026-08-07",
-    readingMinutes: 6,
+    readingMinutes: 7,
     sections: [
       {
         heading: "Why testnet keys still matter",
@@ -174,6 +192,15 @@ export const GUIDES_SEO: Article[] = [
           "Bottom line: treat testnets as a sandbox with real key-management consequences. Isolate seeds, fund honestly, behave like one user—not a warehouse of bots.",
         ],
       },
+      {
+        heading: "Mainnet touchpoints without merging identities",
+        paragraphs: [
+          "Some campaigns eventually require a mainnet registration transaction, a funded address, or a bridge that links test history to production. When that happens, fund a **dedicated mainnet burn address**—still separate from cold storage—with only the minimum needed. Never top up that address from an exchange withdrawal that also funds your savings wallet if you care about graph clustering; use fresh withdrawals or carefully planned hops you accept as linked.",
+          "Before any mainnet signature, re-verify [[chain ID]], contract address from official docs, and simulation output. Testnet muscle memory is dangerous: the same UI can flip to mainnet after a wallet reconnect. Reject unlimited [[approval]]s on experimental dApps; if a flow demands them, size the wallet so a drain is survivable. After suspicious connections, revoke and rotate—habits from [How to Revoke Token Approvals](/how-to/how-to-revoke-token-approvals-to-protect-wallet-allowance-limits) apply even when amounts feel “small.”",
+          "Keep the burn wallet’s [[seed phrase]] offline and never typed into faucet forms, Discord bots, or “eligibility checkers.” Phishing operators specifically target testnet farmers who lower their guard because tokens are worthless. Worthless assets; valuable keys.",
+          "Document which identities you intentionally linked (email for faucet, Discord for roles, mainnet burn for claims). Unplanned linkage is how a sandbox becomes a map of your entire stack. When in doubt, stop farming rather than “just this once” importing a main seed into a test profile.",
+        ],
+      },
     ],
   },
   {
@@ -183,7 +210,7 @@ export const GUIDES_SEO: Article[] = [
     description:
       "Compare solo validators, delegated native stake, and liquid staking tokens (LSDs)—liquidity, slashing, smart-contract, and tax complexity for yield seekers.",
     publishedAt: "2026-08-09",
-    readingMinutes: 6,
+    readingMinutes: 7,
     sections: [
       {
         heading: "Three ways to stake ETH and beyond",
@@ -217,6 +244,15 @@ export const GUIDES_SEO: Article[] = [
           "Bottom line: native stake optimizes protocol security participation; LSD optimizes capital mobility at the price of stacked dependencies. Pick the risk you can actually monitor.",
         ],
       },
+      {
+        heading: "Monitoring cadence after you choose a path",
+        paragraphs: [
+          "Whichever staking path you pick, schedule a monthly review instead of chasing APY screenshots. For native stake, check validator performance, commission changes, and unbonding timelines before you need liquidity. For LSDs, watch secondary-market peg, redemption queue length, and protocol incident channels—depegs often start as “temporary discounts” that widen under stress. Write the review outcome in the same log you use for tax lots so yield decisions stay auditable.",
+          "Size positions by **attention budget**, not max imaginable APY. An LSD looped as collateral across three protocols can produce headline yield while concentrating smart-contract and liquidation risk you cannot monitor at work. Prefer one transparent position you understand over a restaking stack you only saw in a thread. Pair this discipline with [How to Compare Staking and Savings APY Without Chasing Headlines](/how-to/how-to-compare-staking-and-savings-apy-without-chasing-headlines).",
+          "Exit planning belongs in the entry checklist. Know how long native unbonding takes, whether LSD redemption is queue-based, and what [[gas]] you need to unwind. If a position cannot be exited within your personal emergency window without heavy slippage, it is not “liquid” for your life—regardless of the token ticker.",
+          "Finally, separate staking experiments from long-term cold storage. Keep meaningful savings on keys you rarely connect to DeFi; stake only capital you accept as operationally hot. Yield that requires constant wallet signatures is a job with variable pay—budget time and risk accordingly.",
+        ],
+      },
     ],
   },
   {
@@ -226,7 +262,7 @@ export const GUIDES_SEO: Article[] = [
     description:
       "Why AMM pool inventory drifts versus holding, how fees partially compensate, and when LP “yield” is still a losing bet.",
     publishedAt: "2026-08-11",
-    readingMinutes: 6,
+    readingMinutes: 7,
     sections: [
       {
         heading: "Hold vs pool: two different bets",
@@ -258,6 +294,66 @@ export const GUIDES_SEO: Article[] = [
           "High-volume pairs you want to hold long-term anyway, stable pairs you understand, or professional market-making with hedges off-chain. Not “100% APY” screenshots on thin pairs.",
           "Micro-earners routing faucet proceeds should usually **swap or hold**, not LP exotic alts—fee income rarely beats IL on random offerwall tokens.",
           "Bottom line: IL is inventory drift, not a bug. Fees may pay you to provide liquidity, but they do not delete directional risk—model both before you deposit.",
+        ],
+      },
+      {
+        heading: "A pre-deposit checklist for GetFreeBit operators",
+        paragraphs: [
+          "Before you deposit, write the pair, fee tier, expected hold horizon, and the IL you would accept if one asset doubles while the other is flat. If you cannot state that number, you are guessing. Cross-check current volume and fee APR from the pool UI—not a farm aggregator screenshot that mixes emissions with trading fees. Emissions can vanish overnight; IL does not wait for your exit.",
+          "Prefer pools where you already want both assets for non-LP reasons (for example ETH you hold long-term plus a stablecoin buffer). That framing turns residual inventory drift into a cost of earning fees on holdings you keep anyway—not a leveraged bet on a random alt. Micro-earners sweeping faucet coins should usually swap to a destination asset, not LP thin pairs that look high-APY because nobody trades them.",
+          "Operational hygiene: use a dedicated hot wallet, verify the pool contract from official docs, and reject unlimited [[approval]]s when a finite allowance works. After exit, revoke leftover allowances and record entry/exit prices for tax lots. [[Gas]] to enter, rebalance, and exit belongs in the ROI line—small LPs often lose to fixed costs before IL even matters.",
+          "If price leaves a concentrated range, treat the position as idle inventory plus opportunity cost—not “set and forget yield.” Either widen/re-enter with eyes open or withdraw. Passive LP without monitoring is how fee income quietly turns into a worse bag than holding.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "points-programs-and-tge-expectations",
+    kind: "guide",
+    title: "Points Programs and TGE Expectations",
+    description:
+      "How pre-token points scoring works, what protocols measure, why TGE unlocks disappoint leaderboard chasers, and a practical checklist to farm without wrecking wallets.",
+    publishedAt: "2026-08-24",
+    readingMinutes: 7,
+    sections: [
+      {
+        heading: "What points programs actually are",
+        paragraphs: [
+          "A [[points]] program is a pre-token incentive scoreboard: protocols track wallet behavior off-chain or on-chain, assign opaque units, and hint that those units may convert into tokens at a later [[TGE]]. Marketing frames points as progress; economically they are provisional IOUs with unknown exchange rates, unknown circulating supply, and optional anti-[[Sybil]] discounts. GetFreeBit treats them as speculative labor—closer to unpaid product testing than to a balance sheet asset.",
+          "Points differ from a confirmed [[airdrop]] snapshot. An airdrop (when published) states criteria and often a claim contract; points dashboards can change weights weekly, wipe seasons, or never convert. Teams use points to bootstrap usage, gather feedback, and delay token design decisions. You are paying [[gas]] and attention for a call option the issuer can reprice.",
+          "That does not make every program worthless. Some seasons convert with clear formulas; others reward genuine users who would have used the product anyway. The operator’s job is to separate “I want this product” from “I need leaderboard rank.” The first can justify modest fees; the second often fails math once unlock schedules and float appear.",
+        ],
+      },
+      {
+        heading: "What protocols typically measure",
+        paragraphs: [
+          "Expect scoring across **volume** (swaps, bridges, notional lent), **retention** (active weeks, not a one-day burst), and **diversity** (multiple contract interactions rather than a single spam loop). Fee-paid actions usually weigh more than free faucet clicks because they are costlier to Sybil—though whales can still manufacture volume. Governance votes, liquidity provision, and referrals appear in some models; copy-paste quest lists from anonymous threads do not guarantee inclusion.",
+          "[[Sybil]] filters sit underneath the pretty UI. Clustering algorithms look for funded-from-same-CEX patterns, identical tx graphs, shared browsers, and synchronized timestamps. Fifty thin wallets often underperform one coherent address with months of organic history. Read [Airdrop Eligibility: What Protocols Actually Measure](/guides/airdrop-eligibility-what-protocols-actually-measure) and [What Sybil Attacks, 51% Attacks, and Smart Contract Exploits Are](/guides/what-sybil-attacks-51-percent-attacks-and-smart-contract-exploits-are) before you industrialize accounts.",
+          "Testnet seasons may feed the same CRM as mainnet points. Isolate keys so experiments never touch cold storage—[Testnet Farming Without Contaminating Your Main Wallet](/guides/testnet-farming-without-contaminating-your-main-wallet) and [How to Farm Testnets for Potential Airdrops Safely](/how-to/how-to-farm-testnets-for-potential-airdrops-safely). Document txs early with [How to Track Airdrop Eligibility with On-Chain Tools](/how-to/how-to-track-airdrop-eligibility-with-on-chain-tools) so you are not reconstructing history from memory at claim time.",
+        ],
+      },
+      {
+        heading: "Why TGE math disappoints leaderboard chasers",
+        paragraphs: [
+          "A high points rank is not a USD balance. At [[TGE]], teams choose total supply, community allocation percentage, unlock cliffs, and market-making float. A “top 1%” farmer can still receive tokens worth less than cumulative gas if float is thin, unlocks drip over years, or the market prices the fully diluted valuation far below Discord hopium. Circulating supply on day one is often a small slice; paper FDV headlines do not equal spendable liquidity.",
+          "Secondary markets add insult: claim dumps, locked investor tranches, and emissions overhang compress price just as farmers unlock. Leaderboard screenshots freeze a relative ranking; markets clear in absolute dollars. Model three scenarios—bear, base, bull—using *circulating* tokens available to the community season you farmed, not the entire max supply meme.",
+          "Opportunity cost matters. Capital parked for points could have earned staking yield or simply stayed in self-custody without smart-contract risk. If your break-even requires perfect vesting and a perpetual bull market, you are not investing—you are wishing. Cap gas and time like any speculative budget; walk away when the option premium (fees + hours) exceeds plausible payoff.",
+        ],
+      },
+      {
+        heading: "Risk callouts operators ignore at their peril",
+        paragraphs: [
+          "**Farming cost versus uncertain allocation** is the core risk. You spend real [[gas]] and sometimes bridging fees for a score that can be reweighted, delayed, or voided for policy reasons. Treat spend as a sunk educational cost unless the product itself is useful.",
+          "**Phishing claim sites** explode around TGE announcements. Clones ask for your [[seed phrase]], blind signatures, or unlimited [[approval]]s. Bookmark official docs and socials *before* the announcement week. Never search “project name claim” and click the first ad.",
+          "**Multi-account bans** destroy months of work. Terms usually forbid industrial Sybil farming; filters and KYC portals enforce that. One person, one coherent narrative beats a warehouse of wallets that share funding trails. If a guide promises “guaranteed allocation with 20 wallets,” it is selling risk, not alpha.",
+        ],
+      },
+      {
+        heading: "Practical operator checklist",
+        paragraphs: [
+          "1) Thesis first: use the product if no token existed. 2) Burn wallet only—never main [[seed phrase]] on points dashboards or testnets. 3) Log date, chain, action, txid, gas USD weekly. 4) Hard-cap cumulative fees; stop at the cap. 5) Prefer retention and diversity over last-minute volume spikes. 6) Pre-write a claim runbook with official URLs; reject unlimited approvals. 7) Model circulating unlocks, not FDV cosplay. 8) Skip multi-accounting and paid “farmer wallets.”",
+          "Deepen each step with existing GetFreeBit material: eligibility mechanics in [Airdrop Eligibility](/guides/airdrop-eligibility-what-protocols-actually-measure), key isolation in [Testnet Farming Without Contaminating Your Main Wallet](/guides/testnet-farming-without-contaminating-your-main-wallet), adversarial context in [Sybil / exploits guide](/guides/what-sybil-attacks-51-percent-attacks-and-smart-contract-exploits-are), procedural farming in [Farm Testnets Safely](/how-to/how-to-farm-testnets-for-potential-airdrops-safely), and evidence gathering in [Track Eligibility On-Chain](/how-to/how-to-track-airdrop-eligibility-with-on-chain-tools).",
+          "Bottom line: [[points]] are provisional scores, not paychecks. Farm only what you can explain, afford, and secure—and assume [[TGE]] day will be noisier, thinner, and less generous than the leaderboard made it feel.",
         ],
       },
     ],

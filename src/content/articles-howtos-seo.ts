@@ -11,7 +11,7 @@ export const HOWTOS_SEO: Article[] = [
     description:
       "Create a FaucetPay micro-wallet, secure it with 2FA, connect US faucet sites, and sweep aggregated balances to self-custody without losing dust to fees.",
     publishedAt: "2026-08-12",
-    readingMinutes: 6,
+    readingMinutes: 7,
     sections: [
       {
         heading: "Create and secure the account",
@@ -45,6 +45,15 @@ export const HOWTOS_SEO: Article[] = [
           "12. If the account is compromised, rotate passwords, revoke sessions, and pause external faucet links until you understand the breach. Custodial risk is platform risk—size exposure accordingly.",
         ],
       },
+      {
+        heading: "Troubleshooting credits and protecting the pipe",
+        paragraphs: [
+          "13. If a faucet shows “paid” but FaucetPay does not credit within its stated window, capture screenshots of the external payout ID, coin type, and destination address before opening a ticket. Most misses are wrong-asset addresses or delayed PTC queues—not hacks. Do not “fix” the issue by pasting a new address from a search ad; stay on bookmarked domains from the [faucet desk](/faucets).",
+          "14. Build a simple ledger: date, site, minutes spent, coin credited, FaucetPay balance after, and any withdrawal fees. Two weeks of data tells you whether the stack beats your next-best use of time—see [Evaluating Crypto Faucets: Time vs Reward](/guides/evaluating-crypto-faucets-time-vs-reward). If ROI fails, shrink platforms before you add more.",
+          "15. When sweeping to self-custody, match network and memo/tag fields exactly; send a [[test amount]] first even if you have withdrawn before. Address-book mistakes and wrong-chain sends remain the top irreversible losses for micro-earners graduating to their own keys. Prefer quieter [[gas]] periods for L1 exits so fees do not erase a month of claims.",
+          "16. Operational security: never store the FaucetPay password in a browser profile you also use for random Discord links, and never share 2FA codes with “support.” If you ever typed credentials on a suspicious page, change the password, rotate 2FA, and temporarily remove FaucetPay payout addresses from external faucets until you confirm control. Routing only works when the custodian account remains yours.",
+        ],
+      },
     ],
   },
   {
@@ -54,7 +63,7 @@ export const HOWTOS_SEO: Article[] = [
     description:
       "A repeatable US-friendly schedule—FaucetPay routing, timer discipline, offerwall hygiene, and exit checks—without multi-account Sybil traps.",
     publishedAt: "2026-08-14",
-    readingMinutes: 6,
+    readingMinutes: 7,
     sections: [
       {
         heading: "Design the routine before you click",
@@ -88,6 +97,16 @@ export const HOWTOS_SEO: Article[] = [
           "12. Disclose referral links if you publish routines publicly. Honest education outperforms hype for long-term SEO and trust.",
         ],
       },
+      {
+        heading: "Measure, prune, and protect the routine",
+        paragraphs: [
+          "13. After fourteen days, compute **net USD per logged hour** using only credited (not pending) balances minus any withdrawal fees. If the number loses to your next-best use of time, cut the weakest site first—do not add offerwalls hoping volume fixes broken unit economics. Re-run the [time-vs-reward](/guides/evaluating-crypto-faucets-time-vs-reward) scorecard quarterly as payout tables change.",
+          "14. Keep a written ban/phishing checklist beside the timer: bookmarked URLs only, no SMS-code tasks, no APK installs, no “support” DMs asking for passwords or [[seed phrase]]s. US operators get targeted with fake Cointiply/FaucetPay clones during high-traffic promo weeks—verify domains character by character before login.",
+          "15. Align payouts through [[FaucetPay]] (or another micro-wallet you already secured) so each session ends with credits in one place. Weekly, reconcile site dashboards against the micro-wallet; missing credits are cheaper to chase early than after you forgot which PTC reverse happened. Sweep to self-custody on a calendar so custodial balances never become “accidentally large.”",
+          "16. Protect attention as aggressively as accounts. If a platform’s captchas routinely blow past your 30-minute cap, demote it. A sustainable routine beats an exhausting one that causes password reuse, VPN hopping, or multi-accounting—behaviors that earn bans and destroy the stack. Micro-earnings compound only when the operator stays solvent, legal, and bored enough to follow the checklist.",
+          "17. Once a month, delete or pause any platform that failed two payout checks, demanded unsafe installs, or broke your time cap three sessions in a row. A shorter stack with clean FaucetPay credits beats a bloated routine that invites phishing and fatigue. Re-read [How FaucetPay Routing Works](/guides/how-faucetpay-routing-works-for-micro-earnings) if your sweep habits drift toward leaving large custodial balances “for later.”",
+        ],
+      },
     ],
   },
   {
@@ -97,7 +116,7 @@ export const HOWTOS_SEO: Article[] = [
     description:
       "Use an isolated burn wallet, official faucets, documented txs, and Sybil-aware behavior when pursuing testnet-based allocation rumors.",
     publishedAt: "2026-08-16",
-    readingMinutes: 6,
+    readingMinutes: 7,
     sections: [
       {
         heading: "Wallet and environment setup",
@@ -131,6 +150,16 @@ export const HOWTOS_SEO: Article[] = [
           "12. Rotate or retire burn wallets after suspicious signatures. Farming is optional; key safety is not.",
         ],
       },
+      {
+        heading: "Budget, documentation, and when to walk away",
+        paragraphs: [
+          "13. Convert every mainnet fee you spend supporting testnet work (bridges, registration txs, identity NFTs) into a running USD total. Cap that budget before you start; when you hit it, stop—even if Discord still posts quest lists. Uncertain [[airdrop]] allocation is not an unlimited expense account. Cross-check behavior against [Airdrop Eligibility: What Protocols Actually Measure](/guides/airdrop-eligibility-what-protocols-actually-measure).",
+          "14. Keep a spreadsheet with date, chain, action, contract, txid, and gas USD. That log is your eligibility evidence and your anti-FOMO tool: if you cannot show sustained, diverse actions, more spam txs will not magically look organic to [[Sybil]] filters. Prefer one coherent wallet narrative over ten clones—see also [What Sybil Attacks, 51% Attacks, and Smart Contract Exploits Are](/guides/what-sybil-attacks-51-percent-attacks-and-smart-contract-exploits-are).",
+          "15. Before any claim UI appears, bookmark official docs and social accounts. Phishing claim sites spike at announcement time; they ask for [[seed phrase]]s or unlimited [[approval]]s. Simulate transactions, reject unknown spenders, and never rush because a countdown timer in a DM says so.",
+          "16. Walk away when product quality is poor, criteria exclude your jurisdiction, or gas already exceeds conservative allocation math. Testnet farming is optional research labor. Protecting keys and attention is mandatory—rotate burn wallets after bad signatures and return to mainnet hygiene without ego.",
+          "17. After each farming week, recompute cumulative gas versus your pre-committed cap and write a one-line go/no-go note. If Discord quests demand new chains or bridges you did not budget for, decline—scope creep is how speculative labor turns into a fee sink. Keep the burn wallet’s browser profile free of savings extensions, and never paste a [[seed phrase]] into “eligibility” forms that appear during rumor weeks. Safe testnet farming is mostly saying no on schedule.",
+        ],
+      },
     ],
   },
   {
@@ -140,7 +169,7 @@ export const HOWTOS_SEO: Article[] = [
     description:
       "Use explorers, Dune dashboards, and wallet labels to audit your farming history, spot gaps, and avoid fake eligibility checkers.",
     publishedAt: "2026-08-18",
-    readingMinutes: 6,
+    readingMinutes: 7,
     sections: [
       {
         heading: "Start from primary sources",
@@ -174,6 +203,16 @@ export const HOWTOS_SEO: Article[] = [
           "12. When claim time arrives, verify claim contract on explorer, use simulation, and document claim txid for taxes—[How to Calculate Capital Gains and Prepare Crypto Taxes](/how-to/how-to-calculate-capital-gains-and-prepare-crypto-taxes).",
         ],
       },
+      {
+        heading: "From gap analysis to a safe claim plan",
+        paragraphs: [
+          "13. After you list missing criteria, estimate [[gas]] and time to fill each gap *once*—not with spam retries. Rank gaps by official weight if the team published a scorecard; otherwise prioritize fee-paid, retained usage over vanity mints. If the cheapest path still exceeds your speculative budget at conservative FDV assumptions, mark the campaign “observe only” and stop signing.",
+          "14. Build a claim runbook before TGE week: official URL sources, the exact farm address that should claim, whether KYC is required, and which [[approval]]s you will refuse. Store that runbook offline. When phishing clones flood search results, you follow the runbook—not adrenaline. Pair with [How to Connect a Wallet to dApps Securely](/how-to/how-to-connect-a-wallet-to-decentralized-applications-dapps-securely).",
+          "15. Use explorers and Dune in **read-only** mode forever. Any site that asks you to “verify ownership” by signing a blind message or importing a [[seed phrase]] is hostile until proven otherwise. Paste addresses, never keys. If a dashboard requires a connected wallet just to view public stats, prefer the SQL/embed view or an explorer instead.",
+          "16. After claim (or after you decide to skip), archive txids, token amounts, and USD estimates for taxes and post-mortems. Review what the on-chain record actually shows versus what Discord promised. That feedback loop improves the next campaign more than chasing every new points leaderboard the same week.",
+          "17. Maintain a private “official sources” list (docs URL, verified social, governance forum) updated before snapshot rumors peak. When a third-party checker disagrees with your explorer history, trust the explorer and your txid log—not the checker. If you must interact with a claim contract, verify the bytecode address on the explorer against the official announcement, simulate the call, and keep claim size and [[gas]] notes for tax records even when the token later goes to zero.",
+        ],
+      },
     ],
   },
   {
@@ -183,7 +222,7 @@ export const HOWTOS_SEO: Article[] = [
     description:
       "Normalize APY vs APR, strip reward-token emissions, and score lockups, smart-contract, and depeg risk before you deposit for yield.",
     publishedAt: "2026-08-20",
-    readingMinutes: 6,
+    readingMinutes: 7,
     sections: [
       {
         heading: "Decode the headline number",
@@ -217,6 +256,16 @@ export const HOWTOS_SEO: Article[] = [
           "12. Never stake or lend based on Telegram APY pics. Compare, disclose partner links if applicable, and accept that real yield is usually lower than headlines after risk.",
         ],
       },
+      {
+        heading: "Worked comparison habits that survive hype cycles",
+        paragraphs: [
+          "13. Pick two candidate products only—for example native delegated stake versus a reputable LSD, or CEX savings versus a blue-chip lending market. Fill your table with live numbers on the same day, same denomination, and the same “can I exit in seven days?” stress question. If one option needs three nested protocols to match the other’s APY, the complexity is part of the price.",
+          "14. Haircut emissions and points aggressively. A farm paying 40% in a volatile reward token may be worth mid-single-digits after expected sell pressure—or less. Convert reward tokens to your unit of account mentally at a discounted price, not the launch tweet’s fully diluted fantasy. For LSD and LP paths, re-read [Liquid Staking vs Native Staking](/guides/liquid-staking-vs-native-staking-trade-offs-for-earners) and [Impermanent Loss Explained](/guides/impermanent-loss-explained-for-liquidity-providers) before you size up.",
+          "15. Document counterparty and contract risk in plain language: “keys on exchange,” “single audited pool,” “restaking stack I cannot explain.” If you cannot explain the failure mode in one sentence, do not deposit size that would hurt. Enable wallet simulation and revoke unused [[approval]]s when you leave a venue.",
+          "16. Revisit the table monthly. APYs decay, pegs wobble, and lockups extend via governance. Yield is a monitoring job; set calendar reminders or you are not earning—you are hoping. Boring, risk-adjusted carry beats headline screenshots that ignore exit friction and [[gas]].",
+          "17. Record the date of every APY check so you can see decay clearly—yesterday’s 18% is not today’s product. Prefer venues where you can explain custody (self-custody vs CEX), exit path, and failure mode to a non-crypto friend in under a minute. If you cannot, size near zero. Yield without comprehension is unpaid risk underwriting, not a GetFreeBit strategy.",
+        ],
+      },
     ],
   },
   {
@@ -226,7 +275,7 @@ export const HOWTOS_SEO: Article[] = [
     description:
       "Harden a Tier-1 CEX account with authenticator 2FA, anti-phishing codes, withdrawal allowlists, and a first self-custody test withdrawal.",
     publishedAt: "2026-08-22",
-    readingMinutes: 6,
+    readingMinutes: 7,
     sections: [
       {
         heading: "Baseline account hygiene",
@@ -258,6 +307,16 @@ export const HOWTOS_SEO: Article[] = [
           "10. Separate exchange login browser profile from faucet or DeFi experimentation to reduce cookie-stealer blast radius.",
           "11. Export trade history periodically for taxes—[How to Calculate Capital Gains](/how-to/how-to-calculate-capital-gains-and-prepare-crypto-taxes).",
           "12. If you rotate phones, migrate authenticator seeds carefully before wiping old devices. Losing 2FA without backup codes locks you into painful recovery flows—prepare before upgrades.",
+        ],
+      },
+      {
+        heading: "Recovery drills and first withdrawal rehearsal",
+        paragraphs: [
+          "13. Before you fund size, rehearse recovery: confirm you can locate 2FA backup codes, that the anti-phishing phrase appears on official emails, and that allowlisted addresses match your self-custody receive address on a [[block explorer]]. A dry run costs nothing; discovering missing backup codes after a phone wipe costs weeks.",
+          "14. Perform a full small-withdrawal rehearsal on the allowlisted address: withdraw a [[test amount]], wait for the required confirmations, verify receipt, then withdraw a second modest amount. Only after both succeed should you treat the exchange as an on-ramp you trust operationally. Wrong-network mistakes are common when users copy addresses from chat history—always copy from the wallet receive screen.",
+          "15. Harden the human layer. Support scammers will impersonate exchange staff in Telegram or email and ask for 2FA codes, remote desktop access, or your [[seed phrase]] (exchanges never need your self-custody seed). Hang up, navigate from bookmarks, and open tickets only inside the official account portal.",
+          "16. Ongoing: review allowlisted addresses quarterly, remove unused ones, and keep trade/export history for taxes. Separate the browser profile used for the CEX from faucet and DeFi profiles so a malicious extension has a smaller blast radius. Account security is boring checklist work—that is the point.",
+          "17. Treat allowlists as living policy: when you rotate a self-custody address, add the new one, confirm the timelock/email gate, test a tiny withdrawal, then remove the retired address so an attacker cannot reuse an old entry. Document which exchange account maps to which hardware or software wallet label—confusion here causes wrong-network sends more often than malware does. Pair exchange hardening with the broader onboarding guide [How to Buy Crypto on a Centralized Exchange](/how-to/how-to-buy-crypto-on-a-centralized-exchange-using-fiat-currency) so fiat deposits never land in an account that still lacks 2FA and withdrawal controls.",
         ],
       },
     ],

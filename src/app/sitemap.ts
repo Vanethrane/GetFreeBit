@@ -20,6 +20,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/guides",
     "/how-to",
     "/faucets",
+    "/exchanges",
+    "/tools/tax",
     "/news",
     "/about",
     "/contact",
@@ -27,12 +29,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/terms",
   ];
 
+  const moneyDesks = new Set(["/faucets", "/exchanges", "/tools/tax"]);
+
   const entries: MetadataRoute.Sitemap = staticRoutes.map((path) => ({
     url: sitemapUrl(base, path),
     lastModified: now,
     changeFrequency:
       path === "" || path === "/guides" || path === "/news" ? "daily" : "weekly",
-    priority: path === "" ? 1 : path === "/faucets" ? 0.9 : 0.8,
+    priority: path === "" ? 1 : moneyDesks.has(path) ? 0.9 : 0.8,
   }));
 
   for (const guide of ALL_GUIDES) {

@@ -50,10 +50,31 @@ export const HOME_POPULAR_PATHS: HomePath[] = [
     kind: "learn",
   },
   {
+    id: "points-tge",
+    label: "Points & TGE",
+    description: "Leaderboard expectations",
+    href: "/guides/points-programs-and-tge-expectations",
+    kind: "learn",
+  },
+  {
+    id: "exchange-desk",
+    label: "Exchange desk",
+    description: "US CEX referrals",
+    href: "/exchanges",
+    kind: "earn",
+  },
+  {
     id: "buy-crypto",
     label: "Buy with fiat",
     description: "CEX onboarding",
     href: "/how-to/how-to-buy-crypto-on-a-centralized-exchange-using-fiat-currency",
+    kind: "do",
+  },
+  {
+    id: "tax-desk",
+    label: "Tax tools",
+    description: "Koinly & CoinLedger",
+    href: "/tools/tax",
     kind: "do",
   },
   {
@@ -140,6 +161,16 @@ export const HOME_DESK_LINKS: HomeDeskLink[] = [
     href: "/faucets",
     label: "Faucets",
     summary: "US referral desk",
+  },
+  {
+    href: "/exchanges",
+    label: "Exchanges",
+    summary: "US onboarding desk",
+  },
+  {
+    href: "/tools/tax",
+    label: "Tax tools",
+    summary: "Importers & reports",
   },
   {
     href: "/news",

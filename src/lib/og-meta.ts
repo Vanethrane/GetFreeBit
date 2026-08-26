@@ -87,7 +87,7 @@ export function buildProgrammaticSocialMetadata(input: OgMetaInput): Metadata {
 
   const dynamic = buildDynamicTitle({
     slug: input.slug,
-    pageType: titlePageType === "programmatic" ? "guide" : titlePageType,
+    pageType: titlePageType,
     name: displayName,
     keyword: page?.primaryKeyword || input.title,
     phonetic: input.phonetic,

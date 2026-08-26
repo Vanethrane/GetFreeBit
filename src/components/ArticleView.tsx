@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArticlePartnerCta } from "@/components/ArticlePartnerCta";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { GuideRichText } from "@/components/GuideRichText";
 import { HeadMetadata } from "@/components/HeadMetadata";
@@ -79,6 +80,8 @@ export function ArticleView({ article }: { article: Article }) {
             </section>
           ))}
         </Prose>
+
+        <ArticlePartnerCta slug={article.slug} />
 
         <RelatedToolsConversions slug={article.slug} />
 

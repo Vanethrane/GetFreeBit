@@ -76,6 +76,10 @@ export default function FaucetsPage() {
 
               <p className="mt-3 max-w-3xl text-ink-muted">{faucet.description}</p>
 
+              <p className="mt-3 rounded-lg border border-signal/25 bg-signal-glow/40 px-3 py-2 text-sm text-ink">
+                <span className="font-medium text-signal-dark">Why join:</span> {faucet.whyJoin}
+              </p>
+
               <dl className="mt-5 grid gap-3 text-sm sm:grid-cols-2 lg:grid-cols-3">
                 <div>
                   <dt className="text-xs font-medium uppercase tracking-wide text-ink-muted">
@@ -214,9 +218,9 @@ export default function FaucetsPage() {
         </section>
 
         <p className="mt-10 text-xs leading-relaxed text-ink-muted">
-          {siteConfig.affiliateDisclosure} Referral codes on this page will be updated as partner
-          links are verified. Always confirm you are on the official domain—phishing clones target
-          faucet users aggressively.
+          {siteConfig.affiliateDisclosure} Additional platforms appear here as partner links are
+          approved. Always confirm you are on the official domain—phishing clones target faucet
+          users aggressively.
         </p>
       </section>
     </SiteShell>

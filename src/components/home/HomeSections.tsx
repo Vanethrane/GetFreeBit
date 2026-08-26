@@ -64,26 +64,36 @@ export function HomePopularPaths() {
 export function HomeEarnStrip() {
   return (
     <section aria-labelledby="earn-strip-heading" className="py-8">
-      <Link
-        href="/faucets"
-        className="earn-strip group flex flex-col gap-2 rounded-2xl border px-5 py-4 transition sm:flex-row sm:items-center sm:justify-between"
-      >
-        <div>
-          <p id="earn-strip-heading" className="text-xs font-semibold uppercase tracking-[0.22em] text-voice-dark">
-            Start earning
-          </p>
-          <p className="mt-1 font-display text-lg tracking-tight text-ink group-hover:text-voice-dark">
-            US faucet desk &amp; payout routing
-          </p>
-          <p className="mt-1 max-w-xl text-sm leading-relaxed text-ink-muted">
-            Compare micro-earning platforms, batch payouts, and daily routines — partner links disclosed
-            on the desk page.
-          </p>
+      <div className="earn-strip rounded-2xl border px-5 py-4">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p
+              id="earn-strip-heading"
+              className="text-xs font-semibold uppercase tracking-[0.22em] text-voice-dark"
+            >
+              Money desks
+            </p>
+            <p className="mt-1 font-display text-lg tracking-tight text-ink">
+              Faucets, exchanges, and tax tools
+            </p>
+            <p className="mt-1 max-w-xl text-sm leading-relaxed text-ink-muted">
+              Compare US-accessible platforms with mechanics and risk notes first—partner links
+              disclosed on each desk.
+            </p>
+          </div>
         </div>
-        <span className="inline-flex shrink-0 items-center text-sm font-medium text-voice-dark underline-offset-4 group-hover:underline">
-          Open faucet desk →
-        </span>
-      </Link>
+        <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium">
+          <Link href="/faucets" className="text-voice-dark underline-offset-4 hover:underline">
+            Faucet desk →
+          </Link>
+          <Link href="/exchanges" className="text-voice-dark underline-offset-4 hover:underline">
+            Exchange desk →
+          </Link>
+          <Link href="/tools/tax" className="text-voice-dark underline-offset-4 hover:underline">
+            Tax tools →
+          </Link>
+        </div>
+      </div>
     </section>
   );
 }

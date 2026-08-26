@@ -78,7 +78,7 @@ export const GUIDES: Article[] = [
         paragraphs: [
           "Circulating supply, max supply, and unlock calendars shape dilution. A token with a hard cap behaves differently from one that emits rewards forever. Liquidity depth on a [[DEX]] [[liquidity pool]] or [[CEX]] order book determines whether you can exit without catastrophic [[slippage]]. Thin books turn “paper gains” into trapping.",
           "Custody splits the landscape again. Holding USDC on Coinbase is not the same as holding USDC in a [[browser wallet]], which is not the same as a bridged USDC.e representation on an [[L2]]. Asset name similarity hides different redemption and bridge risks—see [bridging without losing funds](/how-to/how-to-transfer-tokens-across-different-blockchains-via-a-cross-chain-bridge).",
-          "For micro-earners routing faucet coins, prefer liquid majors when exiting [[micro-wallet]] balances. Exotic alts paid by offerwalls often fail the same time-vs-reward test as weak faucets in [evaluating crypto faucets](/guides/understanding-crypto-wallets-hot-wallets-vs-cold-storage).",
+          "For micro-earners routing faucet coins, prefer liquid majors when exiting [[micro-wallet]] balances. Exotic alts paid by offerwalls often fail the same time-vs-reward test as weak faucets in [evaluating crypto faucets](/guides/evaluating-crypto-faucets-time-vs-reward).",
         ],
       },
       {
@@ -128,7 +128,7 @@ export const GUIDES: Article[] = [
         heading: "User-facing differences: fees, issuance, and yield language",
         paragraphs: [
           "PoW users primarily interact with fee markets and confirmation depth. There is no native “stake your BTC to earn protocol yield” in Bitcoin’s base layer the way Ethereum offers [[native staking]]. Custodial products that advertise BTC yield are credit or DeFi wrappers—not PoW consensus rewards.",
-          "PoS users encounter [[staking]], [[unbonding period]]s, [[withdrawal lock]]s, and sometimes [[LSD]] tokens. Yield is compensation for securing the network and taking slash/liquidity risk—not free money. Compare designs in [native ETH staking vs liquid staking](/guides/what-crypto-staking-is-and-how-yield-is-generated) and the broader explainer [what crypto staking is](/guides/what-crypto-staking-is-and-how-yield-is-generated).",
+          "PoS users encounter [[staking]], [[unbonding period]]s, [[withdrawal lock]]s, and sometimes [[LSD]] tokens. Yield is compensation for securing the network and taking slash/liquidity risk—not free money. Compare designs in [native vs liquid staking](/guides/liquid-staking-vs-native-staking-trade-offs-for-earners) and the broader explainer [what crypto staking is](/guides/what-crypto-staking-is-and-how-yield-is-generated).",
           "Energy narratives dominate headlines. PoW consumes more electricity by design; PoS drastically reduces that footprint but introduces capital lockup and correlated validator failure modes (cloud outages, client bugs). Neither is “risk-free green finance.”",
         ],
       },
@@ -171,7 +171,7 @@ export const GUIDES: Article[] = [
         heading: "Nodes, mempools, and the fee market",
         paragraphs: [
           "Full nodes download and validate the blockchain, relay peers’ transactions, and maintain a local [[mempool]] of unconfirmed txs. When blocks are full, users bid with fees. Higher fee rates generally confirm faster; low fees may wait through multiple blocks or never confirm if policies drop them.",
-          "This fee market is why micro-payments on base-layer Bitcoin are often uneconomical—and why faucet operators prefer aggregators like [[FaucetPay]] before on-chain withdrawals. Plan exits with fee awareness, as in [FaucetPay routing](/how-to/how-to-send-and-receive-crypto-transactions-without-losing-funds) and [mempool validation](/guides/what-mempools-are-and-how-transactions-get-validated).",
+          "This fee market is why micro-payments on base-layer Bitcoin are often uneconomical—and why faucet operators prefer aggregators like [[FaucetPay]] before on-chain withdrawals. Plan exits with fee awareness, as in [FaucetPay routing](/guides/how-faucetpay-routing-works-for-micro-earnings) and [mempool validation](/guides/what-mempools-are-and-how-transactions-get-validated).",
           "Light wallets trade some trust and privacy for convenience. They may rely on third-party servers for balances. For large holdings, prefer verified software and [[hardware wallet]] signing—see [hardware wallet setup](/how-to/how-to-set-up-a-hardware-wallet-for-maximum-cold-storage-security).",
         ],
       },
@@ -186,7 +186,7 @@ export const GUIDES: Article[] = [
       {
         heading: "Practical peer-to-peer habits",
         paragraphs: [
-          "Verify addresses carefully; Bitcoin transactions are irreversible on-chain. Send a [[test amount]] for new destinations. Prefer wallets that show fee rates clearly. For recurring buys, [practical DCA](/guides/how-bitcoin-functions-as-a-decentralized-peer-to-peer-network) beats panic timing.",
+          "Verify addresses carefully; Bitcoin transactions are irreversible on-chain. Send a [[test amount]] for new destinations. Prefer wallets that show fee rates clearly. For recurring buys, [fiat onboarding on a CEX](/how-to/how-to-buy-crypto-on-a-centralized-exchange-using-fiat-currency) beats panic timing.",
           "When moving from a [[CEX]] to [[self-custody]], follow a [withdrawal checklist](/how-to/how-to-send-and-receive-crypto-transactions-without-losing-funds). Network selection is simpler than multi-chain EVM land—but wrong addresses and malware clipboard swaps still steal coins.",
           "Bottom line: Bitcoin functions as a decentralized peer-to-peer network because thousands of rules-enforcing nodes and economically motivated miners converge on one ledger. Your job is keys, fees, and confirmation policy—not trusting a single payment processor.",
         ],
@@ -291,7 +291,7 @@ export const GUIDES: Article[] = [
         heading: "Choosing L1 vs L2 for GetFreeBit activities",
         paragraphs: [
           "Use L2 for routine swaps, low-value farming, and learning DeFi with smaller sizes. Use L1 when you need mainnet-native protocols, deepest liquidity, or standardized long-term addresses for [[hardware wallet]] storage.",
-          "Airdrop farmers should track fee history and Sybil optics; spam on near-zero fee months may weigh differently than deliberate mainnet usage—see [points and TGE expectations](/guides/what-sybil-attacks-51-percent-attacks-and-smart-contract-exploits-are).",
+          "Airdrop farmers should track fee history and Sybil optics; spam on near-zero fee months may weigh differently than deliberate mainnet usage—see [points and TGE expectations](/guides/points-programs-and-tge-expectations).",
           "Bottom line: L1 is the court of final settlement; L2 is the high-throughput workshop. Understand which security and bridge assumptions you accept every time you switch layers.",
         ],
       },
@@ -388,7 +388,7 @@ export const GUIDES: Article[] = [
         paragraphs: [
           "Banks reverse fraudulent card payments; blockchains do not chargeback signed transfers. Brokers provide best-execution obligations and insurance frameworks that vary by jurisdiction; DeFi offers transparency and self-help tools instead. KYC/AML compliance sits with [[CEX]] [[VASP]]s more than with permissionless pools.",
           "For fiat on/off-ramps, identity, and customer support, centralized venues remain practical—start with [first CEX setup](/how-to/how-to-buy-crypto-on-a-centralized-exchange-using-fiat-currency). Many users blend models: earn or trade on-chain, cash out via regulated entities.",
-          "Risk: “DeFi APY” screenshots without listing smart-contract, oracle, and liquidity risk are incomplete. Impermanent loss for LPs is real—see [IL with real numbers](/guides/explaining-liquidity-pools-and-automated-market-makers-amms).",
+          "Risk: “DeFi APY” screenshots without listing smart-contract, oracle, and liquidity risk are incomplete. Impermanent loss for LPs is real—see [IL with real numbers](/guides/impermanent-loss-explained-for-liquidity-providers).",
         ],
       },
       {
@@ -446,7 +446,7 @@ export const GUIDES: Article[] = [
       {
         heading: "A practical split for GetFreeBit users",
         paragraphs: [
-          "Route faucet and offerwall drips through a [[micro-wallet]], sweep to hot self-custody when thresholds clear, then move meaningful balances to cold storage on a schedule—[FaucetPay routing](/how-to/how-to-send-and-receive-crypto-transactions-without-losing-funds) plus [withdrawal checklist](/how-to/how-to-send-and-receive-crypto-transactions-without-losing-funds).",
+          "Route faucet and offerwall drips through a [[micro-wallet]], sweep to hot self-custody when thresholds clear, then move meaningful balances to cold storage on a schedule—[FaucetPay routing](/guides/how-faucetpay-routing-works-for-micro-earnings) plus [withdrawal checklist](/how-to/how-to-send-and-receive-crypto-transactions-without-losing-funds).",
           "Never import a cold seed into a browser for “convenience.” If you need DeFi with larger funds, consider limited hot balances or [[multisig]] rather than hot-ifying your life savings.",
           "Bottom line: hot vs cold is about connectivity and blast radius. Match wallet type to job—spending, experimenting, or preserving—so one phishing click cannot liquidate everything.",
         ],
@@ -638,7 +638,7 @@ export const GUIDES: Article[] = [
       {
         heading: "What LPs are actually paid for",
         paragraphs: [
-          "LP yield comes primarily from swap fees (and sometimes incentives). It is not free money: you hold a changing basket of assets. If one side moons, you end up with less of the winner than if you simply held—[[impermanent loss]] (better: divergence loss). Worked intuition lives in [IL with real numbers](/guides/explaining-liquidity-pools-and-automated-market-makers-amms).",
+          "LP yield comes primarily from swap fees (and sometimes incentives). It is not free money: you hold a changing basket of assets. If one side moons, you end up with less of the winner than if you simply held—[[impermanent loss]] (better: divergence loss). Worked intuition lives in [IL with real numbers](/guides/impermanent-loss-explained-for-liquidity-providers).",
           "Incentive emissions can subsidize LPs temporarily. When emissions end, fee APR may not cover divergence risk. Always separate fee APY from reward APY in your notes.",
           "Risk: adding liquidity to a pool with a [[honeypot]] token or unlocked LP owned by a deployer is how rugs happen. Inspect pool contracts and LP ownership on a [[block explorer]].",
         ],
@@ -664,7 +664,7 @@ export const GUIDES: Article[] = [
         paragraphs: [
           "Stable-swap curves differ from constant-product pools: they keep prices tighter for similarly pegged assets but can still break when a constituent depegs. Volatile pairs need wider fees or concentrated ranges. Matching pool type to asset behavior is the first LP skill.",
           "Some protocols use TWAP oracles derived from [[AMM]] prices. Thin or manipulable pools can feed bad prices into lending [[liquidation]]s elsewhere—another reason deep liquidity and honest market structure matter beyond your personal swap.",
-          "Do not provide liquidity just because a farm shows triple-digit [[APR]]. Emissions can mask [[impermanent loss]] until you withdraw and notice you underperformed holding. If you cannot explain your inventory risk in one sentence, you are not ready to LP that pair—review [IL with real numbers](/guides/explaining-liquidity-pools-and-automated-market-makers-amms).",
+          "Do not provide liquidity just because a farm shows triple-digit [[APR]]. Emissions can mask [[impermanent loss]] until you withdraw and notice you underperformed holding. If you cannot explain your inventory risk in one sentence, you are not ready to LP that pair—review [IL with real numbers](/guides/impermanent-loss-explained-for-liquidity-providers).",
           "Traders should size against depth, set [[slippage]] consciously, and prefer limit or intent systems when available for large orders. AMMs shine for permissionless access; they are not always the best execution venue for size. Always verify the pool’s [[token contract]] addresses before depositing.",
         ],
       },
@@ -691,7 +691,7 @@ export const GUIDES: Article[] = [
         heading: "Liquid staking and layered yield",
         paragraphs: [
           "[[LSD]] protocols issue tradable receipts (stETH, rETH, etc.) representing staked positions. You keep liquidity at the cost of smart-contract and oracle/liquidity risks on the receipt token. Compare carefully in [native vs liquid staking](/guides/what-crypto-staking-is-and-how-yield-is-generated).",
-          "[[Restaking]] and [[LRT]]s add extra services and extra slash surfaces—[restaking risk stack](/guides/what-crypto-staking-is-and-how-yield-is-generated). Higher advertised [[APY]] usually means more correlated failure modes. Receipt tokens can also trade away from “fair” value during stress, creating basis risk on top of protocol yield.",
+          "[[Restaking]] and [[LRT]]s add extra services and extra slash surfaces—[restaking risk stack](/guides/liquid-staking-vs-native-staking-trade-offs-for-earners). Higher advertised [[APY]] usually means more correlated failure modes. Receipt tokens can also trade away from “fair” value during stress, creating basis risk on top of protocol yield.",
           "DeFi platforms often label any lockup “staking.” Sometimes it is governance lock, sometimes farm emissions, sometimes custodial yield. Read the contract path: consensus rewards ≠ mercantile incentive points. If you cannot name who can [[slash]] you or pause withdrawals, you are not looking at transparent staking.",
         ],
       },
@@ -1179,7 +1179,7 @@ export const GUIDES: Article[] = [
         heading: "Unlock math, float games, and honest dashboards",
         paragraphs: [
           "Compute roughly how many tokens hit markets at each unlock and compare to average daily volume. If a month’s unlock exceeds many days of volume, expect pressure unless demand suddenly rises. Caps without unlock literacy still leave you exposed to float shocks.",
-          "[[Points]] programs and pre-[[TGE]] emissions create implied float that is not yet a token. When the token arrives, circulating supply can surprise participants who only watched leaderboard points—see [points and TGE expectations](/guides/what-sybil-attacks-51-percent-attacks-and-smart-contract-exploits-are).",
+          "[[Points]] programs and pre-[[TGE]] emissions create implied float that is not yet a token. When the token arrives, circulating supply can surprise participants who only watched leaderboard points—see [points and TGE expectations](/guides/points-programs-and-tge-expectations).",
           "Burns funded by real usage (fees) differ from burns that destroy unsold treasury leftovers before a marketing push. Ask which. Likewise, “deflationary tokenomics” stamped on a memecoin with infinite mint authority in an admin key is contradictory—read the roles on the [[token contract]].",
           "Build a one-page tokenomics brief for any asset you hold beyond dust: cap, emissions, unlocks, sinks, admin mint rights, and liquidity venues. Update it when governance changes parameters. Hype fades; schedules execute on-chain whether or not Twitter remembers.",
         ],

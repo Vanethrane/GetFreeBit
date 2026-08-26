@@ -16,9 +16,9 @@ export function faucetSignupHref(faucet: FaucetReferral): string {
 }
 
 export function hasReferralCode(faucet: FaucetReferral): boolean {
-  return faucet.referralCode.trim().length > 0;
+  return faucet.live === true;
 }
 
 export function referralStatusLabel(faucet: FaucetReferral): string {
-  return hasReferralCode(faucet) ? `Code: ${faucet.referralCode.trim()}` : "Referral code coming soon";
+  return faucet.live ? "Partner link live" : "Coming after approval";
 }
