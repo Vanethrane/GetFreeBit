@@ -168,6 +168,11 @@ export const HOME_DESK_LINKS: HomeDeskLink[] = [
     summary: "US onboarding desk",
   },
   {
+    href: "/cards",
+    label: "Cards",
+    summary: "Bybit Card code & more",
+  },
+  {
     href: "/tools/tax",
     label: "Tax tools",
     summary: "Importers & reports",

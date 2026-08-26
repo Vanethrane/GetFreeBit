@@ -17,7 +17,7 @@ export function HomeResourceRail() {
         Pros use the desks for quick checks. Newcomers start with guides and how-tos. Same trust
         standard everywhere—no hype, disclosed partners.
       </p>
-      <ul className="mt-6 grid gap-px overflow-hidden rounded-xl border border-paper-line bg-paper-line sm:grid-cols-3 lg:grid-cols-6">
+      <ul className="mt-6 grid gap-px overflow-hidden rounded-xl border border-paper-line bg-paper-line sm:grid-cols-2 lg:grid-cols-4">
         {HOME_DESK_LINKS.map((desk) => (
           <li key={desk.href} className="bg-paper-raised">
             <Link

@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/how-to",
     "/faucets",
     "/exchanges",
+    "/cards",
     "/tools/tax",
     "/news",
     "/about",
@@ -29,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/terms",
   ];
 
-  const moneyDesks = new Set(["/faucets", "/exchanges", "/tools/tax"]);
+  const moneyDesks = new Set(["/faucets", "/exchanges", "/cards", "/tools/tax"]);
 
   const entries: MetadataRoute.Sitemap = staticRoutes.map((path) => ({
     url: sitemapUrl(base, path),

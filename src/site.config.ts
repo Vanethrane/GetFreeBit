@@ -40,6 +40,13 @@ export type AffiliateOffer = {
   benefit?: string;
   /** Partner category for comparison tables */
   category?: AffiliateCategory;
+  /**
+   * Manual referral / invite code. Prefer full tracked URLs; use only when the
+   * program has no affiliate link (e.g. Bybit Card).
+   */
+  referralCode?: string;
+  /** When true, UI shows the code prominently for users to enter at signup */
+  codeOnly?: boolean;
 };
 
 export type AffiliateCategory =
@@ -201,6 +208,19 @@ const partners = [
     benefit: "Referral perks when you register via our link",
   },
   {
+    id: "bybit-card",
+    category: "cards" as const,
+    title: "Bybit Card",
+    description:
+      "Crypto debit card via Bybit—apply on the official card flow and enter our invite code (Bybit does not issue a tracked link for this program).",
+    href: "https://www.bybit.com/en/cards",
+    cta: "Open Bybit Card application",
+    eyebrow: "Cards",
+    benefit: "Enter invite code RA1PNLO during the card application",
+    referralCode: "RA1PNLO",
+    codeOnly: true,
+  },
+  {
     id: "tradingview",
     category: "web3-tools" as const,
     title: "TradingView",
@@ -328,6 +348,7 @@ export const siteConfig = {
     { href: "/how-to", label: "How-tos" },
     { href: "/faucets", label: "Faucets" },
     { href: "/exchanges", label: "Exchanges" },
+    { href: "/cards", label: "Cards" },
     { href: "/news", label: "News" },
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
@@ -340,6 +361,7 @@ export const siteConfig = {
     { href: "/how-to", label: "How-tos" },
     { href: "/faucets", label: "Faucet referrals" },
     { href: "/exchanges", label: "Exchange referrals" },
+    { href: "/cards", label: "Cards & banking" },
     { href: "/tools/tax", label: "Tax tools" },
     { href: "/news", label: "News" },
     { href: "/about", label: "About" },
