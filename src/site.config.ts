@@ -246,36 +246,31 @@ export const siteConfig = {
   contactEmail: "vanethrane@gmail.com",
 
   /** One-line product pitch */
-  tagline: "Faucets, yield, and Web3—explained like an operator, not a hype reel.",
+  tagline:
+    "Live Bitcoin desk for operators who leave the tab open—and a free library for anyone learning crypto without the theater.",
 
   /** Home hero — brand kicker + two-line headline */
   heroEyebrow: "GetFreeBit",
-  heroTitleLead: "Free crypto,",
-  heroTitleAccent: "zero theater.",
+  heroTitleLead: "Watch Bitcoin.",
+  heroTitleAccent: "Learn crypto freely.",
 
   /** Default meta description */
   description:
-    "Straight talk on faucets, airdrops, staking, and exchange onboarding. Real mechanics, risk callouts, and disclosed partner links—no get-rich-quick theater.",
+    "Live Bitcoin price chart and sats/BTC converter, plus free guides on faucets, wallets, yield, and Web3. A trusted desk for pros and a clear starting point for newcomers.",
 
   /** Mission — footer and brand surfaces */
   footerBlurb:
-    "A free resource for the crypto community—plain-English guides so anyone can earn, secure, and navigate Web3 without the hype.",
+    "Live Bitcoin desk and a free crypto library—built for operators who stay sharp and newcomers who want clarity without the theater.",
 
-  /**
-   * Home mission + optional donations. Leave bitcoinAddress empty until you have a receive address.
-   * PayPal uses a donate link to the public contact email when paypalUrl is empty.
-   */
   donations: {
     eyebrow: "Our mission",
-    title: "Free for the community. Built for operators.",
+    title: "A free resource for the whole community.",
     body:
-      "GetFreeBit is a free public resource for the crypto community—guides, how-tos, and desks that explain faucets, yield, and Web3 in plain English. No membership wall. No get-rich-quick theater. Just mechanics, risk callouts, and paths you can actually follow.",
+      "GetFreeBit pairs a live Bitcoin monitor with plain-English guides so pros have a desk worth leaving open—and newcomers have a trusted place to learn wallets, yield, and Web3. No membership wall. No get-rich-quick theater.",
     supportTitle: "Keep the desk online",
     supportBody:
-      "If a guide saved you time, fees, or a costly mistake, chip in. Donations help cover hosting, research, and writing so the library stays free for the next reader.",
-    /** On-chain BTC receive address — paste when ready */
-    bitcoinAddress: "",
-    /** Full PayPal donate / paypal.me URL. Empty → donate link to siteConfig.contactEmail */
+      "If the chart, converter, or a guide helped you, chip in. Donations cover hosting and writing so the library stays free for the next reader.",
+    bitcoinAddress: "bc1qdvpp8r9lr2xyjeu7kqaww2xnq4ezx2caw8d9ag",
     paypalUrl: "https://paypal.me/technivorous",
     bitcoinLabel: "Donate Bitcoin",
     paypalLabel: "Donate with PayPal",

@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { AdSlot } from "@/components/ads";
 import { GlobalSearchProvider } from "@/components/GlobalSearchProvider";
 import { GlobalSearchTrigger } from "@/components/GlobalSearchModal";
@@ -25,9 +24,6 @@ function BrandMark({ className = "" }: { className?: string }) {
 }
 
 function SiteHeader() {
-  const pathname = usePathname();
-  const isHome = pathname === "/";
-
   return (
     <header className="site-header relative z-[1] space-y-3">
       <div className="flex flex-wrap items-center justify-between gap-4">
@@ -46,16 +42,14 @@ function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className={`relative transition-colors hover:text-signal-dark after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-gradient-to-r after:from-signal after:to-voice after:transition-[width] hover:after:w-full ${
-                item.href === "/faucets" ? "font-medium text-voice-dark" : ""
-              }`}
+              className="relative transition-colors hover:text-signal-dark after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-gradient-to-r after:from-signal after:to-voice after:transition-[width] hover:after:w-full"
             >
               {item.label}
             </Link>
           ))}
         </nav>
       </div>
-      {!isHome ? <GlobalSearchTrigger className="w-full max-w-xl" /> : null}
+      <GlobalSearchTrigger className="w-full max-w-xl" />
     </header>
   );
 }
@@ -113,7 +107,7 @@ export function SiteFooter() {
 
 type SiteShellProps = {
   children: React.ReactNode;
-  /** Home uses in-page search; skip top banner so hero stays clean */
+  /** Home keeps the Bitcoin desk clean; skip top banner (footer/inline ads stay) */
   homeLayout?: boolean;
 };
 
@@ -121,7 +115,11 @@ export function SiteShell({ children, homeLayout = false }: SiteShellProps) {
   return (
     <GlobalSearchProvider>
       <HistoryProvider>
-        <div className="site-shell mx-auto flex min-h-screen w-full max-w-3xl flex-col px-6 py-8">
+        <div
+          className={`site-shell mx-auto flex min-h-screen w-full flex-col px-6 py-8 ${
+            homeLayout ? "max-w-5xl" : "max-w-3xl"
+          }`}
+        >
           <SiteHeader />
           {!homeLayout ? (
             <StableSlot

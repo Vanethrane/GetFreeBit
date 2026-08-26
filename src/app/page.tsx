@@ -1,13 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import {
-  HomeDeskTiles,
-  HomeEarnStrip,
-  HomeMissionSupport,
-  HomeOperatorPicks,
-  HomePopularPaths,
-} from "@/components/home/HomeSections";
-import { HomeSearch } from "@/components/HomeSearch";
+import { BitcoinMonitor } from "@/components/home/BitcoinMonitor";
+import { HomeMissionSupport, HomeResourceRail } from "@/components/home/HomeSections";
 import { SiteJsonLd } from "@/components/SiteJsonLd";
 import { SiteShell } from "@/components/SiteChrome";
 import { getAllGuides, getAllHowtos, getAllNews } from "@/content/guides";
@@ -17,93 +11,75 @@ import { siteConfig } from "@/site.config";
 export const metadata: Metadata = buildHomeMetadata();
 
 export default function HomePage() {
-  const latestGuides = getAllGuides().slice(0, 2);
-  const latestHowtos = getAllHowtos().slice(0, 2);
-  const latestNews = getAllNews().slice(0, 2);
-
-  const deskCounts = {
-    "/guides": getAllGuides().length,
-    "/how-to": getAllHowtos().length,
-    "/news": getAllNews().length,
-  };
+  const latest = [
+    ...getAllGuides().slice(0, 1).map((a) => ({ ...a, base: "/guides" as const })),
+    ...getAllHowtos().slice(0, 1).map((a) => ({ ...a, base: "/how-to" as const })),
+    ...getAllNews().slice(0, 1).map((a) => ({ ...a, base: "/news" as const })),
+  ];
 
   return (
     <SiteShell homeLayout>
       <SiteJsonLd />
-      <section className="hero-scene relative py-10 sm:py-12">
+
+      <section className="hero-scene relative pb-6 pt-8 sm:pb-8 sm:pt-10">
         <p className="anim-rise text-xs font-semibold uppercase tracking-[0.28em] text-voice-dark">
           {siteConfig.heroEyebrow}
         </p>
-        <h1 className="anim-rise-delay mt-3 font-display text-4xl leading-[1.02] tracking-tight text-ink sm:text-5xl lg:text-[3.25rem]">
+        <h1 className="anim-rise-delay mt-3 max-w-3xl font-display text-4xl leading-[1.05] tracking-tight text-ink sm:text-5xl lg:text-[3.15rem]">
           <span className="block">{siteConfig.heroTitleLead}</span>
           <span className="block text-signal">{siteConfig.heroTitleAccent}</span>
         </h1>
         <div className="hero-rule mt-4" aria-hidden="true" />
-        <p className="anim-rise-delay-2 mt-4 max-w-lg text-base leading-relaxed text-ink-muted sm:text-lg">
+        <p className="anim-rise-delay-2 mt-4 max-w-xl text-base leading-relaxed text-ink-muted sm:text-lg">
           {siteConfig.tagline}
         </p>
-        <div className="anim-rise-delay-2 mt-7">
-          <HomeSearch className="max-w-2xl" />
-        </div>
       </section>
 
-      <HomePopularPaths />
-      <HomeMissionSupport />
-      <HomeEarnStrip />
-      <HomeOperatorPicks />
-      <HomeDeskTiles counts={deskCounts} />
+      <div className="anim-rise-delay-2 pb-4">
+        <BitcoinMonitor />
+      </div>
 
-      <section aria-labelledby="fresh-heading" className="section-scene border-t border-transparent py-10">
-        <h2 id="fresh-heading" className="font-display text-2xl tracking-tight text-ink">
-          Fresh from the desk
-        </h2>
-        <div className="mt-6 space-y-8">
-          <DeskBlock title="Guides" href="/guides" items={latestGuides} base="/guides" />
-          <DeskBlock title="How-tos" href="/how-to" items={latestHowtos} base="/how-to" />
-          <DeskBlock title="News" href="/news" items={latestNews} base="/news" />
-        </div>
-        <p className="mt-8 text-center text-sm text-ink-muted">
-          <Link href="/guides" className="font-medium text-voice-dark underline-offset-4 hover:underline">
-            Browse all content
+      <HomeResourceRail />
+
+      <HomeMissionSupport />
+
+      <section
+        aria-labelledby="latest-heading"
+        className="section-scene border-t border-transparent py-10"
+      >
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <div>
+            <h2 id="latest-heading" className="font-display text-2xl tracking-tight text-ink">
+              From the library
+            </h2>
+            <p className="mt-1.5 max-w-lg text-sm leading-relaxed text-ink-muted">
+              Deep guides for newcomers, operator how-tos for pros—always free.
+            </p>
+          </div>
+          <Link
+            href="/guides"
+            className="text-sm font-medium text-voice-dark underline-offset-4 hover:underline"
+          >
+            Browse all →
           </Link>
-        </p>
+        </div>
+        <ul className="mt-6 divide-y divide-paper-line border-y border-paper-line">
+          {latest.map((item) => (
+            <li key={`${item.base}-${item.slug}`}>
+              <Link
+                href={`${item.base}/${item.slug}`}
+                className="block py-4 transition-colors hover:bg-paper-raised/40"
+              >
+                <span className="text-[0.65rem] font-semibold uppercase tracking-[0.16em] text-ink-muted">
+                  {item.base === "/guides" ? "Guide" : item.base === "/how-to" ? "How-to" : "News"}
+                </span>
+                <span className="mt-1 block font-semibold text-ink">{item.title}</span>
+                <span className="mt-1 block text-sm text-ink-muted">{item.description}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </section>
     </SiteShell>
-  );
-}
-
-function DeskBlock({
-  title,
-  href,
-  items,
-  base,
-}: {
-  title: string;
-  href: string;
-  base: string;
-  items: { slug: string; title: string; description: string }[];
-}) {
-  return (
-    <div>
-      <div className="flex items-end justify-between gap-4">
-        <h3 className="font-display text-xl text-ink">{title}</h3>
-        <Link href={href} className="text-sm font-medium text-voice-dark underline underline-offset-4">
-          View all
-        </Link>
-      </div>
-      <ul className="mt-3 space-y-1">
-        {items.map((item) => (
-          <li key={item.slug}>
-            <Link
-              href={`${base}/${item.slug}`}
-              className="block border-b border-paper-line py-3 transition-colors hover:border-voice/40"
-            >
-              <span className="font-semibold text-ink">{item.title}</span>
-              <span className="mt-1 block text-sm text-ink-muted">{item.description}</span>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
   );
 }

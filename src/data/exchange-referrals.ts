@@ -43,7 +43,7 @@ export const EXCHANGE_REFERRALS: ExchangeReferral[] = [
     riskNotes:
       "Confirm you are on binance.us—not the global domain. Regulatory status can change; keep balances you cannot afford to lock on-exchange temporary.",
     whyJoin:
-      "US-legal Binance rails for spot buys after faucet or paycheck funding—use our ref link at registration.",
+      "US-legal Binance rails for spot buys after faucet or paycheck funding—register with our partner link below.",
     sortOrder: 1,
   },
   {

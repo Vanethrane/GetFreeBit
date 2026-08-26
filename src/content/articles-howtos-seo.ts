@@ -40,7 +40,7 @@ export const HOWTOS_SEO: Article[] = [
       {
         heading: "Referrals and disclosure",
         paragraphs: [
-          "10. If you promote FaucetPay, use your referral link from the dashboard once added to our [desk config](/faucets). Disclose commissions per [GetFreeBit policy](/about)—never promise guaranteed income.",
+          "10. If you promote FaucetPay, share your own tracked referral URL from the dashboard (or use the partner buttons on our [faucet desk](/faucets)). Disclose commissions per [GetFreeBit policy](/about)—never promise guaranteed income.",
           "11. Log withdrawals with dates and amounts for tax records—micro-income may still matter—[How to Calculate Capital Gains and Prepare Crypto Taxes](/how-to/how-to-calculate-capital-gains-and-prepare-crypto-taxes).",
           "12. If the account is compromised, rotate passwords, revoke sessions, and pause external faucet links until you understand the breach. Custodial risk is platform risk—size exposure accordingly.",
         ],

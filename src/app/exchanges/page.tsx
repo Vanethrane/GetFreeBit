@@ -4,8 +4,9 @@ import { dynamicTitleMetadata } from "@/components/SEOHead";
 import { SiteShell } from "@/components/SiteChrome";
 import { getExchangeReferrals } from "@/data/exchange-referrals";
 import {
-  hasPartnerReferralCode,
+  isPartnerLive,
   partnerReferralStatusLabel,
+  partnerSignupCta,
   partnerSignupHref,
 } from "@/lib/partner-referrals";
 import { buildHubMetadata } from "@/lib/site-metadata";
@@ -64,7 +65,7 @@ export default function ExchangesPage() {
                 </div>
                 <span
                   className={`rounded-full px-3 py-1 text-xs font-medium ${
-                    hasPartnerReferralCode(exchange)
+                    isPartnerLive(exchange)
                       ? "bg-voice-glow text-voice-dark"
                       : "bg-paper text-ink-muted"
                   }`}
@@ -117,9 +118,7 @@ export default function ExchangesPage() {
                   rel="noopener noreferrer sponsored"
                   className="inline-flex items-center justify-center rounded-lg bg-voice px-5 py-2.5 text-sm font-semibold text-paper-raised hover:bg-voice-dark"
                 >
-                  {hasPartnerReferralCode(exchange)
-                    ? `Sign up with our ${exchange.name} link`
-                    : `Visit ${exchange.name}`}
+                  {partnerSignupCta(exchange.name, isPartnerLive(exchange))}
                 </a>
                 <Link
                   href="/how-to/how-to-buy-crypto-on-a-centralized-exchange-using-fiat-currency"

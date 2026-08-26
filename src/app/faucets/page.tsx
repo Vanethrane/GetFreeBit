@@ -4,8 +4,9 @@ import { dynamicTitleMetadata } from "@/components/SEOHead";
 import { SiteShell } from "@/components/SiteChrome";
 import { getFaucetReferrals } from "@/data/faucet-referrals";
 import {
+  faucetSignupCta,
   faucetSignupHref,
-  hasReferralCode,
+  isFaucetLive,
   referralStatusLabel,
 } from "@/lib/faucet-referrals";
 import { buildHubMetadata } from "@/lib/site-metadata";
@@ -65,7 +66,7 @@ export default function FaucetsPage() {
                 </div>
                 <span
                   className={`rounded-full px-3 py-1 text-xs font-medium ${
-                    hasReferralCode(faucet)
+                    isFaucetLive(faucet)
                       ? "bg-voice-glow text-voice-dark"
                       : "bg-paper text-ink-muted"
                   }`}
@@ -136,9 +137,7 @@ export default function FaucetsPage() {
                   rel="noopener noreferrer sponsored"
                   className="inline-flex items-center justify-center rounded-lg bg-voice px-5 py-2.5 text-sm font-semibold text-paper-raised hover:bg-voice-dark"
                 >
-                  {hasReferralCode(faucet)
-                    ? `Sign up with our ${faucet.name} link`
-                    : `Visit ${faucet.name}`}
+                  {faucetSignupCta(faucet.name, isFaucetLive(faucet))}
                 </a>
                 <Link
                   href="/how-to/how-to-send-and-receive-crypto-transactions-without-losing-funds"

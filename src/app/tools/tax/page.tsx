@@ -4,8 +4,9 @@ import { dynamicTitleMetadata } from "@/components/SEOHead";
 import { SiteShell } from "@/components/SiteChrome";
 import { getTaxToolReferrals } from "@/data/tax-tool-referrals";
 import {
-  hasPartnerReferralCode,
+  isPartnerLive,
   partnerReferralStatusLabel,
+  partnerSignupCta,
   partnerSignupHref,
 } from "@/lib/partner-referrals";
 import { buildHubMetadata } from "@/lib/site-metadata";
@@ -63,7 +64,7 @@ export default function TaxToolsPage() {
                 </div>
                 <span
                   className={`rounded-full px-3 py-1 text-xs font-medium ${
-                    hasPartnerReferralCode(tool)
+                    isPartnerLive(tool)
                       ? "bg-voice-glow text-voice-dark"
                       : "bg-paper text-ink-muted"
                   }`}
@@ -116,9 +117,7 @@ export default function TaxToolsPage() {
                   rel="noopener noreferrer sponsored"
                   className="inline-flex items-center justify-center rounded-lg bg-voice px-5 py-2.5 text-sm font-semibold text-paper-raised hover:bg-voice-dark"
                 >
-                  {hasPartnerReferralCode(tool)
-                    ? `Start with our ${tool.name} link`
-                    : `Visit ${tool.name}`}
+                  {partnerSignupCta(tool.name, isPartnerLive(tool))}
                 </a>
                 <Link
                   href="/how-to/how-to-calculate-capital-gains-and-prepare-crypto-taxes"

@@ -40,7 +40,7 @@ export const TAX_TOOL_REFERRALS: TaxToolReferral[] = [
     riskNotes:
       "Imports can mis-classify transfers as taxable sales. Always reconcile large txs against explorers before filing.",
     whyJoin:
-      "Fastest path from exchange CSVs + wallets to draft US reports—use our affiliate link at signup.",
+      "Fastest path from exchange CSVs + wallets to draft US reports—open Koinly with our partner link.",
     sortOrder: 1,
   },
   {

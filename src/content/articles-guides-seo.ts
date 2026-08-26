@@ -77,7 +77,7 @@ export const GUIDES_SEO: Article[] = [
         paragraphs: [
           "Register FaucetPay once, then connect it as the payout address on Cointiply, FreeBitco.in, CoinPayU, Fire Faucet, and similar US-listed platforms on our [desk](/faucets). Run a **daily or twice-daily** claim routine rather than obsessive hourly checks unless ROI justifies it—[Evaluating Crypto Faucets: Time vs Reward](/guides/evaluating-crypto-faucets-time-vs-reward).",
           "Weekly or monthly, sweep aggregated balances to a [[hot wallet]] you control, then move meaningful sums to [[cold storage]]. Keeping life-changing value on a micro-wallet defeats the purpose of learning self-custody.",
-          "Referral programs on FaucetPay can supplement claims if you document honestly. Empty referral slots on our desk are placeholders—add your codes in `faucet-referrals.ts` when partner links verify.",
+          "Referral programs on FaucetPay can supplement claims if you document honestly. Use the tracked partner buttons on our [faucet desk](/faucets)—registration goes through our affiliate link automatically.",
         ],
       },
       {
