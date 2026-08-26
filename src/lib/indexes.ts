@@ -224,8 +224,8 @@ export function buildIndexDatasetJsonLd(index: PublishedIndex): Record<string, u
   const orgId = `${home}#organization`;
   const datasetId = `${pageUrl}#dataset`;
   const faqId = `${pageUrl}#faq`;
-  const jsonUrl = absoluteCanonicalUrl(index.downloadJsonPath, domain);
-  const csvUrl = absoluteCanonicalUrl(index.downloadCsvPath, domain);
+  const jsonUrl = `${domain.replace(/\/$/, "")}${index.downloadJsonPath}`;
+  const csvUrl = `${domain.replace(/\/$/, "")}${index.downloadCsvPath}`;
 
   const graph: Record<string, unknown>[] = [
     {
