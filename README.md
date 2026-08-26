@@ -92,4 +92,5 @@ Notes:
 - Legacy `client/` + `server/` apps
 - Word-generation scripts
 
-Sample guide/editorial content under `src/content/` is example payload — replace for each new site.
+Sample guide/editorial content under `src/content/` is example payload — replace for each new site. 
+
