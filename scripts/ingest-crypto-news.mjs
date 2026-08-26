@@ -1,11 +1,12 @@
 /**
- * Ingest one fresh crypto news story into src/data/news-wire.json.
+ * Ingest crypto news posted since the last search into src/data/news-wire.json.
  * Sources: public RSS feeds (no API key). Optional CRYPTOCOMPARE_API_KEY fallback.
  *
  * Usage: node scripts/ingest-crypto-news.mjs
  * Env:
- *   NEWS_INGEST_MAX=50          keep at most N wire stories (default 50)
- *   NEWS_INGEST_DRY_RUN=1       print candidate without writing
+ *   NEWS_INGEST_MAX=80          keep at most N wire stories (default 80)
+ *   NEWS_INGEST_BATCH=15        max new stories per run (default 15)
+ *   NEWS_INGEST_DRY_RUN=1       print candidates without writing
  *   CRYPTOCOMPARE_API_KEY=...   optional CryptoCompare key
  */
 import fs from "node:fs";
@@ -15,6 +16,7 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const WIRE_PATH = path.join(ROOT, "src", "data", "news-wire.json");
+const STATE_PATH = path.join(ROOT, "src", "data", "news-wire-state.json");
 
 const RSS_FEEDS = [
   { name: "CoinDesk", url: "https://www.coindesk.com/arc/outboundfeeds/rss/" },
@@ -22,9 +24,16 @@ const RSS_FEEDS = [
   { name: "Decrypt", url: "https://decrypt.co/feed" },
 ];
 
-const MAX_STORIES = Number(process.env.NEWS_INGEST_MAX || 50);
+const MAX_STORIES = Number(process.env.NEWS_INGEST_MAX || 80);
+const MAX_BATCH = Number(process.env.NEWS_INGEST_BATCH || 15);
 const DRY_RUN = process.env.NEWS_INGEST_DRY_RUN === "1";
 const CC_KEY = process.env.CRYPTOCOMPARE_API_KEY || "";
+
+/** Fallback lookback when no prior search is recorded (2 hours). */
+const DEFAULT_LOOKBACK_MS = 2 * 60 * 60 * 1000;
+
+const CRYPTO_HINT =
+  /\b(bitcoin|btc|ethereum|eth|crypto|cryptocurrency|blockchain|defi|nft|stablecoin|satoshi|mining|wallet|exchange|binance|coinbase|sec|cftc|etf|halving|lightning|token|web3|on-?chain)\b/i;
 
 /**
  * @typedef {{
@@ -46,6 +55,7 @@ const CC_KEY = process.env.CRYPTOCOMPARE_API_KEY || "";
  *   url: string;
  *   body: string;
  *   publishedAt: string;
+ *   publishedAtMs: number;
  *   sourceName: string;
  *   externalId: string;
  *   scoreHint?: number;
@@ -123,6 +133,22 @@ function saveWire(stories) {
   fs.writeFileSync(WIRE_PATH, `${JSON.stringify(sorted, null, 2)}\n`, "utf8");
 }
 
+function loadState() {
+  if (!fs.existsSync(STATE_PATH)) return { lastSearchAt: null };
+  try {
+    const raw = JSON.parse(fs.readFileSync(STATE_PATH, "utf8"));
+    return {
+      lastSearchAt: typeof raw.lastSearchAt === "string" ? raw.lastSearchAt : null,
+    };
+  } catch {
+    return { lastSearchAt: null };
+  }
+}
+
+function saveState(state) {
+  fs.writeFileSync(STATE_PATH, `${JSON.stringify(state, null, 2)}\n`, "utf8");
+}
+
 function scoreTitle(title) {
   const t = title.toLowerCase();
   let score = 0;
@@ -130,14 +156,24 @@ function scoreTitle(title) {
   if (/\b(sec|cftc|etf|regulation|stablecoin|hack|exploit|fed|treasury|court|lawsuit)\b/.test(t)) {
     score += 4;
   }
-  if (/\b(bitcoin|ethereum|defi|wallet|exchange|staking)\b/.test(t)) score += 1;
+  if (/\b(bitcoin|btc|ethereum|eth|defi|wallet|exchange|staking)\b/.test(t)) score += 2;
+  if (CRYPTO_HINT.test(title)) score += 1;
   return score;
 }
 
-function toIsoDate(input) {
+function parsePublishedMs(input) {
   const d = new Date(input);
-  if (Number.isNaN(d.getTime())) return new Date().toISOString().slice(0, 10);
-  return d.toISOString().slice(0, 10);
+  if (Number.isNaN(d.getTime())) return Date.now();
+  return d.getTime();
+}
+
+function toIsoDate(ms) {
+  return new Date(ms).toISOString().slice(0, 10);
+}
+
+function isCryptoStory(item) {
+  const hay = `${item.title} ${item.body} ${item.sourceName}`;
+  return CRYPTO_HINT.test(hay) || (item.scoreHint || 0) > 0;
 }
 
 /**
@@ -159,11 +195,13 @@ function parseRss(xml, sourceName) {
       tagText(block, "summary");
     const body = stripHtml(description);
     if (!title || !link) continue;
+    const publishedAtMs = parsePublishedMs(pubDate);
     items.push({
       title,
       url: link,
       body,
-      publishedAt: toIsoDate(pubDate),
+      publishedAt: toIsoDate(publishedAtMs),
+      publishedAtMs,
       sourceName,
       externalId: guid || link,
       scoreHint: scoreTitle(title),
@@ -208,13 +246,13 @@ async function fetchCryptoCompare() {
     const sourceName = item.source_info?.name || item.source || "CryptoCompare";
     const sourceUrl = String(item.url || "").trim();
     const publishedOn = Number(item.published_on || 0);
+    const publishedAtMs = publishedOn ? publishedOn * 1000 : Date.now();
     return {
       title,
       url: sourceUrl,
       body,
-      publishedAt: publishedOn
-        ? new Date(publishedOn * 1000).toISOString().slice(0, 10)
-        : new Date().toISOString().slice(0, 10),
+      publishedAt: toIsoDate(publishedAtMs),
+      publishedAtMs,
       sourceName,
       externalId: String(item.id || item.guid || sourceUrl),
       scoreHint: scoreTitle(title),
@@ -250,7 +288,17 @@ function toWireStory(item) {
 }
 
 async function main() {
+  const searchStartedAt = new Date().toISOString();
   const existing = loadWire();
+  const state = loadState();
+  const sinceMs = state.lastSearchAt
+    ? parsePublishedMs(state.lastSearchAt)
+    : Date.now() - DEFAULT_LOOKBACK_MS;
+
+  console.log(
+    `Searching crypto news since ${new Date(sinceMs).toISOString()} (last search: ${state.lastSearchAt || "none"}).`,
+  );
+
   const seenSlugs = new Set(existing.map((s) => s.slug));
   const seenIds = new Set(
     existing.flatMap((s) => [s.externalId, s.sourceUrl].filter(Boolean)),
@@ -271,32 +319,53 @@ async function main() {
     console.warn("CryptoCompare error:", err instanceof Error ? err.message : err);
   }
 
-  pool.sort((a, b) => (b.scoreHint || 0) - (a.scoreHint || 0));
+  /** @type {WireStory[]} */
+  const fresh = [];
+  const seenThisRun = new Set();
 
-  /** @type {WireStory | null} */
-  let picked = null;
-  for (const item of pool) {
+  const ranked = [...pool].sort((a, b) => {
+    if (b.publishedAtMs !== a.publishedAtMs) return b.publishedAtMs - a.publishedAtMs;
+    return (b.scoreHint || 0) - (a.scoreHint || 0);
+  });
+
+  for (const item of ranked) {
+    if (fresh.length >= MAX_BATCH) break;
     if ((item.scoreHint || 0) < 0) continue;
+    if (item.publishedAtMs < sinceMs) continue;
+    if (!isCryptoStory(item)) continue;
+
     const story = toWireStory(item);
     if (!story) continue;
-    if (seenSlugs.has(story.slug)) continue;
+    if (seenSlugs.has(story.slug) || seenThisRun.has(story.slug)) continue;
     if (seenIds.has(story.externalId) || seenIds.has(story.sourceUrl)) continue;
-    picked = story;
-    break;
+    if (seenThisRun.has(story.externalId) || seenThisRun.has(story.sourceUrl)) continue;
+
+    fresh.push(story);
+    seenThisRun.add(story.slug);
+    seenThisRun.add(story.externalId);
+    seenThisRun.add(story.sourceUrl);
   }
 
-  if (!picked) {
-    console.log("No new crypto wire story to ingest.");
+  if (!DRY_RUN) {
+    saveState({ lastSearchAt: searchStartedAt });
+  }
+
+  if (fresh.length === 0) {
+    console.log("No new crypto stories since last search.");
     return;
   }
 
-  console.log(`Ingesting: ${picked.title} (${picked.sourceName})`);
+  console.log(`Ingesting ${fresh.length} stor${fresh.length === 1 ? "y" : "ies"}:`);
+  for (const story of fresh) {
+    console.log(`  - ${story.title} (${story.sourceName})`);
+  }
+
   if (DRY_RUN) {
-    console.log(JSON.stringify(picked, null, 2));
+    console.log(JSON.stringify(fresh, null, 2));
     return;
   }
 
-  const next = [picked, ...existing].slice(0, MAX_STORIES);
+  const next = [...fresh, ...existing].slice(0, MAX_STORIES);
   saveWire(next);
   console.log(`Wrote ${WIRE_PATH} (${next.length} stories).`);
 }

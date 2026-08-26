@@ -1,12 +1,12 @@
-# Ingest one crypto news wire story every few hours and push to main
-# so Cloudflare Pages (or GitHub Pages) rebuilds with the new /news entry.
+# Hourly crypto news ingest — add stories posted since the last search, then
+# rebuild the static export so GitHub Pages serves the new /news entries.
 
 name: Ingest crypto news
 
 on:
   schedule:
-    # Every 3 hours
-    - cron: "0 */3 * * *"
+    # Every hour
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -29,18 +29,39 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
+          cache: npm
 
-      - name: Ingest latest wire story
+      - name: Ingest new crypto stories since last search
         run: node scripts/ingest-crypto-news.mjs
 
+      - name: Detect wire changes
+        id: wire
+        run: |
+          if git diff --quiet -- src/data/news-wire.json src/data/news-wire-state.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No new stories to publish."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install and rebuild static site
+        if: steps.wire.outputs.changed == 'true'
+        run: |
+          npm ci
+          npm run build:pages
+
       - name: Commit and push if changed
+        if: steps.wire.outputs.changed == 'true'
         run: |
           git config user.name "getfreebit-news-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/news-wire.json
+          git add src/data/news-wire.json src/data/news-wire-state.json \
+            news/ sitemap.xml robots.txt _next/ index.html index.txt \
+            about/ cards/ contact/ exchanges/ faucets/ guides/ how-to/ \
+            privacy/ terms/ tools/ 404.html 404/ || true
           if git diff --staged --quiet; then
-            echo "No news-wire changes."
+            echo "Nothing staged after rebuild."
             exit 0
           fi
-          git commit -m "Add crypto news wire story."
+          git commit -m "Add crypto news wire stories."
           git push

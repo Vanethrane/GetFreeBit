@@ -21,8 +21,8 @@ export default function NewsIndexPage() {
         <p className="text-sm font-medium uppercase tracking-[0.2em] text-voice">Watch</p>
         <h1 className="mt-3 font-display text-4xl tracking-tight text-ink sm:text-5xl">News</h1>
         <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-muted">
-          Editorial briefings plus an automated wire that pulls one fresh crypto story every few
-          hours—with source links, not ticker spam.
+          Editorial briefings on regulation, institutions, and protocol shifts—with source links,
+          not ticker spam.
         </p>
         <ul className="mt-10 space-y-1">
           {items.map((item) => (
