@@ -95,11 +95,11 @@ const MIN_INBOUND = data.schema.internalLinks?.minInbound ?? 3;
 
 const DEFAULT_TOOL_AFFILIATE: ToolAffiliate = {
   id: "guides",
-  label: "Guides",
-  title: "Browse GetFreeBit guides",
-  description: "How-tos for faucets, airdrops, yield, and onboarding.",
+  label: "Do",
+  title: "Browse GetFreeBit Do guides",
+  description: "Guides for faucets, airdrops, yield, and onboarding.",
   href: "/guides",
-  cta: "View guides",
+  cta: "View Do",
 };
 
 const toolAffiliates: Record<string, ToolAffiliate> = {
@@ -341,9 +341,9 @@ function absoluteUrl(path: string): string {
 }
 
 function hubForPageType(pageType: string): { name: string; path: string } {
-  if (pageType === "howto") return { name: "How-tos", path: "/how-to" };
+  if (pageType === "howto") return { name: "Learn", path: "/how-to" };
   if (pageType === "news") return { name: "News", path: "/news" };
-  return { name: "Guides", path: "/guides" };
+  return { name: "Do", path: "/guides" };
 }
 
 /**
@@ -457,7 +457,7 @@ export function buildProgrammaticJsonLd(input: ProgrammaticSchemaInput): Program
   const crumb = schema.breadcrumb || {
     homeName: siteConfig.name,
     homePath: "/",
-    guidesName: "Guides",
+    guidesName: "Do",
     guidesPath: "/guides",
     wordsName: "Words",
     wordsPath: "/words",
@@ -527,7 +527,7 @@ export function buildProgrammaticJsonLd(input: ProgrammaticSchemaInput): Program
       : pageType === "howto"
         ? [
             { name: crumb.homeName, path: crumb.homePath },
-            { name: "How-tos", path: "/how-to" },
+            { name: "Learn", path: "/how-to" },
             { name, path: input.path },
           ]
         : pageType === "news"

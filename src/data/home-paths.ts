@@ -26,7 +26,7 @@ export const HOME_POPULAR_PATHS: HomePath[] = [
     label: "First wallet",
     description: "Self-custody setup",
     href: "/how-to/how-to-create-your-first-self-custody-crypto-wallet",
-    kind: "do",
+    kind: "learn",
   },
   {
     id: "faucetpay",
@@ -40,21 +40,21 @@ export const HOME_POPULAR_PATHS: HomePath[] = [
     label: "Staking yield",
     description: "How rewards are paid",
     href: "/guides/what-crypto-staking-is-and-how-yield-is-generated",
-    kind: "learn",
+    kind: "do",
   },
   {
     id: "airdrops",
     label: "Airdrop eligibility",
     description: "What protocols measure",
     href: "/guides/airdrop-eligibility-what-protocols-actually-measure",
-    kind: "learn",
+    kind: "do",
   },
   {
     id: "points-tge",
     label: "Points & TGE",
     description: "Leaderboard expectations",
     href: "/guides/points-programs-and-tge-expectations",
-    kind: "learn",
+    kind: "do",
   },
   {
     id: "exchange-desk",
@@ -68,7 +68,7 @@ export const HOME_POPULAR_PATHS: HomePath[] = [
     label: "Buy with fiat",
     description: "CEX onboarding",
     href: "/how-to/how-to-buy-crypto-on-a-centralized-exchange-using-fiat-currency",
-    kind: "do",
+    kind: "learn",
   },
   {
     id: "tax-desk",
@@ -82,14 +82,14 @@ export const HOME_POPULAR_PATHS: HomePath[] = [
     label: "DEX swaps",
     description: "Swap tokens safely",
     href: "/how-to/how-to-use-a-decentralized-exchange-dex-to-swap-tokens",
-    kind: "do",
+    kind: "learn",
   },
   {
     id: "gas-fees",
     label: "Gas fees",
     description: "Congestion & priority",
     href: "/guides/what-gas-fees-are-and-why-they-change-based-on-network-congestion",
-    kind: "learn",
+    kind: "do",
   },
 ];
 
@@ -100,7 +100,7 @@ export const HOME_OPERATOR_PICKS: HomePath[] = [
     label: "Back up a seed phrase",
     description: "Offline redundancy",
     href: "/how-to/how-to-safely-store-and-back-up-your-seed-phrase",
-    kind: "do",
+    kind: "learn",
   },
   {
     id: "faucet-routine",
@@ -114,14 +114,14 @@ export const HOME_OPERATOR_PICKS: HomePath[] = [
     label: "Avoid phishing & scams",
     description: "Wallet drain patterns",
     href: "/how-to/how-to-identify-and-avoid-common-crypto-phishing-and-wallet-scams",
-    kind: "do",
+    kind: "learn",
   },
   {
     id: "revoke",
     label: "Revoke token approvals",
     description: "Clean allowances",
     href: "/how-to/how-to-revoke-token-approvals-to-protect-wallet-allowance-limits",
-    kind: "do",
+    kind: "learn",
   },
   {
     id: "compare-apy",
@@ -149,13 +149,13 @@ export type HomeDeskLink = {
 export const HOME_DESK_LINKS: HomeDeskLink[] = [
   {
     href: "/guides",
-    label: "Guides",
-    summary: "How crypto systems work",
+    label: "Do",
+    summary: "Guides you can put to work",
   },
   {
     href: "/how-to",
-    label: "How-tos",
-    summary: "Step-by-step procedures",
+    label: "Learn",
+    summary: "Step-by-step how-tos",
   },
   {
     href: "/faucets",

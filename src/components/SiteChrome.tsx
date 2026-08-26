@@ -98,7 +98,7 @@ export function SiteFooter() {
         {siteConfig.affiliateDisclosure}
       </p>
       <p className="mt-4 pb-2 text-xs text-ink-muted">
-        © {new Date().getFullYear()} {siteConfig.name}. Guides emphasize risks, payout math, and
+        © {new Date().getFullYear()} {siteConfig.name}. Do & Learn pages emphasize risks, payout math, and
         disclosed partner links.
       </p>
     </footer>

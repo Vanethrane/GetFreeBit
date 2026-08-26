@@ -143,7 +143,7 @@ export function historyKindLabel(kind: HistoryKind): string {
     case "tool":
       return "Tool";
     case "guide":
-      return "Guide";
+      return "Do";
     case "search":
       return "Search";
     default:

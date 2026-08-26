@@ -5,13 +5,14 @@ import { GUIDES_SEO } from "./articles-guides-seo";
 import { HOWTOS } from "./articles-howtos";
 import { HOWTOS_SEO } from "./articles-howtos-seo";
 import { NEWS } from "./articles-news";
+import { WIRE_NEWS } from "./news-wire";
 
 export type { Article, ArticleKind, Guide, GuideSection } from "./types";
 export { articleWordCount, guideWordCount } from "./types";
 
 export const ALL_GUIDES: Article[] = [...GUIDES, ...GUIDES_SEO];
 export const ALL_HOWTOS: Article[] = [...HOWTOS, ...HOWTOS_SEO];
-export const ALL_NEWS: Article[] = NEWS;
+export const ALL_NEWS: Article[] = [...NEWS, ...WIRE_NEWS];
 
 export const ALL_ARTICLES: Article[] = [...ALL_GUIDES, ...ALL_HOWTOS, ...ALL_NEWS];
 

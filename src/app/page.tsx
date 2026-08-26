@@ -71,7 +71,7 @@ export default function HomePage() {
                 className="block py-4 transition-colors hover:bg-paper-raised/40"
               >
                 <span className="text-[0.65rem] font-semibold uppercase tracking-[0.16em] text-ink-muted">
-                  {item.base === "/guides" ? "Guide" : item.base === "/how-to" ? "How-to" : "News"}
+                  {item.base === "/guides" ? "Do" : item.base === "/how-to" ? "Learn" : "News"}
                 </span>
                 <span className="mt-1 block font-semibold text-ink">{item.title}</span>
                 <span className="mt-1 block text-sm text-ink-muted">{item.description}</span>

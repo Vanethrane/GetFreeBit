@@ -306,15 +306,15 @@ export const siteConfig = {
   pillars: [
     {
       id: "faucets-micro" as const satisfies ContentPillar,
-      label: "Guides",
+      label: "Do",
       href: "/guides",
-      summary: "How blockchain, tokens, DeFi, and security models actually work.",
+      summary: "Guides on blockchain, DeFi, wallets, staking, and security—built to act on.",
     },
     {
       id: "airdrop-testnet" as const satisfies ContentPillar,
-      label: "How-tos",
+      label: "Learn",
       href: "/how-to",
-      summary: "Wallets, swaps, bridges, staking, and security procedures.",
+      summary: "How-tos for wallets, swaps, bridges, staking, and security procedures.",
     },
     {
       id: "staking-yield" as const satisfies ContentPillar,
@@ -344,8 +344,8 @@ export const siteConfig = {
 
   /** Primary header navigation */
   primaryNav: [
-    { href: "/guides", label: "Guides" },
-    { href: "/how-to", label: "How-tos" },
+    { href: "/guides", label: "Do" },
+    { href: "/how-to", label: "Learn" },
     { href: "/faucets", label: "Faucets" },
     { href: "/exchanges", label: "Exchanges" },
     { href: "/cards", label: "Cards" },
@@ -357,8 +357,8 @@ export const siteConfig = {
   /** Footer product column */
   footerProductNav: [
     { href: "/", label: "Home" },
-    { href: "/guides", label: "Guides" },
-    { href: "/how-to", label: "How-tos" },
+    { href: "/guides", label: "Do" },
+    { href: "/how-to", label: "Learn" },
     { href: "/faucets", label: "Faucet referrals" },
     { href: "/exchanges", label: "Exchange referrals" },
     { href: "/cards", label: "Cards & banking" },

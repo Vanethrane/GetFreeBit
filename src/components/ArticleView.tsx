@@ -11,14 +11,14 @@ import { getPageLanguageMeta } from "@/lib/dataset";
 import { siteConfig } from "@/site.config";
 
 const kindLabel: Record<ArticleKind, string> = {
-  guide: "Guide",
-  howto: "How-to",
+  guide: "Do",
+  howto: "Learn",
   news: "News",
 };
 
 const kindIndex: Record<ArticleKind, { href: string; label: string; hub: string }> = {
-  guide: { href: "/guides", label: "All guides", hub: "Guides" },
-  howto: { href: "/how-to", label: "All how-tos", hub: "How-tos" },
+  guide: { href: "/guides", label: "All Do guides", hub: "Do" },
+  howto: { href: "/how-to", label: "All Learn how-tos", hub: "Learn" },
   news: { href: "/news", label: "All news", hub: "News" },
 };
 
@@ -67,7 +67,20 @@ export function ArticleView({ article }: { article: Article }) {
           <p className="mt-2 text-xs text-ink-muted sm:text-sm">
             <time dateTime={article.publishedAt}>{article.publishedAt}</time> ·{" "}
             {article.readingMinutes} min read · {words} words
+            {article.sourceName ? ` · via ${article.sourceName}` : ""}
           </p>
+          {article.sourceUrl ? (
+            <p className="mt-3 text-sm text-ink-muted">
+              <a
+                href={article.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 hover:text-voice-dark"
+              >
+                Read the original report
+              </a>
+            </p>
+          ) : null}
         </header>
 
         <Prose>

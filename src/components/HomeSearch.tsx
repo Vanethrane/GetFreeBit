@@ -32,9 +32,9 @@ function SearchIcon({ className = "" }: { className?: string }) {
 
 function hintBadge(entry: HeaderSearchEntry): string {
   if (entry.type === "term") return "Term";
-  if (entry.type === "howto") return "How-to";
+  if (entry.type === "howto") return "Learn";
   if (entry.type === "news") return "News";
-  if (entry.type === "guide") return "Guide";
+  if (entry.type === "guide") return "Do";
   return entry.hint;
 }
 

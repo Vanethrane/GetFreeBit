@@ -7,7 +7,7 @@ export const GUIDES_SEO: Article[] = [
   {
     slug: "evaluating-crypto-faucets-time-vs-reward",
     kind: "guide",
-    title: "Evaluating Crypto Faucets: Time vs Reward Math",
+    title: "Faucet time vs reward",
     description:
       "A practical framework for measuring faucet and offerwall payouts against captchas, timers, and withdrawal minimums—so micro-earning stays worth the hour.",
     publishedAt: "2026-08-01",
@@ -50,7 +50,7 @@ export const GUIDES_SEO: Article[] = [
   {
     slug: "how-faucetpay-routing-works-for-micro-earnings",
     kind: "guide",
-    title: "How FaucetPay Routing Works for Micro-Earnings",
+    title: "FaucetPay routing",
     description:
       "Why micro-wallets sit between faucets and self-custody, how internal transfers and multi-coin balances work, and when to sweep to your own keys.",
     publishedAt: "2026-08-03",
@@ -102,7 +102,7 @@ export const GUIDES_SEO: Article[] = [
   {
     slug: "airdrop-eligibility-what-protocols-actually-measure",
     kind: "guide",
-    title: "Airdrop Eligibility: What Protocols Actually Measure",
+    title: "Airdrop eligibility",
     description:
       "On-chain usage, holding periods, testnet participation, and Sybil filters—how projects score wallets before a token generation event.",
     publishedAt: "2026-08-05",
@@ -154,7 +154,7 @@ export const GUIDES_SEO: Article[] = [
   {
     slug: "testnet-farming-without-contaminating-your-main-wallet",
     kind: "guide",
-    title: "Testnet Farming Without Contaminating Your Main Wallet",
+    title: "Safe testnet farming",
     description:
       "Separate burn wallets, faucet hygiene, and key isolation so testnet and mainnet experiments do not merge into one recoverable disaster.",
     publishedAt: "2026-08-07",
@@ -206,7 +206,7 @@ export const GUIDES_SEO: Article[] = [
   {
     slug: "liquid-staking-vs-native-staking-trade-offs-for-earners",
     kind: "guide",
-    title: "Liquid Staking vs Native Staking: Trade-offs for Earners",
+    title: "Liquid vs native staking",
     description:
       "Compare solo validators, delegated native stake, and liquid staking tokens (LSDs)—liquidity, slashing, smart-contract, and tax complexity for yield seekers.",
     publishedAt: "2026-08-09",
@@ -258,7 +258,7 @@ export const GUIDES_SEO: Article[] = [
   {
     slug: "impermanent-loss-explained-for-liquidity-providers",
     kind: "guide",
-    title: "Impermanent Loss Explained for Liquidity Providers",
+    title: "Impermanent loss",
     description:
       "Why AMM pool inventory drifts versus holding, how fees partially compensate, and when LP “yield” is still a losing bet.",
     publishedAt: "2026-08-11",
@@ -310,7 +310,7 @@ export const GUIDES_SEO: Article[] = [
   {
     slug: "points-programs-and-tge-expectations",
     kind: "guide",
-    title: "Points Programs and TGE Expectations",
+    title: "Points & TGE",
     description:
       "How pre-token points scoring works, what protocols measure, why TGE unlocks disappoint leaderboard chasers, and a practical checklist to farm without wrecking wallets.",
     publishedAt: "2026-08-24",

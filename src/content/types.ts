@@ -13,6 +13,9 @@ export type Article = {
   publishedAt: string;
   readingMinutes: number;
   sections: ArticleSection[];
+  /** Optional primary-source link for automated wire stories */
+  sourceUrl?: string;
+  sourceName?: string;
 };
 
 /** @deprecated Prefer Article — kept for gradual migration */

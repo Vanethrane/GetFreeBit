@@ -4,7 +4,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-create-your-first-self-custody-crypto-wallet",
-    title: "How to Create Your First Self-Custody Crypto Wallet",
+    title: "Create a self-custody wallet",
     description:
       "Install a reputable browser or mobile wallet, create a new seed phrase offline from strangers, fund with a test amount, and verify your address on a block explorer before treating it as home base.",
     publishedAt: "2026-07-02",
@@ -40,7 +40,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-safely-store-and-back-up-your-seed-phrase",
-    title: "How to Safely Store and Back Up Your Seed Phrase",
+    title: "Back up your seed phrase",
     description:
       "Back up a 12- or 24-word seed with offline redundancy, verify restores on a throwaway device, and avoid the digital and social failure modes that empty wallets.",
     publishedAt: "2026-07-05",
@@ -76,7 +76,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-buy-crypto-on-a-centralized-exchange-using-fiat-currency",
-    title: "How to Buy Crypto on a Centralized Exchange Using Fiat Currency",
+    title: "Buy crypto with fiat",
     description:
       "Complete KYC on a reputable CEX, deposit fiat, place a spot order, withdraw a test amount to self-custody, and keep records without treating the exchange as a bank forever.",
     publishedAt: "2026-07-08",
@@ -112,7 +112,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-send-and-receive-crypto-transactions-without-losing-funds",
-    title: "How to Send and Receive Crypto Transactions Without Losing Funds",
+    title: "Send & receive crypto",
     description:
       "Verify network, address, memo, and test amounts before every transfer; confirm inclusion on a block explorer; and recover from stuck nonces without panic signing.",
     publishedAt: "2026-07-11",
@@ -148,7 +148,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-use-a-decentralized-exchange-dex-to-swap-tokens",
-    title: "How to Use a Decentralized Exchange (DEX) to Swap Tokens",
+    title: "Swap tokens on a DEX",
     description:
       "Connect a burn-capable wallet, verify token contracts, set slippage consciously, approve minimally, swap on a liquid pool, and revoke leftover allowances when done.",
     publishedAt: "2026-07-14",
@@ -185,7 +185,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-transfer-tokens-across-different-blockchains-via-a-cross-chain-bridge",
-    title: "How to Transfer Tokens Across Different Blockchains via a Cross-Chain Bridge",
+    title: "Bridge tokens cross-chain",
     description:
       "Prefer canonical bridges when practical, verify chain IDs and asset representations, send test amounts, track both legs on explorers, and budget time for optimistic withdrawal delays.",
     publishedAt: "2026-07-17",
@@ -222,7 +222,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-stake-tokens-to-earn-network-rewards",
-    title: "How to Stake Tokens to Earn Network Rewards",
+    title: "Stake for network rewards",
     description:
       "Choose native staking versus liquid staking, understand unbonding and slash risk, stake through official flows, and track rewards without chasing unsustainable APY screenshots.",
     publishedAt: "2026-07-20",
@@ -260,7 +260,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-set-up-a-hardware-wallet-for-maximum-cold-storage-security",
-    title: "How to Set Up a Hardware Wallet for Maximum Cold-Storage Security",
+    title: "Set up a hardware wallet",
     description:
       "Buy from trusted channels, initialize offline with a verified seed backup, enable PIN and optional passphrase, and practice verifying addresses on-device before moving long-term funds.",
     publishedAt: "2026-07-23",
@@ -298,7 +298,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-read-a-blockchain-explorer-to-track-pending-and-completed-transactions",
-    title: "How to Read a Blockchain Explorer to Track Pending and Completed Transactions",
+    title: "Read a blockchain explorer",
     description:
       "Look up tx hashes and addresses on the correct explorer, interpret pending, success, and failure states, decode token transfers, and spot red flags in approvals and counterparties.",
     publishedAt: "2026-07-26",
@@ -336,7 +336,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-revoke-token-approvals-to-protect-wallet-allowance-limits",
-    title: "How to Revoke Token Approvals to Protect Wallet Allowance Limits",
+    title: "Revoke token approvals",
     description:
       "Inventory ERC-20 allowances, revoke unused or unlimited spenders, verify on a block explorer, and rebuild safer approve-then-swap habits for future DEX use.",
     publishedAt: "2026-07-29",
@@ -374,7 +374,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-mint-buy-and-transfer-an-nft-using-a-decentralized-marketplace",
-    title: "How to Mint, Buy, and Transfer an NFT Using a Decentralized Marketplace",
+    title: "Mint, buy & transfer NFTs",
     description:
       "Verify collections and contracts, mint or buy with simulation-aware signing, transfer only to known addresses, and avoid signature phishing disguised as NFT claims.",
     publishedAt: "2026-08-01",
@@ -412,7 +412,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-provide-liquidity-to-an-automated-market-maker-pool",
-    title: "How to Provide Liquidity to an Automated Market Maker Pool",
+    title: "Provide AMM liquidity",
     description:
       "Choose a pool and fee tier, deposit balanced assets, track fees versus impermanent loss, and withdraw deliberately without treating LP tokens as risk-free yield.",
     publishedAt: "2026-08-04",
@@ -450,7 +450,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-identify-and-avoid-common-crypto-phishing-and-wallet-scams",
-    title: "How to Identify and Avoid Common Crypto Phishing and Wallet Scams",
+    title: "Spot phishing & wallet scams",
     description:
       "Recognize fake support, airdrop claim sites, malicious approvals, and address-poisoning patterns, and build verification habits that keep seed phrases and signatures offline from attackers.",
     publishedAt: "2026-08-07",
@@ -488,7 +488,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-calculate-capital-gains-and-prepare-crypto-taxes",
-    title: "How to Calculate Capital Gains and Prepare Crypto Taxes",
+    title: "Crypto taxes & capital gains",
     description:
       "Export exchange and wallet histories, establish cost basis per disposal, separate income-like rewards, and prepare filings with jurisdiction-aware caution—not tax advice.",
     publishedAt: "2026-08-10",
@@ -526,7 +526,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-set-up-a-multisig-wallet-for-shared-funds-and-dao-treasuries",
-    title: "How to Set Up a Multisig Wallet for Shared Funds and DAO Treasuries",
+    title: "Set up a multisig wallet",
     description:
       "Choose an M-of-N threshold, onboard signer devices safely, deploy or create the multisig, run a test transaction, and document policies that prevent single-key failure without freezing funds forever.",
     publishedAt: "2026-08-13",
@@ -564,7 +564,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-deposit-crypto-assets-into-defi-lending-platforms-to-earn-interest",
-    title: "How to Deposit Crypto Assets into DeFi Lending Platforms to Earn Interest",
+    title: "Earn interest in DeFi lending",
     description:
       "Evaluate protocol risk and oracles, supply assets from a dedicated wallet, monitor health if borrowing, and withdraw with gas reserved—without treating variable APY as guaranteed income.",
     publishedAt: "2026-08-16",
@@ -602,7 +602,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-adjust-gas-fees-and-priority-gas-rules-manually-to-speed-up-transactions",
-    title: "How to Adjust Gas Fees and Priority Gas Rules Manually to Speed Up Transactions",
+    title: "Adjust gas fees",
     description:
       "Read EIP-1559 base fee and tips, set priority fees intentionally, speed up or cancel stuck nonces, and avoid overpaying during congestion without spamming duplicate transactions.",
     publishedAt: "2026-08-19",
@@ -640,7 +640,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-connect-a-wallet-to-decentralized-applications-dapps-securely",
-    title: "How to Connect a Wallet to Decentralized Applications (dApps) Securely",
+    title: "Connect a wallet to dApps",
     description:
       "Use role-separated wallets, verify URLs and chain IDs, read connection and signature prompts, disconnect after sessions, and keep vault keys away from experimental contracts.",
     publishedAt: "2026-08-22",
@@ -678,7 +678,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-analyze-on-chain-wallet-data-and-metrics-using-tools-like-dune-or-etherscan",
-    title: "How to Analyze On-Chain Wallet Data and Metrics Using Tools like Dune or Etherscan",
+    title: "Analyze on-chain wallet data",
     description:
       "Build an explorer-first workflow for a single address, then escalate to Dune-style dashboards for protocol metrics—while treating labels and third-party charts as hypotheses to verify.",
     publishedAt: "2026-08-25",
@@ -716,7 +716,7 @@ export const HOWTOS: Article[] = [
   {
     kind: "howto",
     slug: "how-to-participate-in-dao-governance-proposals-and-on-chain-voting",
-    title: "How to Participate in DAO Governance Proposals and On-Chain Voting",
+    title: "Vote in DAO governance",
     description:
       "Obtain voting power honestly, research proposals on official forums, cast on-chain or delegated votes with simulation-aware signing, and document conflicts without treating governance as free money.",
     publishedAt: "2026-08-28",

@@ -21,8 +21,8 @@ export default function NewsIndexPage() {
         <p className="text-sm font-medium uppercase tracking-[0.2em] text-voice">Watch</p>
         <h1 className="mt-3 font-display text-4xl tracking-tight text-ink sm:text-5xl">News</h1>
         <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-muted">
-          {items.length} briefings on regulation, institutions, and protocol shifts—with context, not
-          ticker spam.
+          Editorial briefings plus an automated wire that pulls one fresh crypto story every few
+          hours—with source links, not ticker spam.
         </p>
         <ul className="mt-10 space-y-1">
           {items.map((item) => (
@@ -31,8 +31,9 @@ export default function NewsIndexPage() {
                 href={`/news/${item.slug}`}
                 className="block border-b border-paper-line py-5 hover:border-voice/40"
               >
-                <p className="text-xs uppercase tracking-wide text-ink-muted">
-                  {item.publishedAt} · {item.readingMinutes} min · {articleWordCount(item)} words
+                <p className="mt-2 text-xs uppercase tracking-wide text-ink-muted">
+                  {item.publishedAt} · {item.readingMinutes} min
+                  {item.sourceName ? ` · ${item.sourceName}` : ""} · {articleWordCount(item)} words
                 </p>
                 <h2 className="mt-2 font-display text-2xl text-ink">{item.title}</h2>
                 <p className="mt-2 text-ink-muted">{item.description}</p>

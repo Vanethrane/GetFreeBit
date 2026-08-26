@@ -8,7 +8,7 @@ export const GUIDES: Article[] = [
   {
     slug: "what-blockchain-technology-is-and-how-it-works",
     kind: "guide",
-    title: "What Blockchain Technology Is and How It Works",
+    title: "Blockchain",
     description:
       "A clear walkthrough of blocks, hashes, consensus, and distributed ledgers—so you can evaluate crypto products without treating “blockchain” as a buzzword.",
     publishedAt: "2026-01-08",
@@ -51,7 +51,7 @@ export const GUIDES: Article[] = [
   {
     slug: "understanding-cryptocurrencies-tokens-and-altcoins",
     kind: "guide",
-    title: "Understanding Cryptocurrencies, Tokens, and Altcoins",
+    title: "Cryptocurrencies & tokens",
     description:
       "How native coins, issued tokens, and altcoins differ—and how to read supply, utility, and risk without collapsing everything into “crypto.”",
     publishedAt: "2026-01-14",
@@ -102,7 +102,7 @@ export const GUIDES: Article[] = [
   {
     slug: "the-difference-between-proof-of-work-and-proof-of-stake",
     kind: "guide",
-    title: "The Difference Between Proof of Work and Proof of Stake",
+    title: "Proof of Work vs Proof of Stake",
     description:
       "How PoW and PoS select block producers, what they cost to attack, and what those differences mean for fees, energy, and staking risk.",
     publishedAt: "2026-01-22",
@@ -153,7 +153,7 @@ export const GUIDES: Article[] = [
   {
     slug: "how-bitcoin-functions-as-a-decentralized-peer-to-peer-network",
     kind: "guide",
-    title: "How Bitcoin Functions as a Decentralized Peer-to-Peer Network",
+    title: "Bitcoin",
     description:
       "How Bitcoin nodes relay transactions, mine blocks, and enforce consensus rules without a central operator—and what that means for users moving value.",
     publishedAt: "2026-01-28",
@@ -205,7 +205,7 @@ export const GUIDES: Article[] = [
   {
     slug: "what-ethereum-smart-contracts-are-and-how-they-execute-automatically",
     kind: "guide",
-    title: "What Ethereum Smart Contracts Are and How They Execute Automatically",
+    title: "Ethereum smart contracts",
     description:
       "How Ethereum contracts store code and state, run when called by transactions, and why “automatic” still depends on gas, bugs, and human-controlled admin keys.",
     publishedAt: "2026-02-05",
@@ -257,7 +257,7 @@ export const GUIDES: Article[] = [
   {
     slug: "explaining-layer-1-vs-layer-2-scaling-solutions",
     kind: "guide",
-    title: "Explaining Layer 1 vs Layer 2 Scaling Solutions",
+    title: "Layer 1 vs Layer 2",
     description:
       "What L1 and L2 mean for security, fees, and bridges—and how to choose where to transact without stranding funds.",
     publishedAt: "2026-02-11",
@@ -309,7 +309,7 @@ export const GUIDES: Article[] = [
   {
     slug: "what-public-and-private-keys-are-in-digital-cryptography",
     kind: "guide",
-    title: "What Public and Private Keys Are in Digital Cryptography",
+    title: "Public & private keys",
     description:
       "How keypairs sign and verify crypto transactions, how seed phrases derive keys, and how to avoid the phishing patterns that steal them.",
     publishedAt: "2026-02-18",
@@ -361,7 +361,7 @@ export const GUIDES: Article[] = [
   {
     slug: "how-decentralized-finance-defi-replaces-traditional-intermediaries",
     kind: "guide",
-    title: "How Decentralized Finance (DeFi) Replaces Traditional Intermediaries",
+    title: "Decentralized Finance (DeFi)",
     description:
       "How AMMs, lending markets, and on-chain settlement substitute for brokers and banks—and which risks those intermediaries used to absorb.",
     publishedAt: "2026-02-24",
@@ -413,7 +413,7 @@ export const GUIDES: Article[] = [
   {
     slug: "understanding-crypto-wallets-hot-wallets-vs-cold-storage",
     kind: "guide",
-    title: "Understanding Crypto Wallets: Hot Wallets vs Cold Storage",
+    title: "Hot wallets vs cold storage",
     description:
       "How hot wallets and cold storage differ in connectivity and attack surface—and how to split balances between spending money and savings.",
     publishedAt: "2026-03-03",
@@ -465,7 +465,7 @@ export const GUIDES: Article[] = [
   {
     slug: "what-gas-fees-are-and-why-they-change-based-on-network-congestion",
     kind: "guide",
-    title: "What Gas Fees Are and Why They Change Based on Network Congestion",
+    title: "Gas fees",
     description:
       "How gas metering, base fees, and priority tips respond to block demand—and how to plan transactions when networks get busy.",
     publishedAt: "2026-03-09",
@@ -517,7 +517,7 @@ export const GUIDES: Article[] = [
   {
     slug: "how-stablecoins-maintain-their-peg-to-fiat-currencies",
     kind: "guide",
-    title: "How Stablecoins Maintain Their Peg to Fiat Currencies",
+    title: "Stablecoins",
     description:
       "Fiat-reserved, crypto-collateralized, and algorithmic peg designs—what keeps $1 tokens near $1, and what breaks under stress.",
     publishedAt: "2026-03-15",
@@ -569,7 +569,7 @@ export const GUIDES: Article[] = [
   {
     slug: "what-non-fungible-tokens-nfts-are-and-how-on-chain-ownership-works",
     kind: "guide",
-    title: "What Non-Fungible Tokens (NFTs) Are and How On-Chain Ownership Works",
+    title: "NFTs",
     description:
       "How NFT standards encode unique ownership on-chain, what metadata lives off-chain, and which rights a token does—and does not—grant.",
     publishedAt: "2026-03-22",
@@ -621,7 +621,7 @@ export const GUIDES: Article[] = [
   {
     slug: "explaining-liquidity-pools-and-automated-market-makers-amms",
     kind: "guide",
-    title: "Explaining Liquidity Pools and Automated Market Makers (AMMs)",
+    title: "Liquidity pools & AMMs",
     description:
       "How constant-product and related AMM formulas price swaps, how LPs earn fees, and why impermanent loss appears when prices move.",
     publishedAt: "2026-03-28",
@@ -673,7 +673,7 @@ export const GUIDES: Article[] = [
   {
     slug: "what-crypto-staking-is-and-how-yield-is-generated",
     kind: "guide",
-    title: "What Crypto Staking Is and How Yield Is Generated",
+    title: "Crypto staking",
     description:
       "How proof-of-stake rewards, liquid staking, and DeFi “staking” tabs differ—and which risks produce the APY you see.",
     publishedAt: "2026-04-04",
@@ -725,7 +725,7 @@ export const GUIDES: Article[] = [
   {
     slug: "understanding-zero-knowledge-proofs-zkps-and-their-role-in-privacy",
     kind: "guide",
-    title: "Understanding Zero-Knowledge Proofs (ZKPs) and Their Role in Privacy",
+    title: "Zero-knowledge proofs",
     description:
       "What zero-knowledge proofs show without revealing underlying data, how ZK rollups use validity proofs, and where privacy guarantees stop.",
     publishedAt: "2026-04-10",
@@ -777,7 +777,7 @@ export const GUIDES: Article[] = [
   {
     slug: "what-real-world-asset-rwa-tokenization-means-for-traditional-finance",
     kind: "guide",
-    title: "What Real-World Asset (RWA) Tokenization Means for Traditional Finance",
+    title: "RWA tokenization",
     description:
       "How tokenizing treasuries, credit, and other off-chain assets works on-chain—and which legal and oracle risks remain outside the ledger.",
     publishedAt: "2026-04-16",
@@ -837,7 +837,7 @@ export const GUIDES: Article[] = [
   {
     slug: "how-decentralized-autonomous-organizations-daos-manage-governance",
     kind: "guide",
-    title: "How Decentralized Autonomous Organizations (DAOs) Manage Governance",
+    title: "DAOs",
     description:
       "How token voting, delegates, and timelocks steer protocols—and why turnout, whales, and multisigs still shape outcomes.",
     publishedAt: "2026-04-22",
@@ -897,7 +897,7 @@ export const GUIDES: Article[] = [
   {
     slug: "understanding-blockchain-consensus-mechanisms-beyond-pow-and-pos",
     kind: "guide",
-    title: "Understanding Blockchain Consensus Mechanisms Beyond PoW and PoS",
+    title: "Consensus mechanisms",
     description:
       "A tour of BFT-style, hybrid, DAG, and permissioned consensus families—and how to evaluate finality and decentralization claims.",
     publishedAt: "2026-04-28",
@@ -957,7 +957,7 @@ export const GUIDES: Article[] = [
   {
     slug: "what-sybil-attacks-51-percent-attacks-and-smart-contract-exploits-are",
     kind: "guide",
-    title: "What Sybil Attacks, 51% Attacks, and Smart Contract Exploits Are",
+    title: "Sybil, 51%, & contract exploits",
     description:
       "Clear definitions of Sybil identity attacks, majority hash/stake attacks, and smart-contract exploits—plus how users reduce exposure.",
     publishedAt: "2026-05-05",
@@ -1017,7 +1017,7 @@ export const GUIDES: Article[] = [
   {
     slug: "how-crypto-mining-works-and-what-mining-rewards-are",
     kind: "guide",
-    title: "How Crypto Mining Works and What Mining Rewards Are",
+    title: "Crypto mining",
     description:
       "How proof-of-work miners compete for blocks, what subsidies and fees pay them, and why home mining rarely matches industrial economics.",
     publishedAt: "2026-05-11",
@@ -1077,7 +1077,7 @@ export const GUIDES: Article[] = [
   {
     slug: "what-mempools-are-and-how-transactions-get-validated",
     kind: "guide",
-    title: "What Mempools Are and How Transactions Get Validated",
+    title: "Mempools",
     description:
       "How pending transactions enter mempools, pass validation checks, and get selected into blocks—plus stuck-tx and replacement basics.",
     publishedAt: "2026-05-17",
@@ -1137,7 +1137,7 @@ export const GUIDES: Article[] = [
   {
     slug: "understanding-crypto-tokenomics-supply-caps-inflation-and-token-burns",
     kind: "guide",
-    title: "Understanding Crypto Tokenomics: Supply Caps, Inflation, and Token Burns",
+    title: "Tokenomics",
     description:
       "How max supply, emissions, unlocks, and burns shape token value narratives—and how to read them without hype.",
     publishedAt: "2026-05-23",
@@ -1197,7 +1197,7 @@ export const GUIDES: Article[] = [
   {
     slug: "what-cross-chain-bridges-are-and-how-they-transfer-data-between-blockchains",
     kind: "guide",
-    title: "What Cross-Chain Bridges Are and How They Transfer Data Between Blockchains",
+    title: "Cross-chain bridges",
     description:
       "How lock-mint, burn-mint, and light-client bridges move value and messages across chains—and why bridges are high-value attack targets.",
     publishedAt: "2026-05-29",
@@ -1257,7 +1257,7 @@ export const GUIDES: Article[] = [
   {
     slug: "explaining-central-bank-digital-currencies-cbdcs-vs-decentralized-crypto",
     kind: "guide",
-    title: "Explaining Central Bank Digital Currencies (CBDCs) vs Decentralized Crypto",
+    title: "CBDCs vs crypto",
     description:
       "How CBDCs differ from bitcoin and public smart-contract platforms in issuance, privacy, programmability, and custody assumptions.",
     publishedAt: "2026-06-06",
@@ -1317,7 +1317,7 @@ export const GUIDES: Article[] = [
   {
     slug: "how-ai-agents-are-interacting-with-on-chain-infrastructure-and-smart-contracts",
     kind: "guide",
-    title: "How AI Agents Are Interacting with On-Chain Infrastructure and Smart Contracts",
+    title: "AI agents on-chain",
     description:
       "How autonomous agents use wallets, RPCs, and contracts to trade or operate on-chain—and which security boundaries humans must still set.",
     publishedAt: "2026-06-14",

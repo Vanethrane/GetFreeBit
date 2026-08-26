@@ -14,10 +14,10 @@ export default function NotFound() {
             Home
           </Link>
           <Link href="/guides" className="text-voice-dark underline underline-offset-4">
-            Guides
+            Do
           </Link>
           <Link href="/how-to" className="text-voice-dark underline underline-offset-4">
-            How-tos
+            Learn
           </Link>
           <Link href="/faucets" className="text-voice-dark underline underline-offset-4">
             Faucets

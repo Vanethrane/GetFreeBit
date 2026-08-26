@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useId, useRef } from "react";
 
 declare global {
   interface Window {
@@ -14,22 +14,29 @@ type BitcoinChartProps = {
   className?: string;
 };
 
-const CONTAINER_ID = "gfb-btc-tv-chart";
-
 /**
  * TradingView advanced chart for BTC — designed for “leave this tab open” monitoring.
+ * Uses a stable container id + remount-safe boot so React Strict Mode does not leave
+ * an empty chart shell.
  */
 export function BitcoinChart({ className = "" }: BitcoinChartProps) {
+  const reactId = useId().replace(/:/g, "");
+  const containerId = `gfb-btc-tv-chart-${reactId}`;
   const booted = useRef(false);
 
   useEffect(() => {
-    const container = document.getElementById(CONTAINER_ID);
+    let cancelled = false;
+    booted.current = false;
+
+    const container = document.getElementById(containerId);
     if (!container) return;
 
     const boot = () => {
-      if (!window.TradingView || booted.current) return;
+      if (cancelled || !window.TradingView || booted.current) return;
+      const host = document.getElementById(containerId);
+      if (!host) return;
       booted.current = true;
-      container.innerHTML = "";
+      host.innerHTML = "";
       // eslint-disable-next-line no-new
       new window.TradingView.widget({
         autosize: true,
@@ -47,7 +54,7 @@ export function BitcoinChart({ className = "" }: BitcoinChartProps) {
         calendar: false,
         hide_volume: false,
         support_host: "https://www.tradingview.com",
-        container_id: CONTAINER_ID,
+        container_id: containerId,
         studies: ["STD;SMA"],
         backgroundColor: "rgba(248, 250, 252, 1)",
         gridColor: "rgba(197, 208, 220, 0.45)",
@@ -56,7 +63,10 @@ export function BitcoinChart({ className = "" }: BitcoinChartProps) {
 
     if (window.TradingView) {
       boot();
-      return;
+      return () => {
+        cancelled = true;
+        booted.current = false;
+      };
     }
 
     const existing = document.querySelector<HTMLScriptElement>(
@@ -64,7 +74,12 @@ export function BitcoinChart({ className = "" }: BitcoinChartProps) {
     );
     if (existing) {
       existing.addEventListener("load", boot);
-      return () => existing.removeEventListener("load", boot);
+      if (window.TradingView) boot();
+      return () => {
+        cancelled = true;
+        booted.current = false;
+        existing.removeEventListener("load", boot);
+      };
     }
 
     const script = document.createElement("script");
@@ -73,11 +88,16 @@ export function BitcoinChart({ className = "" }: BitcoinChartProps) {
     script.dataset.gfbTradingview = "1";
     script.onload = boot;
     document.body.appendChild(script);
-  }, []);
+
+    return () => {
+      cancelled = true;
+      booted.current = false;
+    };
+  }, [containerId]);
 
   return (
     <div className={`btc-chart-shell ${className}`}>
-      <div id={CONTAINER_ID} className="btc-chart-host" />
+      <div id={containerId} className="btc-chart-host" />
     </div>
   );
 }

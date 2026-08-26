@@ -57,9 +57,9 @@ function articleBasePath(kind: ArticleKind): string {
 }
 
 function articleHint(kind: ArticleKind): string {
-  if (kind === "howto") return "How-to";
+  if (kind === "howto") return "Learn";
   if (kind === "news") return "News";
-  return "Guide";
+  return "Do";
 }
 
 function slugifyGuidePath(slug: string, meta: DatasetPage): string {
@@ -111,7 +111,7 @@ export function buildHeaderSearchIndex(): HeaderSearchEntry[] {
       id: `guide:${slug}`,
       type: "guide",
       label: meta.name || slug.replace(/-/g, " "),
-      hint: meta.primaryKeyword || meta.parentCategory?.replace(/-/g, " ") || "Guide",
+      hint: meta.primaryKeyword || meta.parentCategory?.replace(/-/g, " ") || "Do",
       href,
       staticHref: staticGuideHref(slug),
       terms: collectTerms(

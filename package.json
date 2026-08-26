@@ -18,6 +18,7 @@
     "ads:txt": "node scripts/fetch-ads-txt.mjs",
     "assert:faq": "node scripts/assert-faq-schema.mjs",
     "dataset:generate": "npx tsx scripts/generate-article-seed.mts && python scripts/generate_dataset.py --mode template --seed data/seeds/getfreebit-articles.json",
+    "news:ingest": "node scripts/ingest-crypto-news.mjs",
     "serve": "node scripts/serve.mjs"
   },
   "dependencies": {

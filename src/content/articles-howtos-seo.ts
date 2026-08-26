@@ -7,7 +7,7 @@ export const HOWTOS_SEO: Article[] = [
   {
     kind: "howto",
     slug: "how-to-set-up-faucetpay-and-route-faucet-payouts",
-    title: "How to Set Up FaucetPay and Route Faucet Payouts",
+    title: "Set up FaucetPay routing",
     description:
       "Create a FaucetPay micro-wallet, secure it with 2FA, connect US faucet sites, and sweep aggregated balances to self-custody without losing dust to fees.",
     publishedAt: "2026-08-12",
@@ -59,7 +59,7 @@ export const HOWTOS_SEO: Article[] = [
   {
     kind: "howto",
     slug: "how-to-run-a-daily-crypto-faucet-routine-in-the-us",
-    title: "How to Run a Daily Crypto Faucet Routine in the US",
+    title: "Daily faucet routine (US)",
     description:
       "A repeatable US-friendly schedule—FaucetPay routing, timer discipline, offerwall hygiene, and exit checks—without multi-account Sybil traps.",
     publishedAt: "2026-08-14",
@@ -112,7 +112,7 @@ export const HOWTOS_SEO: Article[] = [
   {
     kind: "howto",
     slug: "how-to-farm-testnets-for-potential-airdrops-safely",
-    title: "How to Farm Testnets for Potential Airdrops Safely",
+    title: "Farm testnets safely",
     description:
       "Use an isolated burn wallet, official faucets, documented txs, and Sybil-aware behavior when pursuing testnet-based allocation rumors.",
     publishedAt: "2026-08-16",
@@ -165,7 +165,7 @@ export const HOWTOS_SEO: Article[] = [
   {
     kind: "howto",
     slug: "how-to-track-airdrop-eligibility-with-on-chain-tools",
-    title: "How to Track Airdrop Eligibility with On-Chain Tools",
+    title: "Track airdrop eligibility",
     description:
       "Use explorers, Dune dashboards, and wallet labels to audit your farming history, spot gaps, and avoid fake eligibility checkers.",
     publishedAt: "2026-08-18",
@@ -218,7 +218,7 @@ export const HOWTOS_SEO: Article[] = [
   {
     kind: "howto",
     slug: "how-to-compare-staking-and-savings-apy-without-chasing-headlines",
-    title: "How to Compare Staking and Savings APY Without Chasing Headlines",
+    title: "Compare staking APY",
     description:
       "Normalize APY vs APR, strip reward-token emissions, and score lockups, smart-contract, and depeg risk before you deposit for yield.",
     publishedAt: "2026-08-20",
@@ -271,7 +271,7 @@ export const HOWTOS_SEO: Article[] = [
   {
     kind: "howto",
     slug: "how-to-enable-2fa-and-withdrawal-allowlists-on-a-centralized-exchange",
-    title: "How to Enable 2FA and Withdrawal Allowlists on a Centralized Exchange",
+    title: "Enable 2FA & withdrawal allowlists",
     description:
       "Harden a Tier-1 CEX account with authenticator 2FA, anti-phishing codes, withdrawal allowlists, and a first self-custody test withdrawal.",
     publishedAt: "2026-08-22",
