@@ -20,16 +20,18 @@ export function BitcoinConverter({ priceUsd }: BitcoinConverterProps) {
   const [raw, setRaw] = useState("1");
 
   const amount = parseAmountInput(raw);
-  const btc = amount == null || priceUsd == null ? null : amountToBtc(amount, unit);
+  // BTC ↔ sats never depends on the USD feed
+  const btc = amount == null ? null : amountToBtc(amount, unit);
   const usd = btc != null && priceUsd != null ? btc * priceUsd : null;
 
+  const otherUnit: BtcUnit = unit === "btc" ? "sats" : "btc";
   const counterpart = useMemo(() => {
     if (btc == null) return null;
-    if (unit === "btc") {
+    if (otherUnit === "sats") {
       return `${formatSatsDisplay(btcToSats(btc))} sats`;
     }
     return `${formatBtcDisplay(btc)} BTC`;
-  }, [btc, unit]);
+  }, [btc, otherUnit]);
 
   function switchUnit(next: BtcUnit) {
     if (next === unit) return;
@@ -52,7 +54,7 @@ export function BitcoinConverter({ priceUsd }: BitcoinConverterProps) {
             Convert
           </p>
           <p className="mt-1 text-sm text-ink-muted">
-            Enter an amount in BTC or sats — USD updates with the live spot.
+            Type an amount — the other unit and USD update as you go.
           </p>
         </div>
         <div
@@ -107,12 +109,12 @@ export function BitcoinConverter({ priceUsd }: BitcoinConverterProps) {
             USD value
           </p>
           <p className="mt-1 font-display text-2xl tracking-tight text-ink tabular-nums sm:text-3xl">
-            {usd == null ? "—" : formatUsd(usd)}
+            {usd == null ? (priceUsd == null ? "Loading…" : "—") : formatUsd(usd)}
           </p>
         </div>
         <div className="rounded-xl border border-paper-line/80 bg-paper/50 px-4 py-3">
           <p className="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-ink-muted">
-            Also equals
+            Also equals ({otherUnit === "btc" ? "BTC" : "sats"})
           </p>
           <p className="mt-1 font-display text-2xl tracking-tight text-ink tabular-nums sm:text-3xl">
             {counterpart ?? "—"}

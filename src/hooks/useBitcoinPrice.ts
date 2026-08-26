@@ -8,134 +8,153 @@ export type BitcoinTicker = {
   high24h: number;
   low24h: number;
   updatedAt: number;
+  source: string;
 };
 
 type ConnectionState = "connecting" | "live" | "polling" | "error";
 
-const REST_URL = "https://api.binance.com/api/v3/ticker/24hr?symbol=BTCUSDT";
-const WS_URL = "wss://stream.binance.com:9443/ws/btcusdt@ticker";
-const POLL_MS = 15_000;
+const POLL_MS = 12_000;
 
-async function fetchTicker(): Promise<BitcoinTicker> {
-  const res = await fetch(REST_URL, { cache: "no-store" });
-  if (!res.ok) throw new Error(`Ticker HTTP ${res.status}`);
+type SpotSnapshot = {
+  price: number;
+  changePercent24h: number;
+  high24h: number;
+  low24h: number;
+  source: string;
+};
+
+async function fetchCoinbase(): Promise<SpotSnapshot> {
+  const [tickerRes, statsRes] = await Promise.all([
+    fetch("https://api.exchange.coinbase.com/products/BTC-USD/ticker", { cache: "no-store" }),
+    fetch("https://api.exchange.coinbase.com/products/BTC-USD/stats", { cache: "no-store" }),
+  ]);
+  if (!tickerRes.ok) throw new Error(`Coinbase ticker HTTP ${tickerRes.status}`);
+  const ticker = (await tickerRes.json()) as { price?: string };
+  const price = Number(ticker.price);
+  if (!Number.isFinite(price) || price <= 0) throw new Error("Coinbase bad price");
+
+  let open = price;
+  let high24h = price;
+  let low24h = price;
+  if (statsRes.ok) {
+    const stats = (await statsRes.json()) as { open?: string; high?: string; low?: string };
+    open = Number(stats.open) || price;
+    high24h = Number(stats.high) || price;
+    low24h = Number(stats.low) || price;
+  }
+  const changePercent24h = open > 0 ? ((price - open) / open) * 100 : 0;
+  return { price, changePercent24h, high24h, low24h, source: "Coinbase" };
+}
+
+async function fetchBinanceHost(host: string, symbol: string, label: string): Promise<SpotSnapshot> {
+  const res = await fetch(`https://${host}/api/v3/ticker/24hr?symbol=${symbol}`, {
+    cache: "no-store",
+  });
+  if (!res.ok) throw new Error(`${label} HTTP ${res.status}`);
   const data = (await res.json()) as {
     lastPrice: string;
     priceChangePercent: string;
     highPrice: string;
     lowPrice: string;
   };
+  const price = Number(data.lastPrice);
+  if (!Number.isFinite(price) || price <= 0) throw new Error(`${label} bad price`);
   return {
-    price: Number(data.lastPrice),
-    changePercent24h: Number(data.priceChangePercent),
-    high24h: Number(data.highPrice),
-    low24h: Number(data.lowPrice),
-    updatedAt: Date.now(),
+    price,
+    changePercent24h: Number(data.priceChangePercent) || 0,
+    high24h: Number(data.highPrice) || price,
+    low24h: Number(data.lowPrice) || price,
+    source: label,
   };
 }
 
+async function fetchCoinGecko(): Promise<SpotSnapshot> {
+  const res = await fetch(
+    "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true&include_24hr_vol=false",
+    { cache: "no-store" },
+  );
+  if (!res.ok) throw new Error(`CoinGecko HTTP ${res.status}`);
+  const data = (await res.json()) as {
+    bitcoin?: { usd?: number; usd_24h_change?: number };
+  };
+  const price = Number(data.bitcoin?.usd);
+  if (!Number.isFinite(price) || price <= 0) throw new Error("CoinGecko bad price");
+  const change = Number(data.bitcoin?.usd_24h_change) || 0;
+  return {
+    price,
+    changePercent24h: change,
+    high24h: price,
+    low24h: price,
+    source: "CoinGecko",
+  };
+}
+
+async function fetchSpot(): Promise<SpotSnapshot> {
+  const attempts = [
+    () => fetchCoinbase(),
+    () => fetchBinanceHost("api.binance.us", "BTCUSD", "Binance.US"),
+    () => fetchBinanceHost("api.binance.com", "BTCUSDT", "Binance"),
+    () => fetchCoinGecko(),
+  ];
+  let lastError: unknown;
+  for (const attempt of attempts) {
+    try {
+      return await attempt();
+    } catch (err) {
+      lastError = err;
+    }
+  }
+  throw lastError instanceof Error ? lastError : new Error("All price feeds failed");
+}
+
 /**
- * Live BTC/USDT spot via Binance WebSocket, with REST fallback polling.
- * Client-only — safe for static Cloudflare Pages export.
+ * Live BTC/USD spot with multi-source REST polling.
+ * Prefer Coinbase / Binance.US so US browsers are not stuck on geo-blocked Binance.com.
  */
 export function useBitcoinPrice() {
   const [ticker, setTicker] = useState<BitcoinTicker | null>(null);
   const [status, setStatus] = useState<ConnectionState>("connecting");
   const [error, setError] = useState<string | null>(null);
-  const wsRef = useRef<WebSocket | null>(null);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  const applyTicker = useCallback((next: BitcoinTicker) => {
-    setTicker(next);
+  const applySpot = useCallback((spot: SpotSnapshot) => {
+    setTicker({
+      price: spot.price,
+      changePercent24h: spot.changePercent24h,
+      high24h: spot.high24h,
+      low24h: spot.low24h,
+      updatedAt: Date.now(),
+      source: spot.source,
+    });
     setError(null);
+    setStatus("live");
   }, []);
-
-  const startPolling = useCallback(() => {
-    if (pollRef.current) return;
-    setStatus("polling");
-    const tick = async () => {
-      try {
-        applyTicker(await fetchTicker());
-      } catch (e) {
-        setError(e instanceof Error ? e.message : "Price feed unavailable");
-        setStatus("error");
-      }
-    };
-    void tick();
-    pollRef.current = setInterval(() => void tick(), POLL_MS);
-  }, [applyTicker]);
 
   useEffect(() => {
     let cancelled = false;
 
-    void (async () => {
+    const tick = async () => {
       try {
-        const initial = await fetchTicker();
-        if (!cancelled) applyTicker(initial);
-      } catch {
-        /* WS / poll may still recover */
+        const spot = await fetchSpot();
+        if (!cancelled) applySpot(spot);
+      } catch (e) {
+        if (cancelled) return;
+        setError(e instanceof Error ? e.message : "Price feed unavailable");
+        setStatus((prev) => (prev === "live" ? "polling" : "error"));
       }
-    })();
+    };
 
-    try {
-      const ws = new WebSocket(WS_URL);
-      wsRef.current = ws;
-
-      ws.onopen = () => {
-        if (cancelled) return;
-        if (pollRef.current) {
-          clearInterval(pollRef.current);
-          pollRef.current = null;
-        }
-        setStatus("live");
-      };
-
-      ws.onmessage = (event) => {
-        try {
-          const msg = JSON.parse(String(event.data)) as {
-            c?: string;
-            P?: string;
-            h?: string;
-            l?: string;
-          };
-          const price = Number(msg.c);
-          if (!Number.isFinite(price)) return;
-          applyTicker({
-            price,
-            changePercent24h: Number(msg.P) || 0,
-            high24h: Number(msg.h) || 0,
-            low24h: Number(msg.l) || 0,
-            updatedAt: Date.now(),
-          });
-          setStatus("live");
-        } catch {
-          /* ignore malformed frames */
-        }
-      };
-
-      ws.onerror = () => {
-        ws.close();
-      };
-
-      ws.onclose = () => {
-        if (cancelled) return;
-        wsRef.current = null;
-        startPolling();
-      };
-    } catch {
-      startPolling();
-    }
+    void tick();
+    pollRef.current = setInterval(() => void tick(), POLL_MS);
 
     return () => {
       cancelled = true;
-      wsRef.current?.close();
-      wsRef.current = null;
       if (pollRef.current) {
         clearInterval(pollRef.current);
         pollRef.current = null;
       }
     };
-  }, [applyTicker, startPolling]);
+  }, [applySpot]);
 
   return { ticker, status, error };
 }

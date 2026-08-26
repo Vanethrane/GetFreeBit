@@ -81,8 +81,9 @@ export function BitcoinMonitor() {
         </div>
 
         <p className="border-t border-paper-line/60 px-4 py-3 text-[0.7rem] leading-relaxed text-ink-muted sm:px-5">
-          Spot via Binance BTCUSDT · Chart by TradingView. Not financial advice—prices can move
-          between updates. Keep this tab open to monitor; converter uses the live spot above.
+          Spot via {ticker?.source ?? "live feed"} · Chart by TradingView. Not financial
+          advice—prices can move between updates. Keep this tab open to monitor; converter uses the
+          live spot above.
         </p>
       </div>
     </section>
