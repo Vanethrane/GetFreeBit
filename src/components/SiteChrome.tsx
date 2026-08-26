@@ -95,7 +95,27 @@ export function SiteFooter() {
         </div>
       </div>
       <p className="mt-8 max-w-2xl text-xs leading-relaxed text-ink-muted">
+        <Link
+          href="/how-we-make-money"
+          className="font-medium text-voice-dark underline underline-offset-2 hover:text-voice"
+        >
+          How GetFreeBit makes money
+        </Link>
+        {" · "}
         {siteConfig.affiliateDisclosure}
+      </p>
+      <p className="mt-4 text-sm text-ink-muted">
+        Found an error?{" "}
+        <Link
+          href="/corrections#report"
+          className="font-medium text-signal-dark underline underline-offset-2 hover:text-signal"
+        >
+          Report a correction
+        </Link>
+        {" · "}
+        <Link href="/corrections" className="underline underline-offset-2 hover:text-voice-dark">
+          View corrections log
+        </Link>
       </p>
       <p className="mt-4 pb-2 text-xs text-ink-muted">
         © {new Date().getFullYear()} {siteConfig.name}. Do & Learn pages emphasize risks, payout math, and

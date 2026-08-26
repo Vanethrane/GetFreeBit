@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteShell } from "@/components/SiteChrome";
 import { getAllGuides, articleWordCount } from "@/content/guides";
+import { getPageIntent } from "@/data/seo-intent-map";
 import { buildHubMetadata } from "@/lib/site-metadata";
 import { siteConfig } from "@/site.config";
 
@@ -9,18 +10,22 @@ export const metadata: Metadata = buildHubMetadata({
   title: "Do",
   description: `Actionable crypto guides from ${siteConfig.name}—blockchain, DeFi, wallets, staking, and security fundamentals with risk callouts.`,
   path: "/guides",
-  keyword: "crypto guides blockchain DeFi",
+  keyword: "crypto guides",
 });
 
 export default function GuidesIndexPage() {
   const guides = getAllGuides();
+  const intent = getPageIntent("/guides");
 
   return (
     <SiteShell>
       <section className="py-12">
-        <h1 className="font-display text-4xl tracking-tight text-ink sm:text-5xl">Do</h1>
+        <h1 className="font-display text-4xl tracking-tight text-ink sm:text-5xl">
+          {intent?.h1 ?? "Do"}
+        </h1>
         <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-muted">
-          {guides.length} guides on how crypto systems work.
+          {guides.length} guides on how crypto systems work—each page targets one clear search
+          intent.
         </p>
         <ul className="mt-10 space-y-1">
           {guides.map((guide) => (

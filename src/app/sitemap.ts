@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 import { ALL_GUIDES, ALL_HOWTOS, ALL_NEWS } from "@/content/guides";
+import { BITCOIN_TOOL_SLUGS } from "@/data/bitcoin-tools";
+import { FAUCET_CLUSTER_SLUGS } from "@/data/faucet-cluster-content";
 import { canonicalPath } from "@/lib/canonical";
 import { siteConfig } from "@/site.config";
 
@@ -19,18 +21,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/guides",
     "/how-to",
+    "/bitcoin-tools",
     "/faucets",
+    "/faucets/learn",
+    "/faucets/payouts",
     "/exchanges",
     "/cards",
     "/tools/tax",
     "/news",
     "/about",
     "/contact",
+    "/corrections",
+    "/how-we-make-money",
     "/privacy",
     "/terms",
   ];
 
-  const moneyDesks = new Set(["/faucets", "/exchanges", "/cards", "/tools/tax"]);
+  const moneyDesks = new Set([
+    "/faucets",
+    "/faucets/learn",
+    "/faucets/payouts",
+    "/exchanges",
+    "/cards",
+    "/tools/tax",
+    "/bitcoin-tools",
+  ]);
 
   const entries: MetadataRoute.Sitemap = staticRoutes.map((path) => ({
     url: sitemapUrl(base, path),
@@ -39,6 +54,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       path === "" || path === "/guides" || path === "/news" ? "daily" : "weekly",
     priority: path === "" ? 1 : moneyDesks.has(path) ? 0.9 : 0.8,
   }));
+
+  for (const slug of BITCOIN_TOOL_SLUGS) {
+    entries.push({
+      url: sitemapUrl(base, `/${slug}`),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    });
+  }
+
+  for (const slug of FAUCET_CLUSTER_SLUGS) {
+    entries.push({
+      url: sitemapUrl(base, `/faucets/learn/${slug}`),
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    });
+  }
 
   for (const guide of ALL_GUIDES) {
     entries.push({

@@ -19,6 +19,7 @@
   - `scripts/lib/word-html.mjs`, `scripts/lib/word-seo.mjs`
 - Monetized UI must surface `siteConfig.affiliateDisclosure`.
 - No get-rich-quick copy, unverified token claims, or undisclosed tracking links.
+- **Crypto factual claims:** cite primary sources (Bitcoin dev docs, IRS/SEC/CFTC/FinCEN, exchange fee schedules, wallet/Lightning docs)—not secondary blogs. Label **Source:** vs **GetFreeBit analysis:** (see engine rule).
 
 ## SEO / schema.org
 - Use existing helpers (`SEOHead`, `HeadMetadata`, dataset graph builders).

@@ -1,0 +1,1909 @@
+/**
+ * SEO keyword / content map — one primary search intent per URL.
+ * Hub pages and planned Bitcoin tool URLs should pull titles/descriptions from here.
+ */
+
+export type SearchIntent =
+  | "informational"
+  | "commercial"
+  | "transactional"
+  | "navigational"
+  | "tool";
+
+export type IntentStatus = "live" | "planned" | "private";
+
+export type PageIntentTarget = {
+  path: string;
+  section:
+    | "home"
+    | "bitcoin"
+    | "faucets"
+    | "exchanges"
+    | "cards"
+    | "tax"
+    | "do"
+    | "learn"
+    | "news"
+    | "about"
+    | "casinos"
+    | "stocks"
+    | "tools";
+  primaryKeyword: string;
+  intent: SearchIntent;
+  /** Suggested <title> lead (brand appended by metadata helpers) */
+  title: string;
+  h1: string;
+  metaDescription: string;
+  secondaryKeywords: string[];
+  supportingKeywords?: string[];
+  status: IntentStatus;
+  /** Parent cluster for siloing */
+  cluster?: string;
+};
+
+export const SEO_INTENT_MAP: PageIntentTarget[] = [
+  // ── Home / Bitcoin desk ─────────────────────────────────────────────
+  {
+    path: "/",
+    section: "home",
+    primaryKeyword: "bitcoin price",
+    intent: "tool",
+    title: "Live Bitcoin Price, Chart & Sats Converter",
+    h1: "Watch Bitcoin. Learn crypto freely.",
+    metaDescription:
+      "Live Bitcoin price chart, BTC/USD spot, and sats converter—plus free guides on faucets, wallets, yield, and Web3. A desk for operators and a clear start for newcomers.",
+    secondaryKeywords: [
+      "bitcoin price chart",
+      "btc usd",
+      "live bitcoin price",
+      "bitcoin monitor",
+    ],
+    supportingKeywords: ["sats converter", "btc to usd", "learn crypto free"],
+    status: "live",
+    cluster: "bitcoin-price",
+  },
+
+  // ── Bitcoin tool cluster (flat live URLs) ───────────────────────────
+  {
+    path: "/bitcoin/price",
+    section: "bitcoin",
+    primaryKeyword: "bitcoin price today",
+    intent: "tool",
+    title: "Bitcoin Price Today (Live BTC/USD)",
+    h1: "Bitcoin price today",
+    metaDescription:
+      "Live Bitcoin price in USD with 24h high/low and change. Spot feed for operators who keep a BTC tab open.",
+    secondaryKeywords: ["btc price", "bitcoin usd price", "current bitcoin price"],
+    status: "planned",
+    cluster: "bitcoin-price",
+  },
+  {
+    path: "/bitcoin-tools",
+    section: "bitcoin",
+    primaryKeyword: "bitcoin calculator",
+    intent: "tool",
+    title: "Bitcoin Calculators & Converters",
+    h1: "Bitcoin calculators",
+    metaDescription:
+      "Free Bitcoin calculators—BTC/USD, sats converters, fees, DCA, mining, block subsidy, and countdown tools. Live spot where USD is involved.",
+    secondaryKeywords: ["bitcoin tools", "btc converter", "satoshi calculator"],
+    status: "live",
+    cluster: "bitcoin-tools",
+  },
+  {
+    path: "/bitcoin-calculator",
+    section: "bitcoin",
+    primaryKeyword: "bitcoin calculator",
+    intent: "tool",
+    title: "Bitcoin Calculator — BTC, Sats & USD",
+    h1: "Bitcoin calculator",
+    metaDescription:
+      "Convert Bitcoin to USD and sats with live spot. Flip units for faucet balances, withdrawals, and portfolio snapshots—no account required.",
+    secondaryKeywords: [
+      "bitcoin price calculator",
+      "btc to usd calculator",
+      "bitcoin converter",
+    ],
+    status: "live",
+    cluster: "bitcoin-calculator",
+  },
+  {
+    path: "/satoshi-calculator",
+    section: "bitcoin",
+    primaryKeyword: "satoshi calculator",
+    intent: "tool",
+    title: "Satoshi Calculator — Sats ↔ BTC ↔ USD",
+    h1: "Satoshi calculator",
+    metaDescription:
+      "Convert satoshis to Bitcoin and USD instantly. Built for faucet claims, Lightning amounts, and micro-earnings math with live spot.",
+    secondaryKeywords: [
+      "sats calculator",
+      "satoshi to usd",
+      "satoshi converter",
+      "sats to btc",
+    ],
+    supportingKeywords: ["1000 sats to usd", "how many sats in a bitcoin", "1 btc to sats"],
+    status: "live",
+    cluster: "bitcoin-calculator",
+  },
+  {
+    path: "/btc-to-usd",
+    section: "bitcoin",
+    primaryKeyword: "btc to usd",
+    intent: "tool",
+    title: "BTC to USD Converter — Live Bitcoin to Dollars",
+    h1: "BTC to USD",
+    metaDescription:
+      "Convert Bitcoin to US dollars with live spot. Enter any BTC amount and see USD plus the sats equivalent.",
+    secondaryKeywords: ["bitcoin to usd", "btc usd converter", "convert bitcoin to dollars"],
+    status: "live",
+    cluster: "bitcoin-calculator",
+  },
+  {
+    path: "/usd-to-btc",
+    section: "bitcoin",
+    primaryKeyword: "usd to btc",
+    intent: "tool",
+    title: "USD to BTC Converter — Dollars to Bitcoin",
+    h1: "USD to BTC",
+    metaDescription:
+      "Convert US dollars to Bitcoin with live spot. See how much BTC and sats a dollar amount buys at the current mark.",
+    secondaryKeywords: ["dollars to bitcoin", "how much bitcoin can i buy", "usd to bitcoin"],
+    status: "live",
+    cluster: "bitcoin-calculator",
+  },
+  {
+    path: "/btc-to-sats",
+    section: "bitcoin",
+    primaryKeyword: "btc to sats",
+    intent: "tool",
+    title: "BTC to Sats — Convert Bitcoin to Satoshis",
+    h1: "BTC to sats",
+    metaDescription:
+      "Convert Bitcoin to satoshis. 1 BTC = 100,000,000 sats—fixed unit math, no price feed required.",
+    secondaryKeywords: [
+      "1 btc to sats",
+      "bitcoin to satoshi",
+      "how many sats in a bitcoin",
+    ],
+    status: "live",
+    cluster: "bitcoin-calculator",
+  },
+  {
+    path: "/sats-to-btc",
+    section: "bitcoin",
+    primaryKeyword: "sats to btc",
+    intent: "tool",
+    title: "Sats to BTC — Convert Satoshis to Bitcoin",
+    h1: "Sats to BTC",
+    metaDescription:
+      "Convert satoshis to Bitcoin. Divide by 100,000,000—fixed scale for faucet and Lightning amounts.",
+    secondaryKeywords: ["satoshi to bitcoin", "convert sats to btc", "sats in bitcoin"],
+    status: "live",
+    cluster: "bitcoin-calculator",
+  },
+  {
+    path: "/sats-to-usd",
+    section: "bitcoin",
+    primaryKeyword: "sats to usd",
+    intent: "tool",
+    title: "Sats to USD — Convert Satoshis to Dollars",
+    h1: "Sats to USD",
+    metaDescription:
+      "Convert 1,000 sats, 10,000 sats, or any amount to USD with live Bitcoin spot. Built for micro-earnings and Lightning amounts.",
+    secondaryKeywords: ["1000 sats to usd", "satoshi to usd", "convert sats to dollars"],
+    status: "live",
+    cluster: "bitcoin-calculator",
+  },
+  {
+    path: "/usd-to-sats",
+    section: "bitcoin",
+    primaryKeyword: "usd to sats",
+    intent: "tool",
+    title: "USD to Sats — Dollars to Satoshis",
+    h1: "USD to sats",
+    metaDescription:
+      "Convert US dollars to satoshis with live Bitcoin spot. Useful for Lightning tips, faucet goals, and micro-budgets.",
+    secondaryKeywords: ["dollars to satoshis", "how many sats for a dollar", "usd to satoshi"],
+    status: "live",
+    cluster: "bitcoin-calculator",
+  },
+  {
+    path: "/bitcoin-fee-calculator",
+    section: "bitcoin",
+    primaryKeyword: "bitcoin fee calculator",
+    intent: "tool",
+    title: "Bitcoin Fee Calculator — Sats/vB to USD",
+    h1: "Bitcoin fee calculator",
+    metaDescription:
+      "Estimate Bitcoin transaction fees from sats/vByte and template size. See sats, BTC, and USD cost before you broadcast.",
+    secondaryKeywords: [
+      "btc transaction fee",
+      "bitcoin fee estimator",
+      "sats per vbyte calculator",
+    ],
+    status: "live",
+    cluster: "bitcoin-ops",
+  },
+  {
+    path: "/bitcoin-dca-calculator",
+    section: "bitcoin",
+    primaryKeyword: "bitcoin dca calculator",
+    intent: "tool",
+    title: "Bitcoin DCA Calculator — Recurring Buy Model",
+    h1: "Bitcoin DCA calculator",
+    metaDescription:
+      "Model dollar-cost averaging into BTC—periodic buys, total invested, average cost, and sats accumulated at a chosen price assumption.",
+    secondaryKeywords: ["btc dca", "dollar cost average bitcoin", "bitcoin recurring buy calculator"],
+    status: "live",
+    cluster: "bitcoin-tools",
+  },
+  {
+    path: "/bitcoin-halving-countdown",
+    section: "bitcoin",
+    primaryKeyword: "bitcoin halving countdown",
+    intent: "tool",
+    title: "Bitcoin Halving Countdown — Next Subsidy Drop",
+    h1: "Bitcoin halving countdown",
+    metaDescription:
+      "Countdown to the next Bitcoin halving, current block subsidy, and what issuance changes mean—without price prophecy.",
+    secondaryKeywords: ["btc halving date", "next bitcoin halving", "bitcoin halving schedule"],
+    status: "live",
+    cluster: "bitcoin-ops",
+  },
+  {
+    path: "/bitcoin-mining-calculator",
+    section: "bitcoin",
+    primaryKeyword: "bitcoin mining calculator",
+    intent: "tool",
+    title: "Bitcoin Mining Calculator — Hashrate & Power Cost",
+    h1: "Bitcoin mining calculator",
+    metaDescription:
+      "Estimate Bitcoin mining revenue vs electricity and pool fees. Enter hashrate, network hashrate, watts, and kWh price for a net USD/day sketch.",
+    secondaryKeywords: [
+      "btc mining profitability",
+      "asic profit calculator",
+      "bitcoin miner electricity cost",
+    ],
+    status: "live",
+    cluster: "bitcoin-ops",
+  },
+  {
+    path: "/bitcoin-block-reward-calculator",
+    section: "bitcoin",
+    primaryKeyword: "bitcoin block reward",
+    intent: "tool",
+    title: "Bitcoin Block Reward Calculator — Subsidy by Era",
+    h1: "Bitcoin block reward calculator",
+    metaDescription:
+      "See Bitcoin block subsidy by era, annual issuance, and USD value of a block at live spot. Understand the reward schedule without price myths.",
+    secondaryKeywords: [
+      "bitcoin block subsidy",
+      "btc block reward calculator",
+      "bitcoin issuance per block",
+    ],
+    status: "live",
+    cluster: "bitcoin-ops",
+  },
+  {
+    path: "/bitcoin-inflation-calculator",
+    section: "bitcoin",
+    primaryKeyword: "bitcoin inflation rate",
+    intent: "tool",
+    title: "Bitcoin Inflation Calculator — Issuance vs Supply",
+    h1: "Bitcoin inflation calculator",
+    metaDescription:
+      "Estimate Bitcoin’s annualized issuance rate from block subsidy and circulating supply. Compare eras without confusing inflation with price.",
+    secondaryKeywords: [
+      "btc inflation calculator",
+      "bitcoin issuance rate",
+      "bitcoin supply inflation",
+    ],
+    status: "live",
+    cluster: "bitcoin-ops",
+  },
+  {
+    path: "/bitcoin-profit-calculator",
+    section: "bitcoin",
+    primaryKeyword: "bitcoin profit calculator",
+    intent: "tool",
+    title: "Bitcoin Profit Calculator — Cost Basis vs Spot",
+    h1: "Bitcoin profit calculator",
+    metaDescription:
+      "Estimate unrealized Bitcoin profit or loss from holdings and cost basis vs live spot. Not tax advice—pair with proper lot tracking software.",
+    secondaryKeywords: [
+      "btc profit loss",
+      "bitcoin unrealized gain",
+      "bitcoin pnl calculator",
+    ],
+    status: "live",
+    cluster: "bitcoin-tools",
+  },
+  {
+    path: "/bitcoin/fees",
+    section: "bitcoin",
+    primaryKeyword: "bitcoin network fees",
+    intent: "informational",
+    title: "Bitcoin Network Fees Explained",
+    h1: "Bitcoin network fees",
+    metaDescription:
+      "How BTC miner fees work, when to raise sats/vB, and how fee spikes affect faucet withdrawals and exchange deposits.",
+    secondaryKeywords: ["btc transaction fee", "bitcoin fee estimator", "mempool fees"],
+    status: "planned",
+    cluster: "bitcoin-ops",
+  },
+  {
+    path: "/bitcoin/halving",
+    section: "bitcoin",
+    primaryKeyword: "bitcoin halving",
+    intent: "informational",
+    title: "Bitcoin Halving — Schedule, Subsidy & What Changes",
+    h1: "Bitcoin halvings explained",
+    metaDescription:
+      "What the Bitcoin block subsidy halving does to issuance, miner revenue, and long-term supply—without price prophecy.",
+    secondaryKeywords: ["btc halving date", "bitcoin block reward", "halving schedule"],
+    status: "planned",
+    cluster: "bitcoin-ops",
+  },
+
+  // ── Faucets ─────────────────────────────────────────────────────────
+  {
+    path: "/faucets",
+    section: "faucets",
+    primaryKeyword: "best bitcoin faucets",
+    intent: "commercial",
+    title: "Best Bitcoin Faucets (US) — Referral Desk",
+    h1: "Faucet referral desk",
+    metaDescription:
+      "Compare US-accessible Bitcoin and crypto faucets—withdrawal minimums, FaucetPay routing, referral commissions, and risk notes before you register.",
+    secondaryKeywords: [
+      "bitcoin faucets",
+      "free bitcoin faucet",
+      "crypto faucet usa",
+      "best crypto faucets",
+    ],
+    supportingKeywords: [
+      "bitcoin faucet withdrawal",
+      "faucet minimum payout",
+      "faucet vs mining",
+      "faucetpay faucets",
+    ],
+    status: "live",
+    cluster: "faucets",
+  },
+  {
+    path: "/faucets/learn",
+    section: "faucets",
+    primaryKeyword: "bitcoin faucet guide",
+    intent: "informational",
+    title: "Bitcoin Faucets — Topical Cluster Hub",
+    h1: "Bitcoin Faucets cluster",
+    metaDescription:
+      "Pillar guide, payout mechanics, scams, taxes, and comparisons—linked to the live payout database and referral desk.",
+    secondaryKeywords: ["what is a bitcoin faucet", "how bitcoin faucets work", "faucet cluster"],
+    status: "live",
+    cluster: "bitcoin-faucets",
+  },
+  {
+    path: "/faucets/payouts",
+    section: "faucets",
+    primaryKeyword: "bitcoin faucet list",
+    intent: "commercial",
+    title: "Bitcoin Faucet Payout Database",
+    h1: "Faucet payout database",
+    metaDescription:
+      "Compare withdrawal minimums, coins, and FaucetPay rails—part of the Bitcoin Faucets educational cluster.",
+    secondaryKeywords: ["faucet minimum payout", "bitcoin faucet withdrawal", "faucet comparison"],
+    status: "live",
+    cluster: "bitcoin-faucets",
+  },
+  {
+    path: "/faucets/learn/what-is-a-bitcoin-faucet",
+    section: "faucets",
+    primaryKeyword: "what is a bitcoin faucet",
+    intent: "informational",
+    title: "What Is a Bitcoin Faucet?",
+    h1: "What is a Bitcoin faucet?",
+    metaDescription:
+      "Bitcoin faucets pay tiny sats for captchas, ads, or timers—funded by ad revenue. Definition, funding model, and cluster links.",
+    status: "live",
+    cluster: "bitcoin-faucets",
+  },
+  {
+    path: "/faucets/learn/how-bitcoin-faucets-work",
+    section: "faucets",
+    primaryKeyword: "how bitcoin faucets work",
+    intent: "informational",
+    title: "How Bitcoin Faucets Work",
+    h1: "How Bitcoin faucets work",
+    metaDescription:
+      "Timers, captchas, ad revenue, and where faucet sats come from—linked cluster guide.",
+    status: "live",
+    cluster: "bitcoin-faucets",
+  },
+  {
+    path: "/faucets/learn/how-faucet-payouts-work",
+    section: "faucets",
+    primaryKeyword: "how faucet payouts work",
+    intent: "informational",
+    title: "How Faucet Payouts Work",
+    h1: "How faucet payouts work",
+    metaDescription:
+      "Internal balances, FaucetPay batching, and on-chain exits—how faucet payouts reach your wallet.",
+    status: "live",
+    cluster: "bitcoin-faucets",
+  },
+  {
+    path: "/faucets/learn/faucet-withdrawal-minimums",
+    section: "faucets",
+    primaryKeyword: "faucet minimum payout",
+    intent: "informational",
+    title: "Faucet Withdrawal Minimums",
+    h1: "Faucet withdrawal minimums",
+    metaDescription:
+      "Why Bitcoin faucet minimums trap dust and how FaucetPay lowers effective withdrawal floors.",
+    status: "live",
+    cluster: "bitcoin-faucets",
+  },
+  {
+    path: "/faucets/learn/faucet-earning-rates",
+    section: "faucets",
+    primaryKeyword: "bitcoin faucet earning rate",
+    intent: "informational",
+    title: "Faucet Earning Rates",
+    h1: "Faucet earning rates",
+    metaDescription:
+      "Realistic sats per hour math for Bitcoin faucets—not headline claim amounts.",
+    status: "live",
+    cluster: "bitcoin-faucets",
+  },
+  {
+    path: "/faucets/learn/faucet-scams",
+    section: "faucets",
+    primaryKeyword: "bitcoin faucet scam",
+    intent: "informational",
+    title: "Bitcoin Faucet Scams",
+    h1: "Bitcoin faucet scams",
+    metaDescription:
+      "Phishing faucets, fake multiply modes, and seed-phrase traps targeting micro-earners.",
+    status: "live",
+    cluster: "bitcoin-faucets",
+  },
+  {
+    path: "/faucets/learn/faucet-taxes",
+    section: "faucets",
+    primaryKeyword: "bitcoin faucet taxes",
+    intent: "informational",
+    title: "Bitcoin Faucet Taxes (US)",
+    h1: "Faucet taxes (US)",
+    metaDescription:
+      "US tax basics for Bitcoin faucet micro-income—tracking sats and recordkeeping overview.",
+    status: "live",
+    cluster: "bitcoin-faucets",
+  },
+  {
+    path: "/faucets/learn/faucet-vs-staking",
+    section: "faucets",
+    primaryKeyword: "faucet vs staking",
+    intent: "informational",
+    title: "Faucet vs Staking",
+    h1: "Faucet vs staking",
+    metaDescription:
+      "Compare faucet time-and-attention earnings to crypto staking yield—different risks and hourly math.",
+    status: "live",
+    cluster: "bitcoin-faucets",
+  },
+  {
+    path: "/faucets/learn/lightning-faucets",
+    section: "faucets",
+    primaryKeyword: "lightning faucet",
+    intent: "informational",
+    title: "Lightning Faucets",
+    h1: "Lightning faucets",
+    metaDescription:
+      "Bitcoin Lightning faucets pay sats over LN—instant micro-payments with different custody trade-offs.",
+    status: "live",
+    cluster: "bitcoin-faucets",
+  },
+  {
+    path: "/faucets#withdrawal",
+    section: "faucets",
+    primaryKeyword: "bitcoin faucet withdrawal",
+    intent: "informational",
+    title: "Bitcoin Faucet Withdrawal — Minimums & Routing",
+    h1: "Faucet withdrawals",
+    metaDescription:
+      "How faucet withdrawals work: minimums, FaucetPay routing, on-chain fees, and when a claim is not worth cashing out.",
+    secondaryKeywords: ["faucet minimum payout", "faucetpay withdrawal", "crypto faucet cash out"],
+    status: "planned",
+    cluster: "faucets",
+  },
+  {
+    path: "/guides/evaluating-crypto-faucets-time-vs-reward",
+    section: "do",
+    primaryKeyword: "faucet vs mining",
+    intent: "informational",
+    title: "Faucet Time vs Reward Math (Not Mining)",
+    h1: "Faucet time vs reward",
+    metaDescription:
+      "Compare faucet claim efficiency to mining hype. Time-vs-reward math, payout thresholds, and when micro-earnings are not worth the attention.",
+    secondaryKeywords: ["are bitcoin faucets worth it", "crypto faucet roi", "faucet payout math"],
+    status: "live",
+    cluster: "faucets",
+  },
+  {
+    path: "/guides/how-faucetpay-routing-works-for-micro-earnings",
+    section: "do",
+    primaryKeyword: "faucetpay",
+    intent: "informational",
+    title: "FaucetPay Routing for Micro-Earnings",
+    h1: "How FaucetPay routing works",
+    metaDescription:
+      "Why faucets route through FaucetPay, how batching beats tiny on-chain withdrawals, and risks of custodial micro-wallets.",
+    secondaryKeywords: ["faucetpay setup", "faucetpay withdrawal", "micro wallet faucet"],
+    status: "live",
+    cluster: "faucets",
+  },
+  {
+    path: "/how-to/how-to-set-up-faucetpay-and-route-faucet-payouts",
+    section: "learn",
+    primaryKeyword: "how to set up faucetpay",
+    intent: "informational",
+    title: "How to Set Up FaucetPay and Route Payouts",
+    h1: "Set up FaucetPay routing",
+    metaDescription:
+      "Step-by-step FaucetPay setup for faucet payouts—account hygiene, coin selection, and when to exit to self-custody.",
+    secondaryKeywords: ["faucetpay tutorial", "route faucet payouts", "faucetpay guide"],
+    status: "live",
+    cluster: "faucets",
+  },
+  {
+    path: "/how-to/how-to-run-a-daily-crypto-faucet-routine-in-the-us",
+    section: "learn",
+    primaryKeyword: "daily bitcoin faucet routine",
+    intent: "informational",
+    title: "Daily Crypto Faucet Routine (US)",
+    h1: "Daily faucet routine in the US",
+    metaDescription:
+      "Build a US-friendly daily faucet routine with timers, FaucetPay routing, and realistic expectations—no get-rich-quick claims.",
+    secondaryKeywords: ["bitcoin faucet schedule", "crypto faucet daily", "us crypto faucets"],
+    status: "live",
+    cluster: "faucets",
+  },
+
+  // ── Exchanges / buy Bitcoin ─────────────────────────────────────────
+  {
+    path: "/exchanges",
+    section: "exchanges",
+    primaryKeyword: "best crypto exchange for beginners",
+    intent: "commercial",
+    title: "Best Crypto Exchanges for Beginners (US)",
+    h1: "Exchange referral desk",
+    metaDescription:
+      "US-accessible crypto exchanges with referral links—KYC, fees, fiat rails, and withdrawal habits for first buys.",
+    secondaryKeywords: [
+      "how to buy bitcoin",
+      "best bitcoin exchange usa",
+      "crypto exchange fees",
+      "exchange verification",
+    ],
+    supportingKeywords: [
+      "bitcoin withdrawal fees",
+      "cex vs dex beginners",
+      "crypto kyc requirements",
+    ],
+    status: "live",
+    cluster: "exchanges",
+  },
+  {
+    path: "/how-to/how-to-buy-crypto-on-a-centralized-exchange-using-fiat-currency",
+    section: "learn",
+    primaryKeyword: "how to buy bitcoin",
+    intent: "informational",
+    title: "How to Buy Crypto with Fiat on a CEX",
+    h1: "Buy crypto with fiat",
+    metaDescription:
+      "Step-by-step fiat onboarding on a centralized exchange—KYC, deposits, first buy, and a safe withdrawal checklist.",
+    secondaryKeywords: [
+      "buy bitcoin with bank account",
+      "how to buy crypto usa",
+      "cex onboarding",
+    ],
+    status: "live",
+    cluster: "exchanges",
+  },
+  {
+    path: "/how-to/how-to-enable-2fa-and-withdrawal-allowlists-on-a-centralized-exchange",
+    section: "learn",
+    primaryKeyword: "exchange verification 2fa",
+    intent: "informational",
+    title: "Exchange 2FA & Withdrawal Allowlists",
+    h1: "Enable 2FA and withdrawal allowlists",
+    metaDescription:
+      "Lock down a CEX account with authenticator 2FA and withdrawal allowlists before you size deposits.",
+    secondaryKeywords: ["crypto exchange security", "withdrawal whitelist", "cex 2fa setup"],
+    status: "live",
+    cluster: "exchanges",
+  },
+  {
+    path: "/guides/what-gas-fees-are-and-why-they-change-based-on-network-congestion",
+    section: "do",
+    primaryKeyword: "crypto network fees",
+    intent: "informational",
+    title: "Gas Fees & Network Congestion Explained",
+    h1: "Gas fees",
+    metaDescription:
+      "Why crypto fees spike, how congestion works, and how that interacts with exchange withdrawal fees and timing.",
+    secondaryKeywords: ["bitcoin withdrawal fees", "ethereum gas fees", "exchange withdrawal fee"],
+    status: "live",
+    cluster: "exchanges",
+  },
+
+  // ── Cards ───────────────────────────────────────────────────────────
+  {
+    path: "/cards",
+    section: "cards",
+    primaryKeyword: "crypto debit card",
+    intent: "commercial",
+    title: "Crypto Cards & Banking Referrals",
+    h1: "Cards & banking desk",
+    metaDescription:
+      "Crypto debit and banking partners—Bybit Card invite flows, cashback caveats, and eligibility notes for US users.",
+    secondaryKeywords: ["bybit card referral", "crypto cashback card", "bitcoin debit card"],
+    status: "live",
+    cluster: "cards",
+  },
+
+  // ── Tax ─────────────────────────────────────────────────────────────
+  {
+    path: "/tools/tax",
+    section: "tax",
+    primaryKeyword: "crypto tax reporting",
+    intent: "commercial",
+    title: "Crypto Tax Tools — Koinly, CoinTracking & More",
+    h1: "Tax tools desk",
+    metaDescription:
+      "Compare crypto tax software for cost basis, gains reports, and form exports—partner links disclosed.",
+    secondaryKeywords: [
+      "bitcoin tax calculator",
+      "crypto gains calculator",
+      "bitcoin cost basis",
+      "crypto tax forms",
+    ],
+    supportingKeywords: ["irs crypto taxes", "form 8949 crypto", "koinly vs cointracking"],
+    status: "live",
+    cluster: "tax",
+  },
+  {
+    path: "/how-to/how-to-calculate-capital-gains-and-prepare-crypto-taxes",
+    section: "learn",
+    primaryKeyword: "bitcoin cost basis",
+    intent: "informational",
+    title: "Crypto Capital Gains & Cost Basis Prep",
+    h1: "Crypto taxes & capital gains",
+    metaDescription:
+      "How to track crypto cost basis, calculate gains, and prepare records before you export to tax software.",
+    secondaryKeywords: [
+      "crypto tax reporting",
+      "crypto gains calculator",
+      "crypto tax forms",
+    ],
+    status: "live",
+    cluster: "tax",
+  },
+
+  // ── Do (guides hub) ─────────────────────────────────────────────────
+  {
+    path: "/guides",
+    section: "do",
+    primaryKeyword: "crypto guides",
+    intent: "informational",
+    title: "Crypto Guides — Systems Explained (Do)",
+    h1: "Do",
+    metaDescription:
+      "Actionable crypto guides on blockchain, DeFi, wallets, staking, and security—explained so you can act with eyes open.",
+    secondaryKeywords: ["learn blockchain", "defi explained", "crypto security guide"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/what-blockchain-technology-is-and-how-it-works",
+    section: "do",
+    primaryKeyword: "what is blockchain",
+    intent: "informational",
+    title: "What Blockchain Technology Is and How It Works",
+    h1: "Blockchain",
+    metaDescription:
+      "Plain-English blockchain fundamentals—blocks, consensus, and what users actually verify.",
+    secondaryKeywords: ["blockchain explained", "how blockchain works"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/understanding-cryptocurrencies-tokens-and-altcoins",
+    section: "do",
+    primaryKeyword: "cryptocurrency vs token",
+    intent: "informational",
+    title: "Cryptocurrencies, Tokens & Altcoins Explained",
+    h1: "Cryptocurrencies & tokens",
+    metaDescription:
+      "Native coins vs tokens vs altcoins—what the labels mean for fees, risk, and custody.",
+    secondaryKeywords: ["what is an altcoin", "crypto token meaning"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/the-difference-between-proof-of-work-and-proof-of-stake",
+    section: "do",
+    primaryKeyword: "proof of work vs proof of stake",
+    intent: "informational",
+    title: "Proof of Work vs Proof of Stake",
+    h1: "Proof of Work vs Proof of Stake",
+    metaDescription:
+      "How PoW and PoS secure networks differently—and what that means for fees, staking, and risk.",
+    secondaryKeywords: ["pow vs pos", "bitcoin ethereum consensus"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/how-bitcoin-functions-as-a-decentralized-peer-to-peer-network",
+    section: "do",
+    primaryKeyword: "how bitcoin works",
+    intent: "informational",
+    title: "How Bitcoin Works as a Peer-to-Peer Network",
+    h1: "Bitcoin",
+    metaDescription:
+      "How Bitcoin nodes, mining, and UTXOs move value without a central operator—and what users must get right.",
+    secondaryKeywords: ["bitcoin explained", "bitcoin peer to peer"],
+    status: "live",
+    cluster: "bitcoin-guides",
+  },
+  {
+    path: "/guides/what-ethereum-smart-contracts-are-and-how-they-execute-automatically",
+    section: "do",
+    primaryKeyword: "what are smart contracts",
+    intent: "informational",
+    title: "Ethereum Smart Contracts Explained",
+    h1: "Ethereum smart contracts",
+    metaDescription:
+      "What smart contracts execute, how gas pays for computation, and why signatures still matter.",
+    secondaryKeywords: ["ethereum smart contract", "how smart contracts work"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/explaining-layer-1-vs-layer-2-scaling-solutions",
+    section: "do",
+    primaryKeyword: "layer 1 vs layer 2",
+    intent: "informational",
+    title: "Layer 1 vs Layer 2 Scaling Explained",
+    h1: "Layer 1 vs Layer 2",
+    metaDescription:
+      "L1 security vs L2 throughput—bridges, fees, and when rollups change your risk model.",
+    secondaryKeywords: ["ethereum layer 2", "crypto scaling solutions"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/what-public-and-private-keys-are-in-digital-cryptography",
+    section: "do",
+    primaryKeyword: "crypto public private keys",
+    intent: "informational",
+    title: "Public & Private Keys in Crypto",
+    h1: "Public & private keys",
+    metaDescription:
+      "How key pairs control crypto funds, why seed phrases matter, and common loss paths.",
+    secondaryKeywords: ["private key explained", "crypto wallet keys"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/how-decentralized-finance-defi-replaces-traditional-intermediaries",
+    section: "do",
+    primaryKeyword: "what is defi",
+    intent: "informational",
+    title: "What DeFi Is — Replacing Intermediaries",
+    h1: "Decentralized Finance (DeFi)",
+    metaDescription:
+      "How DeFi protocols replace brokers and banks—and which risks they introduce instead.",
+    secondaryKeywords: ["defi explained", "decentralized finance guide"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/understanding-crypto-wallets-hot-wallets-vs-cold-storage",
+    section: "do",
+    primaryKeyword: "hot wallet vs cold wallet",
+    intent: "informational",
+    title: "Hot Wallets vs Cold Storage Explained",
+    h1: "Hot wallets vs cold storage",
+    metaDescription:
+      "When to use hot wallets vs cold storage—trade-offs for faucets, DeFi, and long-term holdings.",
+    secondaryKeywords: ["crypto cold storage", "hardware wallet vs software"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/how-stablecoins-maintain-their-peg-to-fiat-currencies",
+    section: "do",
+    primaryKeyword: "how stablecoins work",
+    intent: "informational",
+    title: "How Stablecoins Maintain Their Peg",
+    h1: "Stablecoins",
+    metaDescription:
+      "Fiat-backed vs algorithmic pegs, depeg risk, and how yield claims relate to stablecoin design.",
+    secondaryKeywords: ["stablecoin peg", "usdt vs usdc"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/what-crypto-staking-is-and-how-yield-is-generated",
+    section: "do",
+    primaryKeyword: "what is crypto staking",
+    intent: "informational",
+    title: "What Crypto Staking Is and How Yield Is Generated",
+    h1: "Crypto staking",
+    metaDescription:
+      "Native staking vs marketing “APY”—issuance, fees, slashing, and how to read yield claims.",
+    secondaryKeywords: ["staking yield explained", "proof of stake rewards"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/liquid-staking-vs-native-staking-trade-offs-for-earners",
+    section: "do",
+    primaryKeyword: "liquid staking vs native staking",
+    intent: "commercial",
+    title: "Liquid Staking vs Native Staking",
+    h1: "Liquid vs native staking",
+    metaDescription:
+      "Compare LSDs and native stake—liquidity, smart-contract risk, and tax complexity for earners.",
+    secondaryKeywords: ["liquid staking tokens", "lst risks"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/impermanent-loss-explained-for-liquidity-providers",
+    section: "do",
+    primaryKeyword: "impermanent loss explained",
+    intent: "informational",
+    title: "Impermanent Loss Explained for LPs",
+    h1: "Impermanent loss",
+    metaDescription:
+      "Why AMM inventory drifts vs holding, when fees compensate, and when LP yield is still a losing bet.",
+    secondaryKeywords: ["impermanent loss calculator meaning", "amm lp risk"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/airdrop-eligibility-what-protocols-actually-measure",
+    section: "do",
+    primaryKeyword: "airdrop eligibility",
+    intent: "informational",
+    title: "Airdrop Eligibility — What Protocols Measure",
+    h1: "Airdrop eligibility",
+    metaDescription:
+      "What protocols actually score for airdrops—activity, Sybil filters, and realistic expectations.",
+    secondaryKeywords: ["crypto airdrop requirements", "sybil airdrop"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/testnet-farming-without-contaminating-your-main-wallet",
+    section: "do",
+    primaryKeyword: "testnet farming safely",
+    intent: "informational",
+    title: "Testnet Farming Without Contaminating Main Wallets",
+    h1: "Safe testnet farming",
+    metaDescription:
+      "Burn-wallet hygiene for testnets and airdrop farming—so experiments never touch main funds.",
+    secondaryKeywords: ["crypto testnet airdrop", "burn wallet testnet"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/points-programs-and-tge-expectations",
+    section: "do",
+    primaryKeyword: "crypto points program tge",
+    intent: "informational",
+    title: "Points Programs and TGE Expectations",
+    h1: "Points & TGE",
+    metaDescription:
+      "How points leaderboards relate to TGE outcomes—and why points are not guaranteed tokens.",
+    secondaryKeywords: ["crypto points farming", "tge token expectations"],
+    status: "live",
+    cluster: "guides",
+  },
+
+  // ── Learn (how-tos hub) ─────────────────────────────────────────────
+  {
+    path: "/how-to",
+    section: "learn",
+    primaryKeyword: "crypto how to",
+    intent: "informational",
+    title: "Crypto How-tos — Step-by-Step (Learn)",
+    h1: "Learn",
+    metaDescription:
+      "Step-by-step crypto how-tos for wallets, swaps, bridges, staking, and security—with checkpoints baked in.",
+    secondaryKeywords: ["crypto tutorials", "how to use crypto", "web3 how to"],
+    status: "live",
+    cluster: "how-to",
+  },
+  {
+    path: "/how-to/how-to-create-your-first-self-custody-crypto-wallet",
+    section: "learn",
+    primaryKeyword: "how to create a crypto wallet",
+    intent: "informational",
+    title: "How to Create a Self-Custody Crypto Wallet",
+    h1: "Create a self-custody wallet",
+    metaDescription:
+      "Create your first self-custody wallet safely—seed phrase rules, network checks, and first receive test.",
+    secondaryKeywords: ["self custody wallet setup", "first bitcoin wallet"],
+    status: "live",
+    cluster: "how-to",
+  },
+  {
+    path: "/how-to/how-to-safely-store-and-back-up-your-seed-phrase",
+    section: "learn",
+    primaryKeyword: "how to backup seed phrase",
+    intent: "informational",
+    title: "How to Back Up a Crypto Seed Phrase",
+    h1: "Back up your seed phrase",
+    metaDescription:
+      "Offline seed phrase backup that survives theft, fire, and bad labeling—without cloud photos.",
+    secondaryKeywords: ["seed phrase backup", "crypto recovery phrase"],
+    status: "live",
+    cluster: "how-to",
+  },
+  {
+    path: "/how-to/how-to-send-and-receive-crypto-transactions-without-losing-funds",
+    section: "learn",
+    primaryKeyword: "how to send crypto safely",
+    intent: "informational",
+    title: "How to Send & Receive Crypto Safely",
+    h1: "Send & receive crypto",
+    metaDescription:
+      "Network checks, test amounts, and fee habits so transfers do not become permanent losses.",
+    secondaryKeywords: ["send bitcoin tutorial", "crypto transfer checklist"],
+    status: "live",
+    cluster: "how-to",
+  },
+  {
+    path: "/how-to/how-to-use-a-decentralized-exchange-dex-to-swap-tokens",
+    section: "learn",
+    primaryKeyword: "how to use a dex",
+    intent: "informational",
+    title: "How to Swap Tokens on a DEX",
+    h1: "Swap tokens on a DEX",
+    metaDescription:
+      "Connect a wallet, set slippage consciously, and verify token contracts before you swap.",
+    secondaryKeywords: ["dex swap tutorial", "uniswap how to"],
+    status: "live",
+    cluster: "how-to",
+  },
+  {
+    path: "/how-to/how-to-transfer-tokens-across-different-blockchains-via-a-cross-chain-bridge",
+    section: "learn",
+    primaryKeyword: "how to bridge crypto",
+    intent: "informational",
+    title: "How to Bridge Tokens Cross-Chain",
+    h1: "Bridge tokens cross-chain",
+    metaDescription:
+      "Cross-chain bridge steps, fee expectations, and how to avoid wrong-network permanent loss.",
+    secondaryKeywords: ["crypto bridge tutorial", "cross chain transfer"],
+    status: "live",
+    cluster: "how-to",
+  },
+  {
+    path: "/how-to/how-to-stake-tokens-to-earn-network-rewards",
+    section: "learn",
+    primaryKeyword: "how to stake crypto",
+    intent: "informational",
+    title: "How to Stake Tokens for Network Rewards",
+    h1: "Stake for network rewards",
+    metaDescription:
+      "Stake step-by-step—validator choice, unbonding, and separating real rewards from emissions.",
+    secondaryKeywords: ["crypto staking guide", "how to stake ethereum"],
+    status: "live",
+    cluster: "how-to",
+  },
+  {
+    path: "/how-to/how-to-set-up-a-hardware-wallet-for-maximum-cold-storage-security",
+    section: "learn",
+    primaryKeyword: "how to set up hardware wallet",
+    intent: "informational",
+    title: "How to Set Up a Hardware Wallet",
+    h1: "Set up a hardware wallet",
+    metaDescription:
+      "Hardware wallet setup from unboxing to first receive—supply-chain checks and firmware hygiene.",
+    secondaryKeywords: ["ledger setup guide", "trezor cold storage"],
+    status: "live",
+    cluster: "how-to",
+  },
+  {
+    path: "/how-to/how-to-revoke-token-approvals-to-protect-wallet-allowance-limits",
+    section: "learn",
+    primaryKeyword: "how to revoke token approvals",
+    intent: "informational",
+    title: "How to Revoke Token Approvals",
+    h1: "Revoke token approvals",
+    metaDescription:
+      "Find and revoke dangerous ERC-20 allowances so old dApps cannot drain your wallet.",
+    secondaryKeywords: ["revoke crypto allowances", "wallet approval cleaner"],
+    status: "live",
+    cluster: "how-to",
+  },
+  {
+    path: "/how-to/how-to-identify-and-avoid-common-crypto-phishing-and-wallet-scams",
+    section: "learn",
+    primaryKeyword: "crypto phishing scams",
+    intent: "informational",
+    title: "How to Spot Crypto Phishing & Wallet Scams",
+    h1: "Spot phishing & wallet scams",
+    metaDescription:
+      "Common wallet-drain patterns, fake support, and signature traps—plus habits that stop them.",
+    secondaryKeywords: ["crypto wallet scam", "avoid crypto phishing"],
+    status: "live",
+    cluster: "how-to",
+  },
+  {
+    path: "/how-to/how-to-compare-staking-and-savings-apy-without-chasing-headlines",
+    section: "learn",
+    primaryKeyword: "compare staking apy",
+    intent: "informational",
+    title: "How to Compare Staking APY Without Hype",
+    h1: "Compare staking APY",
+    metaDescription:
+      "Risk-adjust yield claims—issuance vs real fees, lockups, and when high APY is a warning.",
+    secondaryKeywords: ["crypto savings apy", "staking yield comparison"],
+    status: "live",
+    cluster: "how-to",
+  },
+  {
+    path: "/how-to/how-to-farm-testnets-for-potential-airdrops-safely",
+    section: "learn",
+    primaryKeyword: "how to farm testnets",
+    intent: "informational",
+    title: "How to Farm Testnets Safely",
+    h1: "Farm testnets safely",
+    metaDescription:
+      "Testnet farming checklist with burn wallets, faucet ETH, and Sybil-aware behavior.",
+    secondaryKeywords: ["testnet airdrop guide", "crypto testnet farming"],
+    status: "live",
+    cluster: "how-to",
+  },
+
+  // ── News / About / private desks ────────────────────────────────────
+  {
+    path: "/news",
+    section: "news",
+    primaryKeyword: "crypto news",
+    intent: "informational",
+    title: "Crypto News — Regulation & Markets",
+    h1: "News",
+    metaDescription:
+      "Crypto regulation, institutions, and protocol news with operator context—not ticker spam.",
+    secondaryKeywords: ["bitcoin news", "crypto regulation news"],
+    status: "live",
+    cluster: "news",
+  },
+  {
+    path: "/about",
+    section: "about",
+    primaryKeyword: "about getfreebit",
+    intent: "navigational",
+    title: "About GetFreeBit — Mission & Support",
+    h1: "About GetFreeBit",
+    metaDescription:
+      "GetFreeBit’s mission: a live Bitcoin desk and free crypto library. Donations keep it online.",
+    secondaryKeywords: ["getfreebit mission", "crypto education site"],
+    status: "live",
+    cluster: "about",
+  },
+  {
+    path: "/how-we-make-money",
+    section: "about",
+    primaryKeyword: "how getfreebit makes money",
+    intent: "navigational",
+    title: "How GetFreeBit Makes Money",
+    h1: "How GetFreeBit makes money",
+    metaDescription:
+      "Affiliate commissions, advertising, sponsorships, and donations—how GetFreeBit earns. Rankings are not for sale.",
+    secondaryKeywords: [
+      "affiliate disclosure",
+      "crypto site transparency",
+      "referral relationships",
+    ],
+    status: "live",
+    cluster: "about",
+  },
+  {
+    path: "/corrections",
+    section: "about",
+    primaryKeyword: "getfreebit corrections",
+    intent: "navigational",
+    title: "Corrections Log — GetFreeBit",
+    h1: "Corrections log",
+    metaDescription:
+      "Verified factual corrections on GetFreeBit—fees, minimums, dates, and tool assumptions. Report an error if you spot one.",
+    secondaryKeywords: ["corrections log", "report correction", "editorial corrections"],
+    status: "live",
+    cluster: "about",
+  },
+  {
+    path: "/contact",
+    section: "about",
+    primaryKeyword: "contact getfreebit",
+    intent: "navigational",
+    title: "Contact GetFreeBit",
+    h1: "Contact",
+    metaDescription: "Contact GetFreeBit for partnerships, privacy questions, or corrections.",
+    secondaryKeywords: ["getfreebit email", "crypto site contact"],
+    status: "live",
+    cluster: "about",
+  },
+  {
+    path: "/casinos",
+    section: "casinos",
+    primaryKeyword: "bitcoin casino",
+    intent: "commercial",
+    title: "Bitcoin Casinos — Partner Desk",
+    h1: "Bitcoin casino desk",
+    metaDescription:
+      "Bitcoin casino partners with referral links and loss-risk disclaimers. Use at your own risk.",
+    secondaryKeywords: ["btc casino", "crypto gambling referral"],
+    status: "private",
+    cluster: "casinos",
+  },
+  {
+    path: "/stocks",
+    section: "stocks",
+    primaryKeyword: "stock app referral",
+    intent: "commercial",
+    title: "US Stock App Referrals",
+    h1: "US stock app desk",
+    metaDescription:
+      "Robinhood, Webull, and US brokerage apps with referral programs—investing risk disclosed.",
+    secondaryKeywords: ["robinhood referral", "webull invite"],
+    status: "private",
+    cluster: "stocks",
+  },
+
+  // ── Deeper planned content (fill gaps) ──────────────────────────────
+  {
+    path: "/earn/faucet-minimum-payout",
+    section: "faucets",
+    primaryKeyword: "faucet minimum payout",
+    intent: "informational",
+    title: "Faucet Minimum Payout Guide",
+    h1: "Faucet minimum payouts",
+    metaDescription:
+      "Typical faucet withdrawal floors, FaucetPay thresholds, and when waiting beats claiming.",
+    secondaryKeywords: ["bitcoin faucet minimum", "faucet payout threshold"],
+    status: "planned",
+    cluster: "faucets",
+  },
+  {
+    path: "/exchanges/fees",
+    section: "exchanges",
+    primaryKeyword: "crypto exchange fees",
+    intent: "commercial",
+    title: "Crypto Exchange Fees Compared",
+    h1: "Exchange fees",
+    metaDescription:
+      "Spot trading fees, spread costs, and Bitcoin withdrawal fees on major US-accessible exchanges.",
+    secondaryKeywords: ["bitcoin withdrawal fees", "cex trading fees"],
+    status: "planned",
+    cluster: "exchanges",
+  },
+  {
+    path: "/exchanges/verification",
+    section: "exchanges",
+    primaryKeyword: "crypto exchange verification",
+    intent: "informational",
+    title: "Crypto Exchange Verification (KYC) Guide",
+    h1: "Exchange verification",
+    metaDescription:
+      "What KYC levels unlock, document tips, and how verification delays affect first Bitcoin buys.",
+    secondaryKeywords: ["cex kyc", "exchange identity verification"],
+    status: "planned",
+    cluster: "exchanges",
+  },
+  {
+    path: "/tools/tax/bitcoin-tax-calculator",
+    section: "tax",
+    primaryKeyword: "bitcoin tax calculator",
+    intent: "tool",
+    title: "Bitcoin Tax Calculator — Gains & Cost Basis",
+    h1: "Bitcoin tax calculator",
+    metaDescription:
+      "Estimate crypto gains with cost-basis methods, then export to tax software partners.",
+    secondaryKeywords: ["crypto gains calculator", "btc capital gains"],
+    status: "planned",
+    cluster: "tax",
+  },
+  {
+    path: "/tools/tax/forms",
+    section: "tax",
+    primaryKeyword: "crypto tax forms",
+    intent: "informational",
+    title: "Crypto Tax Forms Overview (8949 & More)",
+    h1: "Crypto tax forms",
+    metaDescription:
+      "Which IRS forms crypto investors commonly need—and how software maps your trade history.",
+    secondaryKeywords: ["form 8949 crypto", "schedule d crypto"],
+    status: "planned",
+    cluster: "tax",
+  },
+
+  // ── Remaining live Do articles ──────────────────────────────────────
+  {
+    path: "/guides/what-non-fungible-tokens-nfts-are-and-how-on-chain-ownership-works",
+    section: "do",
+    primaryKeyword: "what are nfts",
+    intent: "informational",
+    title: "What NFTs Are and How On-Chain Ownership Works",
+    h1: "NFTs & on-chain ownership",
+    metaDescription:
+      "How NFT ownership is recorded on-chain, what a token ID proves, and common marketplace traps.",
+    secondaryKeywords: ["nft explained", "on chain ownership nft"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/explaining-liquidity-pools-and-automated-market-makers-amms",
+    section: "do",
+    primaryKeyword: "what is an amm",
+    intent: "informational",
+    title: "Liquidity Pools & AMMs Explained",
+    h1: "Liquidity pools & AMMs",
+    metaDescription:
+      "How AMM pools price swaps, where LP fees come from, and how that connects to impermanent loss.",
+    secondaryKeywords: ["liquidity pool explained", "amm crypto"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/understanding-zero-knowledge-proofs-zkps-and-their-role-in-privacy",
+    section: "do",
+    primaryKeyword: "zero knowledge proofs crypto",
+    intent: "informational",
+    title: "Zero-Knowledge Proofs in Crypto Privacy",
+    h1: "Zero-knowledge proofs",
+    metaDescription:
+      "What ZK proofs verify without revealing data—and how rollups and privacy tools use them.",
+    secondaryKeywords: ["zk rollup explained", "zkp blockchain"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/what-real-world-asset-rwa-tokenization-means-for-traditional-finance",
+    section: "do",
+    primaryKeyword: "rwa tokenization",
+    intent: "informational",
+    title: "RWA Tokenization Explained",
+    h1: "Real-world asset tokenization",
+    metaDescription:
+      "What RWA tokenization claims to put on-chain—custody, legal wrappers, and yield caveats.",
+    secondaryKeywords: ["tokenized treasuries", "real world assets crypto"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/how-decentralized-autonomous-organizations-daos-manage-governance",
+    section: "do",
+    primaryKeyword: "what is a dao",
+    intent: "informational",
+    title: "How DAOs Manage On-Chain Governance",
+    h1: "DAO governance",
+    metaDescription:
+      "How DAO proposals, voting power, and treasuries work—and where governance attacks show up.",
+    secondaryKeywords: ["dao voting", "crypto governance"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/understanding-blockchain-consensus-mechanisms-beyond-pow-and-pos",
+    section: "do",
+    primaryKeyword: "blockchain consensus mechanisms",
+    intent: "informational",
+    title: "Consensus Beyond PoW and PoS",
+    h1: "Consensus mechanisms",
+    metaDescription:
+      "BFT-style and hybrid consensus models—what they optimize and what they trade away.",
+    secondaryKeywords: ["bft consensus crypto", "blockchain finality"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/what-sybil-attacks-51-percent-attacks-and-smart-contract-exploits-are",
+    section: "do",
+    primaryKeyword: "sybil attack crypto",
+    intent: "informational",
+    title: "Sybil Attacks, 51% Attacks & Smart Contract Exploits",
+    h1: "Attack classes in crypto",
+    metaDescription:
+      "Sybil farming, majority hash attacks, and common smart-contract exploit patterns—plain language.",
+    secondaryKeywords: ["51 percent attack", "smart contract exploit types"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/how-crypto-mining-works-and-what-mining-rewards-are",
+    section: "do",
+    primaryKeyword: "how crypto mining works",
+    intent: "informational",
+    title: "How Crypto Mining Works and What Rewards Are",
+    h1: "Crypto mining",
+    metaDescription:
+      "Block rewards, fees, and why home mining rarely beats faucets or spot buying for beginners.",
+    secondaryKeywords: ["bitcoin mining rewards", "mining vs faucet"],
+    status: "live",
+    cluster: "faucets",
+  },
+  {
+    path: "/guides/what-mempools-are-and-how-transactions-get-validated",
+    section: "do",
+    primaryKeyword: "what is a mempool",
+    intent: "informational",
+    title: "What Mempools Are and How TXs Get Validated",
+    h1: "Mempools",
+    metaDescription:
+      "How pending transactions wait in the mempool, fee bidding, and when a TX is actually final.",
+    secondaryKeywords: ["bitcoin mempool", "pending crypto transaction"],
+    status: "live",
+    cluster: "bitcoin-ops",
+  },
+  {
+    path: "/guides/understanding-crypto-tokenomics-supply-caps-inflation-and-token-burns",
+    section: "do",
+    primaryKeyword: "crypto tokenomics explained",
+    intent: "informational",
+    title: "Tokenomics — Supply Caps, Inflation & Burns",
+    h1: "Tokenomics",
+    metaDescription:
+      "Supply caps, emissions, and burns—how to read tokenomics without marketing slides.",
+    secondaryKeywords: ["token burn crypto", "crypto inflation supply"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/what-cross-chain-bridges-are-and-how-they-transfer-data-between-blockchains",
+    section: "do",
+    primaryKeyword: "what is a crypto bridge",
+    intent: "informational",
+    title: "What Cross-Chain Bridges Are",
+    h1: "Cross-chain bridges",
+    metaDescription:
+      "How bridges move assets or messages across chains—and why bridge hacks dominate loss stats.",
+    secondaryKeywords: ["cross chain bridge risk", "bridge vs swap"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/explaining-central-bank-digital-currencies-cbdcs-vs-decentralized-crypto",
+    section: "do",
+    primaryKeyword: "cbdc vs cryptocurrency",
+    intent: "informational",
+    title: "CBDCs vs Decentralized Crypto",
+    h1: "CBDCs vs crypto",
+    metaDescription:
+      "How central bank digital currencies differ from Bitcoin and permissionless tokens.",
+    secondaryKeywords: ["what is a cbdc", "digital dollar vs bitcoin"],
+    status: "live",
+    cluster: "guides",
+  },
+  {
+    path: "/guides/how-ai-agents-are-interacting-with-on-chain-infrastructure-and-smart-contracts",
+    section: "do",
+    primaryKeyword: "ai agents crypto",
+    intent: "informational",
+    title: "AI Agents and On-Chain Infrastructure",
+    h1: "AI agents on-chain",
+    metaDescription:
+      "How AI agents call contracts and wallets—and the new phishing and key-custody risks that follow.",
+    secondaryKeywords: ["ai crypto agents", "autonomous wallet agents"],
+    status: "live",
+    cluster: "guides",
+  },
+
+  // ── Remaining live Learn articles ───────────────────────────────────
+  {
+    path: "/how-to/how-to-track-airdrop-eligibility-with-on-chain-tools",
+    section: "learn",
+    primaryKeyword: "check airdrop eligibility",
+    intent: "informational",
+    title: "How to Track Airdrop Eligibility On-Chain",
+    h1: "Track airdrop eligibility",
+    metaDescription:
+      "Use explorers and eligibility checkers without connecting your main wallet to random sites.",
+    secondaryKeywords: ["airdrop checker", "on chain airdrop tools"],
+    status: "live",
+    cluster: "airdrops",
+  },
+  {
+    path: "/how-to/how-to-read-a-blockchain-explorer-to-track-pending-and-completed-transactions",
+    section: "learn",
+    primaryKeyword: "how to use blockchain explorer",
+    intent: "informational",
+    title: "How to Read a Blockchain Explorer",
+    h1: "Read a blockchain explorer",
+    metaDescription:
+      "Track pending and confirmed transfers on explorers—status, fees, and failed TX diagnosis.",
+    secondaryKeywords: ["etherscan tutorial", "bitcoin explorer how to"],
+    status: "live",
+    cluster: "how-to",
+  },
+  {
+    path: "/how-to/how-to-mint-buy-and-transfer-an-nft-using-a-decentralized-marketplace",
+    section: "learn",
+    primaryKeyword: "how to buy an nft",
+    intent: "informational",
+    title: "How to Mint, Buy & Transfer an NFT",
+    h1: "Mint, buy, transfer NFTs",
+    metaDescription:
+      "Marketplace steps for minting, buying, and transferring NFTs—with approval and fee checks.",
+    secondaryKeywords: ["nft marketplace tutorial", "transfer nft wallet"],
+    status: "live",
+    cluster: "how-to",
+  },
+  {
+    path: "/how-to/how-to-provide-liquidity-to-an-automated-market-maker-pool",
+    section: "learn",
+    primaryKeyword: "how to provide liquidity defi",
+    intent: "informational",
+    title: "How to Provide Liquidity to an AMM Pool",
+    h1: "Provide AMM liquidity",
+    metaDescription:
+      "Add liquidity step-by-step—pair selection, IL awareness, and how to exit a position.",
+    secondaryKeywords: ["add liquidity uniswap", "lp crypto tutorial"],
+    status: "live",
+    cluster: "how-to",
+  },
+  {
+    path: "/how-to/how-to-set-up-a-multisig-wallet-for-shared-funds-and-dao-treasuries",
+    section: "learn",
+    primaryKeyword: "how to set up multisig wallet",
+    intent: "informational",
+    title: "How to Set Up a Multisig Wallet",
+    h1: "Set up a multisig",
+    metaDescription:
+      "Configure a multisig for shared funds or DAO treasuries—signer rules and recovery drills.",
+    secondaryKeywords: ["safe multisig setup", "dao treasury wallet"],
+    status: "live",
+    cluster: "how-to",
+  },
+  {
+    path: "/how-to/how-to-deposit-crypto-assets-into-defi-lending-platforms-to-earn-interest",
+    section: "learn",
+    primaryKeyword: "how to earn interest on crypto",
+    intent: "informational",
+    title: "How to Deposit into DeFi Lending Platforms",
+    h1: "Deposit into DeFi lending",
+    metaDescription:
+      "Supply assets to lending markets for interest—utilization risk, freezes, and exit liquidity.",
+    secondaryKeywords: ["defi lending tutorial", "aave deposit guide"],
+    status: "live",
+    cluster: "how-to",
+  },
+  {
+    path: "/how-to/how-to-adjust-gas-fees-and-priority-gas-rules-manually-to-speed-up-transactions",
+    section: "learn",
+    primaryKeyword: "how to speed up crypto transaction",
+    intent: "informational",
+    title: "How to Adjust Gas Fees Manually",
+    h1: "Adjust gas & priority fees",
+    metaDescription:
+      "Raise priority fees safely, replace stuck TXs, and avoid overpaying during fee spikes.",
+    secondaryKeywords: ["speed up ethereum transaction", "replace by fee bitcoin"],
+    status: "live",
+    cluster: "how-to",
+  },
+  {
+    path: "/how-to/how-to-connect-a-wallet-to-decentralized-applications-dapps-securely",
+    section: "learn",
+    primaryKeyword: "how to connect wallet to dapp",
+    intent: "informational",
+    title: "How to Connect a Wallet to dApps Securely",
+    h1: "Connect a wallet securely",
+    metaDescription:
+      "Connect to dApps without approving unlimited spend—network checks and phishing tells.",
+    secondaryKeywords: ["wallet connect security", "dapp connection checklist"],
+    status: "live",
+    cluster: "how-to",
+  },
+  {
+    path: "/how-to/how-to-analyze-on-chain-wallet-data-and-metrics-using-tools-like-dune-or-etherscan",
+    section: "learn",
+    primaryKeyword: "how to analyze on chain data",
+    intent: "informational",
+    title: "How to Analyze On-Chain Wallet Data",
+    h1: "Analyze on-chain data",
+    metaDescription:
+      "Use explorers and dashboards to read wallet activity without treating every metric as signal.",
+    secondaryKeywords: ["dune analytics tutorial", "etherscan wallet analysis"],
+    status: "live",
+    cluster: "how-to",
+  },
+  {
+    path: "/how-to/how-to-participate-in-dao-governance-proposals-and-on-chain-voting",
+    section: "learn",
+    primaryKeyword: "how to vote in a dao",
+    intent: "informational",
+    title: "How to Participate in DAO Governance Voting",
+    h1: "Vote in DAO governance",
+    metaDescription:
+      "Find proposals, delegate or vote on-chain, and understand quorum and vote-buying risks.",
+    secondaryKeywords: ["dao voting tutorial", "on chain governance vote"],
+    status: "live",
+    cluster: "how-to",
+  },
+
+  // ── Deeper planned: Bitcoin ─────────────────────────────────────────
+  {
+    path: "/bitcoin/how-many-sats-in-a-bitcoin",
+    section: "bitcoin",
+    primaryKeyword: "how many sats in a bitcoin",
+    intent: "informational",
+    title: "How Many Sats in a Bitcoin? (100,000,000)",
+    h1: "How many sats in a Bitcoin?",
+    metaDescription:
+      "There are 100,000,000 satoshis in 1 BTC. See the scale table and convert common faucet amounts.",
+    secondaryKeywords: ["satoshi per bitcoin", "1 bitcoin equals how many sats"],
+    status: "planned",
+    cluster: "bitcoin-calculator",
+  },
+  {
+    path: "/bitcoin/lightning",
+    section: "bitcoin",
+    primaryKeyword: "bitcoin lightning network",
+    intent: "informational",
+    title: "Bitcoin Lightning Network Explained",
+    h1: "Lightning Network",
+    metaDescription:
+      "What Lightning channels do for small BTC payments—liquidity, routing, and custody trade-offs.",
+    secondaryKeywords: ["lightning sats", "btc lightning wallet"],
+    status: "planned",
+    cluster: "bitcoin-ops",
+  },
+  {
+    path: "/bitcoin/utxo",
+    section: "bitcoin",
+    primaryKeyword: "bitcoin utxo explained",
+    intent: "informational",
+    title: "Bitcoin UTXOs Explained",
+    h1: "UTXOs",
+    metaDescription:
+      "How unspent outputs work, why dust matters for faucet withdrawals, and consolidation basics.",
+    secondaryKeywords: ["utxo consolidation", "bitcoin dust"],
+    status: "planned",
+    cluster: "bitcoin-ops",
+  },
+  {
+    path: "/bitcoin/wallet-types",
+    section: "bitcoin",
+    primaryKeyword: "best bitcoin wallet for beginners",
+    intent: "commercial",
+    title: "Bitcoin Wallet Types for Beginners",
+    h1: "Bitcoin wallet types",
+    metaDescription:
+      "Custodial vs self-custody vs hardware for Bitcoin—when each fits faucet cash-outs and long holds.",
+    secondaryKeywords: ["bitcoin self custody", "btc hardware wallet"],
+    status: "planned",
+    cluster: "bitcoin-guides",
+  },
+  {
+    path: "/bitcoin/difficulty",
+    section: "bitcoin",
+    primaryKeyword: "bitcoin mining difficulty",
+    intent: "informational",
+    title: "Bitcoin Mining Difficulty Explained",
+    h1: "Mining difficulty",
+    metaDescription:
+      "How difficulty adjusts, what it means for hashrate, and why it does not set the USD price.",
+    secondaryKeywords: ["btc difficulty adjustment", "bitcoin hashrate"],
+    status: "planned",
+    cluster: "bitcoin-ops",
+  },
+
+  // ── Deeper planned: Faucets & earn ──────────────────────────────────
+  {
+    path: "/faucets/free-bitcoin-faucet",
+    section: "faucets",
+    primaryKeyword: "free bitcoin faucet",
+    intent: "commercial",
+    title: "Free Bitcoin Faucets — What “Free” Actually Means",
+    h1: "Free Bitcoin faucets",
+    metaDescription:
+      "Legitimate free BTC faucet models vs timers and captchas—expectations, not get-rich claims.",
+    secondaryKeywords: ["free btc faucet", "bitcoin faucet list"],
+    status: "planned",
+    cluster: "faucets",
+  },
+  {
+    path: "/faucets/bitcoin-faucets",
+    section: "faucets",
+    primaryKeyword: "bitcoin faucets",
+    intent: "commercial",
+    title: "Bitcoin Faucets — How They Pay and What to Check",
+    h1: "Bitcoin faucets",
+    metaDescription:
+      "How Bitcoin faucets fund claims, typical sats payouts, and red flags before you register.",
+    secondaryKeywords: ["btc faucet", "crypto faucet sites"],
+    status: "planned",
+    cluster: "faucets",
+  },
+  {
+    path: "/faucets/vs-mining",
+    section: "faucets",
+    primaryKeyword: "faucet vs cloud mining",
+    intent: "informational",
+    title: "Bitcoin Faucet vs Mining (and Cloud Mining)",
+    h1: "Faucets vs mining",
+    metaDescription:
+      "Time-vs-reward comparison of faucets, home mining, and cloud mining contracts—risk first.",
+    secondaryKeywords: ["cloud mining scam", "is faucet mining"],
+    status: "planned",
+    cluster: "faucets",
+  },
+  {
+    path: "/earn/cointiply",
+    section: "faucets",
+    primaryKeyword: "cointiply review",
+    intent: "commercial",
+    title: "Cointiply — GPT & Faucet Micro-Earnings",
+    h1: "Cointiply",
+    metaDescription:
+      "How Cointiply GPT and faucet claims work for US users—payout rails and referral notes.",
+    secondaryKeywords: ["cointiply faucet", "cointiply withdrawal"],
+    status: "planned",
+    cluster: "faucets",
+  },
+  {
+    path: "/earn/freebitcoin",
+    section: "faucets",
+    primaryKeyword: "freebitco.in",
+    intent: "commercial",
+    title: "FreeBitco.in — Faucet, Multiplier & Risks",
+    h1: "FreeBitco.in",
+    metaDescription:
+      "FreeBitco.in faucet and multiplier mechanics—custody risk, bonuses, and when to cash out.",
+    secondaryKeywords: ["freebitcoin faucet", "freebitco withdrawal"],
+    status: "planned",
+    cluster: "faucets",
+  },
+  {
+    path: "/earn/micro-wallet",
+    section: "faucets",
+    primaryKeyword: "crypto micro wallet",
+    intent: "informational",
+    title: "Micro-Wallets for Faucet Payouts",
+    h1: "Micro-wallets",
+    metaDescription:
+      "Why faucet sites use micro-wallets, batching benefits, and when to move to self-custody.",
+    secondaryKeywords: ["faucetpay vs wallet", "micro earnings wallet"],
+    status: "planned",
+    cluster: "faucets",
+  },
+
+  // ── Deeper planned: Exchanges / buy ─────────────────────────────────
+  {
+    path: "/buy-bitcoin",
+    section: "exchanges",
+    primaryKeyword: "buy bitcoin usa",
+    intent: "transactional",
+    title: "Buy Bitcoin in the US — Safe First Steps",
+    h1: "Buy Bitcoin in the US",
+    metaDescription:
+      "First BTC purchase path for US users—KYC, bank rails, fees, and withdrawing to your wallet.",
+    secondaryKeywords: ["buy bitcoin with debit card", "purchase bitcoin online"],
+    status: "planned",
+    cluster: "exchanges",
+  },
+  {
+    path: "/exchanges/withdrawal-fees",
+    section: "exchanges",
+    primaryKeyword: "bitcoin withdrawal fees",
+    intent: "commercial",
+    title: "Bitcoin Withdrawal Fees by Exchange",
+    h1: "Bitcoin withdrawal fees",
+    metaDescription:
+      "Compare BTC withdrawal fees and network timing so your first cash-out is not a surprise.",
+    secondaryKeywords: ["btc withdrawal fee comparison", "exchange network fee"],
+    status: "planned",
+    cluster: "exchanges",
+  },
+  {
+    path: "/exchanges/cex-vs-dex",
+    section: "exchanges",
+    primaryKeyword: "cex vs dex",
+    intent: "informational",
+    title: "CEX vs DEX for Beginners",
+    h1: "CEX vs DEX",
+    metaDescription:
+      "When a centralized exchange beats a DEX for first buys—and when self-custody swaps win.",
+    secondaryKeywords: ["centralized vs decentralized exchange", "dex for beginners"],
+    status: "planned",
+    cluster: "exchanges",
+  },
+  {
+    path: "/exchanges/binance-us",
+    section: "exchanges",
+    primaryKeyword: "binance us review",
+    intent: "commercial",
+    title: "Binance.US — Fees, KYC & Referral Notes",
+    h1: "Binance.US",
+    metaDescription:
+      "Binance.US onboarding, fee shape, and US availability notes—with disclosed partner links.",
+    secondaryKeywords: ["binance us fees", "binance us kyc"],
+    status: "planned",
+    cluster: "exchanges",
+  },
+  {
+    path: "/exchanges/coinbase",
+    section: "exchanges",
+    primaryKeyword: "coinbase for beginners",
+    intent: "commercial",
+    title: "Coinbase for Beginners — Fees & First Buy",
+    h1: "Coinbase for beginners",
+    metaDescription:
+      "Coinbase first-buy flow, spread vs fees, and when Advanced Trade is worth learning.",
+    secondaryKeywords: ["coinbase fees", "buy bitcoin coinbase"],
+    status: "planned",
+    cluster: "exchanges",
+  },
+  {
+    path: "/exchanges/kraken",
+    section: "exchanges",
+    primaryKeyword: "kraken exchange review",
+    intent: "commercial",
+    title: "Kraken — Security Reputation & Fee Tiers",
+    h1: "Kraken",
+    metaDescription:
+      "Kraken verification levels, maker/taker fees, and BTC withdrawal habits for US users.",
+    secondaryKeywords: ["kraken fees", "kraken kyc levels"],
+    status: "planned",
+    cluster: "exchanges",
+  },
+
+  // ── Deeper planned: Tax ─────────────────────────────────────────────
+  {
+    path: "/tools/tax/crypto-gains-calculator",
+    section: "tax",
+    primaryKeyword: "crypto gains calculator",
+    intent: "tool",
+    title: "Crypto Gains Calculator",
+    h1: "Crypto gains calculator",
+    metaDescription:
+      "Estimate short- and long-term crypto gains from cost basis—then hand off to tax software.",
+    secondaryKeywords: ["capital gains crypto calculator", "crypto profit calculator"],
+    status: "planned",
+    cluster: "tax",
+  },
+  {
+    path: "/tools/tax/cost-basis-methods",
+    section: "tax",
+    primaryKeyword: "crypto cost basis methods",
+    intent: "informational",
+    title: "Crypto Cost Basis Methods (FIFO, LIFO, HIFO)",
+    h1: "Cost basis methods",
+    metaDescription:
+      "FIFO, LIFO, HIFO, and specific ID—how method choice changes taxable gains.",
+    secondaryKeywords: ["fifo crypto taxes", "hifo cost basis"],
+    status: "planned",
+    cluster: "tax",
+  },
+  {
+    path: "/tools/tax/irs-crypto",
+    section: "tax",
+    primaryKeyword: "irs crypto taxes",
+    intent: "informational",
+    title: "IRS Crypto Tax Basics",
+    h1: "IRS crypto tax basics",
+    metaDescription:
+      "How the IRS treats crypto as property—taxable events, reporting habits, not legal advice.",
+    secondaryKeywords: ["is crypto taxable", "crypto taxable events"],
+    status: "planned",
+    cluster: "tax",
+  },
+  {
+    path: "/tools/tax/koinly",
+    section: "tax",
+    primaryKeyword: "koinly review",
+    intent: "commercial",
+    title: "Koinly for Crypto Taxes — Import & Reports",
+    h1: "Koinly",
+    metaDescription:
+      "How Koinly imports exchanges and wallets, common gaps, and when partner pricing helps.",
+    secondaryKeywords: ["koinly vs cointracking", "koinly crypto tax"],
+    status: "planned",
+    cluster: "tax",
+  },
+
+  // ── Deeper planned: Yield / staking / airdrops / wallets ────────────
+  {
+    path: "/earn/staking",
+    section: "tools",
+    primaryKeyword: "best crypto staking",
+    intent: "commercial",
+    title: "Crypto Staking — Risk-Adjusted Yield Desk",
+    h1: "Staking desk",
+    metaDescription:
+      "Compare staking and savings-style yields with lockup, slashing, and custody risk called out.",
+    secondaryKeywords: ["crypto staking apy", "eth staking for beginners"],
+    status: "planned",
+    cluster: "yield",
+  },
+  {
+    path: "/earn/airdrops",
+    section: "tools",
+    primaryKeyword: "crypto airdrop guide",
+    intent: "informational",
+    title: "Crypto Airdrop Guide — Eligibility Without Sybil Noise",
+    h1: "Airdrop guide",
+    metaDescription:
+      "Eligibility patterns, gas budgeting, and Sybil rules for operators farming testnets and points.",
+    secondaryKeywords: ["best crypto airdrops", "airdrop farming guide"],
+    status: "planned",
+    cluster: "airdrops",
+  },
+  {
+    path: "/wallets/hardware",
+    section: "tools",
+    primaryKeyword: "best hardware wallet",
+    intent: "commercial",
+    title: "Hardware Wallets — Ledger, Trezor & Cold Storage",
+    h1: "Hardware wallets",
+    metaDescription:
+      "Hardware wallet trade-offs for Bitcoin and altcoins—supply-chain checks and partner notes.",
+    secondaryKeywords: ["ledger vs trezor", "cold storage bitcoin"],
+    status: "planned",
+    cluster: "wallets",
+  },
+  {
+    path: "/wallets/seed-phrase",
+    section: "tools",
+    primaryKeyword: "seed phrase explained",
+    intent: "informational",
+    title: "Seed Phrases Explained — Backup Without Cloud Photos",
+    h1: "Seed phrases",
+    metaDescription:
+      "What a recovery phrase controls, metal backup options, and why screenshots lose funds.",
+    secondaryKeywords: ["recovery phrase crypto", "bip39 seed"],
+    status: "planned",
+    cluster: "wallets",
+  },
+  {
+    path: "/cards/bybit-card",
+    section: "cards",
+    primaryKeyword: "bybit card",
+    intent: "commercial",
+    title: "Bybit Card — Cashback, Eligibility & Invite Flow",
+    h1: "Bybit Card",
+    metaDescription:
+      "Bybit Card cashback and invite notes for eligible regions—fees and KYC caveats disclosed.",
+    secondaryKeywords: ["bybit card cashback", "crypto debit card bybit"],
+    status: "planned",
+    cluster: "cards",
+  },
+];
+
+export function getPageIntent(path: string): PageIntentTarget | undefined {
+  const normalized = path.replace(/\/$/, "") || "/";
+  return SEO_INTENT_MAP.find((p) => {
+    const pPath = p.path.replace(/\/$/, "") || "/";
+    return pPath === normalized;
+  });
+}
+
+export function listIntentsBySection(section: PageIntentTarget["section"]): PageIntentTarget[] {
+  return SEO_INTENT_MAP.filter((p) => p.section === section);
+}
+
+export function listIntentsByStatus(status: IntentStatus): PageIntentTarget[] {
+  return SEO_INTENT_MAP.filter((p) => p.status === status);
+}
+
+export function listPrimaryKeywords(): string[] {
+  return SEO_INTENT_MAP.map((p) => p.primaryKeyword);
+}

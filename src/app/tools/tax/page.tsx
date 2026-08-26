@@ -1,6 +1,13 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { dynamicTitleMetadata } from "@/components/SEOHead";
+import {
+  ComparisonMethodologyBlock,
+  ListPositionBadge,
+  MonetizationTransparencyStrip,
+  WhyRankedHere,
+} from "@/components/ComparisonTransparency";
+import { getComparisonMethodology } from "@/data/comparison-methodology";
 import { SiteShell } from "@/components/SiteChrome";
 import { getTaxToolReferrals } from "@/data/tax-tool-referrals";
 import {
@@ -29,6 +36,7 @@ export const metadata: Metadata = {
 
 export default function TaxToolsPage() {
   const tools = getTaxToolReferrals();
+  const methodology = getComparisonMethodology("tax-tools")!;
 
   return (
     <SiteShell>
@@ -48,8 +56,10 @@ export default function TaxToolsPage() {
           digital assets.
         </div>
 
+        <ComparisonMethodologyBlock methodology={methodology} />
+
         <ul className="mt-10 space-y-8">
-          {tools.map((tool) => (
+          {tools.map((tool, index) => (
             <li
               key={tool.id}
               id={tool.id}
@@ -61,6 +71,9 @@ export default function TaxToolsPage() {
                     {tool.tagline}
                   </p>
                   <h2 className="mt-1 font-display text-2xl text-ink">{tool.name}</h2>
+                  <div className="mt-2">
+                    <ListPositionBadge position={index + 1} total={tools.length} />
+                  </div>
                 </div>
                 <span
                   className={`rounded-full px-3 py-1 text-xs font-medium ${
@@ -109,6 +122,13 @@ export default function TaxToolsPage() {
               <p className="mt-4 rounded-lg border border-paper-line bg-paper px-3 py-2 text-sm text-ink-muted">
                 <span className="font-medium text-ink">Risk check:</span> {tool.riskNotes}
               </p>
+
+              <WhyRankedHere
+                name={tool.name}
+                partnerId={tool.id}
+                position={index + 1}
+                methodology={methodology}
+              />
 
               <div className="mt-5 flex flex-wrap items-center gap-3">
                 <a
@@ -183,7 +203,9 @@ export default function TaxToolsPage() {
           </ol>
         </section>
 
-        <p className="mt-10 text-xs leading-relaxed text-ink-muted">
+        <MonetizationTransparencyStrip />
+
+        <p className="mt-6 text-xs leading-relaxed text-ink-muted">
           {siteConfig.affiliateDisclosure} Not tax, legal, or investment advice.
         </p>
       </section>

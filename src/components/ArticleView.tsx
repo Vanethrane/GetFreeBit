@@ -4,7 +4,9 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { GuideRichText } from "@/components/GuideRichText";
 import { HeadMetadata } from "@/components/HeadMetadata";
 import { RelatedToolsConversions } from "@/components/RelatedToolsConversions";
+import { TopicClusterNav } from "@/components/TopicClusterNav";
 import { SiteShell, Prose } from "@/components/SiteChrome";
+import { findClusterByArticle } from "@/lib/topic-clusters";
 import type { Article, ArticleKind } from "@/content/types";
 import { articleWordCount } from "@/content/types";
 import { getPageLanguageMeta } from "@/lib/dataset";
@@ -33,6 +35,7 @@ export function ArticleView({ article }: { article: Article }) {
     article.kind === "guide" ? "/guides" : article.kind === "howto" ? "/how-to" : "/news";
   const path = `${base}/${article.slug}`;
   const index = kindIndex[article.kind];
+  const clusterMatch = findClusterByArticle(article.slug);
 
   return (
     <SiteShell>
@@ -93,6 +96,12 @@ export function ArticleView({ article }: { article: Article }) {
             </section>
           ))}
         </Prose>
+
+        {clusterMatch ? (
+          <div className="mt-10">
+            <TopicClusterNav cluster={clusterMatch.cluster} currentPath={path} />
+          </div>
+        ) : null}
 
         <ArticlePartnerCta slug={article.slug} />
 

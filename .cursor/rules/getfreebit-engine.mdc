@@ -25,6 +25,8 @@ Every guide, tool, dataset page, or response must map to one pillar:
 ## Affiliate & monetization
 
 - Pull partners / CTAs from `src/site.config.ts` — never hardcode brand or affiliate URLs in components.
+- **Permanent transparency page:** `/how-we-make-money` — affiliate commissions, ads, sponsorships, donations, referral relationships. Link from footer and comparison desks.
+- **Ranking independence (required on comparison desks):** State clearly: *Our revenue relationships do not determine our rankings.* Document sort criteria in `src/data/comparison-methodology.ts`; explain each list position with `WhyRankedHere`—never “#1 Best 🏆” trophy copy.
 - **Native placement:** Links and codes only inside setup steps, tool recommendations, or comparison tables — never forced.
 - **Value-first:** Always state the user benefit (fee discount, welcome bonus, etc.).
 - **Disclosure (required on monetized surfaces):**  
@@ -46,6 +48,40 @@ Every guide, tool, dataset page, or response must map to one pillar:
 - **Steps:** Numbered sequences for bridging, testnet, claims, staking.
 - **Risk callouts:** Smart-contract risk, IL, withdrawal mins, phishing, lockups.
 - **CTAs:** Clear registration steps with the specific affiliate offer from config.
+
+## Evidence & sourcing (crypto)
+
+**Do not cite secondary crypto blogs as primary evidence** when an official or primary document exists.
+
+**Prefer, in order:**
+- Bitcoin Core / [Bitcoin Developer Documentation](https://developer.bitcoin.org/)
+- BIPs and project repos (actual protocol & product docs)
+- Lightning documentation (BOLT specs, [docs.lightning.engineering](https://docs.lightning.engineering/))
+- Regulators: **IRS**, **SEC**, **CFTC**, **FinCEN**, relevant **state** agencies (when jurisdiction-specific)
+- **Exchange** fee schedules, withdrawal limits, and KYC docs (link the live schedule, not a blog recap)
+- **Wallet** manufacturer docs (Ledger, Trezor, etc.)
+- On-chain / mempool tools for fee data (e.g. mempool.space) — label as data source, not editorial
+
+**On-page attribution format** (required when stating regulatory, protocol, or fee facts):
+
+```
+Source: IRS — Digital assets are treated as property; disposition may be taxable.
+GetFreeBit analysis: This calculator marks unrealized PnL only—it is not tax filing software.
+```
+
+- **Source:** = what the primary document or schedule states (paraphrase + link).
+- **GetFreeBit analysis:** = calculator assumptions, risk framing, affiliate context, or editorial judgment—never blend the two without labels.
+- If no primary source applies (opinion, time-vs-reward math), label **GetFreeBit analysis** only.
+- Registry for tool pages: `src/data/crypto-sources.ts` + `SourceAttribution` component.
+
+**Prohibited:** “Experts say…”, unnamed “studies”, or blog roundups as proof for protocol rules, tax treatment, or exchange fees.
+
+## Corrections log
+
+- Factual fixes (minimums, fees, dates, regulatory claims) get logged at `/corrections` after verification.
+- Footer on every page: “Found an error? Report a correction.”
+- Log entry format: `{Month DD, YYYY} — Corrected {specific before → after}.` Include page path.
+- Data file: `src/data/corrections.ts`. Do not log SEO title tweaks or opinion edits.
 
 ## Tech constraints (also in `.cursorrules`)
 

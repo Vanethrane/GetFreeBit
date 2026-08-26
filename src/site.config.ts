@@ -346,6 +346,7 @@ export const siteConfig = {
   primaryNav: [
     { href: "/guides", label: "Do" },
     { href: "/how-to", label: "Learn" },
+    { href: "/bitcoin-tools", label: "Tools" },
     { href: "/faucets", label: "Faucets" },
     { href: "/exchanges", label: "Exchanges" },
     { href: "/cards", label: "Cards" },
@@ -359,6 +360,7 @@ export const siteConfig = {
     { href: "/", label: "Home" },
     { href: "/guides", label: "Do" },
     { href: "/how-to", label: "Learn" },
+    { href: "/bitcoin-tools", label: "Bitcoin calculators" },
     { href: "/faucets", label: "Faucet referrals" },
     { href: "/exchanges", label: "Exchange referrals" },
     { href: "/cards", label: "Cards & banking" },
@@ -369,7 +371,9 @@ export const siteConfig = {
 
   /** Footer trust / legal column */
   footerTrustNav: [
+    { href: "/how-we-make-money", label: "How we make money" },
     { href: "/about", label: "About Us" },
+    { href: "/corrections", label: "Corrections log" },
     { href: "/contact", label: "Contact" },
     { href: "/privacy", label: "Privacy Policy" },
     { href: "/terms", label: "Terms of Service" },

@@ -2,6 +2,13 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { dynamicTitleMetadata } from "@/components/SEOHead";
 import { SiteShell } from "@/components/SiteChrome";
+import {
+  ComparisonMethodologyBlock,
+  ListPositionBadge,
+  MonetizationTransparencyStrip,
+  WhyRankedHere,
+} from "@/components/ComparisonTransparency";
+import { getComparisonMethodology } from "@/data/comparison-methodology";
 import { getExchangeReferrals } from "@/data/exchange-referrals";
 import {
   isPartnerLive,
@@ -29,6 +36,7 @@ export const metadata: Metadata = {
 
 export default function ExchangesPage() {
   const exchanges = getExchangeReferrals();
+  const methodology = getComparisonMethodology("exchanges")!;
 
   return (
     <SiteShell>
@@ -49,8 +57,10 @@ export default function ExchangesPage() {
           if you are a US person. State-level product bans still apply; confirm at signup.
         </div>
 
+        <ComparisonMethodologyBlock methodology={methodology} />
+
         <ul className="mt-10 space-y-8">
-          {exchanges.map((exchange) => (
+          {exchanges.map((exchange, index) => (
             <li
               key={exchange.id}
               id={exchange.id}
@@ -62,6 +72,9 @@ export default function ExchangesPage() {
                     {exchange.tagline}
                   </p>
                   <h2 className="mt-1 font-display text-2xl text-ink">{exchange.name}</h2>
+                  <div className="mt-2">
+                    <ListPositionBadge position={index + 1} total={exchanges.length} />
+                  </div>
                 </div>
                 <span
                   className={`rounded-full px-3 py-1 text-xs font-medium ${
@@ -110,6 +123,13 @@ export default function ExchangesPage() {
               <p className="mt-4 rounded-lg border border-paper-line bg-paper px-3 py-2 text-sm text-ink-muted">
                 <span className="font-medium text-ink">Risk check:</span> {exchange.riskNotes}
               </p>
+
+              <WhyRankedHere
+                name={exchange.name}
+                partnerId={exchange.id}
+                position={index + 1}
+                methodology={methodology}
+              />
 
               <div className="mt-5 flex flex-wrap items-center gap-3">
                 <a
@@ -198,7 +218,9 @@ export default function ExchangesPage() {
           </ol>
         </section>
 
-        <p className="mt-10 text-xs leading-relaxed text-ink-muted">
+        <MonetizationTransparencyStrip />
+
+        <p className="mt-6 text-xs leading-relaxed text-ink-muted">
           {siteConfig.affiliateDisclosure} More exchanges appear here as Impact/Awin links are
           approved. This is education—not investment, tax, or legal advice.
         </p>

@@ -176,6 +176,30 @@ export const FAUCET_REFERRALS: FaucetReferral[] = [
     sortOrder: 6,
   },
   {
+    id: "trustdice",
+    name: "TrustDice",
+    tagline: "Casino faucet (multi-coin drips)",
+    description:
+      "TrustDice runs a dedicated faucet path alongside its casino—periodic free claims credited to your account balance before withdrawal. Fits earners who already use crypto casinos and want documented faucet claims, not dice-only gambling.",
+    signupUrl: "https://trustdice.win/faucet/?ref=u_tknvrs",
+    referralStyle: "query",
+    referralParam: "ref",
+    referralCode: "",
+    live: true,
+    referralCommission: "Referral share on referred player activity (verify live referral terms)",
+    coins: ["BTC", "ETH", "TRX", "USDT", "EOS", "+ others"],
+    minWithdrawal: "Varies by coin—check live wallet after faucet credits",
+    usAvailability:
+      "Crypto casinos often geo-restrict US and other regulated markets. Confirm you are allowed to register where you live—do not use a VPN to bypass rules.",
+    payoutNotes: "Faucet credits to custodial balance; withdraw when site minimums clear",
+    riskNotes:
+      "Casino-adjacent product—house-edge games are negative-EV for most users. Treat the faucet as a disciplined claim path only; skip multiply/casino modes if that is not your risk budget. Custodial balance—not self-custody until you withdraw.",
+    whyJoin:
+      "Multi-coin faucet on a casino platform—use our partner link if you already qualify to register and want faucet drips with referral attribution.",
+    usesFaucetPay: false,
+    sortOrder: 7,
+  },
+  {
     id: "pipeflare",
     name: "PipeFlare",
     tagline: "ZEC faucet + casual games",
@@ -195,7 +219,7 @@ export const FAUCET_REFERRALS: FaucetReferral[] = [
     riskNotes: "Game quests and social linking increase exposure—use a burn email if experimenting.",
     whyJoin: "ZEC / multi-asset daily drips—hidden until a verified referral link is approved.",
     usesFaucetPay: false,
-    sortOrder: 7,
+    sortOrder: 8,
   },
   {
     id: "globalhive",
@@ -217,7 +241,7 @@ export const FAUCET_REFERRALS: FaucetReferral[] = [
     riskNotes: "Linking Google/social accounts increases claim multipliers but expands your footprint—decide before connecting.",
     whyJoin: "Once-daily ZEC with deep referral tiers—hidden until a verified referral link is approved.",
     usesFaucetPay: false,
-    sortOrder: 8,
+    sortOrder: 9,
   },
 ];
 

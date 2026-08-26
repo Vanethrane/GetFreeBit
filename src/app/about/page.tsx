@@ -31,6 +31,16 @@ export default function AboutPage() {
         </div>
 
         <div className="mt-12 space-y-5 text-base leading-relaxed text-ink">
+          <h2 className="font-display text-2xl text-ink">How we make money</h2>
+          <p>
+            {siteConfig.name} earns through affiliate commissions, advertising, optional
+            sponsorships, and reader donations. We publish the full breakdown—including our ranking
+            independence policy—on{" "}
+            <Link href="/how-we-make-money" className="text-voice-dark underline underline-offset-4">
+              How GetFreeBit makes money
+            </Link>
+            .
+          </p>
           <h2 className="font-display text-2xl text-ink">Contact &amp; trust</h2>
           <p>
             Questions about the product, partnerships, privacy, or accessibility are welcome on our{" "}

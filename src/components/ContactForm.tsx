@@ -3,10 +3,10 @@
 import { useState } from "react";
 import { siteConfig } from "@/site.config";
 
-export function ContactForm() {
+export function ContactForm({ defaultTopic = "general" }: { defaultTopic?: string }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [topic, setTopic] = useState("general");
+  const [topic, setTopic] = useState(defaultTopic);
   const [message, setMessage] = useState("");
 
   const contactEmail = siteConfig.contactEmail;
@@ -58,6 +58,7 @@ export function ContactForm() {
           className="mt-1 w-full rounded-xl border border-paper-line bg-paper px-3 py-2 text-ink outline-none focus:ring-2 focus:ring-voice/30"
         >
           <option value="general">General</option>
+          <option value="correction">Correction / factual error</option>
           <option value="privacy">Privacy</option>
           <option value="partnership">Partnership</option>
           <option value="accessibility">Accessibility</option>

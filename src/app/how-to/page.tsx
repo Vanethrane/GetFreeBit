@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteShell } from "@/components/SiteChrome";
 import { getAllHowtos, articleWordCount } from "@/content/guides";
+import { getPageIntent } from "@/data/seo-intent-map";
 import { buildHubMetadata } from "@/lib/site-metadata";
 import { siteConfig } from "@/site.config";
 
@@ -9,18 +10,21 @@ export const metadata: Metadata = buildHubMetadata({
   title: "Learn",
   description: `Step-by-step crypto how-tos from ${siteConfig.name}—wallets, faucets, swaps, bridges, staking, and security procedures.`,
   path: "/how-to",
-  keyword: "crypto how to wallet staking",
+  keyword: "crypto how to",
 });
 
 export default function HowtosIndexPage() {
   const items = getAllHowtos();
+  const intent = getPageIntent("/how-to");
 
   return (
     <SiteShell>
       <section className="py-12">
-        <h1 className="font-display text-4xl tracking-tight text-ink sm:text-5xl">Learn</h1>
+        <h1 className="font-display text-4xl tracking-tight text-ink sm:text-5xl">
+          {intent?.h1 ?? "Learn"}
+        </h1>
         <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-muted">
-          {items.length} how-tos with security checkpoints.
+          {items.length} how-tos with security checkpoints—each procedure owns one search intent.
         </p>
         <ul className="mt-10 space-y-1">
           {items.map((item) => (

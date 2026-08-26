@@ -1,9 +1,16 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { CopyReferralCode } from "@/components/CopyReferralCode";
+import {
+  ComparisonMethodologyBlock,
+  ListPositionBadge,
+  MonetizationTransparencyStrip,
+  WhyRankedHere,
+} from "@/components/ComparisonTransparency";
 import { dynamicTitleMetadata } from "@/components/SEOHead";
 import { SiteShell } from "@/components/SiteChrome";
 import { getCardReferrals } from "@/data/card-referrals";
+import { getComparisonMethodology } from "@/data/comparison-methodology";
 import { buildHubMetadata } from "@/lib/site-metadata";
 import { siteConfig } from "@/site.config";
 
@@ -24,6 +31,7 @@ export const metadata: Metadata = {
 
 export default function CardsPage() {
   const cards = getCardReferrals();
+  const methodology = getComparisonMethodology("cards")!;
 
   return (
     <SiteShell>
@@ -43,8 +51,10 @@ export default function CardsPage() {
           VPN to bypass residency rules.
         </div>
 
+        <ComparisonMethodologyBlock methodology={methodology} />
+
         <ul className="mt-10 space-y-8">
-          {cards.map((card) => (
+          {cards.map((card, index) => (
             <li
               key={card.id}
               id={card.id}
@@ -56,6 +66,9 @@ export default function CardsPage() {
                     {card.tagline}
                   </p>
                   <h2 className="mt-1 font-display text-2xl text-ink">{card.name}</h2>
+                  <div className="mt-2">
+                    <ListPositionBadge position={index + 1} total={cards.length} />
+                  </div>
                 </div>
                 <span
                   className={`rounded-full px-3 py-1 text-xs font-medium ${
@@ -105,6 +118,13 @@ export default function CardsPage() {
                 <span className="font-medium text-ink">Risk check:</span> {card.riskNotes}
               </p>
 
+              <WhyRankedHere
+                name={card.name}
+                partnerId={card.id}
+                position={index + 1}
+                methodology={methodology}
+              />
+
               <div className="mt-5 flex flex-wrap items-center gap-3">
                 <a
                   href={card.signupUrl}
@@ -125,7 +145,9 @@ export default function CardsPage() {
           ))}
         </ul>
 
-        <p className="mt-10 text-xs leading-relaxed text-ink-muted">
+        <MonetizationTransparencyStrip />
+
+        <p className="mt-6 text-xs leading-relaxed text-ink-muted">
           {siteConfig.affiliateDisclosure} Not financial advice. Card terms and eligibility change—
           verify on the official site.
         </p>

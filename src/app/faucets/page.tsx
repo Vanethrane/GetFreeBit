@@ -9,6 +9,14 @@ import {
   isFaucetLive,
   referralStatusLabel,
 } from "@/lib/faucet-referrals";
+import { TopicClusterNav } from "@/components/TopicClusterNav";
+import {
+  ComparisonMethodologyBlock,
+  ListPositionBadge,
+  MonetizationTransparencyStrip,
+  WhyRankedHere,
+} from "@/components/ComparisonTransparency";
+import { getComparisonMethodology } from "@/data/comparison-methodology";
 import { buildHubMetadata } from "@/lib/site-metadata";
 import { siteConfig } from "@/site.config";
 
@@ -29,6 +37,7 @@ export const metadata: Metadata = {
 
 export default function FaucetsPage() {
   const faucets = getFaucetReferrals();
+  const methodology = getComparisonMethodology("faucets")!;
 
   return (
     <SiteShell>
@@ -50,8 +59,41 @@ export default function FaucetsPage() {
           inventory, not guaranteed income.
         </div>
 
+        <div className="mt-8 lg:grid lg:grid-cols-[minmax(0,1fr)_280px] lg:gap-8">
+          <section className="rounded-xl border border-voice/25 bg-voice-glow/30 p-5">
+            <h2 className="font-display text-xl text-ink">Start with the cluster</h2>
+            <p className="mt-2 text-sm leading-relaxed text-ink-muted">
+              This desk is one node in the Bitcoin Faucets topical cluster—not a standalone list.
+              Read the pillar guide, payout mechanics, and scam checklist before you register.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3 text-sm">
+              <Link
+                href="/faucets/learn/what-is-a-bitcoin-faucet"
+                className="font-semibold text-voice-dark underline underline-offset-4"
+              >
+                What is a Bitcoin faucet?
+              </Link>
+              <Link
+                href="/faucets/learn"
+                className="text-voice-dark underline underline-offset-4"
+              >
+                Full cluster map
+              </Link>
+              <Link
+                href="/faucets/payouts"
+                className="text-voice-dark underline underline-offset-4"
+              >
+                Payout database
+              </Link>
+            </div>
+          </section>
+          <TopicClusterNav currentPath="/faucets" />
+        </div>
+
+        <ComparisonMethodologyBlock methodology={methodology} />
+
         <ul className="mt-10 space-y-8">
-          {faucets.map((faucet) => (
+          {faucets.map((faucet, index) => (
             <li
               key={faucet.id}
               id={faucet.id}
@@ -63,6 +105,9 @@ export default function FaucetsPage() {
                     {faucet.tagline}
                   </p>
                   <h2 className="mt-1 font-display text-2xl text-ink">{faucet.name}</h2>
+                  <div className="mt-2">
+                    <ListPositionBadge position={index + 1} total={faucets.length} />
+                  </div>
                 </div>
                 <span
                   className={`rounded-full px-3 py-1 text-xs font-medium ${
@@ -130,6 +175,13 @@ export default function FaucetsPage() {
                 <span className="font-medium text-ink">Risk check:</span> {faucet.riskNotes}
               </p>
 
+              <WhyRankedHere
+                name={faucet.name}
+                partnerId={faucet.id}
+                position={index + 1}
+                methodology={methodology}
+              />
+
               <div className="mt-5 flex flex-wrap items-center gap-3">
                 <a
                   href={faucetSignupHref(faucet)}
@@ -154,7 +206,11 @@ export default function FaucetsPage() {
           <h2 className="font-display text-2xl text-ink">Quick comparison</h2>
           <p className="mt-2 text-sm text-ink-muted">
             Snapshot for planning—not live APY promises. Verify thresholds on each site before
-            you size your routine.
+            you size your routine. Full thresholds:{" "}
+            <Link href="/faucets/payouts" className="text-voice-dark underline underline-offset-2">
+              payout database
+            </Link>
+            .
           </p>
           <div className="mt-5 overflow-x-auto">
             <table className="w-full min-w-[640px] border-collapse text-left text-sm">
@@ -216,7 +272,9 @@ export default function FaucetsPage() {
           </ol>
         </section>
 
-        <p className="mt-10 text-xs leading-relaxed text-ink-muted">
+        <MonetizationTransparencyStrip />
+
+        <p className="mt-6 text-xs leading-relaxed text-ink-muted">
           {siteConfig.affiliateDisclosure} Additional platforms appear here as partner links are
           approved. Always confirm you are on the official domain—phishing clones target faucet
           users aggressively.
