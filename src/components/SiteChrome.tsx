@@ -109,16 +109,17 @@ type SiteShellProps = {
   children: React.ReactNode;
   /** Home keeps the Bitcoin desk clean; skip top banner (footer/inline ads stay) */
   homeLayout?: boolean;
+  /** Wide canvas for citable index tables */
+  indexLayout?: boolean;
 };
 
-export function SiteShell({ children, homeLayout = false }: SiteShellProps) {
+export function SiteShell({ children, homeLayout = false, indexLayout = false }: SiteShellProps) {
+  const widthClass = homeLayout ? "max-w-5xl" : indexLayout ? "max-w-6xl" : "max-w-3xl";
   return (
     <GlobalSearchProvider>
       <HistoryProvider>
         <div
-          className={`site-shell mx-auto flex min-h-screen w-full flex-col px-6 py-8 ${
-            homeLayout ? "max-w-5xl" : "max-w-3xl"
-          }`}
+          className={`site-shell mx-auto flex min-h-screen w-full flex-col px-6 py-8 ${widthClass}`}
         >
           <SiteHeader />
           {!homeLayout ? (
