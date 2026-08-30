@@ -1,5 +1,16 @@
 [
   {
+    "slug": "a-1-1-million-crypto-card-hack-crashed-a-neobank-s-token-49",
+    "title": "A $1.1 million crypto card hack crashed a neobank's token 49%",
+    "description": "The exploit caused the neobank's AVICI token to drop 49% from a 24-hour high, hitting a record low before paring some of the losses.",
+    "publishedAt": "2026-08-29",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/web3/2026/08/29/a-usd1-1-million-crypto-card-hack-crashed-a-neobank-s-token-49",
+    "sourceName": "CoinDesk",
+    "body": "The exploit caused the neobank's AVICI token to drop 49% from a 24-hour high, hitting a record low before paring some of the losses.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "ea6b9dff-a0f8-453c-96de-56c0d7cb925a"
+  },
+  {
     "slug": "tokenized-stock-transfer-volume-jumps-415-in-30-days-to-29-5b",
     "title": "Tokenized stock transfer volume jumps 415% in 30 days to $29.5B",
     "description": "Tokenized equities saw a sharp rise in onchain activity as active addresses and holders more than doubled over the past month.",
@@ -867,16 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "The blockchain analytics firm said just 14% of the onchain activity it identified is covered by the OECD’s international crypto tax-reporting framework.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/news/chainalysis-estimates-457b-in-potentially-taxable-crypto-activity-says-carf-misses-most-onchain-flows"
-  },
-  {
-    "slug": "crypto-ceo-faces-us-extradition-over-alleged-20-million-token-scheme",
-    "title": "Crypto CEO Faces US Extradition Over Alleged $20 Million Token Scheme",
-    "description": "Manpreet Kohli, accused of making $20 million from an alleged scheme to manipulate the Saitama token, is a step closer to facing trial in Boston.",
-    "publishedAt": "2026-08-26",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/376617/crypto-ceo-extradition-20-million-scheme",
-    "sourceName": "Decrypt",
-    "body": "Manpreet Kohli, accused of making $20 million from an alleged scheme to manipulate the Saitama token, is a step closer to facing trial in Boston.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=376617"
   }
 ]
