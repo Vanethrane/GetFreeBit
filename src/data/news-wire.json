@@ -1,5 +1,38 @@
 [
   {
+    "slug": "crypto-market-makers-are-cashing-in-on-bitcoin-s-rally-without-betting-on-direct",
+    "title": "Crypto market makers are cashing in on bitcoin's rally - without betting on direction",
+    "description": "As bitcoin surges back above $80,000, sophisticated trading firms are quietly collecting yield rather than making directional bet.",
+    "publishedAt": "2026-08-30",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/markets/2026/08/28/crypto-market-makers-are-cashing-in-on-bitcoin-s-rally-without-betting-on-direction",
+    "sourceName": "CoinDesk",
+    "body": "As bitcoin surges back above $80,000, sophisticated trading firms are quietly collecting yield rather than making directional bet.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "5fc01376-dd40-4306-96bf-a34649f054bd"
+  },
+  {
+    "slug": "russia-s-sber-eyes-usdt-loans-questions-digital-ruble-demand",
+    "title": "Russia’s Sber eyes USDT loans, questions digital ruble demand",
+    "description": "Russia’s largest bank, Sber, plans to accept USDT and Ether alongside Bitcoin as loan collateral as the country introduces regulated crypto trading under a new law.",
+    "publishedAt": "2026-08-30",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/russia-sber-bank-bitcoin-ether-usdt-crypto-loans?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Russia’s largest bank, Sber, plans to accept USDT and Ether alongside Bitcoin as loan collateral as the country introduces regulated crypto trading under a new law.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/russia-sber-bank-bitcoin-ether-usdt-crypto-loans"
+  },
+  {
+    "slug": "real-trump-coins-denies-launching-gold-token-blames-bad-actors",
+    "title": "Real Trump Coins denies launching GOLD token, blames ‘bad actors’",
+    "description": "Trump-linked Real Trump Coins said it never authorized GOLD or any digital token as questions persisted over its X account, associated domains and the concentrated token supply.",
+    "publishedAt": "2026-08-30",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/real-trump-coins-denies-gold-token-launch?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Trump-linked Real Trump Coins said it never authorized GOLD or any digital token as questions persisted over its X account, associated domains and the concentrated token supply.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/real-trump-coins-denies-gold-token-launch"
+  },
+  {
     "slug": "a-1-1-million-crypto-card-hack-crashed-a-neobank-s-token-49",
     "title": "A $1.1 million crypto card hack crashed a neobank's token 49%",
     "description": "The exploit caused the neobank's AVICI token to drop 49% from a 24-hour high, hitting a record low before paring some of the losses.",
@@ -845,38 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/news/what-happened-in-crypto-today"
-  },
-  {
-    "slug": "bitcoin-wallets-dormant-for-over-a-decade-move-40m-in-one-week",
-    "title": "Bitcoin Wallets Dormant for Over a Decade Move $40M in One Week",
-    "description": "Six wallets that slept through Bitcoin's entire boom woke up between Aug. 16 and Aug. 26, moving tens of millions in BTC.",
-    "publishedAt": "2026-08-26",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/376641/bitcoin-wallets-dormant-decade-move-40m",
-    "sourceName": "Decrypt",
-    "body": "Six wallets that slept through Bitcoin's entire boom woke up between Aug. 16 and Aug. 26, moving tens of millions in BTC.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=376641"
-  },
-  {
-    "slug": "solana-treasury-firm-invites-investors-to-look-beyond-the-price-of-sol",
-    "title": "Solana Treasury Firm Invites Investors to Look 'Beyond the Price of SOL'",
-    "description": "Nasdaq-listed SOL treasury company DeFi Development Corp launched a free network dashboard on Wednesday. Its pitch: judge Solana on more than just price.",
-    "publishedAt": "2026-08-26",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/376619/solana-treasury-sol-data-beyond-price",
-    "sourceName": "Decrypt",
-    "body": "Nasdaq-listed SOL treasury company DeFi Development Corp launched a free network dashboard on Wednesday. Its pitch: judge Solana on more than just price.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=376619"
-  },
-  {
-    "slug": "chainalysis-estimates-457b-in-taxable-crypto-activity-says-carf-misses-most",
-    "title": "Chainalysis estimates $457B in taxable crypto activity, says CARF misses most",
-    "description": "The blockchain analytics firm said just 14% of the onchain activity it identified is covered by the OECD’s international crypto tax-reporting framework.",
-    "publishedAt": "2026-08-26",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/chainalysis-estimates-457b-in-potentially-taxable-crypto-activity-says-carf-misses-most-onchain-flows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "The blockchain analytics firm said just 14% of the onchain activity it identified is covered by the OECD’s international crypto tax-reporting framework.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/chainalysis-estimates-457b-in-potentially-taxable-crypto-activity-says-carf-misses-most-onchain-flows"
   }
 ]
