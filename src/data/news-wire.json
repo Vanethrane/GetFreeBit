@@ -1,5 +1,38 @@
 [
   {
+    "slug": "cronos-halts-network-after-tectonic-exploit-involving-estimated-75m",
+    "title": "Cronos halts network after Tectonic exploit involving estimated $75M",
+    "description": "Crypto.com CEO Kris Marszalek said the company’s app and exchange were unaffected by the Tectonic breach and continued operating normally.",
+    "publishedAt": "2026-08-31",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/cronos-network-halt-tectonic-exploit-75-million?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Crypto.com CEO Kris Marszalek said the company’s app and exchange were unaffected by the Tectonic breach and continued operating normally.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/cronos-network-halt-tectonic-exploit-75-million"
+  },
+  {
+    "slug": "bitcoin-s-new-quantum-defenses-18-9m-sol-cancelled-hodler-s-digest",
+    "title": "Bitcoin’s new quantum defenses, 18.9M SOL cancelled: Hodler’s Digest",
+    "description": "Bitcoin moves toward a post quantum future, Solana validators agree to curb rampant inflation and the bull case from Bernstein is for Bitcoin to peak at $500K this cycle.",
+    "publishedAt": "2026-08-30",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/magazine/bitcoins-new-quantum-defenses-189m-sol-cancelled-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Bitcoin moves toward a post quantum future, Solana validators agree to curb rampant inflation and the bull case from Bernstein is for Bitcoin to peak at $500K this cycle.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/magazine/bitcoins-new-quantum-defenses-189m-sol-cancelled-hodlers-digest"
+  },
+  {
+    "slug": "ex-white-house-teleprompter-operator-fined-for-prediction-market-insider-trading",
+    "title": "Ex-White House Teleprompter Operator Fined for Prediction Market Insider Trading",
+    "description": "Gabriel Perez used his access to Trump's speeches before delivery to bet on &#34;presidential mention market&#34; contracts, profiting more than $107,500 before the CFTC caught up with him.",
+    "publishedAt": "2026-08-30",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/376909/white-house-teleprompter-fined-prediction-market-trading",
+    "sourceName": "Decrypt",
+    "body": "Gabriel Perez used his access to Trump's speeches before delivery to bet on &#34;presidential mention market&#34; contracts, profiting more than $107,500 before the CFTC caught up with him.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=376909"
+  },
+  {
     "slug": "bitcoin-etfs-snap-nine-day-inflow-streak-as-ethereum-funds-extend-their-run",
     "title": "Bitcoin ETFs Snap Nine-Day Inflow Streak as Ethereum Funds Extend Their Run",
     "description": "Spot Bitcoin ETFs shed $201.9 million on Aug. 28, ending a nine-day inflow run, even as Ethereum funds extended a 10-day streak with fresh cash.",
@@ -845,38 +878,5 @@
     "sourceName": "CoinDesk",
     "body": "An indicator fundamental to understanding whether capital consistently moved in size to push prices higher is flashing green.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "98c57f45-cb65-478f-80de-29c1f87a545f"
-  },
-  {
-    "slug": "shrincs-bip-published-quantum-secure-bitcoin-comes-with-a-catch",
-    "title": "SHRINCS BIP published: Quantum-secure Bitcoin comes with a catch",
-    "description": "A new Bitcoin Improvement Proposal for the SHRINCS signature scheme has just been published to upgrade Bitcoin to quantum secure. Here’s everything you need to know.",
-    "publishedAt": "2026-08-27",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/magazine/shrincs-bip-is-published-quantum-secure-bitcoin-comes-with-a-catch?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "A new Bitcoin Improvement Proposal for the SHRINCS signature scheme has just been published to upgrade Bitcoin to quantum secure. Here’s everything you need to know.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/magazine/shrincs-bip-is-published-quantum-secure-bitcoin-comes-with-a-catch"
-  },
-  {
-    "slug": "sec-resurrecting-u-s-crypto-custody-rule-the-previous-administration-failed-to-l",
-    "title": "SEC resurrecting U.S. crypto custody rule the previous administration failed to land",
-    "description": "In 2023, the regulator tried to narrowly restrict the places investment advisers could park clients' crypto assets, but the new approach is still shrouded in secrecy.",
-    "publishedAt": "2026-08-26",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/news-analysis/2026/08/26/sec-resurrecting-u-s-crypto-custody-rule-the-previous-administration-failed-to-land",
-    "sourceName": "CoinDesk",
-    "body": "In 2023, the regulator tried to narrowly restrict the places investment advisers could park clients' crypto assets, but the new approach is still shrouded in secrecy.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "fa2f0b17-516a-473d-a5be-95ffa11fdf31"
-  },
-  {
-    "slug": "what-traders-are-watching-for-bitcoin-s-next-move",
-    "title": "What Traders Are Watching for Bitcoin's Next Move",
-    "description": "Bitcoin's monster rally just hit its first real test. Here's why each catalyst matters and how they could move the price from here.",
-    "publishedAt": "2026-08-26",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/376649/what-traders-watching-bitcoin-next-move",
-    "sourceName": "Decrypt",
-    "body": "Bitcoin's monster rally just hit its first real test. Here's why each catalyst matters and how they could move the price from here.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=376649"
   }
 ]
