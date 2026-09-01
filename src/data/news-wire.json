@@ -1,5 +1,16 @@
 [
   {
+    "slug": "cme-s-share-of-xrp-futures-jumps-as-token-rallies-40-in-a-week",
+    "title": "CME’s share of XRP futures jumps as token rallies 40% in a week",
+    "description": "Outstanding XRP futures positions outside CME fell by more than 500 million tokens in two weeks, while exposure on the regulated U.S. exchange climbed about 36% as XRP rallied toward $1.40.",
+    "publishedAt": "2026-09-01",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/markets/2026/09/01/xrp-futures-are-shifting-toward-cme-as-institutional-participation-grows",
+    "sourceName": "CoinDesk",
+    "body": "Outstanding XRP futures positions outside CME fell by more than 500 million tokens in two weeks, while exposure on the regulated U.S. exchange climbed about 36% as XRP rallied toward $1.40.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "7aa790a5-8bdd-4bf0-b88f-b070fca5eb71"
+  },
+  {
     "slug": "strive-adds-143-million-in-bitcoin-as-treasury-firms-pile-back-in",
     "title": "Strive Adds $143 Million in Bitcoin as Treasury Firms Pile Back In",
     "description": "The Nasdaq-listed asset manager paid an average of $79,431 per coin, lifting its total stash to 23,156 BTC amid a wave of renewed treasury buying.",
@@ -867,16 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "BitGo completed its acquisition of NYDIG’s institutional trading business, adding about 30 employees and expanding its derivatives and financing capabilities.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/news/bitgo-nydig-trading-arm-acquisition"
-  },
-  {
-    "slug": "kraken-users-briefly-locked-out-after-a-flood-of-sanctioned-crypto-transactions",
-    "title": "Kraken users briefly locked out after a flood of sanctioned crypto transactions",
-    "description": "The activity, appearing to spread sanctioned funds to trigger account restrictions, occurred between Aug. 17 and Aug. 24.",
-    "publishedAt": "2026-08-28",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/business/2026/08/28/kraken-users-briefly-locked-out-after-a-flood-of-sanctioned-crypto-transactions",
-    "sourceName": "CoinDesk",
-    "body": "The activity, appearing to spread sanctioned funds to trigger account restrictions, occurred between Aug. 17 and Aug. 24.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "91b0c24d-ab89-4ff1-886c-15f663715fad"
   }
 ]
