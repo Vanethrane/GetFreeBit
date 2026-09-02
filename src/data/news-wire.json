@@ -1,5 +1,16 @@
 [
   {
+    "slug": "sec-proposes-transfer-agent-rule-sets-event-to-figure-out-round-the-clock-u-s-tr",
+    "title": "SEC proposes transfer agent rule, sets event to figure out round-the-clock U.S. trading",
+    "description": "The U.S. Securities and Exchange Commission issued an agenda for its 24-trading roundtable and proposed a new transfer-agent rule with blockchain implications.",
+    "publishedAt": "2026-09-01",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/policy/2026/09/01/sec-proposes-transfer-agent-rule-sets-event-to-figure-out-round-the-clock-u-s-trading",
+    "sourceName": "CoinDesk",
+    "body": "The U.S. Securities and Exchange Commission issued an agenda for its 24-trading roundtable and proposed a new transfer-agent rule with blockchain implications.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "f6f2bba0-aba1-4322-a79f-a751dffe60f8"
+  },
+  {
     "slug": "crypto-backed-pac-scales-back-ad-spending-in-massachusetts-primary",
     "title": "Crypto-backed PAC scales back ad spending in Massachusetts primary",
     "description": "The $189,000 in media spending to support Representative Jake Auchincloss marked Fairshake’s latest attempt to influence the 2026 elections with funds from the crypto industry.",
@@ -867,16 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "Tokenized equities saw a sharp rise in onchain activity as active addresses and holders more than doubled over the past month.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/markets/tokenized-stock-transfer-volume-jumps-416-in-30-days-to-295b"
-  },
-  {
-    "slug": "bitcoin-s-oldest-coins-are-waking-up-in-2026-at-a-pace-rarely-seen",
-    "title": "Bitcoin's Oldest Coins Are Waking Up in 2026 at a Pace Rarely Seen",
-    "description": "Galaxy Research shows coins untouched for 10-plus years moving at an unusual pace in 2026, with six ancient wallets shifting $40 million in a single 10-day stretch this month.",
-    "publishedAt": "2026-08-29",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/376866/bitcoin-oldest-coins-waking-up-2026",
-    "sourceName": "Decrypt",
-    "body": "Galaxy Research shows coins untouched for 10-plus years moving at an unusual pace in 2026, with six ancient wallets shifting $40 million in a single 10-day stretch this month.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=376866"
   }
 ]
