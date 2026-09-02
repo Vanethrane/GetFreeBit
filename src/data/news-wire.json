@@ -1,5 +1,60 @@
 [
   {
+    "slug": "fbi-seizes-560k-in-crypto-bound-for-hamas-takes-over-fundraising-sites",
+    "title": "FBI Seizes $560K in Crypto Bound for Hamas, Takes Over Fundraising Sites",
+    "description": "Agents seized digital assets, domains, and servers allegedly used by Hamas’ military wing to collect donations and recruit supporters.",
+    "publishedAt": "2026-09-02",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/377230/fbi-seizes-560k-crypto-hamas",
+    "sourceName": "Decrypt",
+    "body": "Agents seized digital assets, domains, and servers allegedly used by Hamas’ military wing to collect donations and recruit supporters.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=377230"
+  },
+  {
+    "slug": "japan-s-remixpoint-dumps-ethereum-xrp-in-shift-to-bitcoin-only-treasury",
+    "title": "Japan’s Remixpoint Dumps Ethereum, XRP in Shift to Bitcoin-Only Treasury",
+    "description": "The Japanese company booked a ¥117.8 million profit after selling its ETH, SOL, XRP and DOGE, leaving roughly 1,506 BTC as its only cryptocurrency holding.",
+    "publishedAt": "2026-09-02",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/377228/remixpoint-xrp-ethereum-bitcoin-only",
+    "sourceName": "Decrypt",
+    "body": "The Japanese company booked a ¥117.8 million profit after selling its ETH, SOL, XRP and DOGE, leaving roughly 1,506 BTC as its only cryptocurrency holding.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=377228"
+  },
+  {
+    "slug": "us-officials-work-with-crowdstrike-to-fight-malware-behind-crypto-theft",
+    "title": "US officials work with CrowdStrike to fight malware behind crypto theft",
+    "description": "Federal authorities and private-sector partners were part of an operation to disrupt malware that redirected about $150,000 in crypto over the last eight years.",
+    "publishedAt": "2026-09-02",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/us-officials-crowdstrike-malware-stealing-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Federal authorities and private-sector partners were part of an operation to disrupt malware that redirected about $150,000 in crypto over the last eight years.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/us-officials-crowdstrike-malware-stealing-crypto"
+  },
+  {
+    "slug": "doj-says-hamas-crypto-seizures-reached-560-000-as-fbi-took-over-fundraising-site",
+    "title": "DOJ says Hamas crypto seizures reached $560,000 as FBI took over fundraising sites",
+    "description": "FBI agents took control of domains and servers, specifically Alqassam.ps, to intercept donations and prevent further fundraising for the Al-Qassam Brigades.",
+    "publishedAt": "2026-09-02",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/business/2026/09/02/doj-says-hamas-crypto-seizures-reached-usd560-000-as-fbi-took-over-fundraising-sites",
+    "sourceName": "CoinDesk",
+    "body": "FBI agents took control of domains and servers, specifically Alqassam.ps, to intercept donations and prevent further fundraising for the Al-Qassam Brigades.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "d273f06a-5a4e-43ea-9a4d-30dbabd2dd53"
+  },
+  {
+    "slug": "coinbase-launches-regulated-crypto-derivatives-in-canada",
+    "title": "Coinbase launches regulated crypto derivatives in Canada",
+    "description": "Coinbase is offering eligible Canadian traders perpetual and dated futures with up to 10x leverage as major US trading platforms expand their crypto presence in Canada.",
+    "publishedAt": "2026-09-02",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/coinbase-launches-regulated-crypto-derivatives-in-canada?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Coinbase is offering eligible Canadian traders perpetual and dated futures with up to 10x leverage as major US trading platforms expand their crypto presence in Canada.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/coinbase-launches-regulated-crypto-derivatives-in-canada"
+  },
+  {
     "slug": "kraken-parent-payward-delays-ipo-to-second-quarter-of-2027-at-earliest",
     "title": "Kraken parent Payward delays IPO to second quarter of 2027 at earliest",
     "description": "The crypto exchange operator, which confidentially filed for a U.S. listing last November, had already put its IPO plans on hold amid difficult market conditions.",
@@ -823,60 +878,5 @@
     "sourceName": "Decrypt",
     "body": "Spot XRP funds have drawn inflows for nine straight days, reaching $1.6 billion in cumulative net inflows even as the token's price cools.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://decrypt.co/?p=376973"
-  },
-  {
-    "slug": "russia-s-sberbank-sees-46-billion-in-crypto-trading-plans-ethereum-and-usdt-back",
-    "title": "Russia's Sberbank Sees $46 Billion in Crypto Trading, Plans Ethereum and USDT-Backed Loans",
-    "description": "Deputy Chairman Anatoly Popov told state media that trading could hit 4 trillion rubles in its first year, as the bank prepares to broaden crypto-backed lending once regulators sign off.",
-    "publishedAt": "2026-08-31",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/376971/russia-sberbank-46-billion-crypto-trading-ethereum-usdt",
-    "sourceName": "Decrypt",
-    "body": "Deputy Chairman Anatoly Popov told state media that trading could hit 4 trillion rubles in its first year, as the bank prepares to broaden crypto-backed lending once regulators sign off.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=376971"
-  },
-  {
-    "slug": "hyperliquid-in-talks-with-kraken-parent-to-bring-crypto-perps-to-us-traders",
-    "title": "Hyperliquid in Talks With Kraken Parent to Bring Crypto Perps to US Traders",
-    "description": "A deal would route the decentralized exchange's perpetual futures through Payward's US-regulated Bitnomial, marking Hyperliquid's first US entry—weeks after Trump said his administration was working to bring it onshore.",
-    "publishedAt": "2026-08-31",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/376963/hyperliquid-crypto-perps-us-kraken-parent",
-    "sourceName": "Decrypt",
-    "body": "A deal would route the decentralized exchange's perpetual futures through Payward's US-regulated Bitnomial, marking Hyperliquid's first US entry—weeks after Trump said his administration was working to bring it onshore.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=376963"
-  },
-  {
-    "slug": "webull-expands-crypto-trading-into-canada-through-coinbase-collaboration",
-    "title": "Webull expands crypto trading into Canada through Coinbase collaboration",
-    "description": "The brokerage is adding digital assets alongside stocks, ETFs and options as Canadian crypto ownership rises and regulators move toward clearer industry rules.",
-    "publishedAt": "2026-08-31",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/webull-canada-crypto-trading-coinbase?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "The brokerage is adding digital assets alongside stocks, ETFs and options as Canadian crypto ownership rises and regulators move toward clearer industry rules.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/webull-canada-crypto-trading-coinbase"
-  },
-  {
-    "slug": "former-sec-cftc-officials-urge-lighter-touch-to-bring-crypto-perps-trading-onsho",
-    "title": "Former SEC, CFTC Officials Urge Lighter Touch to Bring Crypto Perps Trading Onshore",
-    "description": "With the Clarity Act stuck in recess limbo, the agencies are pressing ahead on crypto derivatives and custody, as former officials warn that overly burdensome rules will keep a $90 trillion perps market offshore.",
-    "publishedAt": "2026-08-31",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/376936/sec-cftc-crypto-perps-trading-onshore",
-    "sourceName": "Decrypt",
-    "body": "With the Clarity Act stuck in recess limbo, the agencies are pressing ahead on crypto derivatives and custody, as former officials warn that overly burdensome rules will keep a $90 trillion perps market offshore.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=376936"
-  },
-  {
-    "slug": "bitcoin-holds-steady-as-us-strikes-on-iran-rattle-stocks-and-lift-oil",
-    "title": "Bitcoin Holds Steady as US Strikes on Iran Rattle Stocks and Lift Oil",
-    "description": "The largest cryptocurrency is on track for its best month since 2017, holding above $78,000 even as a hawkish Fed and renewed Middle East conflict drag on stocks and lift crude.",
-    "publishedAt": "2026-08-31",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/376960/bitcoin-holds-steady-us-strikes-iran-stocks-oil",
-    "sourceName": "Decrypt",
-    "body": "The largest cryptocurrency is on track for its best month since 2017, holding above $78,000 even as a hawkish Fed and renewed Middle East conflict drag on stocks and lift crude.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=376960"
   }
 ]
