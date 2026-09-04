@@ -1,5 +1,71 @@
 [
   {
+    "slug": "polymarket-launches-crypto-perpetual-futures-with-up-to-20x-leverage",
+    "title": "Polymarket Launches Crypto Perpetual Futures With Up to 20x Leverage",
+    "description": "The prediction market platform's new Perps product scaled from 10 markets to 67 on its first day—though the 20x leverage ceiling only applies to some of them, and none of it reaches U.S. traders.",
+    "publishedAt": "2026-09-04",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/377483/polymarket-crypto-perpetual-futures",
+    "sourceName": "Decrypt",
+    "body": "The prediction market platform's new Perps product scaled from 10 markets to 67 on its first day—though the 20x leverage ceiling only applies to some of them, and none of it reaches U.S. traders.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=377483"
+  },
+  {
+    "slug": "surprise-nonfarm-payrolls-print-sends-bitcoin-back-below-80k",
+    "title": "Surprise nonfarm payrolls print sends Bitcoin back below 80K",
+    "description": "The US economy added far more jobs than expected in August, pressuring Bitcoin lower as traders repriced the odds of a Federal Reserve rate cut this month.",
+    "publishedAt": "2026-09-04",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/markets/surprise-labor-market-print-sends-bitcoin-back-below-80k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "The US economy added far more jobs than expected in August, pressuring Bitcoin lower as traders repriced the odds of a Federal Reserve rate cut this month.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/markets/surprise-labor-market-print-sends-bitcoin-back-below-80k"
+  },
+  {
+    "slug": "pineapple-financial-puts-1b-in-mortgage-records-on-injective",
+    "title": "Pineapple Financial puts $1B in mortgage records on Injective",
+    "description": "The mortgage lender plans to bring more than $10 billion in historical loans onchain, turning thousands of mortgage files into blockchain-based records.",
+    "publishedAt": "2026-09-04",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/pineapple-financial-puts-1b-in-mortgage-records-on-injective?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "The mortgage lender plans to bring more than $10 billion in historical loans onchain, turning thousands of mortgage files into blockchain-based records.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/pineapple-financial-puts-1b-in-mortgage-records-on-injective"
+  },
+  {
+    "slug": "fincen-ties-13b-in-crypto-scams-to-non-us-operations",
+    "title": "FinCEN ties $13B in crypto scams to non-US operations",
+    "description": "The agency reported that “transnational criminal organizations” based in compounds in Southeast Asia were largely behind digital asset scams targeting US residents.",
+    "publishedAt": "2026-09-04",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/fincen-crypto-overseas-scam-centers-analysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "The agency reported that “transnational criminal organizations” based in compounds in Southeast Asia were largely behind digital asset scams targeting US residents.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/fincen-crypto-overseas-scam-centers-analysis"
+  },
+  {
+    "slug": "crypto-traders-are-pairing-meme-coins-with-stocks-on-robinhood-and-it-s-working",
+    "title": "Crypto Traders Are Pairing Meme Coins With Stocks on Robinhood—And It's Working (Sort Of)",
+    "description": "A meme coin called BONER cornered half of Hims & Hers Health's tokenized shares on Robinhood's new blockchain. It started a new trend that's spreading fast.",
+    "publishedAt": "2026-09-04",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/377463/crypto-meme-coin-stock-pairs-robinhood",
+    "sourceName": "Decrypt",
+    "body": "A meme coin called BONER cornered half of Hims & Hers Health's tokenized shares on Robinhood's new blockchain. It started a new trend that's spreading fast.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=377463"
+  },
+  {
+    "slug": "here-s-what-happened-in-crypto-today",
+    "title": "Here’s what happened in crypto today",
+    "description": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+    "publishedAt": "2026-09-04",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/what-happened-in-crypto-today"
+  },
+  {
     "slug": "crypto-biz-ai-took-a-back-seat-when-bitcoin-started-climbing",
     "title": "Crypto Biz: AI took a back seat when Bitcoin started climbing",
     "description": "Corporate crypto bets are getting bigger as rising markets reward direct exposure, putting balance-sheet strategies and institutional adoption back in focus.",
@@ -812,71 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "Wyoming is using Chainlink to bring near-real-time reserve verification onchain for FRNT as the oracle provider expands its footprint across tokenized financial markets.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/news/wyoming-chainlink-onchain-reserves-of-state-issued-stable-token"
-  },
-  {
-    "slug": "is-bitcoin-about-to-flash-crash-what-a-bart-simpson-pattern-would-actually-take",
-    "title": "Is Bitcoin About to Flash Crash? What a 'Bart Simpson' Pattern Would Actually Take",
-    "description": "Bitcoin traders are calling August's spike-and-fade a Bart Simpson hairline. Here's what separates an actual flash crash from an ordinary correction.",
-    "publishedAt": "2026-09-02",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/377185/bitcoin-flash-crash-real-bart-simpson-pattern",
-    "sourceName": "Decrypt",
-    "body": "Bitcoin traders are calling August's spike-and-fade a Bart Simpson hairline. Here's what separates an actual flash crash from an ordinary correction.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=377185"
-  },
-  {
-    "slug": "crypto-groups-push-sec-for-tailored-rules-on-novel-etfs",
-    "title": "Crypto Groups Push SEC for Tailored Rules on Novel ETFs",
-    "description": "Groups including The Crypto Council for Innovation, Grayscale, and a16z urged the regulator to preserve existing fund classifications and streamline reviews for new exchange-traded products.",
-    "publishedAt": "2026-09-02",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/377184/crypto-groups-sec-novel-etfs",
-    "sourceName": "Decrypt",
-    "body": "Groups including The Crypto Council for Innovation, Grayscale, and a16z urged the regulator to preserve existing fund classifications and streamline reviews for new exchange-traded products.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=377184"
-  },
-  {
-    "slug": "crypto-made-new-friends-in-u-s-primaries-but-focus-now-shifts-to-general-electio",
-    "title": "Crypto made new friends in U.S. primaries, but focus now shifts to general election",
-    "description": "Adding Massachusetts incumbent Auchincloss to the list of winning primary candidates Fairshake supported, the industry's influence moves on to November.",
-    "publishedAt": "2026-09-02",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/news-analysis/2026/09/02/crypto-made-new-friends-in-u-s-primaries-but-focus-now-shifts-to-general-election",
-    "sourceName": "CoinDesk",
-    "body": "Adding Massachusetts incumbent Auchincloss to the list of winning primary candidates Fairshake supported, the industry's influence moves on to November.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "6fe4ce7c-7f69-478e-93ab-2ee75bbe9372"
-  },
-  {
-    "slug": "new-jersey-becomes-first-state-to-ask-supreme-court-to-weigh-in-on-prediction-ma",
-    "title": "New Jersey becomes first state to ask Supreme Court to weigh in on prediction markets",
-    "description": "After multiple appeals courts ruled differently about whether states can crack down on prediction markets' sports products, New Jersey asked SCOTUS to step in.",
-    "publishedAt": "2026-09-02",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/policy/2026/09/02/new-jersey-becomes-first-state-to-ask-supreme-court-to-weigh-in-on-prediction-markets",
-    "sourceName": "CoinDesk",
-    "body": "After multiple appeals courts ruled differently about whether states can crack down on prediction markets' sports products, New Jersey asked SCOTUS to step in.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "9ff82f36-11cf-4129-8728-448cc35fc53b"
-  },
-  {
-    "slug": "ondo-urges-sec-cftc-to-bring-us-stock-perpetuals-onshore",
-    "title": "Ondo urges SEC, CFTC to bring US stock perpetuals onshore",
-    "description": "Ondo says existing US securities laws can accommodate perpetual futures tied to individual stocks as regulators look to bring more derivatives activity onshore.",
-    "publishedAt": "2026-09-02",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/ondo-urges-sec-cftc-bring-us-stock-perpetuals-onshore?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Ondo says existing US securities laws can accommodate perpetual futures tied to individual stocks as regulators look to bring more derivatives activity onshore.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/ondo-urges-sec-cftc-bring-us-stock-perpetuals-onshore"
-  },
-  {
-    "slug": "bitcoin-s-apparent-demand-turns-negative-as-price-struggles-with-77k",
-    "title": "Bitcoin’s apparent demand turns negative as price struggles with $77K",
-    "description": "One of Bitcoin’s onchain demand indicators turns negative again after a brief August rebound, as BTC price slipped below $77,000 amid a broader bond and equities sell-off.",
-    "publishedAt": "2026-09-02",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/markets/bitcoins-apparent-demand-turns-negative-price-struggles-with-77k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "One of Bitcoin’s onchain demand indicators turns negative again after a brief August rebound, as BTC price slipped below $77,000 amid a broader bond and equities sell-off.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/markets/bitcoins-apparent-demand-turns-negative-price-struggles-with-77k"
   }
 ]
