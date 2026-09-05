@@ -1,5 +1,16 @@
 [
   {
+    "slug": "southeast-asia-s-crypto-funding-rebounds-to-680-million-as-investors-focus-on-ma",
+    "title": "Southeast Asia’s crypto funding rebounds to $680 million as investors focus on mature firms",
+    "description": "Blockchain investment in Southeast Asia in 2026 has been led by crypto financial services, though funding remains heavily concentrated in Singapore and a handful of companies.",
+    "publishedAt": "2026-09-05",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/business/2026/09/05/southeast-asia-s-crypto-funding-rebounds-to-usd680-million-as-investors-focus-on-mature-firms",
+    "sourceName": "CoinDesk",
+    "body": "Blockchain investment in Southeast Asia in 2026 has been led by crypto financial services, though funding remains heavily concentrated in Singapore and a handful of companies.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "4d1c44ba-b132-4cc6-ab4b-86e4535e7197"
+  },
+  {
     "slug": "polymarket-launches-crypto-perpetual-futures-with-up-to-20x-leverage",
     "title": "Polymarket Launches Crypto Perpetual Futures With Up to 20x Leverage",
     "description": "The prediction market platform's new Perps product scaled from 10 markets to 67 on its first day—though the 20x leverage ceiling only applies to some of them, and none of it reaches U.S. traders.",
@@ -867,16 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "New Jersey’s Attorney General and gaming authorities filed a petition for a writ of certiorari to the US Supreme Court over Kalshi offering sporting event contracts to residents.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/news/new-jersey-supreme-court-kalshi-prediction-markets-cftc"
-  },
-  {
-    "slug": "wyoming-adds-chainlink-reserve-verification-to-state-issued-stable-token",
-    "title": "Wyoming adds Chainlink reserve verification to state-issued stable token",
-    "description": "Wyoming is using Chainlink to bring near-real-time reserve verification onchain for FRNT as the oracle provider expands its footprint across tokenized financial markets.",
-    "publishedAt": "2026-09-02",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/wyoming-chainlink-onchain-reserves-of-state-issued-stable-token?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Wyoming is using Chainlink to bring near-real-time reserve verification onchain for FRNT as the oracle provider expands its footprint across tokenized financial markets.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/wyoming-chainlink-onchain-reserves-of-state-issued-stable-token"
   }
 ]
