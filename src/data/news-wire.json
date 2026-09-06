@@ -1,5 +1,27 @@
 [
   {
+    "slug": "satoshi-era-bitcoin-wakes-after-16-years-of-dormancy-as-600-btc-moves",
+    "title": "Satoshi-era Bitcoin wakes after 16 years of dormancy as 600 BTC moves",
+    "description": "Whale Alert identified 12 mining rewards totaling 600 BTC that moved after 16 years of dormancy, with the onchain tracking platform finding no connection to Satoshi Nakamoto.",
+    "publishedAt": "2026-09-06",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/satoshi-era-bitcoin-wakes-16-years-600-btc-moves?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Whale Alert identified 12 mining rewards totaling 600 BTC that moved after 16 years of dormancy, with the onchain tracking platform finding no connection to Satoshi Nakamoto.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/satoshi-era-bitcoin-wakes-16-years-600-btc-moves"
+  },
+  {
+    "slug": "this-crypto-project-just-funded-1-000-student-loans-entirely-on-chain",
+    "title": "This Crypto Project Just Funded 1,000 Student Loans Entirely On-Chain",
+    "description": "The team behind Pencil Finance says the financing supported thousands of Southeast Asian students, but it did not disclose borrower costs, defaults, or investor returns.",
+    "publishedAt": "2026-09-06",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/377494/pencil-finance-1-million-student-loan",
+    "sourceName": "Decrypt",
+    "body": "The team behind Pencil Finance says the financing supported thousands of Southeast Asian students, but it did not disclose borrower costs, defaults, or investor returns.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=377494"
+  },
+  {
     "slug": "why-crypto-experts-say-buying-and-holding-bitcoin-easily-beats-trying-to-time-th",
     "title": "Why crypto experts say buying and holding bitcoin easily beats trying to time the market",
     "description": "A historical analysis of bitcoin price performance from 2010 through 2026 demonstrates that the vast majority of the asset's annual returns occur during a tiny fraction of the calendar year.",
@@ -856,27 +878,5 @@
     "sourceName": "Decrypt",
     "body": "Agents seized digital assets, domains, and servers allegedly used by Hamas’ military wing to collect donations and recruit supporters.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://decrypt.co/?p=377230"
-  },
-  {
-    "slug": "japan-s-remixpoint-dumps-ethereum-xrp-in-shift-to-bitcoin-only-treasury",
-    "title": "Japan’s Remixpoint Dumps Ethereum, XRP in Shift to Bitcoin-Only Treasury",
-    "description": "The Japanese company booked a ¥117.8 million profit after selling its ETH, SOL, XRP and DOGE, leaving roughly 1,506 BTC as its only cryptocurrency holding.",
-    "publishedAt": "2026-09-02",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/377228/remixpoint-xrp-ethereum-bitcoin-only",
-    "sourceName": "Decrypt",
-    "body": "The Japanese company booked a ¥117.8 million profit after selling its ETH, SOL, XRP and DOGE, leaving roughly 1,506 BTC as its only cryptocurrency holding.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=377228"
-  },
-  {
-    "slug": "us-officials-work-with-crowdstrike-to-fight-malware-behind-crypto-theft",
-    "title": "US officials work with CrowdStrike to fight malware behind crypto theft",
-    "description": "Federal authorities and private-sector partners were part of an operation to disrupt malware that redirected about $150,000 in crypto over the last eight years.",
-    "publishedAt": "2026-09-02",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/us-officials-crowdstrike-malware-stealing-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Federal authorities and private-sector partners were part of an operation to disrupt malware that redirected about $150,000 in crypto over the last eight years.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/us-officials-crowdstrike-malware-stealing-crypto"
   }
 ]
