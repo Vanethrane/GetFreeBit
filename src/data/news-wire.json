@@ -1,5 +1,27 @@
 [
   {
+    "slug": "ukrainian-police-took-down-a-crypto-scam-that-stole-up-to-1-million-a-month",
+    "title": "Ukrainian police took down a crypto scam that stole up to $1 million a month",
+    "description": "Investigators have identified 62 victims and say more than 46 Ukrainians took part in the alleged operation.",
+    "publishedAt": "2026-09-06",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/business/2026/09/06/ukrainian-police-took-down-a-crypto-scam-that-stole-up-to-usd1-million-a-month",
+    "sourceName": "CoinDesk",
+    "body": "Investigators have identified 62 victims and say more than 46 Ukrainians took part in the alleged operation.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "fee118ef-31af-4127-ba4c-4f4eff5cc245"
+  },
+  {
+    "slug": "better-and-coinbase-s-bitcoin-backed-mortgages-can-reuse-borrowers-collateral",
+    "title": "Better and Coinbase’s bitcoin-backed mortgages can reuse borrowers’ collateral",
+    "description": "Better Mortgage can reuse the pledged bitcoin, and borrowers cannot recover their crypto until the main conventional mortgage is fully repaid or refinanced.",
+    "publishedAt": "2026-09-06",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/business/2026/09/06/better-and-coinbase-s-bitcoin-backed-mortgages-can-reuse-borrowers-collateral",
+    "sourceName": "CoinDesk",
+    "body": "Better Mortgage can reuse the pledged bitcoin, and borrowers cannot recover their crypto until the main conventional mortgage is fully repaid or refinanced.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "bbd31537-0f44-40bd-8b4d-975efdce998f"
+  },
+  {
     "slug": "satoshi-era-bitcoin-wakes-after-16-years-of-dormancy-as-600-btc-moves",
     "title": "Satoshi-era Bitcoin wakes after 16 years of dormancy as 600 BTC moves",
     "description": "Whale Alert identified 12 mining rewards totaling 600 BTC that moved after 16 years of dormancy, with the onchain tracking platform finding no connection to Satoshi Nakamoto.",
@@ -856,27 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "Hyperscale Data’s Bitcoin holdings have fallen about 79% since late July to 215 BTC as it redirects capital toward its Michigan AI data center.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/news/hyperscale-data-ends-michigan-bitcoin-mining-ai"
-  },
-  {
-    "slug": "bitcoin-back-above-77-500-xrp-leads-majors-as-fed-hike-odds-slide-to-62",
-    "title": "Bitcoin back above $77,500, XRP leads majors as Fed hike odds slide to 62%",
-    "description": "Every major token is green over 24 hours, though only zcash and hyperliquid are holding gains on the week.",
-    "publishedAt": "2026-09-03",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/markets/2026/09/03/bitcoin-back-above-usd77-500-xrp-leads-majors-as-fed-hike-odds-near-66",
-    "sourceName": "CoinDesk",
-    "body": "Every major token is green over 24 hours, though only zcash and hyperliquid are holding gains on the week.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "6a71229a-3c63-4487-84f9-9765d20eacb3"
-  },
-  {
-    "slug": "fbi-seizes-560k-in-crypto-bound-for-hamas-takes-over-fundraising-sites",
-    "title": "FBI Seizes $560K in Crypto Bound for Hamas, Takes Over Fundraising Sites",
-    "description": "Agents seized digital assets, domains, and servers allegedly used by Hamas’ military wing to collect donations and recruit supporters.",
-    "publishedAt": "2026-09-02",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/377230/fbi-seizes-560k-crypto-hamas",
-    "sourceName": "Decrypt",
-    "body": "Agents seized digital assets, domains, and servers allegedly used by Hamas’ military wing to collect donations and recruit supporters.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=377230"
   }
 ]
