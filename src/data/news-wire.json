@@ -1,5 +1,49 @@
 [
   {
+    "slug": "franklin-templeton-digital-asset-veteran-takes-helm-at-stablecoinx",
+    "title": "Franklin Templeton digital asset veteran takes helm at StablecoinX",
+    "description": "Former Franklin Templeton digital asset executive Christopher Jensen will lead StablecoinX, the largest corporate holder of Ethena’s ENA token.",
+    "publishedAt": "2026-09-08",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/stablecoinx-franklin-templeton-veteran-to-oversee-roughly-480m-ena-treasury?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Former Franklin Templeton digital asset executive Christopher Jensen will lead StablecoinX, the largest corporate holder of Ethena’s ENA token.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/stablecoinx-franklin-templeton-veteran-to-oversee-roughly-480m-ena-treasury"
+  },
+  {
+    "slug": "47m-still-missing-after-liquid-hack-as-blockstream-bargains-with-white-hats",
+    "title": "$47M Still Missing After Liquid Hack as Blockstream Bargains With 'White Hats'",
+    "description": "The hackers have returned 3,400 of the roughly 4,000 BTC drained from the sidechain, but about 600 BTC remains outstanding—and some doubt the actors' &#34;white hat&#34; claims.",
+    "publishedAt": "2026-09-08",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/377723/liquid-hack-47m-blockstream-bargains-white-hat",
+    "sourceName": "Decrypt",
+    "body": "The hackers have returned 3,400 of the roughly 4,000 BTC drained from the sidechain, but about 600 BTC remains outstanding—and some doubt the actors' &#34;white hat&#34; claims.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=377723"
+  },
+  {
+    "slug": "here-s-what-happened-in-crypto-today",
+    "title": "Here’s what happened in crypto today",
+    "description": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+    "publishedAt": "2026-09-08",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/what-happened-in-crypto-today"
+  },
+  {
+    "slug": "bitcoin-holds-wall-street-stalls-as-oil-shock-revives-fed-hike-bets",
+    "title": "Bitcoin Holds, Wall Street Stalls as Oil Shock Revives Fed Hike Bets",
+    "description": "Bitcoin is defending its golden zone support while the S&#038;P 500 grinds inside its tightest range yet, both waiting on Friday's inflation report before the Fed's September 16 rate call.",
+    "publishedAt": "2026-09-08",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/377705/bitcoin-holds-wall-street-stalls-oil-shock-fed-hike",
+    "sourceName": "Decrypt",
+    "body": "Bitcoin is defending its golden zone support while the S&#038;P 500 grinds inside its tightest range yet, both waiting on Friday's inflation report before the Fed's September 16 rate call.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=377705"
+  },
+  {
     "slug": "visa-taps-onchain-lending-to-finance-stablecoin-card-programs",
     "title": "Visa Taps Onchain Lending to Finance Stablecoin Card Programs",
     "description": "The payment processor giant is pairing payment settlement data with blockchain lending tools to help fintechs and stablecoin-linked card programs access working capital.",
@@ -834,49 +878,5 @@
     "sourceName": "CoinDesk",
     "body": "Bitcoin trades lower by nearly 1% as escalating U.S.-Iran hostilities push oil higher.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "0087fa12-6107-4517-9d61-5d80f69139ca"
-  },
-  {
-    "slug": "bitcoin-network-used-by-exchanges-hit-by-320-million-exploit-hackers-claim-they",
-    "title": "Bitcoin network used by exchanges hit by $320 million exploit. Hackers claim they're the 'good guys'",
-    "description": "Liquid Network, a settlement layer used by exchanges, halted all transactions after losing $320 million worth of bitcoin in a security exploit.",
-    "publishedAt": "2026-09-07",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/markets/2026/09/07/bitcoin-network-used-by-exchanges-hit-by-usd320-million-exploit-hackers-claim-they-re-the-good-guys",
-    "sourceName": "CoinDesk",
-    "body": "Liquid Network, a settlement layer used by exchanges, halted all transactions after losing $320 million worth of bitcoin in a security exploit.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "609a9c18-ed15-470e-b7eb-47c251cc611f"
-  },
-  {
-    "slug": "white-hats-take-4000-btc-from-liquid-etfs-see-best-inflows-of-2026-hodler-s-dige",
-    "title": "‘White hats’ take 4000 BTC from Liquid, ETFs see best inflows of 2026: Hodler’s Digest",
-    "description": "Purported white hat hackers have taken 4000 Bitcoin from the Liquid sidechain in a major security breach. The Bitcoin ETFs see the best three weeks of inflows in 2026.",
-    "publishedAt": "2026-09-07",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/magazine/white-hats-take-4000-btc-from-liquid-btc-etfs-best-week-of-2026-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Purported white hat hackers have taken 4000 Bitcoin from the Liquid sidechain in a major security breach. The Bitcoin ETFs see the best three weeks of inflows in 2026.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/magazine/white-hats-take-4000-btc-from-liquid-btc-etfs-best-week-of-2026-hodlers-digest"
-  },
-  {
-    "slug": "prediction-markets-inch-closer-to-the-supreme-court-state-of-crypto",
-    "title": "Prediction markets inch closer to the Supreme Court: State of Crypto",
-    "description": "New Jersey petitioned for a writ of certiorari in Kalshi's case against it last week, finally throwing the ball to the high court.",
-    "publishedAt": "2026-09-06",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/news-analysis/2026/09/06/prediction-markets-inch-closer-to-the-supreme-court-state-of-crypto",
-    "sourceName": "CoinDesk",
-    "body": "New Jersey petitioned for a writ of certiorari in Kalshi's case against it last week, finally throwing the ball to the high court.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "51a02f52-58f6-4deb-8224-d0a8420aa839"
-  },
-  {
-    "slug": "ukrainian-police-took-down-a-crypto-scam-that-stole-up-to-1-million-a-month",
-    "title": "Ukrainian police took down a crypto scam that stole up to $1 million a month",
-    "description": "Investigators have identified 62 victims and say more than 46 Ukrainians took part in the alleged operation.",
-    "publishedAt": "2026-09-06",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/business/2026/09/06/ukrainian-police-took-down-a-crypto-scam-that-stole-up-to-usd1-million-a-month",
-    "sourceName": "CoinDesk",
-    "body": "Investigators have identified 62 victims and say more than 46 Ukrainians took part in the alleged operation.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "fee118ef-31af-4127-ba4c-4f4eff5cc245"
   }
 ]
