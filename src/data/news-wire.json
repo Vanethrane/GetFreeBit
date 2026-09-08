@@ -1,5 +1,49 @@
 [
   {
+    "slug": "australia-says-it-removed-45-crypto-remittance-registrations-over-the-past-year",
+    "title": "Australia says it removed 45 crypto, remittance registrations over the past year",
+    "description": "AUSTRAC said its yearlong sweep included canceled, suspended and unrenewed registrations, while its action against GetCoins helped disrupt organized investment scams.",
+    "publishedAt": "2026-09-08",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/australia-removes-45-crypto-remittance-registrations?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "AUSTRAC said its yearlong sweep included canceled, suspended and unrenewed registrations, while its action against GetCoins helped disrupt organized investment scams.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/australia-removes-45-crypto-remittance-registrations"
+  },
+  {
+    "slug": "liquid-network-gets-back-3-400-bitcoin-from-whitehat-hackers-talks-underway-for",
+    "title": "Liquid Network gets back 3,400 bitcoin from whitehat hackers; talks underway for the rest",
+    "description": "Supposed whitehat hackers behind Sunday’s Liquid Network breach have returned 3,400 of the 4,000 BTC they took, but nearly $47 million in bitcoin is still outstanding.",
+    "publishedAt": "2026-09-08",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/markets/2026/09/08/white-hat-hackers-return-most-of-usd320m-bitcoin-taken-from-liquid-network",
+    "sourceName": "CoinDesk",
+    "body": "Supposed whitehat hackers behind Sunday’s Liquid Network breach have returned 3,400 of the 4,000 BTC they took, but nearly $47 million in bitcoin is still outstanding.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "009d01e6-a7aa-42ce-83c9-e00616a40574"
+  },
+  {
+    "slug": "bitcoin-slips-under-79-000-zcash-leads-losses-as-fed-hike-odds-hold-near-60",
+    "title": "Bitcoin slips under $79,000, Zcash leads losses as Fed hike odds hold near 60%",
+    "description": "Every major token fell on Tuesday, though most keep weekly gains, with traders pricing a 60% chance of a Fed hike next week.",
+    "publishedAt": "2026-09-08",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/markets/2026/09/08/bitcoin-slips-under-usd79-000-zcash-leads-losses-as-fed-hike-odds-hold-near-60",
+    "sourceName": "CoinDesk",
+    "body": "Every major token fell on Tuesday, though most keep weekly gains, with traders pricing a 60% chance of a Fed hike next week.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "c8e93c13-3054-45c2-a1bd-8dc2d2c4f85b"
+  },
+  {
+    "slug": "liquid-white-hats-return-270m-in-bitcoin-as-network-prepares-restart",
+    "title": "Liquid ‘white hats’ return $270M in Bitcoin as network prepares restart",
+    "description": "The actors returned 85% of the Bitcoin withdrawn from Liquid’s federation wallet following the security incident.",
+    "publishedAt": "2026-09-08",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/liquid-white-hats-return-270m-bitcoin-network-restart?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "The actors returned 85% of the Bitcoin withdrawn from Liquid’s federation wallet following the security incident.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/liquid-white-hats-return-270m-bitcoin-network-restart"
+  },
+  {
     "slug": "brazilian-banks-expand-crypto-offerings-as-regulation-takes-hold",
     "title": "Brazilian Banks Expand Crypto Offerings as Regulation Takes Hold",
     "description": "Itaú, Nubank, and Banco do Brasil now sell more than a dozen tokens each to retail clients, even as none of them touch crypto with their own balance sheet.",
@@ -834,49 +878,5 @@
     "sourceName": "CoinDesk",
     "body": "Financial regulators unveiled a phased roadmap moving traditional capital markets onto distributed ledgers, concluding with onchain stablecoin settlement.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "724e8c5f-ffa0-48e1-bc96-78d7329cfdbb"
-  },
-  {
-    "slug": "bitcoin-etf-inflows-hit-731m-highest-since-january-as-btc-reclaims-80k",
-    "title": "Bitcoin ETF inflows hit $731M, highest since January as BTC reclaims $80K",
-    "description": "US Bitcoin ETFs drew $730.9 million on Thursday as Bitcoin reclaimed $80,000, though CryptoQuant flagged weak fresh demand and a key $83,000 test.",
-    "publishedAt": "2026-09-04",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/markets/bitcoin-etf-draw-731-million-highest-january-btc-80k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "US Bitcoin ETFs drew $730.9 million on Thursday as Bitcoin reclaimed $80,000, though CryptoQuant flagged weak fresh demand and a key $83,000 test.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/markets/bitcoin-etf-draw-731-million-highest-january-btc-80k"
-  },
-  {
-    "slug": "live-updates-bitcoin-etfs-take-731-million-their-biggest-day-since-january",
-    "title": "Live updates: Bitcoin ETFs take $731 million, their biggest day since January",
-    "description": "Every fund in the complex rose almost 6% on Thursday and net assets crossed $103 billion for the first time. BlackRock's IBIT accounted for well over half the money.",
-    "publishedAt": "2026-09-04",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/business/2026/09/04/live-updates-bitcoin-etfs-take-usd731-million-their-biggest-day-since-january",
-    "sourceName": "CoinDesk",
-    "body": "Every fund in the complex rose almost 6% on Thursday and net assets crossed $103 billion for the first time. BlackRock's IBIT accounted for well over half the money.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "c6bc28b1-e643-4a70-86dc-f8b5eddc9a88"
-  },
-  {
-    "slug": "el-salvador-s-post-review-bitcoin-accumulation-used-no-public-funds-imf",
-    "title": "El Salvador’s post-review Bitcoin accumulation used no public funds: IMF",
-    "description": "The IMF attributed Bitcoin added since June 2025 to private donations, addressing questions raised after El Salvador reported a $100 million acquisition.",
-    "publishedAt": "2026-09-04",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/el-salvador-bitcoin-private-donations-imf?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "The IMF attributed Bitcoin added since June 2025 to private donations, addressing questions raised after El Salvador reported a $100 million acquisition.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/el-salvador-bitcoin-private-donations-imf"
-  },
-  {
-    "slug": "one-full-bitcoin-now-buys-a-little-more-than-18-ounces-of-gold-the-most-since-ja",
-    "title": "One full bitcoin now buys a little more than 18 ounces of gold, the most since January",
-    "description": "Bitcoin is pulling ahead of gold even as both hard assets rally together, driven by fears that governments will inflate away their debt rather than by bond yields.",
-    "publishedAt": "2026-09-04",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/markets/2026/09/04/one-full-bitcoin-now-buys-a-little-more-than-18-ounces-of-gold-the-most-since-january",
-    "sourceName": "CoinDesk",
-    "body": "Bitcoin is pulling ahead of gold even as both hard assets rally together, driven by fears that governments will inflate away their debt rather than by bond yields.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "b3f824e7-55b4-4f3b-8b28-696f552defca"
   }
 ]
