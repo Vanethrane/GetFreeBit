@@ -1,5 +1,27 @@
 [
   {
+    "slug": "crypto-banks-take-clarity-act-lobbying-fight-to-senators-home-states",
+    "title": "Crypto, Banks Take Clarity Act Lobbying Fight to Senators' Home States",
+    "description": "Crypto advocates and community bankers are targeting lawmakers in their home states as the Senate prepares for a September 15 procedural vote.",
+    "publishedAt": "2026-09-09",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/377810/crypto-banks-clarity-act-lobbying-senators",
+    "sourceName": "Decrypt",
+    "body": "Crypto advocates and community bankers are targeting lawmakers in their home states as the Senate prepares for a September 15 procedural vote.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=377810"
+  },
+  {
+    "slug": "consensys-to-split-into-metamask-and-institutional-blockchain-company",
+    "title": "Consensys to split into MetaMask and institutional blockchain company",
+    "description": "The restructuring will separate MetaMask’s consumer business from Consensys’ Ethereum protocols and institutional blockchain infrastructure operations.",
+    "publishedAt": "2026-09-09",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/consensys-to-split-into-metamask-and-institutional-blockchain-company?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "The restructuring will separate MetaMask’s consumer business from Consensys’ Ethereum protocols and institutional blockchain infrastructure operations.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/consensys-to-split-into-metamask-and-institutional-blockchain-company"
+  },
+  {
     "slug": "secret-service-freezes-52-8-million-in-crypto-tied-to-telegram-bazaar-behind-glo",
     "title": "Secret Service Freezes $52.8 Million in Crypto Tied to Telegram Bazaar Behind Global Scams",
     "description": "Blockchain sleuths at Elliptic traced the money, Treasury sanctioned the marketplace, and Xinbi—which ran $24 billion through a Telegram scam bazaar—called the freeze unfair.",
@@ -856,27 +878,5 @@
     "sourceName": "CoinDesk",
     "body": "Supposed whitehat hackers behind Sunday’s Liquid Network breach have returned 3,400 of the 4,000 BTC they took, but nearly $47 million in bitcoin is still outstanding.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "009d01e6-a7aa-42ce-83c9-e00616a40574"
-  },
-  {
-    "slug": "bitcoin-slips-under-79-000-zcash-leads-losses-as-fed-hike-odds-hold-near-60",
-    "title": "Bitcoin slips under $79,000, Zcash leads losses as Fed hike odds hold near 60%",
-    "description": "Every major token fell on Tuesday, though most keep weekly gains, with traders pricing a 60% chance of a Fed hike next week.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/markets/2026/09/08/bitcoin-slips-under-usd79-000-zcash-leads-losses-as-fed-hike-odds-hold-near-60",
-    "sourceName": "CoinDesk",
-    "body": "Every major token fell on Tuesday, though most keep weekly gains, with traders pricing a 60% chance of a Fed hike next week.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "c8e93c13-3054-45c2-a1bd-8dc2d2c4f85b"
-  },
-  {
-    "slug": "liquid-white-hats-return-270m-in-bitcoin-as-network-prepares-restart",
-    "title": "Liquid ‘white hats’ return $270M in Bitcoin as network prepares restart",
-    "description": "The actors returned 85% of the Bitcoin withdrawn from Liquid’s federation wallet following the security incident.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/liquid-white-hats-return-270m-bitcoin-network-restart?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "The actors returned 85% of the Bitcoin withdrawn from Liquid’s federation wallet following the security incident.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/liquid-white-hats-return-270m-bitcoin-network-restart"
   }
 ]
