@@ -1,5 +1,16 @@
 [
   {
+    "slug": "bitcoin-wallet-maker-trezor-says-hackers-breached-its-email-provider",
+    "title": "Bitcoin Wallet Maker Trezor Says Hackers Breached Its Email Provider",
+    "description": "The hardware wallet maker said a fake security alert claimed a hardware flaw could expose users’ recovery phrases.",
+    "publishedAt": "2026-09-09",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/377831/bitcoin-wallet-trezor-hackers-breach-email",
+    "sourceName": "Decrypt",
+    "body": "The hardware wallet maker said a fake security alert claimed a hardware flaw could expose users’ recovery phrases.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=377831"
+  },
+  {
     "slug": "crypto-banks-take-clarity-act-lobbying-fight-to-senators-home-states",
     "title": "Crypto, Banks Take Clarity Act Lobbying Fight to Senators' Home States",
     "description": "Crypto advocates and community bankers are targeting lawmakers in their home states as the Senate prepares for a September 15 procedural vote.",
@@ -867,16 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "AUSTRAC said its yearlong sweep included canceled, suspended and unrenewed registrations, while its action against GetCoins helped disrupt organized investment scams.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/news/australia-removes-45-crypto-remittance-registrations"
-  },
-  {
-    "slug": "liquid-network-gets-back-3-400-bitcoin-from-whitehat-hackers-talks-underway-for",
-    "title": "Liquid Network gets back 3,400 bitcoin from whitehat hackers; talks underway for the rest",
-    "description": "Supposed whitehat hackers behind Sunday’s Liquid Network breach have returned 3,400 of the 4,000 BTC they took, but nearly $47 million in bitcoin is still outstanding.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/markets/2026/09/08/white-hat-hackers-return-most-of-usd320m-bitcoin-taken-from-liquid-network",
-    "sourceName": "CoinDesk",
-    "body": "Supposed whitehat hackers behind Sunday’s Liquid Network breach have returned 3,400 of the 4,000 BTC they took, but nearly $47 million in bitcoin is still outstanding.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "009d01e6-a7aa-42ce-83c9-e00616a40574"
   }
 ]
