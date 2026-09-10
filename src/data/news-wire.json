@@ -1,5 +1,71 @@
 [
   {
+    "slug": "ai-agents-just-slashed-the-cost-of-a-quantum-attack-on-bitcoin",
+    "title": "AI Agents Just Slashed the Cost of a Quantum Attack on Bitcoin",
+    "description": "The ECDSA.Fail challenge cut a resource benchmark for one component of a potential quantum attack by 86%.",
+    "publishedAt": "2026-09-10",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/377925/ai-agents-slash-cost-quantum-attack-bitcoin",
+    "sourceName": "Decrypt",
+    "body": "The ECDSA.Fail challenge cut a resource benchmark for one component of a potential quantum attack by 86%.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=377925"
+  },
+  {
+    "slug": "new-clarity-act-text-tweaks-defi-credit-union-provisions-but-road-ahead-for-bill",
+    "title": "New Clarity Act text tweaks DeFi, credit union provisions, but road ahead for bill remains murky",
+    "description": "The Clarity Act needs 60 votes when the Senate returns from its recess next week. Republicans circulated a fresh draft on Thursday ahead of the vote.",
+    "publishedAt": "2026-09-10",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/policy/2026/09/10/new-clarity-act-text-tweaks-defi-credit-union-provisions-but-road-ahead-for-bill-remains-murky",
+    "sourceName": "CoinDesk",
+    "body": "The Clarity Act needs 60 votes when the Senate returns from its recess next week. Republicans circulated a fresh draft on Thursday ahead of the vote.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "ed4e247c-74df-40f2-b243-0e8ae8ac71d2"
+  },
+  {
+    "slug": "esma-warns-growing-crypto-ties-could-amplify-risks-to-traditional-finance",
+    "title": "ESMA warns growing crypto ties could amplify risks to traditional finance",
+    "description": "The EU securities regulator flagged tokenized equities, DeFi exploits and prediction markets as areas where growing crypto ties could pose risks to the broader financial system.",
+    "publishedAt": "2026-09-10",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/esma-warns-growing-crypto-ties-could-amplify-risks-to-traditional-finance?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "The EU securities regulator flagged tokenized equities, DeFi exploits and prediction markets as areas where growing crypto ties could pose risks to the broader financial system.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/esma-warns-growing-crypto-ties-could-amplify-risks-to-traditional-finance"
+  },
+  {
+    "slug": "why-a-new-sec-plan-could-ease-a-legal-headache-for-tokenized-securities",
+    "title": "Why a new SEC plan could ease a legal headache for tokenized securities",
+    "description": "The SEC's new proposal to overhaul transfer-agent rules could eliminate duplicate offchain shareholder records, reducing reconciliation costs and legal uncertainty for tokenized securities.",
+    "publishedAt": "2026-09-10",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/business/2026/09/10/why-a-new-sec-plan-could-end-the-legal-headaches-of-holding-tokenized-securities",
+    "sourceName": "CoinDesk",
+    "body": "The SEC's new proposal to overhaul transfer-agent rules could eliminate duplicate offchain shareholder records, reducing reconciliation costs and legal uncertainty for tokenized securities.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "095cc163-38fa-4b4c-b3cb-feba4f24f597"
+  },
+  {
+    "slug": "coinbase-wallet-rebrands-to-chase-anything-anywhere-trading-as-robinhood-chain-h",
+    "title": "Coinbase Wallet Rebrands to Chase 'Anything, Anywhere' Trading as Robinhood Chain Heats Up",
+    "description": "Head of Product Ryan Kass says the return to Coinbase Wallet reflects a broader trading strategy, with the self-custody app serving as a testing ground for new assets and experiences.",
+    "publishedAt": "2026-09-10",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/377601/coinbase-wallet-rebrand-robinhood-chain",
+    "sourceName": "Decrypt",
+    "body": "Head of Product Ryan Kass says the return to Coinbase Wallet reflects a broader trading strategy, with the self-custody app serving as a testing ground for new assets and experiences.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=377601"
+  },
+  {
+    "slug": "bitcoin-rally-cools-but-a-golden-cross-is-coming",
+    "title": "Bitcoin Rally Cools, But a Golden Cross Is Coming",
+    "description": "Bitcoin couldn't escape today's inflation-driven selloff, but a bearish pattern on its chart is about to flip for the first time since November.",
+    "publishedAt": "2026-09-10",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/377903/bitcoin-price-golden-cross-coming",
+    "sourceName": "Decrypt",
+    "body": "Bitcoin couldn't escape today's inflation-driven selloff, but a bearish pattern on its chart is about to flip for the first time since November.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=377903"
+  },
+  {
     "slug": "okx-brings-openai-and-anthropic-bets-to-europe-as-pre-ipo-trading-grows",
     "title": "OKX brings OpenAI and Anthropic bets to Europe as pre-IPO trading grows",
     "description": "The exchange is offering up to 10x leverage on private-company valuations alongside 100 tokenized stocks and ETFs.",
@@ -812,71 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/news/what-happened-in-crypto-today"
-  },
-  {
-    "slug": "bitcoin-holds-wall-street-stalls-as-oil-shock-revives-fed-hike-bets",
-    "title": "Bitcoin Holds, Wall Street Stalls as Oil Shock Revives Fed Hike Bets",
-    "description": "Bitcoin is defending its golden zone support while the S&#038;P 500 grinds inside its tightest range yet, both waiting on Friday's inflation report before the Fed's September 16 rate call.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/377705/bitcoin-holds-wall-street-stalls-oil-shock-fed-hike",
-    "sourceName": "Decrypt",
-    "body": "Bitcoin is defending its golden zone support while the S&#038;P 500 grinds inside its tightest range yet, both waiting on Friday's inflation report before the Fed's September 16 rate call.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=377705"
-  },
-  {
-    "slug": "visa-taps-onchain-lending-to-finance-stablecoin-card-programs",
-    "title": "Visa Taps Onchain Lending to Finance Stablecoin Card Programs",
-    "description": "The payment processor giant is pairing payment settlement data with blockchain lending tools to help fintechs and stablecoin-linked card programs access working capital.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/377696/visa-onchain-lending-finance-stablecoin-card",
-    "sourceName": "Decrypt",
-    "body": "The payment processor giant is pairing payment settlement data with blockchain lending tools to help fintechs and stablecoin-linked card programs access working capital.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=377696"
-  },
-  {
-    "slug": "strive-buys-109-million-in-bitcoin-pushes-preferred-stock-toward-1-billion",
-    "title": "Strive Buys $109 Million in Bitcoin, Pushes Preferred Stock Toward $1 Billion",
-    "description": "The Vivek Ramaswamy-founded asset manager added 1,375 BTC last week, its third straight week of 5%-plus growth.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/377689/strive-buys-109-million-bitcoin-preferred-stock-1-billion",
-    "sourceName": "Decrypt",
-    "body": "The Vivek Ramaswamy-founded asset manager added 1,375 BTC last week, its third straight week of 5%-plus growth.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=377689"
-  },
-  {
-    "slug": "cronos-erased-two-hours-of-transactions-to-reverse-111-million-defi-exploit",
-    "title": "Cronos Erased Two Hours of Transactions to Reverse $111 Million DeFi Exploit",
-    "description": "The rollback reversed legitimate activity alongside the attack, while $9.19 million remains unrecovered, according to Cronos.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/377686/cronos-erased-two-hours-transactions-defi-exploit",
-    "sourceName": "Decrypt",
-    "body": "The rollback reversed legitimate activity alongside the attack, while $9.19 million remains unrecovered, according to Cronos.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=377686"
-  },
-  {
-    "slug": "robinhood-takes-stakes-in-crypto-com-og-com-in-prediction-markets-deal",
-    "title": "Robinhood takes stakes in Crypto.com, OG.com in prediction markets deal",
-    "description": "Robinhood will route event contracts through OG.com’s CFTC-regulated infrastructure as it expands its prediction markets business.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/robinhood-takes-stakes-in-cryptocom-ogcom-in-prediction-markets-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Robinhood will route event contracts through OG.com’s CFTC-regulated infrastructure as it expands its prediction markets business.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/robinhood-takes-stakes-in-cryptocom-ogcom-in-prediction-markets-deal"
-  },
-  {
-    "slug": "visa-brings-onchain-credit-to-its-growing-stablecoin-card-business",
-    "title": "Visa brings onchain credit to its growing stablecoin card business",
-    "description": "Visa is combining VisaNet settlement data with blockchain lending as stablecoin payment volume on its network jumps nearly 200% year over year.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/visa-stablecoin-blockchain-lending-payment-settlement?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Visa is combining VisaNet settlement data with blockchain lending as stablecoin payment volume on its network jumps nearly 200% year over year.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/visa-stablecoin-blockchain-lending-payment-settlement"
   }
 ]
