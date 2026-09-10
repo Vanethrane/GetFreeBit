@@ -1,5 +1,49 @@
 [
   {
+    "slug": "trezor-bitbox-warn-users-about-fake-hardware-wallet-security-alerts",
+    "title": "Trezor, BitBox warn users about fake hardware wallet security alerts",
+    "description": "BitBox said multiple Bitcoin companies appeared to have been targeted through a shared newsletter provider, while Trezor confirmed a breach at its email service.",
+    "publishedAt": "2026-09-10",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/trezor-bitbox-hardware-wallet-phishing-emails?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "BitBox said multiple Bitcoin companies appeared to have been targeted through a shared newsletter provider, while Trezor confirmed a breach at its email service.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/trezor-bitbox-hardware-wallet-phishing-emails"
+  },
+  {
+    "slug": "dogecoin-sinks-5-to-lead-majors-losses-with-bitcoin-holding-78-000-level",
+    "title": "Dogecoin sinks 5% to lead majors losses, with bitcoin holding $78,000 level",
+    "description": "Dogecoin led the losses, BNB fell about 4% and XRP 3%, with oil pushing Treasury yields to their highest since late 2023.",
+    "publishedAt": "2026-09-10",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/markets/2026/09/10/dogecoin-sinks-5-to-lead-majors-losses-with-bitcoin-holding-usd78-000-level",
+    "sourceName": "CoinDesk",
+    "body": "Dogecoin led the losses, BNB fell about 4% and XRP 3%, with oil pushing Treasury yields to their highest since late 2023.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "3d762448-3283-44fa-a8ec-77f3c114d6eb"
+  },
+  {
+    "slug": "crypto-wins-regardless-of-clarity-act-vote-coinbase-s-armstrong-says",
+    "title": "Crypto wins regardless of Clarity Act vote, Coinbase's Armstrong says",
+    "description": "Coinbase CEO tells CNBC the crypto industry gets regulatory clarity whether or not the Senate passes the bill on Sept. 15.",
+    "publishedAt": "2026-09-10",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/markets/2026/09/10/crypto-wins-regardless-of-clarity-act-vote-coinbase-s-armstrong-says",
+    "sourceName": "CoinDesk",
+    "body": "Coinbase CEO tells CNBC the crypto industry gets regulatory clarity whether or not the Senate passes the bill on Sept. 15.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "a0098857-10e3-4bb6-beaf-25cab3291578"
+  },
+  {
+    "slug": "us-sanctions-xinbi-scam-marketplace-restrains-52m-in-crypto",
+    "title": "US sanctions Xinbi scam marketplace, restrains $52M in crypto",
+    "description": "The Justice Department seized Xinbi’s Telegram channels and two wallets as investigators pursued 47 additional wallets across its alleged laundering network.",
+    "publishedAt": "2026-09-10",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/us-sanctions-xinbi-restrains-52m-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "The Justice Department seized Xinbi’s Telegram channels and two wallets as investigators pursued 47 additional wallets across its alleged laundering network.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/us-sanctions-xinbi-restrains-52m-crypto"
+  },
+  {
     "slug": "bitcoin-wallet-maker-trezor-says-hackers-breached-its-email-provider",
     "title": "Bitcoin Wallet Maker Trezor Says Hackers Breached Its Email Provider",
     "description": "The hardware wallet maker said a fake security alert claimed a hardware flaw could expose users’ recovery phrases.",
@@ -834,49 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "Financial market operator SIX and payment app TWINT have joined numerous banks in the sandbox seeking to develop a Swiss franc-based stablecoin.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/news/swiss-stablecoin-sandbox-testing-phase-two-new-partners"
-  },
-  {
-    "slug": "bit2me-sets-up-specialized-unit-to-help-law-enforcement-track-down-crypto-assets",
-    "title": "Bit2Me sets up specialized unit to help law enforcement track down crypto assets",
-    "description": "The unit formalizes past operations, building on 1.5 million euros in seized crypto the exchange processed in 2025 for agencies including Interpol and Europol.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/business/2026/09/02/bit2me-sets-up-specialized-unit-to-help-law-enforcement-track-down-crypto-assets",
-    "sourceName": "CoinDesk",
-    "body": "The unit formalizes past operations, building on 1.5 million euros in seized crypto the exchange processed in 2025 for agencies including Interpol and Europol.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "638fcf95-9988-4613-819a-bceddcec5a6e"
-  },
-  {
-    "slug": "hunter-biden-wants-to-launch-a-laptop-memecoin-crypto-traders-hate-it-already",
-    "title": "Hunter Biden wants to launch a LAPTOP memecoin. Crypto traders hate it already",
-    "description": "Kraken deleted a promotional post after backlash, while a media group named in the token's distribution publicly distanced itself from the project.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/markets/2026/09/08/crypto-traders-turn-on-hunter-biden-s-laptop-memecoin-before-it-even-launches",
-    "sourceName": "CoinDesk",
-    "body": "Kraken deleted a promotional post after backlash, while a media group named in the token's distribution publicly distanced itself from the project.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "ed3fee4f-bcdc-49fb-8695-3060de042eb3"
-  },
-  {
-    "slug": "bitcoin-s-golden-cross-is-here",
-    "title": "Bitcoin’s golden cross is here",
-    "description": "A golden cross has triggered on bitcoin's daily price chart, indicating a potential long-term bullish trend ahead.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/markets/2026/09/08/bitcoin-s-golden-cross-is-here",
-    "sourceName": "CoinDesk",
-    "body": "A golden cross has triggered on bitcoin's daily price chart, indicating a potential long-term bullish trend ahead.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "eed9b572-f50d-4a77-9ceb-4a3a88acde68"
-  },
-  {
-    "slug": "australia-says-it-removed-45-crypto-remittance-registrations-over-the-past-year",
-    "title": "Australia says it removed 45 crypto, remittance registrations over the past year",
-    "description": "AUSTRAC said its yearlong sweep included canceled, suspended and unrenewed registrations, while its action against GetCoins helped disrupt organized investment scams.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/australia-removes-45-crypto-remittance-registrations?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "AUSTRAC said its yearlong sweep included canceled, suspended and unrenewed registrations, while its action against GetCoins helped disrupt organized investment scams.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/australia-removes-45-crypto-remittance-registrations"
   }
 ]
