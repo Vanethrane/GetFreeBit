@@ -1,5 +1,93 @@
 [
   {
+    "slug": "okx-brings-openai-and-anthropic-bets-to-europe-as-pre-ipo-trading-grows",
+    "title": "OKX brings OpenAI and Anthropic bets to Europe as pre-IPO trading grows",
+    "description": "The exchange is offering up to 10x leverage on private-company valuations alongside 100 tokenized stocks and ETFs.",
+    "publishedAt": "2026-09-10",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/markets/2026/09/10/okx-brings-openai-and-anthropic-bets-to-europe-as-pre-ipo-trading-grows",
+    "sourceName": "CoinDesk",
+    "body": "The exchange is offering up to 10x leverage on private-company valuations alongside 100 tokenized stocks and ETFs.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "0c44709c-b112-458b-aa4a-c1955c51e31f"
+  },
+  {
+    "slug": "europe-s-top-regulator-questions-polymarket-and-kalshi-s-eu-access-warns-of-auth",
+    "title": "Europe’s top regulator questions Polymarket and Kalshi’s EU access, warns of authorization gaps",
+    "description": "ESMA said that event contracts may fall under existing EU binary-options bans, crypto-asset frameworks like MiCA or national gambling laws.",
+    "publishedAt": "2026-09-10",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/business/2026/09/10/europe-s-top-regulator-questions-polymarket-and-kalshi-s-eu-access-warns-of-authorization-gaps",
+    "sourceName": "CoinDesk",
+    "body": "ESMA said that event contracts may fall under existing EU binary-options bans, crypto-asset frameworks like MiCA or national gambling laws.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "806357fa-8a72-449f-ab4c-3c1a85931e39"
+  },
+  {
+    "slug": "liquid-network-resumes-block-production-after-320m-exploit",
+    "title": "Liquid Network resumes block production after $320M exploit",
+    "description": "Liquid restarted block production after deploying emergency software updates, though transactions and peg operations remain suspended as recovery efforts continue.",
+    "publishedAt": "2026-09-10",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/liquid-network-resumes-block-production-after-320m-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Liquid restarted block production after deploying emergency software updates, though transactions and peg operations remain suspended as recovery efforts continue.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/liquid-network-resumes-block-production-after-320m-exploit"
+  },
+  {
+    "slug": "polymarket-names-former-amazon-finance-chief-warren-jenson-as-its-first-cfo",
+    "title": "Polymarket names former Amazon finance chief Warren Jenson as its first CFO",
+    "description": "Jenson becomes the prediction market’s first CFO as Polymarket builds its regulated U.S. exchange and global platform.",
+    "publishedAt": "2026-09-10",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/markets/2026/09/10/polymarket-names-former-amazon-finance-chief-warren-jenson-as-its-first-cfo",
+    "sourceName": "CoinDesk",
+    "body": "Jenson becomes the prediction market’s first CFO as Polymarket builds its regulated U.S. exchange and global platform.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "3d3e96bd-8fdd-42f1-9d45-c08f7e5e4dde"
+  },
+  {
+    "slug": "moneygram-launches-visa-stablecoin-card-as-remittance-rivals-expand",
+    "title": "MoneyGram launches Visa stablecoin card as remittance rivals expand",
+    "description": "MoneyGram is following rival Western Union’s lead, rolling out a Visa stablecoin debit card as it expands blockchain-based payments.",
+    "publishedAt": "2026-09-10",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/moneygram-launches-visa-stablecoin-card-as-remittance-rivals-expand?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "MoneyGram is following rival Western Union’s lead, rolling out a Visa stablecoin debit card as it expands blockchain-based payments.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/moneygram-launches-visa-stablecoin-card-as-remittance-rivals-expand"
+  },
+  {
+    "slug": "anthropic-discloses-fourth-claude-hacking-incident-as-debate-around-regulation-g",
+    "title": "Anthropic Discloses Fourth Claude Hacking Incident as Debate Around Regulation Grows",
+    "description": "The company now says attacks during security tests exposed model behavior failures, after initially emphasizing errors in its testing infrastructure.",
+    "publishedAt": "2026-09-10",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/377889/anthropic-discloses-fourth-claude-hacking-incident-as-debate-around-regulation-grows",
+    "sourceName": "Decrypt",
+    "body": "The company now says attacks during security tests exposed model behavior failures, after initially emphasizing errors in its testing infrastructure.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=377889"
+  },
+  {
+    "slug": "bitcoin-bancorp-snaps-up-thousands-of-defunct-bitcoin-depot-atms-for-620-000",
+    "title": "Bitcoin Bancorp snaps up thousands of defunct Bitcoin Depot ATMs for $620,000",
+    "description": "Just over a quarter of Bitcoin Depot’s more than 9,200 kiosks have been sold for less than $1 million, court records show.",
+    "publishedAt": "2026-09-10",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/business/2026/09/10/a-quarter-of-bankrupt-bitcoin-depot-s-atms-snapped-up-for-less-than-usd1-million",
+    "sourceName": "CoinDesk",
+    "body": "Just over a quarter of Bitcoin Depot’s more than 9,200 kiosks have been sold for less than $1 million, court records show.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "ded8c3d2-8d47-4619-9da2-27d5a0549aa7"
+  },
+  {
+    "slug": "crypto-for-advisors-hyperliquid-and-the-future-of-finance",
+    "title": "Crypto for Advisors: Hyperliquid and the future of finance",
+    "description": "Crypto for Advisors: Hyperliquid and the future of finance",
+    "publishedAt": "2026-09-10",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/coindesk-indices/2026/09/10/crypto-for-advisors",
+    "sourceName": "CoinDesk",
+    "body": "Crypto for Advisors: Hyperliquid and the future of finance\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "574827ae-dd07-456e-8b3c-63683933e142"
+  },
+  {
     "slug": "moneygram-unveils-stablecoin-backed-card-as-digital-dollars-move-into-everyday-s",
     "title": "MoneyGram unveils stablecoin-backed card as digital dollars move into everyday spending",
     "description": "The remittance giant is rolling out a Visa card that lets customers hold dollars and spend from a stablecoin-backed balance.",
@@ -790,93 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "Visa is combining VisaNet settlement data with blockchain lending as stablecoin payment volume on its network jumps nearly 200% year over year.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/news/visa-stablecoin-blockchain-lending-payment-settlement"
-  },
-  {
-    "slug": "bitcoin-faces-key-support-test-at-78-3k-as-us-crude-oil-hits-three-month-high",
-    "title": "Bitcoin faces key support test at $78.3K as US crude oil hits three-month high",
-    "description": "Bitcoin fell with US stocks on the opening of Tuesday’s Wall Street trading session as analysis warns that BTC price support at $78,300 must hold.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/markets/bitcoin-faces-key-support-test-at-783k-as-us-crude-oil-hits-three-month-high?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Bitcoin fell with US stocks on the opening of Tuesday’s Wall Street trading session as analysis warns that BTC price support at $78,300 must hold.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/markets/bitcoin-faces-key-support-test-at-783k-as-us-crude-oil-hits-three-month-high"
-  },
-  {
-    "slug": "robinhood-takes-equity-stake-in-crypto-com-taps-exchange-to-power-prediction-mar",
-    "title": "Robinhood Takes Equity Stake in Crypto.com, Taps Exchange to Power Prediction Markets",
-    "description": "The multi-year deal makes OG.com the infrastructure and clearing engine behind Robinhood's fastest-growing business.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/377676/robinhood-equity-crypto-com-prediction-markets",
-    "sourceName": "Decrypt",
-    "body": "The multi-year deal makes OG.com the infrastructure and clearing engine behind Robinhood's fastest-growing business.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=377676"
-  },
-  {
-    "slug": "copper-ceo-amar-kuchinad-departs-as-search-for-a-buyer-enters-a-fourth-month",
-    "title": "Copper CEO Amar Kuchinad departs as search for a buyer enters a fourth month",
-    "description": "Kuchinad, the CEO of cryptocurrency custody firm Copper since 2024, has left the company, according to two people familiar with the matter.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/business/2026/09/08/copper-ceo-amar-kuchinad-departs-as-search-for-a-buyer-enters-a-fourth-month",
-    "sourceName": "CoinDesk",
-    "body": "Kuchinad, the CEO of cryptocurrency custody firm Copper since 2024, has left the company, according to two people familiar with the matter.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "37669fc0-6327-4285-bfa7-1bdfefdc41f8"
-  },
-  {
-    "slug": "tom-lee-s-bitmine-adds-70-million-in-ethereum-holdings-reach-5-93-million-eth",
-    "title": "Tom Lee's Bitmine Adds $70 Million in Ethereum, Holdings Reach 5.93 Million ETH",
-    "description": "The company says it holds roughly 4.9% of Ethereum’s supply, with most of its tokens staked to earn rewards.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/377672/tom-lee-bitmine-adds-70-million-ethereum",
-    "sourceName": "Decrypt",
-    "body": "The company says it holds roughly 4.9% of Ethereum’s supply, with most of its tokens staked to earn rewards.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=377672"
-  },
-  {
-    "slug": "visa-combines-visanet-data-with-onchain-lending-to-power-stablecoin-card-working",
-    "title": "Visa combines VisaNet data with onchain lending to power stablecoin card working capital",
-    "description": "Visa's stablecoin settlement volume surpassed a $20 billion annualized run rate, up 15x year over year. Now it wants blockchain lenders to use that data to extend credit to the issuers driving the growth.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/business/2026/09/08/visa-opens-settlement-data-to-help-blockchain-lenders-finance-crypto-cards-as-volume-surges",
-    "sourceName": "CoinDesk",
-    "body": "Visa's stablecoin settlement volume surpassed a $20 billion annualized run rate, up 15x year over year. Now it wants blockchain lenders to use that data to extend credit to the issuers driving the growth.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "6c9a58c0-a3cc-4d4f-b791-185ac46fec1f"
-  },
-  {
-    "slug": "strategy-s-return-to-bitcoin-buying-lasted-exactly-one-week",
-    "title": "Strategy's Return to Bitcoin Buying Lasted Exactly One Week",
-    "description": "The Bitcoin treasury firm spent $176.3 million on its own preferred stock, and doubled the buyback program's authorization to $2 billion.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/377664/strategys-return-to-bitcoin-buying-lasted-exactly-one-week",
-    "sourceName": "Decrypt",
-    "body": "The Bitcoin treasury firm spent $176.3 million on its own preferred stock, and doubled the buyback program's authorization to $2 billion.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=377664"
-  },
-  {
-    "slug": "bitmine-buys-28k-eth-completes-97-of-treasury-accumulation-goal",
-    "title": "Bitmine buys 28k ETH, completes 97% of treasury accumulation goal",
-    "description": "While Bitmine’s completed 97% of its goal to acquire 5% of Ether’s supply, Tom Lee’s team faces a $5.1 billion unrealized loss on its main treasury asset.",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/bitmine-buys-28k-eth-completes-97-treasury-goal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "While Bitmine’s completed 97% of its goal to acquire 5% of Ether’s supply, Tom Lee’s team faces a $5.1 billion unrealized loss on its main treasury asset.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/bitmine-buys-28k-eth-completes-97-treasury-goal"
-  },
-  {
-    "slug": "is-bitcoin-too-volatile-to-risk-your-retirement-on",
-    "title": "Is Bitcoin too volatile to risk your retirement on?",
-    "description": "Bitcoin believers see it as an almost certain long-term investment, but retirement demands a different approach. How much crypto exposure is too much for your retirement account?",
-    "publishedAt": "2026-09-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/magazine/is-bitcoin-too-volatile-to-risk-your-retirement-on?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Bitcoin believers see it as an almost certain long-term investment, but retirement demands a different approach. How much crypto exposure is too much for your retirement account?\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/magazine/is-bitcoin-too-volatile-to-risk-your-retirement-on"
   }
 ]
