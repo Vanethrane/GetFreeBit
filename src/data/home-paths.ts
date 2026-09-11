@@ -22,6 +22,13 @@ export const HOME_POPULAR_PATHS: HomePath[] = [
     kind: "earn",
   },
   {
+    id: "faucet-payout-index",
+    label: "BTC faucet payout index",
+    description: "August 2026 dataset",
+    href: "/indexes/bitcoin-faucet-payout",
+    kind: "earn",
+  },
+  {
     id: "first-wallet",
     label: "First wallet",
     description: "Self-custody setup",
@@ -161,6 +168,11 @@ export const HOME_DESK_LINKS: HomeDeskLink[] = [
     href: "/faucets",
     label: "Faucets",
     summary: "US referral desk",
+  },
+  {
+    href: "/indexes/bitcoin-faucet-payout",
+    label: "Faucet payout index",
+    summary: "August 2026 dataset",
   },
   {
     href: "/exchanges",

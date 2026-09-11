@@ -8,6 +8,7 @@
     "build": "node node_modules/next/dist/bin/next build",
     "build:pages": "npm run build && node scripts/publish-static-root.mjs",
     "build:indexes": "node scripts/build-global-search-index.mjs",
+    "indexes:data": "node scripts/publish-index-downloads.mjs",
     "build:legacy-static": "node scripts/build-sitemap.mjs && node scripts/build-global-search-index.mjs && node scripts/build-pwa.mjs && node node_modules/next/dist/bin/next build",
     "start": "node node_modules/next/dist/bin/next start",
     "assert:inbound": "node scripts/assert-inbound-links.mjs",

@@ -1,6 +1,7 @@
 import dataset from "@/data/dataset.json";
 import { ALL_ARTICLES, type ArticleKind } from "@/content/guides";
 import { buildGlossarySearchEntries } from "@/lib/glossary-search";
+import { getIndexCatalog } from "@/lib/indexes";
 
 export type HeaderSearchEntry = {
   id: string;
@@ -86,6 +87,39 @@ function collectTerms(...parts: (string | undefined)[]): string[] {
 /** Build a client-side search index from glossary terms + editorial articles + dataset hubs. */
 export function buildHeaderSearchIndex(): HeaderSearchEntry[] {
   const entries: HeaderSearchEntry[] = [...buildGlossarySearchEntries()];
+
+  const indexCatalog = getIndexCatalog();
+  entries.push({
+    id: "hub:indexes",
+    type: "category",
+    label: indexCatalog.title,
+    hint: "Research",
+    href: "/indexes",
+    staticHref: "/indexes",
+    terms: collectTerms("indexes", "dataset", "research", "payout index"),
+  });
+  for (const item of indexCatalog.indexes) {
+    if (item.status !== "published" || !item.path) continue;
+    entries.push({
+      id: `index:${item.id}`,
+      type: "tool",
+      label: item.title,
+      hint: item.edition || "Index",
+      href: item.path,
+      staticHref: item.path,
+      terms: collectTerms(
+        item.id,
+        item.title,
+        item.summary,
+        "bitcoin",
+        "faucet",
+        "payout",
+        "satoshi",
+        "index",
+        "dataset",
+      ),
+    });
+  }
 
   for (const article of ALL_ARTICLES) {
     const base = articleBasePath(article.kind);

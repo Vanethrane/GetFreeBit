@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "id": "getfreebit-indexes",
+  "title": "GetFreeBit Indexes",
+  "description": "Original, citable datasets for operators comparing faucet payouts, network fees, and other crypto cost rails. Each published index is editioned and sourced; planned titles are placeholders until a real check exists.",
+  "pillar": "faucets-micro",
+  "indexes": [
+    {
+      "id": "bitcoin-faucet-payout",
+      "status": "published",
+      "title": "Bitcoin Faucet Payout Index — August 2026",
+      "edition": "August 2026",
+      "path": "/indexes/bitcoin-faucet-payout",
+      "dataFile": "bitcoin-faucet-payout.json",
+      "pillar": "faucets-micro",
+      "summary": "Sourced BTC claim, withdrawal, fee, and status snapshot for documented faucets and the FaucetPay rail."
+    },
+    {
+      "id": "bitcoin-transaction-fees",
+      "status": "planned",
+      "title": "Bitcoin Transaction Fee Index",
+      "edition": null,
+      "path": null,
+      "dataFile": null,
+      "pillar": "faucets-micro",
+      "summary": "On-chain miner fees vs Lightning — not published this edition."
+    },
+    {
+      "id": "exchange-fees",
+      "status": "planned",
+      "title": "Exchange Fee Index",
+      "edition": null,
+      "path": null,
+      "dataFile": null,
+      "pillar": "exchange-onboarding",
+      "summary": "Spot, withdrawal, and spread costs on documented venues — not published this edition."
+    },
+    {
+      "id": "crypto-card-fees",
+      "status": "planned",
+      "title": "Crypto Card Fee Index",
+      "edition": null,
+      "path": null,
+      "dataFile": null,
+      "pillar": "exchange-onboarding",
+      "summary": "FX, ATM, and top-up fees — not published this edition."
+    },
+    {
+      "id": "atm-fees",
+      "status": "planned",
+      "title": "Crypto ATM Fee Index",
+      "edition": null,
+      "path": null,
+      "dataFile": null,
+      "pillar": "exchange-onboarding",
+      "summary": "Buy/sell spreads at documented ATM networks — not published this edition."
+    },
+    {
+      "id": "lightning-fees",
+      "status": "planned",
+      "title": "Lightning Fee Index",
+      "edition": null,
+      "path": null,
+      "dataFile": null,
+      "pillar": "faucets-micro",
+      "summary": "Routing and service fees — not published this edition."
+    },
+    {
+      "id": "earning-rates",
+      "status": "planned",
+      "title": "Crypto Earning Rate Index",
+      "edition": null,
+      "path": null,
+      "dataFile": null,
+      "pillar": "faucets-micro",
+      "summary": "Measured sats/hour trials — not published this edition."
+    },
+    {
+      "id": "withdrawal-minimums",
+      "status": "planned",
+      "title": "Withdrawal Minimum Index",
+      "edition": null,
+      "path": null,
+      "dataFile": null,
+      "pillar": "faucets-micro",
+      "summary": "Cross-platform cashout floors — not published this edition."
+    }
+  ]
+}

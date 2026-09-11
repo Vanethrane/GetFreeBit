@@ -10,6 +10,9 @@ import { loadGlossarySearchEntries } from "./lib/glossary-index.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const dataset = JSON.parse(readFileSync(join(ROOT, "src/data/dataset.json"), "utf8"));
+const indexCatalog = JSON.parse(
+  readFileSync(join(ROOT, "src/data/indexes/catalog.json"), "utf8"),
+);
 
 const DATASET_CATEGORY_LABEL = {
   "faucets-micro": "Faucets & micro-earnings",
@@ -40,6 +43,38 @@ function buildMeta() {
 
   for (const term of loadGlossarySearchEntries(ROOT)) {
     meta.push(term);
+  }
+
+  meta.push({
+    id: "hub:indexes",
+    type: "category",
+    label: indexCatalog.title,
+    hint: "Research",
+    href: "/indexes",
+    staticHref: "/indexes",
+    terms: collectTerms("indexes", "dataset", "research", "payout index"),
+  });
+  for (const item of indexCatalog.indexes) {
+    if (item.status !== "published" || !item.path) continue;
+    meta.push({
+      id: `index:${item.id}`,
+      type: "tool",
+      label: item.title,
+      hint: item.edition || "Index",
+      href: item.path,
+      staticHref: item.path,
+      terms: collectTerms(
+        item.id,
+        item.title,
+        item.summary,
+        "bitcoin",
+        "faucet",
+        "payout",
+        "satoshi",
+        "index",
+        "dataset",
+      ),
+    });
   }
 
   for (const article of loadArticleSearchEntries(ROOT)) {
