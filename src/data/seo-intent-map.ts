@@ -406,6 +406,7 @@ export const SEO_INTENT_MAP: PageIntentTarget[] = [
     h1: "What is a Bitcoin faucet?",
     metaDescription:
       "Bitcoin faucets pay tiny sats for captchas, ads, or timers—funded by ad revenue. Definition, funding model, and cluster links.",
+    secondaryKeywords: ["bitcoin faucet meaning", "free bitcoin faucet explained", "crypto faucet definition"],
     status: "live",
     cluster: "bitcoin-faucets",
   },
@@ -418,6 +419,7 @@ export const SEO_INTENT_MAP: PageIntentTarget[] = [
     h1: "How Bitcoin faucets work",
     metaDescription:
       "Timers, captchas, ad revenue, and where faucet sats come from—linked cluster guide.",
+    secondaryKeywords: ["bitcoin faucet mechanics", "faucet captcha rewards", "how crypto faucets pay"],
     status: "live",
     cluster: "bitcoin-faucets",
   },
@@ -430,6 +432,7 @@ export const SEO_INTENT_MAP: PageIntentTarget[] = [
     h1: "How faucet payouts work",
     metaDescription:
       "Internal balances, FaucetPay batching, and on-chain exits—how faucet payouts reach your wallet.",
+    secondaryKeywords: ["faucet payout process", "faucetpay batching", "bitcoin faucet cash out"],
     status: "live",
     cluster: "bitcoin-faucets",
   },
@@ -442,6 +445,7 @@ export const SEO_INTENT_MAP: PageIntentTarget[] = [
     h1: "Faucet withdrawal minimums",
     metaDescription:
       "Why Bitcoin faucet minimums trap dust and how FaucetPay lowers effective withdrawal floors.",
+    secondaryKeywords: ["faucet withdrawal minimum", "bitcoin faucet threshold", "faucet dust balance"],
     status: "live",
     cluster: "bitcoin-faucets",
   },
@@ -454,6 +458,7 @@ export const SEO_INTENT_MAP: PageIntentTarget[] = [
     h1: "Faucet earning rates",
     metaDescription:
       "Realistic sats per hour math for Bitcoin faucets—not headline claim amounts.",
+    secondaryKeywords: ["faucet sats per hour", "crypto faucet earning rate", "bitcoin faucet roi"],
     status: "live",
     cluster: "bitcoin-faucets",
   },
@@ -466,6 +471,7 @@ export const SEO_INTENT_MAP: PageIntentTarget[] = [
     h1: "Bitcoin faucet scams",
     metaDescription:
       "Phishing faucets, fake multiply modes, and seed-phrase traps targeting micro-earners.",
+    secondaryKeywords: ["fake bitcoin faucet", "faucet phishing", "crypto faucet scam"],
     status: "live",
     cluster: "bitcoin-faucets",
   },
@@ -478,6 +484,7 @@ export const SEO_INTENT_MAP: PageIntentTarget[] = [
     h1: "Faucet taxes (US)",
     metaDescription:
       "US tax basics for Bitcoin faucet micro-income—tracking sats and recordkeeping overview.",
+    secondaryKeywords: ["crypto faucet taxes", "faucet income irs", "bitcoin micro earnings tax"],
     status: "live",
     cluster: "bitcoin-faucets",
   },
@@ -490,6 +497,7 @@ export const SEO_INTENT_MAP: PageIntentTarget[] = [
     h1: "Faucet vs staking",
     metaDescription:
       "Compare faucet time-and-attention earnings to crypto staking yield—different risks and hourly math.",
+    secondaryKeywords: ["faucet or staking", "crypto faucet vs yield", "bitcoin faucet vs staking"],
     status: "live",
     cluster: "bitcoin-faucets",
   },
@@ -502,6 +510,7 @@ export const SEO_INTENT_MAP: PageIntentTarget[] = [
     h1: "Lightning faucets",
     metaDescription:
       "Bitcoin Lightning faucets pay sats over LN—instant micro-payments with different custody trade-offs.",
+    secondaryKeywords: ["ln faucet", "bitcoin lightning faucet", "lightning network faucet"],
     status: "live",
     cluster: "bitcoin-faucets",
   },

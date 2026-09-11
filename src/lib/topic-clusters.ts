@@ -42,7 +42,7 @@ export function getBitcoinFaucetsCluster(): TopicCluster {
   return BITCOIN_FAUCETS_CLUSTER;
 }
 
-export function nodeMatchesPath(node: ClusterNode, path: string): boolean {
+export function nodeMatchesPath(node: Pick<ClusterNode, "path">, path: string): boolean {
   return node.path.replace(/\/$/, "") === path.replace(/\/$/, "");
 }
 

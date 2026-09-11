@@ -170,9 +170,9 @@ export const HOME_DESK_LINKS: HomeDeskLink[] = [
     summary: "US referral desk",
   },
   {
-    href: "/indexes/bitcoin-faucet-payout",
-    label: "Faucet payout index",
-    summary: "August 2026 dataset",
+    href: "/indexes",
+    label: "Indexes",
+    summary: "Citable payout datasets",
   },
   {
     href: "/exchanges",

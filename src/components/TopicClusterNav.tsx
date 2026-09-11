@@ -24,7 +24,7 @@ function NodeLink({
   currentPath: string;
   showRole?: boolean;
 }) {
-  const active = nodeMatchesPath({ path: node.path } as { path: string }, currentPath);
+  const active = nodeMatchesPath(node, currentPath);
   return (
     <li>
       <Link
