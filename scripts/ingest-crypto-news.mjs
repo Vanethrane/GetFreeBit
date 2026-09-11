@@ -22,6 +22,7 @@ const RSS_FEEDS = [
   { name: "CoinDesk", url: "https://www.coindesk.com/arc/outboundfeeds/rss/" },
   { name: "Cointelegraph", url: "https://cointelegraph.com/rss" },
   { name: "Decrypt", url: "https://decrypt.co/feed" },
+  { name: "Coinpedia", url: "https://coinpedia.org/feed/" },
 ];
 
 const MAX_STORIES = Number(process.env.NEWS_INGEST_MAX || 80);
