@@ -1,5 +1,60 @@
 [
   {
+    "slug": "ripple-stablecoin-chief-sees-13-trillion-corporate-treasury-opportunity-for-rlus",
+    "title": "Ripple stablecoin chief sees $13 trillion corporate treasury opportunity for RLUSD",
+    "description": "Payments and capital markets are driving growth for Ripple's $2.4 billion digital dollar as it looks to bring RLUSD to Europe under MiCA, the firm's Jack McDonald said.",
+    "publishedAt": "2026-09-12",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/business/2026/09/12/ripple-stablecoin-chief-sees-usd13-trillion-corporate-treasury-opportunity-for-rlusd",
+    "sourceName": "CoinDesk",
+    "body": "Payments and capital markets are driving growth for Ripple's $2.4 billion digital dollar as it looks to bring RLUSD to Europe under MiCA, the firm's Jack McDonald said.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "8e8abd43-f7ba-4803-acfc-0a22f136aaf2"
+  },
+  {
+    "slug": "ditching-bonds-for-bitcoin-how-crypto-can-tackle-the-ai-heavy-portfolio-dilemma",
+    "title": "Ditching bonds for bitcoin: How crypto can tackle the AI-heavy portfolio dilemma",
+    "description": "Bitcoin Suisse says rising AI investment, government debt and weakening stock-bond diversification strengthen the case for adding bitcoin to traditional portfolios.",
+    "publishedAt": "2026-09-12",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/business/2026/09/12/ditching-bonds-for-bitcoin-how-crypto-can-tackle-the-ai-heavy-portfolio-dilemma",
+    "sourceName": "CoinDesk",
+    "body": "Bitcoin Suisse says rising AI investment, government debt and weakening stock-bond diversification strengthen the case for adding bitcoin to traditional portfolios.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "cd5cd6a8-2917-4ffa-b3be-9aad6d4e51f2"
+  },
+  {
+    "slug": "crypto-billionaires-hand-reform-uk-97m-in-record-donations",
+    "title": "Crypto Billionaires Hand Reform UK $97M in Record Donations",
+    "description": "Ben Delo and Christopher Harborne each gave £36 million, and between them beat what every UK party raised last year.",
+    "publishedAt": "2026-09-12",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/378107/crypto-billionaires-hand-reform-uk-97m-in-record-donations",
+    "sourceName": "Decrypt",
+    "body": "Ben Delo and Christopher Harborne each gave £36 million, and between them beat what every UK party raised last year.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=378107"
+  },
+  {
+    "slug": "farage-s-reform-uk-gets-biggest-donation-ever-from-crypto-billionaire-reports",
+    "title": "Farage’s Reform UK gets biggest donation ever from crypto billionaire: Reports",
+    "description": "Ben Delo, co-founder of BitMEX, donated almost $50 million to Nigel Farage’s Reform UK party.",
+    "publishedAt": "2026-09-12",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/farages-reform-uk-gets-biggest-donation-ever-from-crypto-billionaire-reports?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Ben Delo, co-founder of BitMEX, donated almost $50 million to Nigel Farage’s Reform UK party.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/farages-reform-uk-gets-biggest-donation-ever-from-crypto-billionaire-reports"
+  },
+  {
+    "slug": "hype-price-eyes-100-after-28-8m-whale-accumulation",
+    "title": "HYPE Price Eyes $100 After $28.8M Whale Accumulation",
+    "description": "The post HYPE Price Eyes $100 After $28.8M Whale Accumulation appeared first on Coinpedia Fintech News HYPE price has cooled off after facing rejection near $89 in early September, falling toward $78. The pullback…",
+    "publishedAt": "2026-09-12",
+    "readingMinutes": 1,
+    "sourceUrl": "https://coinpedia.org/news/hype-price-eyes-100-after-28-8m-whale-accumulation/",
+    "sourceName": "Coinpedia",
+    "body": "The post HYPE Price Eyes $100 After $28.8M Whale Accumulation appeared first on Coinpedia Fintech News HYPE price has cooled off after facing rejection near $89 in early September, falling toward $78. The pullback looks less concerning with buyers continuing to accumulate, especially as one whale has been adding $HYPE almost every day. Over the past 15 days, wallet 0x3305 has bought a total of 358,609 HYPE worth about $28.8 million. &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://coinpedia.org/?p=582434"
+  },
+  {
     "slug": "ethereum-price-momentum-builds-as-1m-whale-transactions-surge",
     "title": "Ethereum Price Momentum Builds as $1M+ Whale Transactions Surge",
     "description": "The post Ethereum Price Momentum Builds as $1M+ Whale Transactions Surge appeared first on Coinpedia Fintech News Ethereum (ETH) is gaining momentum after a sharp post-CPI move pushed ETH toward $2,667, putting the…",
@@ -823,60 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "Secretary Scott Bessent warned that failing to pass the CLARITY Act would send a “troubling signal” about America’s leadership in the digital asset industry.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/news/treasury-secretary-bessent-urges-clarity-act-passage-senate-returns"
-  },
-  {
-    "slug": "vitalik-buterin-pushes-ethereum-plan-to-slash-quantum-safe-privacy-costs",
-    "title": "Vitalik Buterin Pushes Ethereum Plan to Slash Quantum-Safe Privacy Costs",
-    "description": "Buterin wants EIP-8288 in I-star, the upgrade after Hegota, and adopting it would make RISC-V Ethereum's canonical instruction set.",
-    "publishedAt": "2026-09-10",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/377857/vitalik-buterin-pushes-ethereum-plan-to-slash-quantum-safe-privacy-costs",
-    "sourceName": "Decrypt",
-    "body": "Buterin wants EIP-8288 in I-star, the upgrade after Hegota, and adopting it would make RISC-V Ethereum's canonical instruction set.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=377857"
-  },
-  {
-    "slug": "hunter-biden-denies-profiting-from-memecoin-after-his-laptop-crashes",
-    "title": "Hunter Biden denies profiting from memecoin after his LAPTOP crashes",
-    "description": "Nansen found a $117,800 unrealized loss in one wallet as the team announced liquidity incentives and Bubblemaps flagged fresh top holders.",
-    "publishedAt": "2026-09-10",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/hunter-biden-denies-profiting-memecoin-laptop-crash?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Nansen found a $117,800 unrealized loss in one wallet as the team announced liquidity incentives and Bubblemaps flagged fresh top holders.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/hunter-biden-denies-profiting-memecoin-laptop-crash"
-  },
-  {
-    "slug": "bitcoin-etfs-shed-167m-after-strongest-three-week-inflow-run-of-2026",
-    "title": "Bitcoin ETFs shed $167M after strongest three-week inflow run of 2026",
-    "description": "ARKB led Wednesday’s Bitcoin ETF outflows as Ether and Solana funds returned to net inflows.",
-    "publishedAt": "2026-09-10",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/markets/bitcoin-etfs-shed-167m-after-strongest-three-week-inflow-run-of-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "ARKB led Wednesday’s Bitcoin ETF outflows as Ether and Solana funds returned to net inflows.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/markets/bitcoin-etfs-shed-167m-after-strongest-three-week-inflow-run-of-2026"
-  },
-  {
-    "slug": "indian-agri-warehouse-giant-is-putting-2-billion-in-grain-backed-loans-onchain",
-    "title": "Indian agri warehouse giant is putting $2 billion in grain-backed loans onchain",
-    "description": "Arya.ag is using Avalanche technology to tokenize grain deposits to help lenders verify crops backing agricultural loans.",
-    "publishedAt": "2026-09-10",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/business/2026/09/10/indian-agri-warehouse-giant-is-putting-usd2-billion-in-grain-backed-loans-onchain",
-    "sourceName": "CoinDesk",
-    "body": "Arya.ag is using Avalanche technology to tokenize grain deposits to help lenders verify crops backing agricultural loans.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "a104dfa1-f156-4f77-8f92-d05791570086"
-  },
-  {
-    "slug": "bitcoin-sell-side-risk-returns-to-rare-lows-as-80k-sellers-fade-from-view",
-    "title": "Bitcoin sell-side risk returns to rare lows as $80K sellers fade from view",
-    "description": "Bitcoin investors showed little sign of panic selling as BTC held most of its August gains and sell-side risk fell to rare lows, data showed.",
-    "publishedAt": "2026-09-10",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/markets/bitcoin-sell-side-risk-returns-rare-lows-fade?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Bitcoin investors showed little sign of panic selling as BTC held most of its August gains and sell-side risk fell to rare lows, data showed.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/markets/bitcoin-sell-side-risk-returns-rare-lows-fade"
   }
 ]
