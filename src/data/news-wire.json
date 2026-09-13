@@ -1,5 +1,38 @@
 [
   {
+    "slug": "xrp-price-prediction-bulls-vs-bears-ahead-of-fomc-week",
+    "title": "XRP Price Prediction: Bulls vs. Bears Ahead Of FOMC Week",
+    "description": "The post XRP Price Prediction: Bulls vs. Bears Ahead Of FOMC Week appeared first on Coinpedia Fintech News XRP is trading near $1.35, down 1.9% today though still up 4.7% over the past week. The token is testing a…",
+    "publishedAt": "2026-09-13",
+    "readingMinutes": 1,
+    "sourceUrl": "https://coinpedia.org/news/xrp-price-prediction-bulls-vs-bears-ahead-of-fomc-week/",
+    "sourceName": "Coinpedia",
+    "body": "The post XRP Price Prediction: Bulls vs. Bears Ahead Of FOMC Week appeared first on Coinpedia Fintech News XRP is trading near $1.35, down 1.9% today though still up 4.7% over the past week. The token is testing a level that mattered heading into the weekend, last week&#8217;s key support zone around $1.355, and slipping below it now, though not decisively enough yet to call the setup broken. According to a crypto analyst &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://coinpedia.org/?p=582461"
+  },
+  {
+    "slug": "quantum-proof-blockchain-why-math-not-machines-holds-the-key",
+    "title": "Quantum-proof blockchain: why math, not machines, holds the key",
+    "description": "lockchains don’t need quantum computers to be quantum-safe, argues Optimum co-founder and MIT professor Muriel Médard. Classic math already gives us the tools.",
+    "publishedAt": "2026-09-13",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/opinion/2026/09/13/quantum-proof-blockchain-why-math-not-machines-holds-the-key",
+    "sourceName": "CoinDesk",
+    "body": "lockchains don’t need quantum computers to be quantum-safe, argues Optimum co-founder and MIT professor Muriel Médard. Classic math already gives us the tools.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "c2cbbe38-b60c-4697-b964-68e506ecbdf9"
+  },
+  {
+    "slug": "thailand-sec-proposes-150k-daily-cap-on-stablecoin-transfers-who-is-exempted",
+    "title": "Thailand SEC Proposes $150K Daily Cap on Stablecoin Transfers, Who Is Exempted?",
+    "description": "The post Thailand SEC Proposes $150K Daily Cap on Stablecoin Transfers, Who Is Exempted? appeared first on Coinpedia Fintech News Thailand Securities and Exchange Commission (SEC) is considering tighter rules for…",
+    "publishedAt": "2026-09-13",
+    "readingMinutes": 1,
+    "sourceUrl": "https://coinpedia.org/news/thailand-sec-proposes-150k-daily-cap-on-stablecoin-transfers/",
+    "sourceName": "Coinpedia",
+    "body": "The post Thailand SEC Proposes $150K Daily Cap on Stablecoin Transfers, Who Is Exempted? appeared first on Coinpedia Fintech News Thailand Securities and Exchange Commission (SEC) is considering tighter rules for stablecoin transfers through licensed crypto platforms, including a 5 million baht ($150,000) daily limit in each direction. The proposal would also prevent users from sending stablecoins through regulated platforms to wallets owned by others, adding stricter checks on how crypto moves. Thailand SEC Limits &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://coinpedia.org/?p=582455"
+  },
+  {
     "slug": "fed-rate-hike-is-about-wall-street-not-inflation-says-economist",
     "title": "Fed rate hike is about Wall Street, not inflation, says economist",
     "description": "Goldman Sachs late Friday became the last of the major banks to retract its forecast of no rate hike next week.",
@@ -845,38 +878,5 @@
     "sourceName": "CoinDesk",
     "body": "The remittance giant is rolling out a Visa card that lets customers hold dollars and spend from a stablecoin-backed balance.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "8a2dd2d7-8030-4323-a806-fd06f0be4392"
-  },
-  {
-    "slug": "coinbase-moov-to-provide-stablecoin-infrastructure-for-us-community-banks",
-    "title": "Coinbase, Moov to provide stablecoin infrastructure for US community banks",
-    "description": "The partnership will provide stablecoin acceptance, settlement and real-time funding capabilities to over 1,000 community banks and credit unions.",
-    "publishedAt": "2026-09-10",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/coinbase-moov-stablecoin-infrastructure-banks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "The partnership will provide stablecoin acceptance, settlement and real-time funding capabilities to over 1,000 community banks and credit unions.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/coinbase-moov-stablecoin-infrastructure-banks"
-  },
-  {
-    "slug": "bitcoin-at-400k-by-2030-still-reasonable-target-coinbase-ceo",
-    "title": "Bitcoin at $400K by 2030 Still 'Reasonable Target': Coinbase CEO",
-    "description": "Brian Armstrong argues the bottom is in, a year into the downturn, with the next halving roughly 18 months out.",
-    "publishedAt": "2026-09-10",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/377875/bitcoin-at-400k-by-2030-still-reasonable-target-coinbase-ceo",
-    "sourceName": "Decrypt",
-    "body": "Brian Armstrong argues the bottom is in, a year into the downturn, with the next halving roughly 18 months out.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=377875"
-  },
-  {
-    "slug": "crypto-researchers-cut-bitcoin-and-ethereum-quantum-attack-estimate-by-50",
-    "title": "Crypto researchers cut Bitcoin and Ethereum quantum attack estimate by 50%",
-    "description": "A paper shared with CoinDesk shows humans and AI agents beating Google’s March result on a core calculation used by Shor’s algorithm, adding another variable to crypto’s quantum clock.",
-    "publishedAt": "2026-09-10",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/tech/2026/09/10/crypto-researchers-cut-bitcoin-and-ethereum-quantum-attack-estimate-by-50",
-    "sourceName": "CoinDesk",
-    "body": "A paper shared with CoinDesk shows humans and AI agents beating Google’s March result on a core calculation used by Shor’s algorithm, adding another variable to crypto’s quantum clock.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "bb9f9993-3f4b-42d9-980f-3ed31b5af0d1"
   }
 ]
