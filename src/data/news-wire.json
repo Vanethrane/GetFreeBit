@@ -1,5 +1,27 @@
 [
   {
+    "slug": "real-stocks-are-finally-coming-on-blockchain-here-s-how-the-sec-wants-it-to-work",
+    "title": "Real stocks are finally coming on blockchain. Here’s how the SEC wants it to work",
+    "description": "The SEC is giving tokenized stocks a regulated U.S. pathway, while keeping trading volumes, access and issuer rights tightly controlled.",
+    "publishedAt": "2026-09-17",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/business/2026/09/17/real-stocks-are-finally-coming-on-blockchain-here-s-how-the-sec-wants-it-to-work",
+    "sourceName": "CoinDesk",
+    "body": "The SEC is giving tokenized stocks a regulated U.S. pathway, while keeping trading volumes, access and issuer rights tightly controlled.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "a9da6545-a214-45af-8a20-641cd4f536c7"
+  },
+  {
+    "slug": "cftc-opens-door-for-crypto-apps-to-offer-regulated-derivatives-access",
+    "title": "CFTC Opens Door for Crypto Apps to Offer Regulated Derivatives Access",
+    "description": "In a no-action letter, the CFTC said certain software providers can connect users to regulated derivatives markets without registering as brokers.",
+    "publishedAt": "2026-09-17",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/378560/cftc-crypto-apps-regulated-derivatives-access",
+    "sourceName": "Decrypt",
+    "body": "In a no-action letter, the CFTC said certain software providers can connect users to regulated derivatives markets without registering as brokers.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=378560"
+  },
+  {
     "slug": "cftc-expands-regulatory-relief-for-passive-trading-software-providers",
     "title": "CFTC expands regulatory relief for passive trading software providers",
     "description": "The US regulator’s move could make it easier for crypto wallets and other apps to offer access to regulated derivatives and prediction markets without registering as introducing brokers.",
@@ -856,27 +878,5 @@
     "sourceName": "CoinDesk",
     "body": "The October update changes how nodes estimate transaction fees and process blocks, while fixing a wallet flaw that could let an authenticated user run commands on a node.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "6cc290e6-ace1-44cd-adc3-94bf6aed2900"
-  },
-  {
-    "slug": "zcash-holders-back-25-second-blocks-vote-to-keep-zec-halving-schedule",
-    "title": "Zcash holders back 25-second blocks, vote to keep ZEC halving schedule",
-    "description": "Nearly 99% of ZEC holders voted to reduce block times to 25 seconds, while keeping ZEC issuance and halving schedules unchanged.",
-    "publishedAt": "2026-09-16",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/zcash-nu7-poll-faster-blocks-zec-halvings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Nearly 99% of ZEC holders voted to reduce block times to 25 seconds, while keeping ZEC issuance and halving schedules unchanged.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/zcash-nu7-poll-faster-blocks-zec-halvings"
-  },
-  {
-    "slug": "circle-launches-arc-mainnet-with-usdc-as-native-gas-token",
-    "title": "Circle launches Arc mainnet with USDC as native gas token",
-    "description": "Circle’s Arc mainnet is live with USDC for transaction fees, support for more than 20 fiat stablecoins and links to over 20 blockchains.",
-    "publishedAt": "2026-09-16",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/circle-arc-mainnet-launch-usdc-native-gas?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Circle’s Arc mainnet is live with USDC for transaction fees, support for more than 20 fiat stablecoins and links to over 20 blockchains.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/circle-arc-mainnet-launch-usdc-native-gas"
   }
 ]
