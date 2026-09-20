@@ -1,5 +1,49 @@
 [
   {
+    "slug": "why-holding-anything-but-bitcoin-has-been-a-losing-bet-for-two-years",
+    "title": "Why Holding Anything But Bitcoin Has Been a Losing Bet for Two Years",
+    "description": "A Glassnode and Bybit report frames the divergence as the defining feature of this cycle, with froth pooling in the market's riskiest corners even as Bitcoin does the heavy lifting.",
+    "publishedAt": "2026-09-20",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/378695/holding-anything-but-bitcoin-losing-bet",
+    "sourceName": "Decrypt",
+    "body": "A Glassnode and Bybit report frames the divergence as the defining feature of this cycle, with froth pooling in the market's riskiest corners even as Bitcoin does the heavy lifting.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=378695"
+  },
+  {
+    "slug": "bitcoin-price-prediction-when-will-btc-price-hit-100k",
+    "title": "Bitcoin Price Prediction: When Will BTC Price Hit $100K?",
+    "description": "The post Bitcoin Price Prediction: When Will BTC Price Hit $100K? appeared first on Coinpedia Fintech News Bitcoin is trading at $80,441.66, up 1.2% today and 4.6% over the past week, after breaking above its 50-week…",
+    "publishedAt": "2026-09-20",
+    "readingMinutes": 1,
+    "sourceUrl": "https://coinpedia.org/news/bitcoin-price-prediction-when-will-btc-price-hit-100k/",
+    "sourceName": "Coinpedia",
+    "body": "The post Bitcoin Price Prediction: When Will BTC Price Hit $100K? appeared first on Coinpedia Fintech News Bitcoin is trading at $80,441.66, up 1.2% today and 4.6% over the past week, after breaking above its 50-week moving average, a level that has historically marked turning points at the end of previous bear markets. Why This Level Matters So Much According to one chart analyst tracking Bitcoin&#8217;s structure, simply breaking above this level &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://coinpedia.org/?p=583459"
+  },
+  {
+    "slug": "coinbase-robinhood-circle-could-be-early-winners-of-sec-s-tokenized-stock-push-a",
+    "title": "Coinbase, Robinhood, Circle could be early winners of SEC's tokenized-stock push, analysts say",
+    "description": "Goldman Sachs and Citizens analysts said the agency's move create new opportunities in custody, tokenization infrastructure and stablecoin settlement, while giving brokers room to expand onchain products.",
+    "publishedAt": "2026-09-20",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/business/2026/09/20/coinbase-robinhood-circle-could-be-early-winners-of-sec-s-tokenized-stock-push-analysts-say",
+    "sourceName": "CoinDesk",
+    "body": "Goldman Sachs and Citizens analysts said the agency's move create new opportunities in custody, tokenization infrastructure and stablecoin settlement, while giving brokers room to expand onchain products.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "2fa40f0a-0ec7-47a1-a78f-2c40fc9727de"
+  },
+  {
+    "slug": "crypto-traders-braced-for-a-total-wipeout-this-week-but-bitcoin-had-other-plans",
+    "title": "Crypto traders braced for a total wipeout this week but Bitcoin had other plans",
+    "description": "Market experts view bitcoin’s price stability as evidence of its fundamental independence from Washington, maintaining that global liquidity and adoption cycles remain the primary growth drivers.",
+    "publishedAt": "2026-09-20",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/markets/2026/09/18/crypto-traders-braced-for-a-total-wipeout-this-week-but-bitcoin-had-other-plans",
+    "sourceName": "CoinDesk",
+    "body": "Market experts view bitcoin’s price stability as evidence of its fundamental independence from Washington, maintaining that global liquidity and adoption cycles remain the primary growth drivers.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "8f30bfdc-d65d-43bf-ad75-3d8859dde468"
+  },
+  {
     "slug": "grayscale-s-zcash-etf-files-for-3-for-1-forward-share-split",
     "title": "Grayscale’s Zcash ETF files for 3-for-1 forward share split",
     "description": "At the close of trading on Sept. 28, shareholders will receive two extra shares for each one they hold.",
@@ -834,49 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "MoonPay plans to use WisdomTree’s $1.2 billion WTGXX tokenized fund as part of its stablecoin reserves while helping expand access to US investors.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/news/wisdomtree-moonpay-team-up-to-expand-us-access-to-tokenized-money-market-fund"
-  },
-  {
-    "slug": "bitcoin-bounces-as-markets-brace-for-the-fed-s-next-move",
-    "title": "Bitcoin Bounces as Markets Brace for the Fed’s Next Move",
-    "description": "The Federal Reserve's first rate increase since 2023 barely dented crypto prices, but what comes next could change calculations on Wall Street.",
-    "publishedAt": "2026-09-17",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/378506/bitcoin-bounces-wall-street-fed-next-move",
-    "sourceName": "Decrypt",
-    "body": "The Federal Reserve's first rate increase since 2023 barely dented crypto prices, but what comes next could change calculations on Wall Street.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=378506"
-  },
-  {
-    "slug": "financial-data-giant-s-038-p-global-moves-deeper-into-crypto-with-openzeppelin-d",
-    "title": "Financial Data Giant S&#038;P Global Moves Deeper Into Crypto With OpenZeppelin Deal",
-    "description": "S&#038;P Global is expanding into the technology risks underpinning stablecoins, tokenized funds, and other onchain financial products.",
-    "publishedAt": "2026-09-17",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/378505/sp-global-acquire-crypto-openzeppelin",
-    "sourceName": "Decrypt",
-    "body": "S&#038;P Global is expanding into the technology risks underpinning stablecoins, tokenized funds, and other onchain financial products.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=378505"
-  },
-  {
-    "slug": "ethereum-price-eyes-breakout-as-exchange-supply-falls-can-eth-reach-3-000",
-    "title": "Ethereum Price Eyes Breakout as Exchange Supply Falls—Can ETH Reach $3,000?",
-    "description": "The post Ethereum Price Eyes Breakout as Exchange Supply Falls—Can ETH Reach $3,000? appeared first on Coinpedia Fintech News Ethereum price is eyeing $2,570 as falling exchange supply adds fuel to its recovery…",
-    "publishedAt": "2026-09-17",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/price-analysis/ethereum-price-eyes-breakout-as-exchange-supply-falls-can-eth-reach-3000/",
-    "sourceName": "Coinpedia",
-    "body": "The post Ethereum Price Eyes Breakout as Exchange Supply Falls—Can ETH Reach $3,000? appeared first on Coinpedia Fintech News Ethereum price is eyeing $2,570 as falling exchange supply adds fuel to its recovery narrative. ETH remains trapped inside a four-hour descending channel, making the next breakout crucial. A sharp move above $2,570 could open the path toward $2,700 and potentially $3,000, while another rejection may extend the consolidation. Falling Exchange Supply Raises Expectations of &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=583178"
-  },
-  {
-    "slug": "sec-8217-s-8216-innovation-exemption-8217-excludes-the-synthetic-tokens-fueling",
-    "title": "SEC&#8217;s &#8216;Innovation Exemption&#8217; Excludes The Synthetic Tokens Fueling Crypto&#8217;s Stock Craze",
-    "description": "The post SEC&#8217;s &#8216;Innovation Exemption&#8217; Excludes The Synthetic Tokens Fueling Crypto&#8217;s Stock Craze appeared first on Coinpedia Fintech News The SEC has introduced what it&#8217;s calling the…",
-    "publishedAt": "2026-09-17",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/news/secs-innovation-exemption-excludes-the-synthetic-tokens-fueling-cryptos-stock-craze/",
-    "sourceName": "Coinpedia",
-    "body": "The post SEC&#8217;s &#8216;Innovation Exemption&#8217; Excludes The Synthetic Tokens Fueling Crypto&#8217;s Stock Craze appeared first on Coinpedia Fintech News The SEC has introduced what it&#8217;s calling the &#8220;Innovation Exemption,&#8221; a new rule that allows certain tokenized stocks to trade directly onchain. The move comes just days after Congress failed to advance the CLARITY Act despite months of negotiation. The SEC said it&#8217;s been working for the past year and a half to bring clarity &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=583228"
   }
 ]
