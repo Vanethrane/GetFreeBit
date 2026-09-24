@@ -1,5 +1,27 @@
 [
   {
+    "slug": "kalshi-says-cftc-hasn-t-contacted-it-over-unusual-5b-trading-activity",
+    "title": "Kalshi says CFTC hasn’t contacted it over ‘unusual’ $5B trading activity",
+    "description": "Kalshi said nearly $5 billion in similarly sized Ether perpetual trades reflected its liquidity incentive programs and rejected allegations that the activity was wash trading.",
+    "publishedAt": "2026-09-24",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/kalshi-says-cftc-hasnt-contacted-it-over-unusual-5b-trading-activity?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Kalshi said nearly $5 billion in similarly sized Ether perpetual trades reflected its liquidity incentive programs and rejected allegations that the activity was wash trading.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/kalshi-says-cftc-hasnt-contacted-it-over-unusual-5b-trading-activity"
+  },
+  {
+    "slug": "bitcoin-drops-to-84k-as-bond-yields-hit-5-11-what-next",
+    "title": "Bitcoin Drops to $84K as Bond Yields Hit 5.11%: What Next?",
+    "description": "The post Bitcoin Drops to $84K as Bond Yields Hit 5.11%: What Next? appeared first on Coinpedia Fintech News Bitcoin (BTC) has shed 2.06% in value in the day, missing the $87,000 resistance line and pulling back to…",
+    "publishedAt": "2026-09-24",
+    "readingMinutes": 1,
+    "sourceUrl": "https://coinpedia.org/news/bitcoin-drops-to-84k-as-bond-yields-hit-5-11-what-next/",
+    "sourceName": "Coinpedia",
+    "body": "The post Bitcoin Drops to $84K as Bond Yields Hit 5.11%: What Next? appeared first on Coinpedia Fintech News Bitcoin (BTC) has shed 2.06% in value in the day, missing the $87,000 resistance line and pulling back to $84,425 at press time. Other than rising speculations of increased aggressiveness in the Middle East conflict, the drop is also a short-term consequence of the recent hike in US government bond yields. Bitcoin drops amid spike &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://coinpedia.org/?p=583923"
+  },
+  {
     "slug": "ex-sec-acting-chair-agency-dropped-crypto-cases-to-avoid-issues-with-credibility",
     "title": "Ex-SEC acting chair: Agency dropped crypto cases to avoid issues with credibility",
     "description": "SEC Commissioner Mark Uyeda said that the agency dropped many cases against crypto companies in early 2025 to avoid potential credibility problems in court.",
@@ -856,27 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "Researchers can trace an estimated 1.1 million BTC to a distinctive early mining operation. The harder question is whether that miner was actually Satoshi.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/magazine/big-questions-does-satoshi-actually-own-1-million-bitcoin"
-  },
-  {
-    "slug": "ripple-news-europe-8217-s-new-digital-euro-rail-has-xrp-holders-doing-the-math-o",
-    "title": "Ripple News: Europe&#8217;s New Digital Euro Rail Has XRP Holders Doing The Math On $1,000",
-    "description": "The post Ripple News: Europe&#8217;s New Digital Euro Rail Has XRP Holders Doing The Math On $1,000 appeared first on Coinpedia Fintech News ECB President Christine Lagarde announced this week that the central bank…",
-    "publishedAt": "2026-09-22",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/news/ripple-news-europes-new-digital-euro-rail-has-xrp-holders-doing-the-math-on-1000/",
-    "sourceName": "Coinpedia",
-    "body": "The post Ripple News: Europe&#8217;s New Digital Euro Rail Has XRP Holders Doing The Math On $1,000 appeared first on Coinpedia Fintech News ECB President Christine Lagarde announced this week that the central bank officially launched Pontes on Monday, September 21, a system that lets banks across the European Union settle transactions with each other using a digital euro and blockchain technology. &#8220;It&#8217;s the beginning, not the finish,&#8221; Lagarde said, adding that a full digital euro pilot is &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=583731"
-  },
-  {
-    "slug": "ecb-eu-cenbanks-seek-changes-in-mica-s-minimum-bank-deposit-for-stablecoins",
-    "title": "ECB, EU cenbanks seek changes in MiCA’s minimum bank deposit for stablecoins",
-    "description": "The ECB and EU central banks want to replace MiCA’s stablecoin bank-deposit requirements with liquidity thresholds, warning that sudden withdrawals could strain lenders.",
-    "publishedAt": "2026-09-22",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/escb-new-stablecoin-liquidity-rules-bank-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "The ECB and EU central banks want to replace MiCA’s stablecoin bank-deposit requirements with liquidity thresholds, warning that sudden withdrawals could strain lenders.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/escb-new-stablecoin-liquidity-rules-bank-risks"
   }
 ]
