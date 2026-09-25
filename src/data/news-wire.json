@@ -1,5 +1,115 @@
 [
   {
+    "slug": "live-updates-bitcoin-steadies-near-84-000-as-the-bond-selloff-pauses",
+    "title": "Live updates: Bitcoin steadies near $84,000 as the bond selloff pauses",
+    "description": "Treasury yields eased from multi-decade highs and oil slipped on reports of a phased U.S.-Iran deal, with roughly $14 billion in bitcoin options set to expire on Deribit on Friday.",
+    "publishedAt": "2026-09-25",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/markets/2026/09/25/live-updates-bitcoin-steadies-near-usd84-000-as-the-bond-selloff-pauses",
+    "sourceName": "CoinDesk",
+    "body": "Treasury yields eased from multi-decade highs and oil slipped on reports of a phased U.S.-Iran deal, with roughly $14 billion in bitcoin options set to expire on Deribit on Friday.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "cf83a51a-bd24-4e7e-8e66-dfc83264e971"
+  },
+  {
+    "slug": "moonclave-works-to-secure-new-exchange-listing",
+    "title": "Moonclave Works to Secure New Exchange Listing",
+    "description": "The post Moonclave Works to Secure New Exchange Listing appeared first on Coinpedia Fintech News On-Chain Protocol Reports 427,000+ Campaign Impressions, $10,000 Prize Pool Payout, and Ongoing Push for Broader Exchange…",
+    "publishedAt": "2026-09-25",
+    "readingMinutes": 1,
+    "sourceUrl": "https://coinpedia.org/press-release/moonclave-works-to-secure-new-exchange-listing/",
+    "sourceName": "Coinpedia",
+    "body": "The post Moonclave Works to Secure New Exchange Listing appeared first on Coinpedia Fintech News On-Chain Protocol Reports 427,000+ Campaign Impressions, $10,000 Prize Pool Payout, and Ongoing Push for Broader Exchange Access. Casper, Wyoming, USA. 25/09/2026: Moonclave, a Solana-based on-chain prediction market protocol, today announced it has surpassed 12,000 members in its loyalty and rewards program, distributing a $10,000 prize pool and over 76 million experience points (EXP) to early &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://coinpedia.org/?p=584074"
+  },
+  {
+    "slug": "10-year-treasury-yield-surges-above-5-20-as-bond-market-faces-pressure",
+    "title": "10-Year Treasury Yield Surges Above 5.20% as Bond Market Faces Pressure",
+    "description": "The post 10-Year Treasury Yield Surges Above 5.20% as Bond Market Faces Pressure appeared first on Coinpedia Fintech News The 10-year Treasury yield has climbed above 5.20%, its highest level in 19 years, rising nearly…",
+    "publishedAt": "2026-09-25",
+    "readingMinutes": 1,
+    "sourceUrl": "https://coinpedia.org/crypto-live-news/10-year-treasury-yield-surges-above-5-20-as-bond-market-faces-pressure/",
+    "sourceName": "Coinpedia",
+    "body": "The post 10-Year Treasury Yield Surges Above 5.20% as Bond Market Faces Pressure appeared first on Coinpedia Fintech News The 10-year Treasury yield has climbed above 5.20%, its highest level in 19 years, rising nearly 30 basis points in two days. The move comes as September’s flash PMI reached a five-year high, inflation pressures increased and markets priced in a more hawkish Fed. Oil remains near $100, while heavy government borrowing is adding pressure &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://coinpedia.org/?p=584089"
+  },
+  {
+    "slug": "binance-records-largest-bitcoin-outflow-since-2023",
+    "title": "Binance Records Largest Bitcoin Outflow Since 2023",
+    "description": "The post Binance Records Largest Bitcoin Outflow Since 2023 appeared first on Coinpedia Fintech News Bitcoin’s rally has coincided with heavy BTC outflows from Binance. The exchange recorded more than 13,800 BTC in net…",
+    "publishedAt": "2026-09-25",
+    "readingMinutes": 1,
+    "sourceUrl": "https://coinpedia.org/crypto-live-news/binance-records-largest-bitcoin-outflow-since-2023/",
+    "sourceName": "Coinpedia",
+    "body": "The post Binance Records Largest Bitcoin Outflow Since 2023 appeared first on Coinpedia Fintech News Bitcoin’s rally has coincided with heavy BTC outflows from Binance. The exchange recorded more than 13,800 BTC in net outflows in a single day, its largest since 2023. Over four days, Binance’s BTC reserves fell from 705,000 to 685,000 BTC. Weekly netflows have averaged about -2,000 BTC. The decline in exchange-held Bitcoin may reduce available &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://coinpedia.org/?p=584080"
+  },
+  {
+    "slug": "researchers-propose-zcash-style-private-bitcoin-transfers-without-a-soft-fork",
+    "title": "Researchers propose Zcash-style private Bitcoin transfers without a soft fork",
+    "description": "Shielded Bitcoin would use zero-knowledge proofs and encrypted notes to hide transaction details without changing Bitcoin consensus, but researchers have raised questions about anonymity and quantum resistance.",
+    "publishedAt": "2026-09-25",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/shielded-bitcoin-zcash-style-privacy-no-soft-fork?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Shielded Bitcoin would use zero-knowledge proofs and encrypted notes to hide transaction details without changing Bitcoin consensus, but researchers have raised questions about anonymity and quantum resistance.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/shielded-bitcoin-zcash-style-privacy-no-soft-fork"
+  },
+  {
+    "slug": "bitget-s-352-million-hack-happened-via-spoofed-transfers-not-private-keys-ceo-gr",
+    "title": "Bitget's $352 million hack happened via spoofed transfers, not private keys, CEO Gray Chen says",
+    "description": "Bitget lost $351.6 million after attackers compromised a wallet backend, spoofed transaction data, Chen said on X.",
+    "publishedAt": "2026-09-25",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/markets/2026/09/25/bitget-s-usd351-million-hack-happened-via-spoofed-transfers-not-private-keys-ceo-gray-chen-says",
+    "sourceName": "CoinDesk",
+    "body": "Bitget lost $351.6 million after attackers compromised a wallet backend, spoofed transaction data, Chen said on X.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "9adc59f7-2575-4b03-b14c-c3504510ce1c"
+  },
+  {
+    "slug": "fed-8217-s-rate-hike-sends-mortgage-rates-to-highest-level-since-2023",
+    "title": "Fed&#8217;s Rate Hike Sends Mortgage Rates To Highest Level Since 2023",
+    "description": "The post Fed&#8217;s Rate Hike Sends Mortgage Rates To Highest Level Since 2023 appeared first on Coinpedia Fintech News The Federal Reserve&#8217;s latest 25 basis point rate hike is rippling through markets far…",
+    "publishedAt": "2026-09-25",
+    "readingMinutes": 1,
+    "sourceUrl": "https://coinpedia.org/crypto-live-news/feds-rate-hike-sends-mortgage-rates-to-highest-level-since-2023/",
+    "sourceName": "Coinpedia",
+    "body": "The post Fed&#8217;s Rate Hike Sends Mortgage Rates To Highest Level Since 2023 appeared first on Coinpedia Fintech News The Federal Reserve&#8217;s latest 25 basis point rate hike is rippling through markets far beyond what the size of the move suggests. According to The Kobeissi Letter, Fed Chair Kevin Warsh signaled the central bank remains firmly committed to its 2% inflation target regardless of political pressure, and markets are now pricing in a full &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://coinpedia.org/?p=584072"
+  },
+  {
+    "slug": "bitcoin-price-holds-84k-yet-its-own-signals-are-fighting-each-other",
+    "title": "Bitcoin Price Holds $84K, Yet Its Own Signals Are Fighting Each Other",
+    "description": "The post Bitcoin Price Holds $84K, Yet Its Own Signals Are Fighting Each Other appeared first on Coinpedia Fintech News Bitcoin is trading near $84,000, up from $76,500 a week ago, though a widely watched market model…",
+    "publishedAt": "2026-09-25",
+    "readingMinutes": 1,
+    "sourceUrl": "https://coinpedia.org/crypto-live-news/bitcoin-price-holds-84k-yet-its-own-signals-are-fighting-each-other/",
+    "sourceName": "Coinpedia",
+    "body": "The post Bitcoin Price Holds $84K, Yet Its Own Signals Are Fighting Each Other appeared first on Coinpedia Fintech News Bitcoin is trading near $84,000, up from $76,500 a week ago, though a widely watched market model shows little conviction behind the move. According to Axel Adler Jr, the Bitcoin Regime Score briefly touched Strong Bull territory twice this week, hitting +52 on September 19 and +64 on September 22, before drifting back near zero &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://coinpedia.org/?p=584070"
+  },
+  {
+    "slug": "ripple-boss-reveals-why-they-are-8216-very-bullish-8217-about-xrp",
+    "title": "Ripple Boss Reveals Why They Are &#8216;Very Bullish&#8217; About XRP",
+    "description": "The post Ripple Boss Reveals Why They Are &#8216;Very Bullish&#8217; About XRP appeared first on Coinpedia Fintech News Ripple CEO Brad Garlinghouse laid out his case for XRP in the simplest terms possible when asked…",
+    "publishedAt": "2026-09-25",
+    "readingMinutes": 1,
+    "sourceUrl": "https://coinpedia.org/news/ripple-boss-reveals-why-he-is-very-bullish-about-xrp/",
+    "sourceName": "Coinpedia",
+    "body": "The post Ripple Boss Reveals Why They Are &#8216;Very Bullish&#8217; About XRP appeared first on Coinpedia Fintech News Ripple CEO Brad Garlinghouse laid out his case for XRP in the simplest terms possible when asked how the token&#8217;s value connects to actual network transaction volume, pointing to basic supply and demand. XRP has a fixed supply, he said, and Ripple&#8217;s job is to keep growing demand against that fixed number. Three Pillars: Trust, &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://coinpedia.org/?p=584067"
+  },
+  {
+    "slug": "block-brings-bitcoin-lightning-payments-to-x402-for-ai-agents",
+    "title": "Block brings Bitcoin Lightning payments to x402 for AI agents",
+    "description": "Block joins Google, Microsoft, AWS and Coinbase in backing x402, an open payment standard enabling agentic AI commerce.",
+    "publishedAt": "2026-09-25",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/block-brings-bitcoin-lightning-payments-to-x402-for-ai-agents?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Block joins Google, Microsoft, AWS and Coinbase in backing x402, an open payment standard enabling agentic AI commerce.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/block-brings-bitcoin-lightning-payments-to-x402-for-ai-agents"
+  },
+  {
     "slug": "bitget-ceo-suspects-north-korea-behind-352m-hack-citing-ip-clues",
     "title": "Bitget CEO suspects North Korea behind $352M hack, citing IP clues",
     "description": "Bitget CEO Gracy Chen said a preliminary investigation found IP addresses matching VPN choices associated with a DPRK hacking group.",
@@ -768,115 +878,5 @@
     "sourceName": "Coinpedia",
     "body": "The post Could Bitcoin Drop To $70,000 From Here? Analyst Flags Key Warning Signs appeared first on Coinpedia Fintech News Bitcoin has reached first resistance at $87,000, but a chart analyst is warning of a potential deeper pullback ahead. Higher timeframes are showing a bearish RSI divergence, while lower timeframes suggest one more push higher may still be needed before a top forms. The analyst is watching a backtest near $83,500 as a critical level. &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://coinpedia.org/?p=583915"
-  },
-  {
-    "slug": "nyse-taps-blockchain-com-to-reach-crypto-investors-with-tokenized-stocks",
-    "title": "NYSE Taps Blockchain.com to Reach Crypto Investors With Tokenized Stocks",
-    "description": "Blockchain.com and NYSE Group signed a preliminary agreement to give the crypto exchange's users access to tokenized U.S. stocks and ETFs, pending regulatory approval.",
-    "publishedAt": "2026-09-23",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/379080/nyse-taps-blockchain-com-to-reach-crypto-investors-with-tokenized-stocks-etfs",
-    "sourceName": "Decrypt",
-    "body": "Blockchain.com and NYSE Group signed a preliminary agreement to give the crypto exchange's users access to tokenized U.S. stocks and ETFs, pending regulatory approval.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=379080"
-  },
-  {
-    "slug": "bitwise-launches-first-lighter-etp-amid-hyperliquid-rivalry",
-    "title": "Bitwise launches first Lighter ETP amid Hyperliquid rivalry",
-    "description": "The product gives European investors brokerage access to the LIT token as Bitwise expands its lineup of products tied to decentralized derivatives platforms.",
-    "publishedAt": "2026-09-23",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/bitwise-lighter-lit-etp-europe-xetra?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "The product gives European investors brokerage access to the LIT token as Bitwise expands its lineup of products tied to decentralized derivatives platforms.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/bitwise-lighter-lit-etp-europe-xetra"
-  },
-  {
-    "slug": "fed-8217-s-barr-signals-more-rate-hikes-needed-to-hit-inflation-target",
-    "title": "Fed&#8217;s Barr Signals More Rate Hikes Needed To Hit Inflation Target",
-    "description": "The post Fed&#8217;s Barr Signals More Rate Hikes Needed To Hit Inflation Target appeared first on Coinpedia Fintech News Fed Governor Michael Barr said further rate hikes are likely needed to ensure a timely return to…",
-    "publishedAt": "2026-09-23",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/crypto-live-news/feds-barr-signals-more-rate-hikes-needed-to-hit-inflation-target/",
-    "sourceName": "Coinpedia",
-    "body": "The post Fed&#8217;s Barr Signals More Rate Hikes Needed To Hit Inflation Target appeared first on Coinpedia Fintech News Fed Governor Michael Barr said further rate hikes are likely needed to ensure a timely return to the Fed&#8217;s 2% inflation target, speaking at the Chicago Fed. He called last week&#8217;s quarter-point hike a necessary adjustment given strong growth and a solid labor market, but said inflation isn&#8217;t trending toward target quickly enough. Barr cited &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=583913"
-  },
-  {
-    "slug": "why-is-crypto-market-going-down-today",
-    "title": "Why is Crypto Market Going Down Today?",
-    "description": "The post Why is Crypto Market Going Down Today? appeared first on Coinpedia Fintech News Bitcoin has dropped to $84,242.05, down 2.1% over 24 hours, as the broader crypto market shed value alongside a sharp selloff…",
-    "publishedAt": "2026-09-23",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/news/why-is-crypto-down-today/",
-    "sourceName": "Coinpedia",
-    "body": "The post Why is Crypto Market Going Down Today? appeared first on Coinpedia Fintech News Bitcoin has dropped to $84,242.05, down 2.1% over 24 hours, as the broader crypto market shed value alongside a sharp selloff across stocks and precious metals. The total crypto market cap sits at $3.01 trillion, roughly flat over the past day despite the intraday drop, with Ethereum at $2,658.60 and XRP at $1.51. What Triggered &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=583910"
-  },
-  {
-    "slug": "nyse-blockchain-com-in-tie-up-to-bring-tokenized-us-stocks-to-crypto-users",
-    "title": "NYSE, Blockchain.com in tie-up to bring tokenized US stocks to crypto users",
-    "description": "Blockchain.com users could gain access to tokenized US stocks and ETFs through NYSE’s planned digital trading platform under a new partnership, as bourses rush to deliver new trading.",
-    "publishedAt": "2026-09-23",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/nyse-blockchaincom-team-up-to-bring-tokenized-us-stocks-to-crypto-users?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Blockchain.com users could gain access to tokenized US stocks and ETFs through NYSE’s planned digital trading platform under a new partnership, as bourses rush to deliver new trading.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/nyse-blockchaincom-team-up-to-bring-tokenized-us-stocks-to-crypto-users"
-  },
-  {
-    "slug": "bitcoin-dips-but-its-forks-are-flying-again",
-    "title": "Bitcoin Dips, But Its Forks Are Flying Again",
-    "description": "A CME futures listing and a fresh Grayscale ETF filing sent Bitcoin's two biggest forks soaring, even as the flagship coin cooled off its seven-month high.",
-    "publishedAt": "2026-09-23",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/379048/bitcoin-dips-but-forks-are-flying-bch-bsv",
-    "sourceName": "Decrypt",
-    "body": "A CME futures listing and a fresh Grayscale ETF filing sent Bitcoin's two biggest forks soaring, even as the flagship coin cooled off its seven-month high.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=379048"
-  },
-  {
-    "slug": "blackrock-ai-agents-could-drive-crypto-s-next-demand-wave",
-    "title": "BlackRock: AI Agents Could Drive Crypto's Next Demand Wave",
-    "description": "The world's largest asset manager argues that autonomous AI agents buying data, paying for services, and renting computing power could quietly become one of the biggest forces pushing money into crypto.",
-    "publishedAt": "2026-09-23",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/379070/blackrock-ai-agents-crypto-next-demand-wave",
-    "sourceName": "Decrypt",
-    "body": "The world's largest asset manager argues that autonomous AI agents buying data, paying for services, and renting computing power could quietly become one of the biggest forces pushing money into crypto.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=379070"
-  },
-  {
-    "slug": "crypto-long-short-inside-the-chain-settling-150-billion-of-stablecoins-a-week",
-    "title": "Crypto Long & Short: Inside the chain settling $150 billion of stablecoins a week",
-    "description": "Tron launched as a content-distribution project and has become the settlement layer for a large share of the world's USDT, processing roughly $150 billion to $190 billion of stablecoin transfers a week. Josh Olszewicz…",
-    "publishedAt": "2026-09-23",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/coindesk-indices/2026/09/23/crypto-long-and-short-inside-the-chain-settling-usd150-billion-of-stablecoins-a-week",
-    "sourceName": "CoinDesk",
-    "body": "Tron launched as a content-distribution project and has become the settlement layer for a large share of the world's USDT, processing roughly $150 billion to $190 billion of stablecoin transfers a week. Josh Olszewicz of Canary Capital breaks down how the network's economics work and what stablecoin regulation could do to the thesis.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "1575f074-8f81-4463-a4c1-f0fde4598864"
-  },
-  {
-    "slug": "moonpay-to-acquire-north-capital-for-onchain-markets",
-    "title": "MoonPay to Acquire North Capital for Onchain Markets",
-    "description": "The post MoonPay to Acquire North Capital for Onchain Markets appeared first on Coinpedia Fintech News MoonPay is moving deeper into securities infrastructure. The company has entered a definitive merger agreement to…",
-    "publishedAt": "2026-09-23",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/news/moonpay-to-acquire-north-capital-for-onchain-markets/",
-    "sourceName": "Coinpedia",
-    "body": "The post MoonPay to Acquire North Capital for Onchain Markets appeared first on Coinpedia Fintech News MoonPay is moving deeper into securities infrastructure. The company has entered a definitive merger agreement to acquire North Capital Investment Technology, a private-markets infrastructure platform with API-first technology and regulated brokerage services. If completed, North Capital will become a wholly owned MoonPay subsidiary, bringing its securities brokerage and investment advisory businesses into MoonPay&#8217;s financial infrastructure &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=583908"
-  },
-  {
-    "slug": "bitcoin-long-liquidations-hit-280m-as-btc-price-dips-under-84k",
-    "title": "Bitcoin long liquidations hit $280M as BTC price dips under $84K",
-    "description": "Bitcoin long liquidations mounted as BTC/USD briefly traded below $84,000, while analysis flagged key support to hold.",
-    "publishedAt": "2026-09-23",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/markets/bitcoin-long-liquidations-hit-280m-as-btc-price-dips-under-84k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Bitcoin long liquidations mounted as BTC/USD briefly traded below $84,000, while analysis flagged key support to hold.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/markets/bitcoin-long-liquidations-hit-280m-as-btc-price-dips-under-84k"
   }
 ]
