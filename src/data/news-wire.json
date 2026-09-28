@@ -1,5 +1,49 @@
 [
   {
+    "slug": "bitcoin-nasdaq-futures-decline-as-trump-won-t-rule-out-more-iran-strikes",
+    "title": "Bitcoin, Nasdaq futures decline as Trump won’t rule out more Iran strikes",
+    "description": "Trump on Sunday didn’t rule out additional strikes on Iran before the midterm elections, even as he said the war could end soon.",
+    "publishedAt": "2026-09-28",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/markets/2026/09/28/bitcoin-and-nasdaq-futures-decline-as-trump-won-t-rule-out-more-iran-strikes",
+    "sourceName": "CoinDesk",
+    "body": "Trump on Sunday didn’t rule out additional strikes on Iran before the midterm elections, even as he said the war could end soon.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "fcf30766-17ca-43a6-bafc-1f1bc6938b05"
+  },
+  {
+    "slug": "btc-eth-and-xrp-brace-for-packed-week-of-us-economic-data-and-fed-clues",
+    "title": "BTC, ETH and XRP Brace For Packed Week Of US Economic Data And Fed Clues",
+    "description": "The post BTC, ETH and XRP Brace For Packed Week Of US Economic Data And Fed Clues appeared first on Coinpedia Fintech News A heavy data calendar could decide whether the Fed hikes again in October, with markets pricing…",
+    "publishedAt": "2026-09-28",
+    "readingMinutes": 1,
+    "sourceUrl": "https://coinpedia.org/crypto-live-news/btc-eth-and-xrp-brace-for-packed-week-of-us-economic-data-and-fed-clues/",
+    "sourceName": "Coinpedia",
+    "body": "The post BTC, ETH and XRP Brace For Packed Week Of US Economic Data And Fed Clues appeared first on Coinpedia Fintech News A heavy data calendar could decide whether the Fed hikes again in October, with markets pricing a 64% chance of a 25 basis point increase. The week opens Tuesday with August JOLTS job openings and September consumer confidence, followed Wednesday by core PCE inflation and Q2 GDP, Thursday&#8217;s ISM manufacturing PMI, and Friday&#8217;s September jobs &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://coinpedia.org/?p=584428"
+  },
+  {
+    "slug": "newsom-signs-california-ban-on-public-officials-issuing-memecoins",
+    "title": "Newsom signs California ban on public officials issuing memecoins",
+    "description": "The law also restricts crypto companies from offering certain memecoins tied to public officials to California residents and takes effect for tokens issued from Jan. 1, 2027.",
+    "publishedAt": "2026-09-28",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/newsom-signs-california-ban-on-public-officials-issuing-memecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "The law also restricts crypto companies from offering certain memecoins tied to public officials to California residents and takes effect for tokens issued from Jan. 1, 2027.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/newsom-signs-california-ban-on-public-officials-issuing-memecoins"
+  },
+  {
+    "slug": "zano-rolls-blockchain-back-a-month-after-gateway-address-exploit",
+    "title": "Zano rolls blockchain back a month after Gateway Address exploit",
+    "description": "The Zano blockchain has been restarted at the block height that came immediately before Hard Fork 6, which introduced Gateway Addresses.",
+    "publishedAt": "2026-09-28",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/zano-rolls-blockchain-back-a-month-after-gateway-address-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "The Zano blockchain has been restarted at the block height that came immediately before Hard Fork 6, which introduced Gateway Addresses.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/zano-rolls-blockchain-back-a-month-after-gateway-address-exploit"
+  },
+  {
     "slug": "ethereum-price-prediction-top-analyst-sees-final-hurdle-before-bull-run",
     "title": "Ethereum Price Prediction: Top Analyst Sees Final Hurdle Before Bull Run",
     "description": "The post Ethereum Price Prediction: Top Analyst Sees Final Hurdle Before Bull Run appeared first on Coinpedia Fintech News Popular crypto chart analyst Ali Martinez says Ethereum is approaching a key level that could…",
@@ -834,49 +878,5 @@
     "sourceName": "Coinpedia",
     "body": "The post Binance Records Largest Bitcoin Outflow Since 2023 appeared first on Coinpedia Fintech News Bitcoin’s rally has coincided with heavy BTC outflows from Binance. The exchange recorded more than 13,800 BTC in net outflows in a single day, its largest since 2023. Over four days, Binance’s BTC reserves fell from 705,000 to 685,000 BTC. Weekly netflows have averaged about -2,000 BTC. The decline in exchange-held Bitcoin may reduce available &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://coinpedia.org/?p=584080"
-  },
-  {
-    "slug": "researchers-propose-zcash-style-private-bitcoin-transfers-without-a-soft-fork",
-    "title": "Researchers propose Zcash-style private Bitcoin transfers without a soft fork",
-    "description": "Shielded Bitcoin would use zero-knowledge proofs and encrypted notes to hide transaction details without changing Bitcoin consensus, but researchers have raised questions about anonymity and quantum resistance.",
-    "publishedAt": "2026-09-25",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/shielded-bitcoin-zcash-style-privacy-no-soft-fork?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Shielded Bitcoin would use zero-knowledge proofs and encrypted notes to hide transaction details without changing Bitcoin consensus, but researchers have raised questions about anonymity and quantum resistance.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/shielded-bitcoin-zcash-style-privacy-no-soft-fork"
-  },
-  {
-    "slug": "bitget-s-352-million-hack-happened-via-spoofed-transfers-not-private-keys-ceo-gr",
-    "title": "Bitget's $352 million hack happened via spoofed transfers, not private keys, CEO Gray Chen says",
-    "description": "Bitget lost $351.6 million after attackers compromised a wallet backend, spoofed transaction data, Chen said on X.",
-    "publishedAt": "2026-09-25",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/markets/2026/09/25/bitget-s-usd351-million-hack-happened-via-spoofed-transfers-not-private-keys-ceo-gray-chen-says",
-    "sourceName": "CoinDesk",
-    "body": "Bitget lost $351.6 million after attackers compromised a wallet backend, spoofed transaction data, Chen said on X.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "9adc59f7-2575-4b03-b14c-c3504510ce1c"
-  },
-  {
-    "slug": "fed-8217-s-rate-hike-sends-mortgage-rates-to-highest-level-since-2023",
-    "title": "Fed&#8217;s Rate Hike Sends Mortgage Rates To Highest Level Since 2023",
-    "description": "The post Fed&#8217;s Rate Hike Sends Mortgage Rates To Highest Level Since 2023 appeared first on Coinpedia Fintech News The Federal Reserve&#8217;s latest 25 basis point rate hike is rippling through markets far…",
-    "publishedAt": "2026-09-25",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/crypto-live-news/feds-rate-hike-sends-mortgage-rates-to-highest-level-since-2023/",
-    "sourceName": "Coinpedia",
-    "body": "The post Fed&#8217;s Rate Hike Sends Mortgage Rates To Highest Level Since 2023 appeared first on Coinpedia Fintech News The Federal Reserve&#8217;s latest 25 basis point rate hike is rippling through markets far beyond what the size of the move suggests. According to The Kobeissi Letter, Fed Chair Kevin Warsh signaled the central bank remains firmly committed to its 2% inflation target regardless of political pressure, and markets are now pricing in a full &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=584072"
-  },
-  {
-    "slug": "bitcoin-price-holds-84k-yet-its-own-signals-are-fighting-each-other",
-    "title": "Bitcoin Price Holds $84K, Yet Its Own Signals Are Fighting Each Other",
-    "description": "The post Bitcoin Price Holds $84K, Yet Its Own Signals Are Fighting Each Other appeared first on Coinpedia Fintech News Bitcoin is trading near $84,000, up from $76,500 a week ago, though a widely watched market model…",
-    "publishedAt": "2026-09-25",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/crypto-live-news/bitcoin-price-holds-84k-yet-its-own-signals-are-fighting-each-other/",
-    "sourceName": "Coinpedia",
-    "body": "The post Bitcoin Price Holds $84K, Yet Its Own Signals Are Fighting Each Other appeared first on Coinpedia Fintech News Bitcoin is trading near $84,000, up from $76,500 a week ago, though a widely watched market model shows little conviction behind the move. According to Axel Adler Jr, the Bitcoin Regime Score briefly touched Strong Bull territory twice this week, hitting +52 on September 19 and +64 on September 22, before drifting back near zero &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=584070"
   }
 ]
