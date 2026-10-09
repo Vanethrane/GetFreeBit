@@ -1,5 +1,49 @@
 [
   {
+    "slug": "u-s-cftc-moves-to-fold-event-contracts-into-swaps-regulations-as-legal-fight-rag",
+    "title": "U.S. CFTC moves to fold event contracts into swaps regulations as legal fight rages",
+    "description": "The derivatives regulator is proposing a formal rule to include certain contracts traded on platforms like Kalshi's as swaps that require the agency's oversight.",
+    "publishedAt": "2026-10-09",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/policy/2026/10/09/u-s-cftc-moves-to-fold-event-contracts-into-swaps-regulations-as-legal-fight-rages",
+    "sourceName": "CoinDesk",
+    "body": "The derivatives regulator is proposing a formal rule to include certain contracts traded on platforms like Kalshi's as swaps that require the agency's oversight.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "2ae93f2b-3de3-4b2f-842a-a5f511189661"
+  },
+  {
+    "slug": "us-plans-to-seize-1b-in-crypto-linked-to-iran-this-week-scott-bessent",
+    "title": "US plans to seize $1B in crypto linked to Iran this week: Scott Bessent",
+    "description": "The Treasury Department has announced several digital asset seizures related to sanctions on Iran as part of US sanctions.",
+    "publishedAt": "2026-10-09",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/scott-bessent-us-seize-crypto-iran-sanctions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "The Treasury Department has announced several digital asset seizures related to sanctions on Iran as part of US sanctions.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/scott-bessent-us-seize-crypto-iran-sanctions"
+  },
+  {
+    "slug": "new-york-permanently-bars-celsius-founder-mashinsky-in-35m-fraud-settlement",
+    "title": "New York permanently bars Celsius founder Mashinsky in $35M fraud settlement",
+    "description": "The agreement resolves a 2023 civil fraud lawsuit against the Celsius founder and permanently bars him from the cryptocurrency, securities and commodities industries.",
+    "publishedAt": "2026-10-09",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/celsius-founder-alex-mashinsky-permanently-banned-from-crypto-industry-in-ny-settlement?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "The agreement resolves a 2023 civil fraud lawsuit against the Celsius founder and permanently bars him from the cryptocurrency, securities and commodities industries.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/celsius-founder-alex-mashinsky-permanently-banned-from-crypto-industry-in-ny-settlement"
+  },
+  {
+    "slug": "blockchain-com-seeks-approval-for-us-prediction-markets-and-crypto-derivatives",
+    "title": "Blockchain.com Seeks Approval for US Prediction Markets and Crypto Derivatives",
+    "description": "The crypto platform filed for designated contract market and futures commission merchant licenses, which would let it run its own regulated event-contract venue instead of relying on overseas partners.",
+    "publishedAt": "2026-10-09",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/380612/blockchain-cftc-prediction-markets-crypto-derivatives",
+    "sourceName": "Decrypt",
+    "body": "The crypto platform filed for designated contract market and futures commission merchant licenses, which would let it run its own regulated event-contract venue instead of relying on overseas partners.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=380612"
+  },
+  {
     "slug": "bitcoin-rebounds-after-rough-week-but-traders-are-pricing-in-more-downside",
     "title": "Bitcoin Rebounds After Rough Week, But Traders Are Pricing In More Downside",
     "description": "Bitcoin bounced after dipping to around $80,000. Traders are placing increasingly high odds BTC slips further before October is over.",
@@ -834,49 +878,5 @@
     "sourceName": "Decrypt",
     "body": "Ethereum Foundation researcher Justin Drake urged holders to calmly move funds to unused addresses, warning that AI-driven math could break crypto signatures before quantum computers do.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://decrypt.co/?p=380363"
-  },
-  {
-    "slug": "sec-and-cftc-crypto-rules-fall-short-of-clarity-says-rep-french-hill",
-    "title": "SEC and CFTC Crypto Rules 'Fall Short' of Clarity, Says Rep. French Hill",
-    "description": "The House Financial Services chairman credited the SEC and CFTC for stepping in after the Clarity Act's collapse but said only &#34;permanent law change&#34; can secure U.S. leadership.",
-    "publishedAt": "2026-10-07",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/380349/sec-cftc-crypto-rules-fall-short-clarity-french-hill",
-    "sourceName": "Decrypt",
-    "body": "The House Financial Services chairman credited the SEC and CFTC for stepping in after the Clarity Act's collapse but said only &#34;permanent law change&#34; can secure U.S. leadership.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=380349"
-  },
-  {
-    "slug": "tether-signs-deal-with-kazakhstan-s-central-bank-to-explore-a-stablecoin-and-tok",
-    "title": "Tether Signs Deal With Kazakhstan's Central Bank to Explore a Stablecoin and Tokenized Assets",
-    "description": "Tether, issuer of the USDT stablecoin, will help Kazakhstan's central bank study a tenge-pegged token and put real-world assets on a blockchain.",
-    "publishedAt": "2026-10-07",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/380347/tether-kazakhstan-central-bank-stablecoin-tokenized-assets",
-    "sourceName": "Decrypt",
-    "body": "Tether, issuer of the USDT stablecoin, will help Kazakhstan's central bank study a tenge-pegged token and put real-world assets on a blockchain.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=380347"
-  },
-  {
-    "slug": "wells-fargo-in-talks-with-kraken-parent-payward-for-crypto-trading-liquidity",
-    "title": "Wells Fargo in talks with Kraken parent Payward for crypto trading liquidity",
-    "description": "The discussions would see Payward supply liquidity for crypto trading as major banks deepen their involvement in digital assets.",
-    "publishedAt": "2026-10-07",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/business/2026/10/05/wells-fargo-in-talks-with-kraken-parent-payward-for-crypto-trading-liquidity",
-    "sourceName": "CoinDesk",
-    "body": "The discussions would see Payward supply liquidity for crypto trading as major banks deepen their involvement in digital assets.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "cdc6c035-b1d1-4990-b252-92453c30b540"
-  },
-  {
-    "slug": "here-s-what-happened-in-crypto-today",
-    "title": "Here’s what happened in crypto today",
-    "description": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-    "publishedAt": "2026-10-07",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/what-happened-in-crypto-today"
   }
 ]
