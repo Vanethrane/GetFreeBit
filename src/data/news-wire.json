@@ -1,5 +1,16 @@
 [
   {
+    "slug": "visa-survey-says-nearly-half-of-apac-consumers-open-to-using-stablecoins-by-2031",
+    "title": "Visa survey says nearly half of APAC consumers open to using stablecoins by 2031",
+    "description": "Visa’s survey of 14,250 people found interest in stablecoin payments is growing, though only 6% of respondents correctly understood how they work.",
+    "publishedAt": "2026-10-10",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/business/2026/10/05/1-2-billion-apac-consumers-could-adopt-stablecoins-by-2031-according-to-visa",
+    "sourceName": "CoinDesk",
+    "body": "Visa’s survey of 14,250 people found interest in stablecoin payments is growing, though only 6% of respondents correctly understood how they work.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "3ad98db0-4f90-46a3-ad33-d7d38f95f379"
+  },
+  {
     "slug": "u-s-cftc-moves-to-fold-event-contracts-into-swaps-regulations-as-legal-fight-rag",
     "title": "U.S. CFTC moves to fold event contracts into swaps regulations as legal fight rages",
     "description": "The derivatives regulator is proposing a formal rule to include certain contracts traded on platforms like Kalshi's as swaps that require the agency's oversight.",
@@ -867,16 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "Ethereum researchers say crypto users should consider an orderly migration of funds to fresh addresses, warning AI could threaten private-key security before quantum computers do.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/news/justin-drake-urges-crypto-bunker-mode-as-ai-could-break-wallet-security-within-months"
-  },
-  {
-    "slug": "ethereum-researcher-says-ai-may-break-encryption-before-quantum-does",
-    "title": "Ethereum Researcher Says AI May Break Encryption Before Quantum Does",
-    "description": "Ethereum Foundation researcher Justin Drake urged holders to calmly move funds to unused addresses, warning that AI-driven math could break crypto signatures before quantum computers do.",
-    "publishedAt": "2026-10-07",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/380363/ethereum-researcher-ai-break-encryption-before-quantum",
-    "sourceName": "Decrypt",
-    "body": "Ethereum Foundation researcher Justin Drake urged holders to calmly move funds to unused addresses, warning that AI-driven math could break crypto signatures before quantum computers do.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=380363"
   }
 ]
