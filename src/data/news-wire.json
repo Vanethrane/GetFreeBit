@@ -1,5 +1,27 @@
 [
   {
+    "slug": "imf-finds-demand-for-tokenized-stocks-says-the-market-is-still-volatile-illiquid",
+    "title": "IMF finds demand for tokenized stocks, says the market is still volatile, illiquid",
+    "description": "Investors are using blockchain-based shares for smaller and after-hours trades. The IMF says liquidity, legal rules and settlement systems have not caught up.",
+    "publishedAt": "2026-10-11",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/business/2026/10/11/imf-finds-demand-for-tokenized-stocks-says-the-market-is-still-volatile-illiquid",
+    "sourceName": "CoinDesk",
+    "body": "Investors are using blockchain-based shares for smaller and after-hours trades. The IMF says liquidity, legal rules and settlement systems have not caught up.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "5c78476b-5760-436e-8f17-74e56afcc665"
+  },
+  {
+    "slug": "cftc-proposals-aimed-at-separating-prediction-markets-from-casino-gambling",
+    "title": "CFTC proposals aimed at separating prediction markets from casino gambling",
+    "description": "The two measures attempt to set the stage for a potential US Supreme Court battle over federal and state jurisdiction.",
+    "publishedAt": "2026-10-11",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/cftc-proposals-aimed-at-separating-prediction-markets-from-casino-gambling?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "The two measures attempt to set the stage for a potential US Supreme Court battle over federal and state jurisdiction.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/cftc-proposals-aimed-at-separating-prediction-markets-from-casino-gambling"
+  },
+  {
     "slug": "cftc-draws-the-line-between-prediction-markets-and-gambling-in-new-rules",
     "title": "CFTC Draws the Line Between Prediction Markets and Gambling in New Rules",
     "description": "A proposed rule would expressly fold event contracts tied to sports, politics, culture and weather into the “swap” definition, while an interim rule excludes casino-style gambling—sharpening the agency’s claim to…",
@@ -856,27 +878,5 @@
     "sourceName": "Decrypt",
     "body": "A draft bill would exempt the first €500 of annual gains, as crypto tax rates across Europe run from Cyprus's 8% to Italy's 33%.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://decrypt.co/?p=380385"
-  },
-  {
-    "slug": "bitcoin-slips-below-83-000-as-ethereum-researcher-s-bunker-mode-call-divides-cry",
-    "title": "Bitcoin slips below $83,000 as Ethereum researcher's 'bunker mode' call divides crypto",
-    "description": "Justin Drake's call to prepare for an AI break of wallet cryptography drew a mixed response as bitcoin slipped below $83,000.",
-    "publishedAt": "2026-10-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/markets/2026/10/08/bitcoin-slips-below-usd83-000-as-ethereum-researcher-s-bunker-mode-call-divides-crypto",
-    "sourceName": "CoinDesk",
-    "body": "Justin Drake's call to prepare for an AI break of wallet cryptography drew a mixed response as bitcoin slipped below $83,000.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "9a4730c8-766b-408f-9724-7c8dc671cc7c"
-  },
-  {
-    "slug": "starknet-considers-becoming-an-l1-to-build-a-quantum-resistant-network-by-2027",
-    "title": "Starknet Considers Becoming An L1 To Build A Quantum-Resistant Network By 2027",
-    "description": "The post Starknet Considers Becoming An L1 To Build A Quantum-Resistant Network By 2027 appeared first on Coinpedia Fintech News Starknet said it is actively considering becoming a Layer 1 blockchain, a move that would…",
-    "publishedAt": "2026-10-08",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/crypto-live-news/starknet-considers-becoming-an-l1-to-build-a-quantum-resistant-network-by-2027/",
-    "sourceName": "Coinpedia",
-    "body": "The post Starknet Considers Becoming An L1 To Build A Quantum-Resistant Network By 2027 appeared first on Coinpedia Fintech News Starknet said it is actively considering becoming a Layer 1 blockchain, a move that would let it become the first fully quantum-resistant network, with 2027 as the target. Eli Ben-Sasson of Starknet said two threats call for &#8220;bunker mode.&#8221; The first is quantum computing, which he says may be much closer than expected. The second &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=585746"
   }
 ]
