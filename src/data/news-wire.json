@@ -1,5 +1,49 @@
 [
   {
+    "slug": "organizations-join-forces-to-fight-illinois-crypto-tax-after-6-month-pause",
+    "title": "Organizations join forces to fight Illinois crypto tax, after 6-month pause",
+    "description": "Illinois officials already agreed to delay implementation of a 0.2% tax on crypto assets, but industry-aligned organizations are pushing for summary judgment on the merits.",
+    "publishedAt": "2026-10-14",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/cci-ba-fight-illinois-crypto-tax-pause?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Illinois officials already agreed to delay implementation of a 0.2% tax on crypto assets, but industry-aligned organizations are pushing for summary judgment on the merits.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/cci-ba-fight-illinois-crypto-tax-pause"
+  },
+  {
+    "slug": "ai-agents-made-138-million-crypto-payments-in-a-year-most-were-tiny",
+    "title": "AI Agents Made 138 Million Crypto Payments in a Year. Most Were Tiny",
+    "description": "A new Chainalysis report found payments through Coinbase’s x402 protocol surged from about 1,500 in mid-2025 to more than 138 million by Q3 2026, with U.S. wallets dominating spending on AI models.",
+    "publishedAt": "2026-10-14",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/380989/ai-agents-138-million-crypto-payments-one-year",
+    "sourceName": "Decrypt",
+    "body": "A new Chainalysis report found payments through Coinbase’s x402 protocol surged from about 1,500 in mid-2025 to more than 138 million by Q3 2026, with U.S. wallets dominating spending on AI models.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=380989"
+  },
+  {
+    "slug": "russia-s-biggest-bank-sberbank-wins-approval-to-trade-bitcoin",
+    "title": "Russia's Biggest Bank Sberbank Wins Approval to Trade Bitcoin",
+    "description": "Sberbank now holds both custody and exchange status under Russia's new crypto law, and plans to bring Bitcoin, Ethereum and USDT to apps used by 110 million retail clients.",
+    "publishedAt": "2026-10-14",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/380981/sberbank-russia-bank-trade-crypto-bitcoin",
+    "sourceName": "Decrypt",
+    "body": "Sberbank now holds both custody and exchange status under Russia's new crypto law, and plans to bring Bitcoin, Ethereum and USDT to apps used by 110 million retail clients.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=380981"
+  },
+  {
+    "slug": "eu-authority-classifies-circle-s-usdc-as-significant-under-mica",
+    "title": "EU authority classifies Circle’s USDC as ‘significant’ under MiCA",
+    "description": "The second-largest stablecoin by market cap will be overseen by French and EU authorities under its classification as a “significant e-money token.“",
+    "publishedAt": "2026-10-14",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/eba-circle-usdc-stablecoin-significant-token-mica?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "The second-largest stablecoin by market cap will be overseen by French and EU authorities under its classification as a “significant e-money token.“\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/eba-circle-usdc-stablecoin-significant-token-mica"
+  },
+  {
     "slug": "us-authorities-dismantle-crypto-scam-network-that-stole-tens-of-millions",
     "title": "US authorities dismantle crypto scam network that stole tens of millions",
     "description": "Brooklyn prosecutors and the FBI seized 112 servers and shut down 241 websites linked to investment scams that targeted Russian-speaking Americans.",
@@ -834,49 +878,5 @@
     "sourceName": "Decrypt",
     "body": "The shutdown comes as NFT trading volumes have collapsed from their 2021-2022 peak, with market revenue projected at $318 million this year.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://decrypt.co/?p=380802"
-  },
-  {
-    "slug": "chinese-fraud-victims-lose-key-court-battle-over-61-000-bitcoin",
-    "title": "Chinese fraud victims lose key court battle over 61,000 Bitcoin",
-    "description": "Chinese fraud victims seeking to recover 61,000 seized Bitcoin face a legal setback after a UK court ruled that Chinese law governs their claims.",
-    "publishedAt": "2026-10-13",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/uk-court-chinese-law-61k-bitcoin-fraud-victims?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Chinese fraud victims seeking to recover 61,000 seized Bitcoin face a legal setback after a UK court ruled that Chinese law governs their claims.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/uk-court-chinese-law-61k-bitcoin-fraud-victims"
-  },
-  {
-    "slug": "ledger-details-lte-enabled-spy-implants-in-wallets-sold-by-cryptobilis",
-    "title": "Ledger details LTE-enabled spy implants in wallets sold by CryptoBilis",
-    "description": "Ledger detailed how LTE-enabled implants exposed wallet recovery phrases as CryptoBilis halted sales and Trezor and OneKey cut ties with the reseller.",
-    "publishedAt": "2026-10-13",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/ledger-cellular-implants-wallets-sold-cryptobilis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Ledger detailed how LTE-enabled implants exposed wallet recovery phrases as CryptoBilis halted sales and Trezor and OneKey cut ties with the reseller.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/ledger-cellular-implants-wallets-sold-cryptobilis"
-  },
-  {
-    "slug": "is-cardano-worth-holding-in-2026-lark-davis-compares-ada-with-bitcoin-stocks",
-    "title": "Is Cardano Worth Holding in 2026? Lark Davis Compares ADA With Bitcoin Stocks",
-    "description": "The post Is Cardano Worth Holding in 2026? Lark Davis Compares ADA With Bitcoin Stocks appeared first on Coinpedia Fintech News Crypto analyst Lark Davis believes Strive could offer greater upside potential than…",
-    "publishedAt": "2026-10-13",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/news/is-cardano-worth-holding-in-2026-lark-davis-compares-ada-with-bitcoin-stocks/",
-    "sourceName": "Coinpedia",
-    "body": "The post Is Cardano Worth Holding in 2026? Lark Davis Compares ADA With Bitcoin Stocks appeared first on Coinpedia Fintech News Crypto analyst Lark Davis believes Strive could offer greater upside potential than Cardano (ADA), citing concerns about Cardano&#8217;s network activity and long-term growth. During a discussion with crypto investor Mitzio, Davis questioned whether ADA remains worth holding after years of development. He suggested that investors consider Strive, a Bitcoin-focused treasury company, instead of continuing to &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=586198"
-  },
-  {
-    "slug": "render-price-eyes-2-40-breakout-as-buyers-regain-control",
-    "title": "RENDER Price Eyes $2.40 Breakout as Buyers Regain Control",
-    "description": "The post RENDER Price Eyes $2.40 Breakout as Buyers Regain Control appeared first on Coinpedia Fintech News Render price is gaining momentum as renewed interest in AI-linked cryptocurrencies puts decentralized GPU…",
-    "publishedAt": "2026-10-13",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/price-analysis/render-price-eyes-2-40-breakout-as-buyers-regain-control/",
-    "sourceName": "Coinpedia",
-    "body": "The post RENDER Price Eyes $2.40 Breakout as Buyers Regain Control appeared first on Coinpedia Fintech News Render price is gaining momentum as renewed interest in AI-linked cryptocurrencies puts decentralized GPU infrastructure back in focus. The token has recovered sharply from its $1.35–$1.45 demand zone and is now approaching a major resistance area. Meanwhile, expanding AI workloads and new rendering software capabilities provide fundamental support for the network’s growth narrative. The next &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=586203"
   }
 ]
