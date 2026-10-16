@@ -1,5 +1,93 @@
 [
   {
+    "slug": "bitcoin-treasury-giant-strategy-faces-index-removal-under-finalized-msci-rules",
+    "title": "Bitcoin Treasury Giant Strategy Faces Index Removal Under Finalized MSCI Rules",
+    "description": "The index provider will classify “non-operating companies” as ineligible starting Nov. 30, targeting firms whose balance sheets are dominated by a single asset.",
+    "publishedAt": "2026-10-16",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/381168/bitcoin-treasury-giant-strategy-faces-index-removal-under-finalized-msci-rules",
+    "sourceName": "Decrypt",
+    "body": "The index provider will classify “non-operating companies” as ineligible starting Nov. 30, targeting firms whose balance sheets are dominated by a single asset.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=381168"
+  },
+  {
+    "slug": "crypto-pacs-escalate-spending-against-sherrod-brown-in-ohio-senate-race",
+    "title": "Crypto PACs escalate spending against Sherrod Brown in Ohio Senate race",
+    "description": "At least two industry-aligned PACs have poured more than $52 million into opposing Sherrod Brown’s return to the Senate.",
+    "publishedAt": "2026-10-16",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/crypto-pac-fairshake-spending-ohio-senate-race-sherrod-brown?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "At least two industry-aligned PACs have poured more than $52 million into opposing Sherrod Brown’s return to the Senate.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/crypto-pac-fairshake-spending-ohio-senate-race-sherrod-brown"
+  },
+  {
+    "slug": "stablecoin-remittances-cost-84-less-than-traditional-transfers-report-finds",
+    "title": "Stablecoin remittances cost 84% less than traditional transfers, report finds",
+    "description": "Borderless.xyz data shows major savings on cross-border business payments, with stablecoin transfers also settling faster than traditional international bank wires.",
+    "publishedAt": "2026-10-16",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/stablecoin-remittances-cost-savings-traditional-transfers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Borderless.xyz data shows major savings on cross-border business payments, with stablecoin transfers also settling faster than traditional international bank wires.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/stablecoin-remittances-cost-savings-traditional-transfers"
+  },
+  {
+    "slug": "cftc-wants-to-drop-gemini-s-5m-settlement-a-judge-just-said-no",
+    "title": "CFTC Wants to Drop Gemini’s $5M Settlement. A Judge Just Said No",
+    "description": "The judge ruled that a shift in the CFTC’s enforcement priorities and misconduct allegations against its enforcement division weren’t enough to reopen a deal Gemini signed weeks before trial.",
+    "publishedAt": "2026-10-16",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/381149/cftc-wants-drop-gemini-5m-settlement-judge-said-no",
+    "sourceName": "Decrypt",
+    "body": "The judge ruled that a shift in the CFTC’s enforcement priorities and misconduct allegations against its enforcement division weren’t enough to reopen a deal Gemini signed weeks before trial.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=381149"
+  },
+  {
+    "slug": "bitcoin-bounces-but-where-does-it-go-next-here-s-what-the-charts-say",
+    "title": "Bitcoin Bounces, But Where Does It Go Next? Here’s What the Charts Say",
+    "description": "Technical indicators suggest the bullish trend remains intact, but prediction market traders are sending mix signals.",
+    "publishedAt": "2026-10-16",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/381150/bitcoin-price-rebounds-where-next-charts",
+    "sourceName": "Decrypt",
+    "body": "Technical indicators suggest the bullish trend remains intact, but prediction market traders are sending mix signals.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=381150"
+  },
+  {
+    "slug": "crypto-biz-wall-street-closes-at-4-tokenized-stocks-keep-trading",
+    "title": "Crypto Biz: Wall Street closes at 4. Tokenized stocks keep trading",
+    "description": "Tokenized stocks are drawing trading activity beyond Wall Street hours, while Bitcoin miners confront costly AI expansion and new accounting rules could benefit stablecoins.",
+    "publishedAt": "2026-10-16",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/tokenized-stocks-after-hours-trading-crypto-biz?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Tokenized stocks are drawing trading activity beyond Wall Street hours, while Bitcoin miners confront costly AI expansion and new accounting rules could benefit stablecoins.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/tokenized-stocks-after-hours-trading-crypto-biz"
+  },
+  {
+    "slug": "bitcoin-price-steadies-around-82k-after-fed-s-warsh-avoids-rate-hike-hints",
+    "title": "Bitcoin price steadies around $82K after Fed’s Warsh avoids rate-hike hints",
+    "description": "Bitcoin held above $80,000 as South Korean tech stocks recovered from a sell-off and traders lowered their expectations for a Federal Reserve interest-rate hike.",
+    "publishedAt": "2026-10-16",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Bitcoin held above $80,000 as South Korean tech stocks recovered from a sell-off and traders lowered their expectations for a Federal Reserve interest-rate hike.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/markets/bitcoin-price-steadies-82k-fed-warsh-avoids-rate-hike-hints"
+  },
+  {
+    "slug": "three-canadian-armed-forces-members-charged-in-kidnapping-of-crypto-exchange-own",
+    "title": "Three Canadian Armed Forces Members Charged in Kidnapping of Crypto Exchange Owner",
+    "description": "Police seized guns, silencers and more than 2,000 rounds of ammunition, nearly all of it allegedly stolen from the Canadian military.",
+    "publishedAt": "2026-10-16",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/381148/three-canadian-armed-forces-members-charged-in-kidnapping-of-crypto-exchange-owner",
+    "sourceName": "Decrypt",
+    "body": "Police seized guns, silencers and more than 2,000 rounds of ammunition, nearly all of it allegedly stolen from the Canadian military.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=381148"
+  },
+  {
     "slug": "deutsche-bank-to-launch-bitcoin-and-ethereum-custody-within-weeks",
     "title": "Deutsche Bank to Launch Bitcoin and Ethereum Custody Within Weeks",
     "description": "The post Deutsche Bank to Launch Bitcoin and Ethereum Custody Within Weeks appeared first on Coinpedia Fintech News Deutsche Bank plans to launch cryptocurrency custody services within weeks, starting with Bitcoin…",
@@ -790,93 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "VanEck initially filed an S-1 registration statement for the exchange-traded fund in October last year.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/news/vaneck-seeks-to-withdraw-application-for-lido-staked-ether-etf"
-  },
-  {
-    "slug": "organizations-join-forces-to-fight-illinois-crypto-tax-after-6-month-pause",
-    "title": "Organizations join forces to fight Illinois crypto tax, after 6-month pause",
-    "description": "Illinois officials already agreed to delay implementation of a 0.2% tax on crypto assets, but industry-aligned organizations are pushing for summary judgment on the merits.",
-    "publishedAt": "2026-10-14",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/cci-ba-fight-illinois-crypto-tax-pause?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Illinois officials already agreed to delay implementation of a 0.2% tax on crypto assets, but industry-aligned organizations are pushing for summary judgment on the merits.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/cci-ba-fight-illinois-crypto-tax-pause"
-  },
-  {
-    "slug": "ai-agents-made-138-million-crypto-payments-in-a-year-most-were-tiny",
-    "title": "AI Agents Made 138 Million Crypto Payments in a Year. Most Were Tiny",
-    "description": "A new Chainalysis report found payments through Coinbase’s x402 protocol surged from about 1,500 in mid-2025 to more than 138 million by Q3 2026, with U.S. wallets dominating spending on AI models.",
-    "publishedAt": "2026-10-14",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/380989/ai-agents-138-million-crypto-payments-one-year",
-    "sourceName": "Decrypt",
-    "body": "A new Chainalysis report found payments through Coinbase’s x402 protocol surged from about 1,500 in mid-2025 to more than 138 million by Q3 2026, with U.S. wallets dominating spending on AI models.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=380989"
-  },
-  {
-    "slug": "russia-s-biggest-bank-sberbank-wins-approval-to-trade-bitcoin",
-    "title": "Russia's Biggest Bank Sberbank Wins Approval to Trade Bitcoin",
-    "description": "Sberbank now holds both custody and exchange status under Russia's new crypto law, and plans to bring Bitcoin, Ethereum and USDT to apps used by 110 million retail clients.",
-    "publishedAt": "2026-10-14",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/380981/sberbank-russia-bank-trade-crypto-bitcoin",
-    "sourceName": "Decrypt",
-    "body": "Sberbank now holds both custody and exchange status under Russia's new crypto law, and plans to bring Bitcoin, Ethereum and USDT to apps used by 110 million retail clients.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=380981"
-  },
-  {
-    "slug": "eu-authority-classifies-circle-s-usdc-as-significant-under-mica",
-    "title": "EU authority classifies Circle’s USDC as ‘significant’ under MiCA",
-    "description": "The second-largest stablecoin by market cap will be overseen by French and EU authorities under its classification as a “significant e-money token.“",
-    "publishedAt": "2026-10-14",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/eba-circle-usdc-stablecoin-significant-token-mica?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "The second-largest stablecoin by market cap will be overseen by French and EU authorities under its classification as a “significant e-money token.“\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/eba-circle-usdc-stablecoin-significant-token-mica"
-  },
-  {
-    "slug": "us-authorities-dismantle-crypto-scam-network-that-stole-tens-of-millions",
-    "title": "US authorities dismantle crypto scam network that stole tens of millions",
-    "description": "Brooklyn prosecutors and the FBI seized 112 servers and shut down 241 websites linked to investment scams that targeted Russian-speaking Americans.",
-    "publishedAt": "2026-10-14",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/fbi-brooklyn-crypto-scam-112-servers-241-websites?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Brooklyn prosecutors and the FBI seized 112 servers and shut down 241 websites linked to investment scams that targeted Russian-speaking Americans.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/fbi-brooklyn-crypto-scam-112-servers-241-websites"
-  },
-  {
-    "slug": "standard-chartered-opens-bitcoin-and-ethereum-trading-to-wealthy-uae-clients",
-    "title": "Standard Chartered Opens Bitcoin and Ethereum Trading to Wealthy UAE Clients",
-    "description": "The British bank won Dubai regulatory approval to let affluent clients buy BTC and ETH straight from their bank accounts, with custody and settlement kept in-house.",
-    "publishedAt": "2026-10-14",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/380967/standard-chartered-bitcoin-ethereum-trading",
-    "sourceName": "Decrypt",
-    "body": "The British bank won Dubai regulatory approval to let affluent clients buy BTC and ETH straight from their bank accounts, with custody and settlement kept in-house.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=380967"
-  },
-  {
-    "slug": "occ-report-finds-debanking-efforts-tied-to-crypto-activities",
-    "title": "OCC report finds debanking efforts tied to crypto activities",
-    "description": "The report from the US banking regulator did not include specific examples of debanking related to crypto, but mentioned it alongside ties to oil, gas and firearms.",
-    "publishedAt": "2026-10-14",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/occ-trump-debanking-crypto-activities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "The report from the US banking regulator did not include specific examples of debanking related to crypto, but mentioned it alongside ties to oil, gas and firearms.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/occ-trump-debanking-crypto-activities"
-  },
-  {
-    "slug": "bittensor-tao-outlook-could-tao-rally-toward-1400",
-    "title": "Bittensor TAO Outlook: Could TAO Rally Toward $1400?",
-    "description": "The post Bittensor TAO Outlook: Could TAO Rally Toward $1400? appeared first on Coinpedia Fintech News Bittensor is showing a tremendously split personality and the reason behind that is its rising competition inside…",
-    "publishedAt": "2026-10-14",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/price-analysis/bittensor-tao-outlook-could-tao-rally-toward-1400/",
-    "sourceName": "Coinpedia",
-    "body": "The post Bittensor TAO Outlook: Could TAO Rally Toward $1400? appeared first on Coinpedia Fintech News Bittensor is showing a tremendously split personality and the reason behind that is its rising competition inside its AI ecosystem, but that carries an advantage for its token TAO’s potential price breakout that could put $1400 on the radar. As data from Taostat&#8217;s dashboard suggest that registration costs have climbed to 884.4 TAO, average subnet &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=586487"
   }
 ]
