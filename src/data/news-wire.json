@@ -1,5 +1,82 @@
 [
   {
+    "slug": "an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own",
+    "title": "An OpenAI agent ran out of Ethereum funds, and took from a wallet it did not own",
+    "description": "The research model derived funded Sepolia addresses from public seed phrases, questioned whether using the money was ethical, then called the funds “effectively abandoned” and used them anyway.",
+    "publishedAt": "2026-10-16",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/tech/2026/10/16/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own",
+    "sourceName": "CoinDesk",
+    "body": "The research model derived funded Sepolia addresses from public seed phrases, questioned whether using the money was ethical, then called the funds “effectively abandoned” and used them anyway.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "6b007e26-5c9c-466f-8968-d087f0467650"
+  },
+  {
+    "slug": "bitcoin-buyers-snap-up-a-brief-drop-below-80-000-as-asian-stocks-rebound",
+    "title": "Bitcoin buyers snap up a brief drop below $80,000 as Asian stocks rebound",
+    "description": "Bitcoin tore back to $82,500 within two hours of dipping under $80,000, and chipmakers in Seoul recovered from their worst close since April.",
+    "publishedAt": "2026-10-16",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/markets/2026/10/16/bitcoin-buyers-snap-up-a-brief-drop-below-usd80-000-as-asian-stocks-rebound",
+    "sourceName": "CoinDesk",
+    "body": "Bitcoin tore back to $82,500 within two hours of dipping under $80,000, and chipmakers in Seoul recovered from their worst close since April.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "82ad3771-22e1-4b55-a449-dd02f044d0f7"
+  },
+  {
+    "slug": "stacks-q3-report-735-btc-staked-as-stx-staking-climbs-25",
+    "title": "Stacks Q3 Report: 735 BTC Staked As STX Staking Climbs 25%",
+    "description": "The post Stacks Q3 Report: 735 BTC Staked As STX Staking Climbs 25% appeared first on Coinpedia Fintech News Bitcoin layer-2 network Stacks said 735 BTC entered its Bitcoin staking system across the first two lock-up…",
+    "publishedAt": "2026-10-16",
+    "readingMinutes": 1,
+    "sourceUrl": "https://coinpedia.org/crypto-live-news/stacks-q3-report-735-btc-staked-as-stx-staking-climbs-25/",
+    "sourceName": "Coinpedia",
+    "body": "The post Stacks Q3 Report: 735 BTC Staked As STX Staking Climbs 25% appeared first on Coinpedia Fintech News Bitcoin layer-2 network Stacks said 735 BTC entered its Bitcoin staking system across the first two lock-up cycles, according to its third-quarter ecosystem report. The first cycle, Bond 1, drew 230 BTC from participants including 21Shares, HashKey Cloud, UTXO Management and Sypher Capital. The second cycle more than doubled that figure to 505 BTC. STX &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://coinpedia.org/?p=586694"
+  },
+  {
+    "slug": "south-korea-watches-bond-and-currency-markets-after-stock-rout",
+    "title": "South Korea Watches Bond And Currency Markets After Stock Rout",
+    "description": "The post South Korea Watches Bond And Currency Markets After Stock Rout appeared first on Coinpedia Fintech News South Korea’s Ministry of Economy and Finance said it will track whether the recent stock market turmoil…",
+    "publishedAt": "2026-10-16",
+    "readingMinutes": 1,
+    "sourceUrl": "https://coinpedia.org/crypto-live-news/south-korea-watches-bond-and-currency-markets-after-stock-rout/",
+    "sourceName": "Coinpedia",
+    "body": "The post South Korea Watches Bond And Currency Markets After Stock Rout appeared first on Coinpedia Fintech News South Korea’s Ministry of Economy and Finance said it will track whether the recent stock market turmoil spreads into the bond, foreign exchange and money markets, Cailian Press reported. The government and related agencies will step up monitoring of equities and act firmly against any activity that disrupts market order. The ministry said the market’s &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://coinpedia.org/?p=586692"
+  },
+  {
+    "slug": "australia-publishes-draft-law-to-adopt-oecd-crypto-tax-reporting-rules",
+    "title": "Australia Publishes Draft Law To Adopt OECD Crypto Tax Reporting Rules",
+    "description": "The post Australia Publishes Draft Law To Adopt OECD Crypto Tax Reporting Rules appeared first on Coinpedia Fintech News Australia’s Treasury has released draft legislation to bring the OECD’s Crypto-Asset Reporting…",
+    "publishedAt": "2026-10-16",
+    "readingMinutes": 1,
+    "sourceUrl": "https://coinpedia.org/crypto-live-news/australia-publishes-draft-law-to-adopt-oecd-crypto-tax-reporting-rules/",
+    "sourceName": "Coinpedia",
+    "body": "The post Australia Publishes Draft Law To Adopt OECD Crypto Tax Reporting Rules appeared first on Coinpedia Fintech News Australia’s Treasury has released draft legislation to bring the OECD’s Crypto-Asset Reporting Framework (CARF) into domestic law, Cointelegraph reported. The Treasury Laws Amendment Bill 2026: Tax Information Reporting is open for public feedback until October 28. Along with CARF, the bill sets up a separate local reporting regime for crypto assets. Under the framework, crypto &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://coinpedia.org/?p=586690"
+  },
+  {
+    "slug": "strategy-braces-for-2-8b-liquidation-shock-as-msci-changes-index-rules",
+    "title": "Strategy Braces for $2.8B Liquidation Shock as MSCI Changes Index Rules",
+    "description": "The post Strategy Braces for $2.8B Liquidation Shock as MSCI Changes Index Rules appeared first on Coinpedia Fintech News The world’s leading publicly traded Bitcoin treasury company, Strategy, is among a list of…",
+    "publishedAt": "2026-10-16",
+    "readingMinutes": 1,
+    "sourceUrl": "https://coinpedia.org/news/strategy-braces-for-2-8b-liquidation-shock-as-msci-changes-index-rules/",
+    "sourceName": "Coinpedia",
+    "body": "The post Strategy Braces for $2.8B Liquidation Shock as MSCI Changes Index Rules appeared first on Coinpedia Fintech News The world’s leading publicly traded Bitcoin treasury company, Strategy, is among a list of companies of its kind that face potential removal from Morgan Stanley Capital International (MSCI) global indexes. Announced on October 15, the decision established new financial tests that deem non-operating companies ineligible for indexing. In this context, non-operating firms are those whose &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://coinpedia.org/?p=586684"
+  },
+  {
+    "slug": "google-achieves-8216-magic-state-8217-quantum-breakthrough-top-5-quantum-proof-b",
+    "title": "Google Achieves &#8216;Magic State&#8217; Quantum Breakthrough; Top 5 Quantum-Proof Blockchains to Watch",
+    "description": "The post Google Achieves &#8216;Magic State&#8217; Quantum Breakthrough; Top 5 Quantum-Proof Blockchains to Watch appeared first on Coinpedia Fintech News Google has achieved the “magic state cultivation” breakthrough,…",
+    "publishedAt": "2026-10-16",
+    "readingMinutes": 1,
+    "sourceUrl": "https://coinpedia.org/news/google-achieves-magic-state-quantum-breakthrough-top-5-quantum-proof-blockchains-to-watch/",
+    "sourceName": "Coinpedia",
+    "body": "The post Google Achieves &#8216;Magic State&#8217; Quantum Breakthrough; Top 5 Quantum-Proof Blockchains to Watch appeared first on Coinpedia Fintech News Google has achieved the “magic state cultivation” breakthrough, once again raising curiosity about the leading quantum-ready blockchains and cryptocurrencies in the digital ecosystem. Google&#8217;s quantum milestone and its impact on blockchain&#160; Google has accomplished a 99.99% accuracy in producing magic states, a key ingredient required by a quantum computer for it to produce meaningful results. &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://coinpedia.org/?p=586674"
+  },
+  {
     "slug": "australia-releases-draft-bill-to-adopt-oecd-crypto-tax-reporting-framework",
     "title": "Australia releases draft bill to adopt OECD crypto tax reporting framework",
     "description": "Australia is among 77 jurisdictions committed to adopting CARF, with its first international exchanges of crypto tax data expected in 2028.",
@@ -801,82 +878,5 @@
     "sourceName": "Coinpedia",
     "body": "The post NEAR Protocol Faces a Major Test as Price Approaches $6 – Can NEAR Price Break the Resistance? appeared first on Coinpedia Fintech News NEAR Protocol has staged a strong rally, surging nearly 285% from its earlier lows before running into a key resistance zone. The token is trading around $5.09 on the latest weekly chart after being rejected near $5.97. The pullback comes as NEAR price approaches a major technical barrier, putting its recent bullish momentum under the &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://coinpedia.org/?p=586439"
-  },
-  {
-    "slug": "kraken-parent-payward-acquires-saldo-bank-to-expand-crypto-banking-in-europe",
-    "title": "Kraken Parent Payward Acquires Saldo Bank to Expand Crypto Banking in Europe",
-    "description": "The post Kraken Parent Payward Acquires Saldo Bank to Expand Crypto Banking in Europe appeared first on Coinpedia Fintech News Payward, the parent company of crypto exchange Kraken, has agreed to acquire Saldo Bank, a…",
-    "publishedAt": "2026-10-14",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/news/kraken-parent-payward-acquires-saldo-bank-to-expand-crypto-banking-in-europe/",
-    "sourceName": "Coinpedia",
-    "body": "The post Kraken Parent Payward Acquires Saldo Bank to Expand Crypto Banking in Europe appeared first on Coinpedia Fintech News Payward, the parent company of crypto exchange Kraken, has agreed to acquire Saldo Bank, a European Union-licensed bank. The deal would allow Payward to combine crypto trading with bank deposits, lending, card payments and credit services. Meanwhile, the Saldo acquisition is expected to close in 2027, subject to regulatory approval. Payward Plans to Bring Banking &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=586440"
-  },
-  {
-    "slug": "qivalis-receives-emi-authorization-from-dutch-central-bank-for-euro-stablecoin",
-    "title": "Qivalis receives EMI authorization from Dutch central bank for euro stablecoin",
-    "description": "Qivalis said the EMI authorization enables it to launch a euro-denominated stablecoin, with issuance planned for the coming months, subject to additional MiCA requirements.",
-    "publishedAt": "2026-10-14",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/qivalis-authorization-dutch-central-bank-euro-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Qivalis said the EMI authorization enables it to launch a euro-denominated stablecoin, with issuance planned for the coming months, subject to additional MiCA requirements.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/qivalis-authorization-dutch-central-bank-euro-stablecoin"
-  },
-  {
-    "slug": "u-s-september-cpi-comes-in-hot-sending-bitcoin-sharply-lower",
-    "title": "U.S. September CPI comes in hot, sending bitcoin sharply lower",
-    "description": "The news could put multiple rate hikes by the Federal Reserve back into play.",
-    "publishedAt": "2026-10-14",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/markets/2026/10/14/u-s-september-cpi-comes-in-hot-sending-bitcoin-sharply-lower",
-    "sourceName": "CoinDesk",
-    "body": "The news could put multiple rate hikes by the Federal Reserve back into play.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "1f29b6a1-e229-4843-8e94-2b0706ede49d"
-  },
-  {
-    "slug": "can-crypto-users-trust-the-supply-chain-behind-hardware-wallets",
-    "title": "Can crypto users trust the supply chain behind hardware wallets?",
-    "description": "Ledger hardware wallet implants have renewed scrutiny of the middlemen handling devices before they reach buyers, even through authorized sellers.",
-    "publishedAt": "2026-10-14",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/hardware-wallet-supply-chain-risk-ledger-incident?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Ledger hardware wallet implants have renewed scrutiny of the middlemen handling devices before they reach buyers, even through authorized sellers.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/hardware-wallet-supply-chain-risk-ledger-incident"
-  },
-  {
-    "slug": "hype-price-analysis-8-17-million-whale-sale-puts-80-support-in-focus",
-    "title": "HYPE Price Analysis: $8.17 Million Whale Sale Puts $80 Support in Focus",
-    "description": "The post HYPE Price Analysis: $8.17 Million Whale Sale Puts $80 Support in Focus appeared first on Coinpedia Fintech News The Hyperliquid (HYPE) price is facing renewed selling pressure, with the token trading near…",
-    "publishedAt": "2026-10-14",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/price-analysis/hype-price-analysis-8-17-million-whale-sale-puts-80-support-in-focus/",
-    "sourceName": "Coinpedia",
-    "body": "The post HYPE Price Analysis: $8.17 Million Whale Sale Puts $80 Support in Focus appeared first on Coinpedia Fintech News The Hyperliquid (HYPE) price is facing renewed selling pressure, with the token trading near $81.36 in the latest chart snapshot after retreating from recent highs. The pullback comes as traders monitor a major holder’s $8.17 million HYPE transfer to Kraken and a concentration of leveraged positions around key price levels. With the market approaching a &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=586419"
-  },
-  {
-    "slug": "beldex-price-prediction-2026-2027-2030-is-bdx-a-hidden-gem-in-privacy-coins",
-    "title": "Beldex Price Prediction 2026, 2027 – 2030: Is BDX a Hidden Gem in Privacy Coins?",
-    "description": "The post Beldex Price Prediction 2026, 2027 – 2030: Is BDX a Hidden Gem in Privacy Coins? appeared first on Coinpedia Fintech News Story Highlights The live price of the Beldex token is BDX could attempt a recovery…",
-    "publishedAt": "2026-10-14",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/price-prediction/beldex-price-prediction/",
-    "sourceName": "Coinpedia",
-    "body": "The post Beldex Price Prediction 2026, 2027 – 2030: Is BDX a Hidden Gem in Privacy Coins? appeared first on Coinpedia Fintech News Story Highlights The live price of the Beldex token is BDX could attempt a recovery toward $0.057–$0.12 by 2026 if demand for privacy-focused Web3 tools increases. By 2030, BDX may move toward $0.817 if confidential ecosystems gain wider acceptance. Beldex BDX is building a particular corner of Web3, one where privacy is the default, not &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=130830"
-  },
-  {
-    "slug": "xdc-network-price-prediction-2026-2027-8211-2030-is-xdc-price-a-good-investment",
-    "title": "XDC Network Price Prediction 2026, 2027 &#8211; 2030: Is XDC Price a Good Investment?",
-    "description": "The post XDC Network Price Prediction 2026, 2027 &#8211; 2030: Is XDC Price a Good Investment? appeared first on Coinpedia Fintech News Story Highlights The XDC Price today is . The XDC Network price could hit a high…",
-    "publishedAt": "2026-10-14",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/price-prediction/xdc-network-xdc-price-prediction/",
-    "sourceName": "Coinpedia",
-    "body": "The post XDC Network Price Prediction 2026, 2027 &#8211; 2030: Is XDC Price a Good Investment? appeared first on Coinpedia Fintech News Story Highlights The XDC Price today is . The XDC Network price could hit a high of $0.052 in 2026. This altcoin, with a potential surge, may reach a high of $0.8347 by 2030. XDC Network (XDC) is an enterprise-focused Layer-1 blockchain designed to power cross-border payments, trade finance, and real-world asset (RWA) tokenization.&#160; Built &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=149060"
   }
 ]
