@@ -1,5 +1,16 @@
 [
   {
+    "slug": "satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-brea",
+    "title": "Satoshi-era bitcoin faces a bigger quantum threat after Google’s new Willow breakthrough",
+    "description": "Google says its Willow chip can prepare the special quantum states needed for advanced calculations with about 40 times fewer errors, reducing one of the hardware bottlenecks behind any future attempt to crack bitcoin…",
+    "publishedAt": "2026-10-17",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/tech/2026/10/16/satoshi-era-bitcoin-faces-a-bigger-quantum-threat-after-google-s-new-willow-breakthrough",
+    "sourceName": "CoinDesk",
+    "body": "Google says its Willow chip can prepare the special quantum states needed for advanced calculations with about 40 times fewer errors, reducing one of the hardware bottlenecks behind any future attempt to crack bitcoin wallets.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "790cf35e-00c2-452f-9232-7c99bf30cb55"
+  },
+  {
     "slug": "pi-network-news-pi-price-jumps-4-as-team-announces-three-day-developer-summit",
     "title": "Pi Network News: PI Price Jumps 4% as Team Announces Three-Day Developer Summit",
     "description": "The post Pi Network News: PI Price Jumps 4% as Team Announces Three-Day Developer Summit appeared first on Coinpedia Fintech News Pi Network is preparing to host its first-ever Pi Ecosystem Summit from November 17–19,…",
@@ -867,16 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "TeraWulf, Core Scientific, Cipher Mining and IREN each lost more than 12% as hotter inflation hit AI infrastructure companies.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/markets/bitcoin-miners-plunge-up-to-13-in-wall-streets-worst-selloff-since-july"
-  },
-  {
-    "slug": "why-bitcoin-s-next-target-could-be-93-000",
-    "title": "Why Bitcoin’s Next Target Could Be $93,000",
-    "description": "The post Why Bitcoin’s Next Target Could Be $93,000 appeared first on Coinpedia Fintech News Bitcoin (BTC) is down 2% in the last 24hours, trading at $81,698 after US inflation came in hot and raised the odds of…",
-    "publishedAt": "2026-10-15",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/price-analysis/why-bitcoins-next-target-could-be-93000/",
-    "sourceName": "Coinpedia",
-    "body": "The post Why Bitcoin’s Next Target Could Be $93,000 appeared first on Coinpedia Fintech News Bitcoin (BTC) is down 2% in the last 24hours, trading at $81,698 after US inflation came in hot and raised the odds of another Fed rate hike. Compounding the decline is a cascade of long liquidations ($63.17 million in the past day) and a break below the $82,000 &#8211; $83,000 support zone. Institutions have also &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=586509"
   }
 ]
