@@ -1,5 +1,71 @@
 [
   {
+    "slug": "jpmorgan-puts-a-number-on-bitcoin-for-the-first-time-10-a-year-with-a-big-caveat",
+    "title": "JPMorgan Puts a Number on Bitcoin for the First Time: 10% a Year, With a Big Caveat",
+    "description": "J.P. Morgan Asset Management’s 2027 Long-Term Capital Market Assumptions project a 10% annual return for Bitcoin over 10 to 15 years, though the firm isn’t adding it to its main portfolio models.",
+    "publishedAt": "2026-10-20",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/381464/jpmorgan-bitcoin-forecast-first-time-stocks-gold",
+    "sourceName": "Decrypt",
+    "body": "J.P. Morgan Asset Management’s 2027 Long-Term Capital Market Assumptions project a 10% annual return for Bitcoin over 10 to 15 years, though the firm isn’t adding it to its main portfolio models.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=381464"
+  },
+  {
+    "slug": "u-s-cftc-sets-agenda-for-ai-forum-exploring-trading-and-agentic-finance",
+    "title": "U.S. CFTC sets agenda for AI forum, exploring trading and agentic finance",
+    "description": "A Commodity Futures Trading Commission task force is scheduled for October 28 to talk about how the latest \"super intelligence\" technology may impact markets.",
+    "publishedAt": "2026-10-20",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/policy/2026/10/20/u-s-cftc-sets-agenda-for-ai-forum-exploring-trading-and-agentic-finance",
+    "sourceName": "CoinDesk",
+    "body": "A Commodity Futures Trading Commission task force is scheduled for October 28 to talk about how the latest \"super intelligence\" technology may impact markets.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "b2d903e8-67ee-4c72-b382-f089654e2200"
+  },
+  {
+    "slug": "wallet-linked-to-drift-exploit-sends-61-million-in-ethereum-to-tornado-cash",
+    "title": "Wallet Linked to Drift Exploit Sends $61 Million in Ethereum to Tornado Cash",
+    "description": "The North Korea-linked attacker behind April's $295 million Drift heist pushed 25,700 ETH through the mixer in two hours, and still controls roughly $198 million more.",
+    "publishedAt": "2026-10-20",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/381450/wallet-drift-exploit-sends-61-million-ethereum-tornado-cash",
+    "sourceName": "Decrypt",
+    "body": "The North Korea-linked attacker behind April's $295 million Drift heist pushed 25,700 ETH through the mixer in two hours, and still controls roughly $198 million more.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=381450"
+  },
+  {
+    "slug": "bitwise-hyperliquid-seek-sec-rule-changes-for-token-trading-airdrops",
+    "title": "Bitwise, Hyperliquid seek SEC rule changes for token trading, airdrops",
+    "description": "The firms are seeking clearer guidance on the classification of crypto assets and secondary-market trading as the SEC’s public comment period comes to a close.",
+    "publishedAt": "2026-10-20",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/bitwise-hyperliquid-seek-sec-rule-changes-for-token-trading-airdrops?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "The firms are seeking clearer guidance on the classification of crypto assets and secondary-market trading as the SEC’s public comment period comes to a close.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/bitwise-hyperliquid-seek-sec-rule-changes-for-token-trading-airdrops"
+  },
+  {
+    "slug": "crypto-s-2026-shutdown-wave-claims-82-projects-what-went-wrong",
+    "title": "Crypto’s 2026 shutdown wave claims 82 projects. What went wrong?",
+    "description": "Crypto projects are struggling to survive as falling revenues, depleted funding and security breaches force closures across DeFi, blockchain infrastructure and gaming.",
+    "publishedAt": "2026-10-20",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/crypto-project-shutdowns-2026-what-went-wrong?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Crypto projects are struggling to survive as falling revenues, depleted funding and security breaches force closures across DeFi, blockchain infrastructure and gaming.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/crypto-project-shutdowns-2026-what-went-wrong"
+  },
+  {
+    "slug": "swiss-regulator-approves-first-retail-fund-that-holds-bitcoin-directly",
+    "title": "Swiss Regulator Approves First Retail Fund That Holds Bitcoin Directly",
+    "description": "FINMA waived the diversification rules for the fund but leaned hard on custody and investor-protection safeguards.",
+    "publishedAt": "2026-10-20",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/381446/swiss-regulator-first-retail-fund-holds-bitcoin-directly",
+    "sourceName": "Decrypt",
+    "body": "FINMA waived the diversification rules for the fund but leaned hard on custody and investor-protection safeguards.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=381446"
+  },
+  {
     "slug": "bitcoin-etfs-post-their-best-day-in-nearly-a-month-as-blackrock-does-all-the-buy",
     "title": "Bitcoin ETFs Post Their Best Day in Nearly a Month as BlackRock Does All the Buying",
     "description": "U.S. spot Bitcoin ETFs took in $526.7 million on Monday, their biggest day since Sept. 22. BlackRock's IBIT supplied all of it while Fidelity and Grayscale funds bled.",
@@ -812,71 +878,5 @@
     "sourceName": "CoinDesk",
     "body": "Bitcoin, Nasdaq futures and Asian stocks rally as stronger-than-expected China GDP and falling oil prices lift risk appetite.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "4b8c00f2-c952-4dca-b63f-ff342116570e"
-  },
-  {
-    "slug": "michael-saylor-says-bitcoin-is-entering-a-new-bull-market-driven-by-banks",
-    "title": "Michael Saylor Says Bitcoin Is Entering A New Bull Market Driven By Banks",
-    "description": "The post Michael Saylor Says Bitcoin Is Entering A New Bull Market Driven By Banks appeared first on Coinpedia Fintech News Strategy Executive Chairman Michael Saylor said Bitcoin is returning to a bull market, with…",
-    "publishedAt": "2026-10-19",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/crypto-live-news/michael-saylor-says-bitcoin-is-entering-a-new-bull-market-driven-by-banks/",
-    "sourceName": "Coinpedia",
-    "body": "The post Michael Saylor Says Bitcoin Is Entering A New Bull Market Driven By Banks appeared first on Coinpedia Fintech News Strategy Executive Chairman Michael Saylor said Bitcoin is returning to a bull market, with global bank adoption acting as the main catalyst. Speaking at ParaFi Investor Day 2026, Saylor pointed to banks offering Bitcoin custody and lending as key drivers. He said these services will open up billions of dollars in BTC-backed credit. Saylor described &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=586885"
-  },
-  {
-    "slug": "strategy-s-bitcoin-holdings-reach-848-250-btc-over-4-of-total-supply",
-    "title": "Strategy’s Bitcoin Holdings Reach 848,250 BTC, Over 4% Of Total Supply",
-    "description": "The post Strategy’s Bitcoin Holdings Reach 848,250 BTC, Over 4% Of Total Supply appeared first on Coinpedia Fintech News Strategy now holds 848,250 BTC, acquired at an average price of $75,444 per coin. That is just…",
-    "publishedAt": "2026-10-19",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/crypto-live-news/strategys-bitcoin-holdings-reach-848250-btc-over-4-of-total-supply/",
-    "sourceName": "Coinpedia",
-    "body": "The post Strategy’s Bitcoin Holdings Reach 848,250 BTC, Over 4% Of Total Supply appeared first on Coinpedia Fintech News Strategy now holds 848,250 BTC, acquired at an average price of $75,444 per coin. That is just over 4% of Bitcoin’s fixed 21 million supply and keeps the company well ahead as the largest corporate holder. With BTC trading near $82,000, the position is worth about $69.6 billion and carries an unrealised gain of roughly &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=586883"
-  },
-  {
-    "slug": "deutsche-bank-targets-asia-crypto-custody-expansion-in-2027-as-german-launch-nea",
-    "title": "Deutsche Bank targets Asia crypto custody expansion in 2027 as German launch nears",
-    "description": "The service will initially support bitcoin, ether and the stablecoins USDC, EURC and EURAU, with the bank managing clients’ wallets and private keys.",
-    "publishedAt": "2026-10-19",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/business/2026/10/18/deutsche-bank-targets-asia-crypto-custody-expansion-in-2027-as-german-launch-nears",
-    "sourceName": "CoinDesk",
-    "body": "The service will initially support bitcoin, ether and the stablecoins USDC, EURC and EURAU, with the bank managing clients’ wallets and private keys.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "5a5091ce-aa71-4445-b412-0fa21e3e6da2"
-  },
-  {
-    "slug": "qubic-freezes-chain-after-attacker-drains-1-4k-wallets-with-weak-seeds",
-    "title": "Qubic freezes chain after attacker drains 1.4K wallets with weak seeds",
-    "description": "Qubic says 87.1% of the stolen funds remain onchain and the rest were frozen at crypto exchange MEXC, as network validators prepare to vote on a recovery plan.",
-    "publishedAt": "2026-10-19",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/qubic-freezes-chain-after-attacker-drains-14k-wallets-with-weak-seeds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Qubic says 87.1% of the stolen funds remain onchain and the rest were frozen at crypto exchange MEXC, as network validators prepare to vote on a recovery plan.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/qubic-freezes-chain-after-attacker-drains-14k-wallets-with-weak-seeds"
-  },
-  {
-    "slug": "sec-tokenized-stock-framework-faces-issuer-pushback-as-broadcom-verizon-object-t",
-    "title": "SEC tokenized stock framework faces issuer pushback as Broadcom, Verizon object to OKX-ICE listing",
-    "description": "Eight more companies objected to trading on the planned OKX-ICE venue, while Nasdaq has separately said it would opt out under the SEC’s framework.",
-    "publishedAt": "2026-10-18",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/business/2026/10/18/sec-tokenized-stock-framework-faces-issuer-pushback-as-broadcom-verizon-object-to-okx-ice-listing",
-    "sourceName": "CoinDesk",
-    "body": "Eight more companies objected to trading on the planned OKX-ICE venue, while Nasdaq has separately said it would opt out under the SEC’s framework.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "25f329fb-37cf-42f0-98bf-a20e3d21d6cb"
-  },
-  {
-    "slug": "richard-heart-caught-off-guard-qday-gets-even-closer-hodler-s-digest",
-    "title": "Richard Heart caught ‘off-guard,’ QDay gets even closer: Hodler’s Digest",
-    "description": "HEX founder Richard Heart detained in early morning raid in Istanbul, Starknet plunges almost 50% as it votes to become an L1, and Bitwise says all signs point to Crypto Spring.",
-    "publishedAt": "2026-10-18",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/magazine/richard-heart-caught-with-pants-down-qday-gets-even-closer-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "HEX founder Richard Heart detained in early morning raid in Istanbul, Starknet plunges almost 50% as it votes to become an L1, and Bitwise says all signs point to Crypto Spring.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/magazine/richard-heart-caught-with-pants-down-qday-gets-even-closer-hodlers-digest"
   }
 ]
