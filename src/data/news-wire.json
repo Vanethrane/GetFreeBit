@@ -1,5 +1,16 @@
 [
   {
+    "slug": "franklin-templeton-adds-150-million-in-fund-shares-to-xrp-ledger-all-in-one-wall",
+    "title": "Franklin Templeton adds $150 million in fund shares to XRP Ledger, all in one wallet",
+    "description": "Two subscriptions on Thursday nearly quadrupled the fund’s tokens on the network. The receiving wallet shares its authorized signers with the issuer.",
+    "publishedAt": "2026-10-24",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet",
+    "sourceName": "CoinDesk",
+    "body": "Two subscriptions on Thursday nearly quadrupled the fund’s tokens on the network. The receiving wallet shares its authorized signers with the issuer.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "b24fbb6b-1b18-40ef-9b52-f4b292bc2010"
+  },
+  {
     "slug": "wells-fargo-and-five-others-object-to-okx-ice-tokenized-stock-listings-report",
     "title": "Wells Fargo and five others object to OKX-ICE tokenized stock listings: Report",
     "description": "As of Friday, 22 companies had filed objections as part of the joint venture’s proposed tokenized stock platform under the SEC’s innovation exemption.",
@@ -867,16 +878,5 @@
     "sourceName": "CoinDesk",
     "body": "Your day-ahead look for Oct. 21, 2026\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "7d51da94-a874-4a73-b914-09a352b0c2a7"
-  },
-  {
-    "slug": "coindcx-hack-today-live-updates-was-india-s-crypto-exchange-breached-again",
-    "title": "CoinDCX Hack Today [LIVE] Updates: Was India’s Crypto Exchange Breached Again?",
-    "description": "The post CoinDCX Hack Today [LIVE] Updates: Was India’s Crypto Exchange Breached Again? appeared first on Coinpedia Fintech News October 22, 2026 13:03:35 UTC CoinDCX Hack Today: Exchange Blames Failed Sweep On…",
-    "publishedAt": "2026-10-22",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/news/coindcx-hack-live-updates/",
-    "sourceName": "Coinpedia",
-    "body": "The post CoinDCX Hack Today [LIVE] Updates: Was India’s Crypto Exchange Breached Again? appeared first on Coinpedia Fintech News October 22, 2026 13:03:35 UTC CoinDCX Hack Today: Exchange Blames Failed Sweep On Deprecated Wallets For Losses CoinDCX said the suspicious activity on its TQKJQ wallet came from deposit addresses that were compromised in its July 2025 security breach and later retired. According to the exchange, some users kept sending crypto to these old addresses &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=587448"
   }
 ]
