@@ -1,5 +1,82 @@
 [
   {
+    "slug": "binance-hack-drained-wallets-backing-customer-assets-reserve-data-shows",
+    "title": "Binance hack drained wallets backing customer assets, reserve data shows",
+    "description": "Binance’s own reserve data lists the drained wallets as backing customer balances, leaving its ether backing an estimated 6% short until the exchange replaces what was stolen.",
+    "publishedAt": "2026-10-30",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/business/2026/10/30/binance-hack-drained-wallets-backing-customer-assets-reserve-data-shows",
+    "sourceName": "CoinDesk",
+    "body": "Binance’s own reserve data lists the drained wallets as backing customer balances, leaving its ether backing an estimated 6% short until the exchange replaces what was stolen.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "5c6a3f8f-92bf-4156-9478-7da886f2a3ff"
+  },
+  {
+    "slug": "binance-hack-may-involve-private-key-misuse-not-theft-blockaid-ceo",
+    "title": "Binance hack may involve private key ‘misuse,’ not theft: Blockaid CEO",
+    "description": "Blockaid’s Ido Ben-Natan suspects attackers manipulated Binance’s transaction-signing infrastructure, drawing parallels with the Bybit hack.",
+    "publishedAt": "2026-10-30",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/binance-hack-may-involve-private-key-misuse-not-theft-blockaid-ceo?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Blockaid’s Ido Ben-Natan suspects attackers manipulated Binance’s transaction-signing infrastructure, drawing parallels with the Bybit hack.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/binance-hack-may-involve-private-key-misuse-not-theft-blockaid-ceo"
+  },
+  {
+    "slug": "binance-hack-rattles-markets-as-bnb-falls-8-bitcoin-nears-77k",
+    "title": "Binance hack rattles markets as BNB falls 8%, Bitcoin nears $77K",
+    "description": "Bitcoin, Ether and the broader crypto market took a dive as Binance suffered a multibillion-dollar hack.",
+    "publishedAt": "2026-10-29",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/markets/binance-hack-rattles-crypto-markets-bnb-bitcoin-slide?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Bitcoin, Ether and the broader crypto market took a dive as Binance suffered a multibillion-dollar hack.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/markets/binance-hack-rattles-crypto-markets-bnb-bitcoin-slide"
+  },
+  {
+    "slug": "binance-5-8-billion-hack-triggers-crypto-market-crash-what-really-happened",
+    "title": "Binance $5.8 Billion Hack Triggers Crypto Market Crash. What Really Happened?",
+    "description": "The post Binance $5.8 Billion Hack Triggers Crypto Market Crash. What Really Happened? appeared first on Coinpedia Fintech News The world&#8217;s largest crypto exchange, Binance, has confirmed it was hacked, with…",
+    "publishedAt": "2026-10-29",
+    "readingMinutes": 1,
+    "sourceUrl": "https://coinpedia.org/news/binance-5-8-billion-hack-triggers-crypto-market-crash-what-really-happened/",
+    "sourceName": "Coinpedia",
+    "body": "The post Binance $5.8 Billion Hack Triggers Crypto Market Crash. What Really Happened? appeared first on Coinpedia Fintech News The world&#8217;s largest crypto exchange, Binance, has confirmed it was hacked, with multiple cryptocurrencies valued at between $2 billion and $5.8 billion drained. According to a forensic analysis of the event by security firm Blockaid, the attacker targeted two Binance hot wallets named “Binance 14” and “Binance 16”. They then siphoned multiple cryptocurrencies, including $1.6 &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://coinpedia.org/?p=588571"
+  },
+  {
+    "slug": "binance-hacker-hunts-for-exit-ramps-as-defi-exchanges-pause-markets",
+    "title": "Binance Hacker Hunts for Exit Ramps as DeFi Exchanges Pause Markets",
+    "description": "Etherscan records show wallets tied to the suspected Binance hack swapping freezable stablecoins for Ethereum on decentralized exchanges.",
+    "publishedAt": "2026-10-29",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/382194/binance-hack-exit-ramps-defi-exchange-ethereum",
+    "sourceName": "Decrypt",
+    "body": "Etherscan records show wallets tied to the suspected Binance hack swapping freezable stablecoins for Ethereum on decentralized exchanges.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=382194"
+  },
+  {
+    "slug": "tampered-ledger-reported-in-singapore-a-month-before-news-broke-asia-express",
+    "title": "Tampered Ledger reported in Singapore a month before news broke: Asia Express",
+    "description": "Singapore police say tampered Ledgers started showing up there on September 10. South Korean lawmakers look set to delay the crypto tax law for a fourth time.",
+    "publishedAt": "2026-10-29",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/magazine/tampered-ledger-reported-in-singapore-a-month-before-news-broke-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Singapore police say tampered Ledgers started showing up there on September 10. South Korean lawmakers look set to delay the crypto tax law for a fourth time.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/magazine/tampered-ledger-reported-in-singapore-a-month-before-news-broke-asia-express"
+  },
+  {
+    "slug": "binance-drained-of-5-5-billion-in-suspected-hack-tether-and-circle-freeze-1-8-bi",
+    "title": "Binance Drained of $5.5 Billion in Suspected Hack, Tether and Circle Freeze $1.8 Billion",
+    "description": "An on-chain tally puts the suspected Binance drain at $5.57 billion across three blockchains, as Tether and Circle froze $1.8 billion.",
+    "publishedAt": "2026-10-29",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/382191/binance-suspected-hack-5-billion-tether-circle-freeze-crypto",
+    "sourceName": "Decrypt",
+    "body": "An on-chain tally puts the suspected Binance drain at $5.57 billion across three blockchains, as Tether and Circle froze $1.8 billion.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=382191"
+  },
+  {
     "slug": "binance-investigates-potential-multibillion-dollar-hack",
     "title": "Binance investigates potential multibillion-dollar hack",
     "description": "Binance said it is investigating a potential security breach after suspicious wallet transfers, while co-founder CZ reported nearly $1.8 billion in frozen stablecoins.",
@@ -801,82 +878,5 @@
     "sourceName": "Coinpedia",
     "body": "The post From Payments to Infrastructure: Why More FX Brokers Are Rethinking Digital Asset Operations appeared first on Coinpedia Fintech News Cregis says larger brokers are increasingly looking beyond payment acceptance as digital asset operations become more complex.&#160; Unlike crypto exchanges, FX brokers have traditionally competed on client acquisition, regional expansion, and operational efficiency rather than building technology stacks from scratch. As a result, much of the industry’s infrastructure has evolved around specialist providers. Trading runs &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://coinpedia.org/?p=588130"
-  },
-  {
-    "slug": "compound-price-prediction-2026-2027-8211-2030-can-comp-surge-to-100",
-    "title": "Compound Price Prediction 2026, 2027 &#8211; 2030: Can COMP Surge to $100?",
-    "description": "The post Compound Price Prediction 2026, 2027 &#8211; 2030: Can COMP Surge to $100? appeared first on Coinpedia Fintech News Story Highlights The live price of the COMP crypto is . The Compound price could reach a…",
-    "publishedAt": "2026-10-28",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/price-prediction/comp-compound-price-prediction/",
-    "sourceName": "Coinpedia",
-    "body": "The post Compound Price Prediction 2026, 2027 &#8211; 2030: Can COMP Surge to $100? appeared first on Coinpedia Fintech News Story Highlights The live price of the COMP crypto is . The Compound price could reach a maximum of $39.34 in 2026. This altcoin could surpass the $500 mark with a high of $507 by 2030. Compound is an autonomous interest-rate protocol built on Ethereum. It allows users to lend and borrow crypto through a &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=82831"
-  },
-  {
-    "slug": "here-s-how-much-bitcoin-and-the-s-p-500-could-rally-after-midterms",
-    "title": "Here's how much bitcoin and the S&P 500 could rally after midterms",
-    "description": "Both bitcoin and the S&P 500 have historically produced positive returns in a year after midterms. BTC's pattern, however, could also be explained by the four-year halving cycles.",
-    "publishedAt": "2026-10-28",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/markets/2026/10/28/bitcoin-averages-over-50-in-the-12-months-after-midterms-s-and-p-500-gains-15",
-    "sourceName": "CoinDesk",
-    "body": "Both bitcoin and the S&P 500 have historically produced positive returns in a year after midterms. BTC's pattern, however, could also be explained by the four-year halving cycles.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "96297b82-c5b6-41c5-a445-ae0938465c9b"
-  },
-  {
-    "slug": "ecash-price-prediction-2026-2027-8211-2030-will-xec-price-record-a-2x-surge",
-    "title": "eCash Price Prediction 2026, 2027 &#8211; 2030: Will XEC Price Record a 2X Surge?",
-    "description": "The post eCash Price Prediction 2026, 2027 &#8211; 2030: Will XEC Price Record a 2X Surge? appeared first on Coinpedia Fintech News Story Highlights The live price of the eCash token is . The XEC price is expected to…",
-    "publishedAt": "2026-10-28",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/price-prediction/ecash-xec-price-prediction/",
-    "sourceName": "Coinpedia",
-    "body": "The post eCash Price Prediction 2026, 2027 &#8211; 2030: Will XEC Price Record a 2X Surge? appeared first on Coinpedia Fintech News Story Highlights The live price of the eCash token is . The XEC price is expected to reach a high of $0.00001824 in 2026. With a potential surge, it may achieve a high of $0.000420 by 2030. eCash (XEC) is a cryptocurrency built with one simple goal: to become fast, easy-to-use digital cash for everyday &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=142140"
-  },
-  {
-    "slug": "securitize-adds-stellar-blockchain-as-institutional-tokenization-gathers-steam",
-    "title": "Securitize adds Stellar blockchain as institutional tokenization gathers steam",
-    "description": "The firms announced the agreement at Meridian 2026, the Stellar Development Foundation’s annual conference in Portugal.",
-    "publishedAt": "2026-10-28",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/business/2026/10/28/securitize-adds-stellar-blockchain-as-institutional-tokenization-gathers-steam",
-    "sourceName": "CoinDesk",
-    "body": "The firms announced the agreement at Meridian 2026, the Stellar Development Foundation’s annual conference in Portugal.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "68520f4b-b16d-49fa-bf38-da10d60604e0"
-  },
-  {
-    "slug": "bittorrent-price-prediction-2026-2027-8211-2030-will-btt-price-record-a-2x-surge",
-    "title": "BitTorrent Price Prediction 2026, 2027 &#8211; 2030: Will BTT Price Record a 2X Surge This Year?",
-    "description": "The post BitTorrent Price Prediction 2026, 2027 &#8211; 2030: Will BTT Price Record a 2X Surge This Year? appeared first on Coinpedia Fintech News Story Highlights The live price of the BitTorrent token is BTT price…",
-    "publishedAt": "2026-10-28",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/price-prediction/btt-bittorrent-price-prediction/",
-    "sourceName": "Coinpedia",
-    "body": "The post BitTorrent Price Prediction 2026, 2027 &#8211; 2030: Will BTT Price Record a 2X Surge This Year? appeared first on Coinpedia Fintech News Story Highlights The live price of the BitTorrent token is BTT price could potentially trade as high as $0.0000008443 by the end of 2026. BitTorrent price, with a potential surge, could go as high as 0.0000063 by the end of 2030. BitTorrent (BTT) is one of the world&#8217;s largest decentralized file-sharing networks, serving millions of &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=62428"
-  },
-  {
-    "slug": "bittensor-tao-price-prediction-2026-2027-8211-2030-is-tao-the-next-ai-crypto-to",
-    "title": "Bittensor (TAO) Price Prediction 2026, 2027 &#8211; 2030: Is TAO the Next AI Crypto to Explode?",
-    "description": "The post Bittensor (TAO) Price Prediction 2026, 2027 &#8211; 2030: Is TAO the Next AI Crypto to Explode? appeared first on Coinpedia Fintech News Story Highlights The live price of the TAO crypto is . Bittensor Price…",
-    "publishedAt": "2026-10-28",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/price-prediction/bittensor-tao-price-prediction/",
-    "sourceName": "Coinpedia",
-    "body": "The post Bittensor (TAO) Price Prediction 2026, 2027 &#8211; 2030: Is TAO the Next AI Crypto to Explode? appeared first on Coinpedia Fintech News Story Highlights The live price of the TAO crypto is . Bittensor Price could show a reversal to $500 by H2 2026. TAO’s long-term outlook targets $1,000–$3,000 by 2030 Bittensor (TAO) has gained attention as a decentralized protocol focused on artificial intelligence. The network enables participants to build, share, and evaluate machine learning models through &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=343297"
-  },
-  {
-    "slug": "multiversx-price-prediction-2026-2027-8211-2030-will-egld-price-hit-15-this-year",
-    "title": "MultiversX Price Prediction 2026, 2027 &#8211; 2030: Will EGLD Price Hit $15 This Year?",
-    "description": "The post MultiversX Price Prediction 2026, 2027 &#8211; 2030: Will EGLD Price Hit $15 This Year? appeared first on Coinpedia Fintech News Story Highlights The live price of the EGLD crypto token is . The Elrond price…",
-    "publishedAt": "2026-10-28",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/price-prediction/elrond-egld-price-prediction/",
-    "sourceName": "Coinpedia",
-    "body": "The post MultiversX Price Prediction 2026, 2027 &#8211; 2030: Will EGLD Price Hit $15 This Year? appeared first on Coinpedia Fintech News Story Highlights The live price of the EGLD crypto token is . The Elrond price could go as high as $10.257 by 2026. With a potential surge, the EGLD price could reach a high of $211.06 by 2030. Elrond rebranded itself as MultiversX, signaling a deeper shift towards the metaverse and Web3 innovation. While the &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=92467"
   }
 ]
