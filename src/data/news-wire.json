@@ -1,5 +1,27 @@
 [
   {
+    "slug": "fbi-blames-north-korea-for-record-6-3b-binance-hack",
+    "title": "FBI blames North Korea for record $6.3B Binance hack",
+    "description": "US agency seeks private-sector help to block further money-laundering of stolen digital assets.",
+    "publishedAt": "2026-11-01",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/fbi-blames-north-korea-for-record-63b-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "US agency seeks private-sector help to block further money-laundering of stolen digital assets.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/fbi-blames-north-korea-for-record-63b-binance-hack"
+  },
+  {
+    "slug": "binance-withdrawals-resume-today-bitcoin-ethereum-solana-in-first-phase",
+    "title": "Binance Withdrawals Resume Today: Bitcoin, Ethereum, Solana In First Phase",
+    "description": "The post Binance Withdrawals Resume Today: Bitcoin, Ethereum, Solana In First Phase appeared first on Coinpedia Fintech News Binance will begin restoring withdrawals on Sunday, November 1, after last week’s record…",
+    "publishedAt": "2026-11-01",
+    "readingMinutes": 1,
+    "sourceUrl": "https://coinpedia.org/crypto-live-news/binance-withdrawals-resume-today-bitcoin-ethereum-solana-in-first-phase/",
+    "sourceName": "Coinpedia",
+    "body": "The post Binance Withdrawals Resume Today: Bitcoin, Ethereum, Solana In First Phase appeared first on Coinpedia Fintech News Binance will begin restoring withdrawals on Sunday, November 1, after last week’s record hack, with the first phase starting between 06:00 and 09:00 UTC, or 11:30 am to 2:30 pm IST. The exchange said access will return gradually as each asset and network passes security checks, and users should expect some temporary delays. Phase one &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://coinpedia.org/?p=588913"
+  },
+  {
     "slug": "fbi-confirms-north-korea-s-role-in-6-billion-binance-hack-asks-defi-community-to",
     "title": "FBI confirms North Korea's role in $6 billion Binance hack, asks DeFi community to block BTC, ETH, SOL addresses",
     "description": "While the FBI listed hundreds of addresses in its notice, Chainalysis said the Binance attackers have already used \"thousands addresses,\" and expects this number to continue growing.",
@@ -856,27 +878,5 @@
     "sourceName": "Coinpedia",
     "body": "The post Binance $5.8 Billion Hack Triggers Crypto Market Crash. What Really Happened? appeared first on Coinpedia Fintech News The world&#8217;s largest crypto exchange, Binance, has confirmed it was hacked, with multiple cryptocurrencies valued at between $2 billion and $5.8 billion drained. According to a forensic analysis of the event by security firm Blockaid, the attacker targeted two Binance hot wallets named “Binance 14” and “Binance 16”. They then siphoned multiple cryptocurrencies, including $1.6 &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://coinpedia.org/?p=588571"
-  },
-  {
-    "slug": "binance-hacker-hunts-for-exit-ramps-as-defi-exchanges-pause-markets",
-    "title": "Binance Hacker Hunts for Exit Ramps as DeFi Exchanges Pause Markets",
-    "description": "Etherscan records show wallets tied to the suspected Binance hack swapping freezable stablecoins for Ethereum on decentralized exchanges.",
-    "publishedAt": "2026-10-29",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/382194/binance-hack-exit-ramps-defi-exchange-ethereum",
-    "sourceName": "Decrypt",
-    "body": "Etherscan records show wallets tied to the suspected Binance hack swapping freezable stablecoins for Ethereum on decentralized exchanges.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=382194"
-  },
-  {
-    "slug": "tampered-ledger-reported-in-singapore-a-month-before-news-broke-asia-express",
-    "title": "Tampered Ledger reported in Singapore a month before news broke: Asia Express",
-    "description": "Singapore police say tampered Ledgers started showing up there on September 10. South Korean lawmakers look set to delay the crypto tax law for a fourth time.",
-    "publishedAt": "2026-10-29",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/magazine/tampered-ledger-reported-in-singapore-a-month-before-news-broke-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Singapore police say tampered Ledgers started showing up there on September 10. South Korean lawmakers look set to delay the crypto tax law for a fourth time.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/magazine/tampered-ledger-reported-in-singapore-a-month-before-news-broke-asia-express"
   }
 ]
