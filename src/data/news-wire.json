@@ -1,5 +1,38 @@
 [
   {
+    "slug": "the-crypto-reader-s-guide-to-the-2026-midterm-election-state-of-crypto",
+    "title": "The crypto reader's guide to the 2026 midterm election: State of Crypto",
+    "description": "America is going to the polls, and the results will shape crypto legislation and regulation over the next two years. Here's what to know.",
+    "publishedAt": "2026-11-01",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/policy/2026/11/01/the-crypto-reader-s-guide-to-the-2026-midterm-election-state-of-crypto",
+    "sourceName": "CoinDesk",
+    "body": "America is going to the polls, and the results will shape crypto legislation and regulation over the next two years. Here's what to know.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "212b4a37-d843-4b6b-ad4c-85c682354f2b"
+  },
+  {
+    "slug": "ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-fin",
+    "title": "AI agents bypassed crypto spending limits without human approval, researchers find in a new test",
+    "description": "The researchers say any approval an agent can reach is unreliable, and they built Countersign, an app tying approval to a physical action the agent can’t fake.",
+    "publishedAt": "2026-11-01",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test",
+    "sourceName": "CoinDesk",
+    "body": "The researchers say any approval an agent can reach is unreliable, and they built Countersign, an app tying approval to a physical action the agent can’t fake.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "73c3bb74-b7a7-4c4c-94f2-b45b52345d47"
+  },
+  {
+    "slug": "bitcoin-etf-investors-head-for-the-exits-after-record-binance-hack",
+    "title": "Bitcoin ETF Investors Head for the Exits After Record Binance Hack",
+    "description": "Bitcoin ETFs saw $643.2 million in outflows Friday, the first full trading session after the $6.4 billion Binance hack, ending October with roughly $516 million in net outflows.",
+    "publishedAt": "2026-11-01",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/382309/bitcoin-etf-investors-exits-record-binance-hack",
+    "sourceName": "Decrypt",
+    "body": "Bitcoin ETFs saw $643.2 million in outflows Friday, the first full trading session after the $6.4 billion Binance hack, ending October with roughly $516 million in net outflows.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=382309"
+  },
+  {
     "slug": "crypto-card-startups-are-racking-up-losses-just-to-buy-your-loyalty-with-big-rew",
     "title": "Crypto card startups are racking up losses just to buy your loyalty with big rewards",
     "description": "Providers are betting trading, lending and staking revenue can cover rewards and turn card users into profitable customers.",
@@ -845,38 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "TRM Labs says it has high confidence in the attribution, while ZachXBT identified stolen funds from the Binance and Bitget hacks converging at the same address.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/news/north-korea-linked-to-63b-binance-hack-by-crypto-investigators"
-  },
-  {
-    "slug": "binance-hack-bites-india-s-largest-crypto-exchange-as-it-curbs-futures-trading",
-    "title": "Binance hack bites India's largest crypto exchange as it curbs futures trading",
-    "description": "CoinDCX has restricted new futures positions after Binance’s security incident disrupted a key liquidity provider. Deposits, withdrawals and customer funds remain unaffected, the exchange said.",
-    "publishedAt": "2026-10-30",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/markets/2026/10/30/coindcx-halts-new-crypto-futures-bets-as-binance-incident-disrupts-liquidity",
-    "sourceName": "CoinDesk",
-    "body": "CoinDCX has restricted new futures positions after Binance’s security incident disrupted a key liquidity provider. Deposits, withdrawals and customer funds remain unaffected, the exchange said.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "c70fc199-d44a-48b2-9139-d7e9b95e2b2a"
-  },
-  {
-    "slug": "binance-hack-update-ripple-freezes-200-million-as-recovery-hits-3-billion-amid-n",
-    "title": "Binance Hack Update: Ripple Freezes $200 Million As Recovery Hits $3 Billion Amid North Korea Link",
-    "description": "The post Binance Hack Update: Ripple Freezes $200 Million As Recovery Hits $3 Billion Amid North Korea Link appeared first on Coinpedia Fintech News The recovery effort after the $6.3 billion Binance exploit is picking…",
-    "publishedAt": "2026-10-30",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/news/binance-hack-update-ripple-freezes-200-million-as-recovery-hits-3-billion-amid-north-korea-link/",
-    "sourceName": "Coinpedia",
-    "body": "The post Binance Hack Update: Ripple Freezes $200 Million As Recovery Hits $3 Billion Amid North Korea Link appeared first on Coinpedia Fintech News The recovery effort after the $6.3 billion Binance exploit is picking up pace. Ripple has frozen about $200 million connected to the attack, according to Binance co-founder Yi He. Binance says about $3 billion of the stolen funds has now been frozen in total. A new on-chain finding has also raised the stakes. Blockchain investigator &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=588590"
-  },
-  {
-    "slug": "binance-hacker-splits-1-4-billion-of-bitcoin-into-19-wallets-that-no-one-can-fre",
-    "title": "Binance hacker splits $1.4 billion of bitcoin into 19 wallets that no one can freeze",
-    "description": "All 18,270 coins sit in 19 wallets, 17 of them holding exactly 1,000 BTC each, and none has moved since Thursday night, a CoinDesk trace of the blockchain shows.",
-    "publishedAt": "2026-10-30",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/markets/2026/10/30/binance-hacker-splits-usd1-4-billion-of-bitcoin-into-19-wallets-that-no-one-can-freeze",
-    "sourceName": "CoinDesk",
-    "body": "All 18,270 coins sit in 19 wallets, 17 of them holding exactly 1,000 BTC each, and none has moved since Thursday night, a CoinDesk trace of the blockchain shows.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "0bf7fd4e-f110-4984-a75a-532a319e0f61"
   }
 ]
