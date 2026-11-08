@@ -1,5 +1,38 @@
 [
   {
+    "slug": "this-bitcoin-developer-s-idea-would-make-quantum-attacks-a-losing-bet",
+    "title": "This Bitcoin Developer’s Idea Would Make Quantum Attacks a Losing Bet",
+    "description": "Cory Fields wants future quantum attackers to post Bitcoin as collateral before touching vulnerable wallets, giving prepared owners a chance to recover their coins and collect a potentially costly penalty.",
+    "publishedAt": "2026-11-08",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/382761/bitcoin-developer-quantum-landmines-losing-bet",
+    "sourceName": "Decrypt",
+    "body": "Cory Fields wants future quantum attackers to post Bitcoin as collateral before touching vulnerable wallets, giving prepared owners a chance to recover their coins and collect a potentially costly penalty.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=382761"
+  },
+  {
+    "slug": "binance-france-emails-announce-closure-of-its-users-accounts-on-dec-31",
+    "title": "Binance France emails announce closure of its users’ accounts on Dec. 31",
+    "description": "Any assets left on the exchange will be charged monthly fees starting on Nov. 29, company says.",
+    "publishedAt": "2026-11-08",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/binance-france-emails-announce-closure-of-its-users-accounts-on-dec-31?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Any assets left on the exchange will be charged monthly fees starting on Nov. 29, company says.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/binance-france-emails-announce-closure-of-its-users-accounts-on-dec-31"
+  },
+  {
+    "slug": "these-finland-homes-get-free-heat-from-bitcoin-miners-as-long-as-btc-stays-above",
+    "title": "These Finland homes get free heat from bitcoin miners (as long as BTC stays above $70,000)",
+    "description": "A Finnish startup has 30 bitcoin mining systems working as central heating, and at today’s prices each one earns slightly more than the electricity it burns.",
+    "publishedAt": "2026-11-08",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/markets/2026/11/08/these-finland-homes-get-free-heat-from-bitcoin-miners-as-long-as-btc-stays-above-usd70-000",
+    "sourceName": "CoinDesk",
+    "body": "A Finnish startup has 30 bitcoin mining systems working as central heating, and at today’s prices each one earns slightly more than the electricity it burns.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "7226ed40-8b46-45e2-a8ad-b6a6c4e27cf4"
+  },
+  {
     "slug": "binance-s-finance-chief-kaiser-ng-to-leave-company-report-says",
     "title": "Binance’s finance chief Kaiser Ng to leave company, report says",
     "description": "Ng will be replaced by Justin Yek, who was formerly vice-president of finance at Airwallex.",
@@ -845,38 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "Crypto super PACs spent more than $176 million on the midterms, but the Democratic sweep raises the prospect of tougher industry scrutiny.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/news/crypto-superpac-midterms"
-  },
-  {
-    "slug": "coinbase-says-99-of-customer-crypto-is-offline-and-out-of-hackers-reach",
-    "title": "Coinbase Says 99% of Customer Crypto Is Offline and Out of Hackers’ Reach",
-    "description": "Coinbase told customers it wasn’t affected by the $6.4 billion Binance hack and detailed its security controls, including offline storage for over 99% of assets, split private keys and kill switches.",
-    "publishedAt": "2026-11-04",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/382570/coinbase-99-percent-customer-crypto-offline-binance-hack",
-    "sourceName": "Decrypt",
-    "body": "Coinbase told customers it wasn’t affected by the $6.4 billion Binance hack and detailed its security controls, including offline storage for over 99% of assets, split private keys and kill switches.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=382570"
-  },
-  {
-    "slug": "crypto-s-powerhouse-super-pac-suffers-costly-setback-as-democrats-sweep-congress",
-    "title": "Crypto's powerhouse super PAC suffers costly setback as Democrats sweep Congress",
-    "description": "The industry's primary campaign arm had cultivated a reputation as an unstoppable force, but more than a third of its spending failed to hit the mark, especially in Ohio.",
-    "publishedAt": "2026-11-04",
-    "readingMinutes": 1,
-    "sourceUrl": "https://www.coindesk.com/news-analysis/2026/11/04/crypto-s-powerhouse-super-pac-fairshake-found-its-kryptonite",
-    "sourceName": "CoinDesk",
-    "body": "The industry's primary campaign arm had cultivated a reputation as an unstoppable force, but more than a third of its spending failed to hit the mark, especially in Ohio.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "2bacb14b-6dee-4e99-98a0-14e8e4ddcd1a"
-  },
-  {
-    "slug": "trump-linked-tokens-lead-crypto-losses-after-democrats-sweep-in-the-us-midterms",
-    "title": "Trump-linked tokens lead crypto losses after Democrats sweep in the US midterms",
-    "description": "The official Trump and World Liberty Financial tokens were the two biggest losers among the top 100 cryptocurrencies on Wednesday, even as Bitcoin and Ether rallied.",
-    "publishedAt": "2026-11-04",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/trump-linked-tokens-lead-crypto-losses-after-democrats-sweep-in-the-us-midterms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "The official Trump and World Liberty Financial tokens were the two biggest losers among the top 100 cryptocurrencies on Wednesday, even as Bitcoin and Ether rallied.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/trump-linked-tokens-lead-crypto-losses-after-democrats-sweep-in-the-us-midterms"
   }
 ]
