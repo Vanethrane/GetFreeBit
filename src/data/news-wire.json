@@ -1,5 +1,27 @@
 [
   {
+    "slug": "what-the-election-results-mean-for-crypto-state-of-crypto",
+    "title": "What the election results mean for crypto: State of Crypto",
+    "description": "Democrats had an astoundingly good night, smashing all expectations. Is that actually bad news for the industry?",
+    "publishedAt": "2026-11-08",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/policy/2026/11/08/what-the-election-results-mean-for-crypto-state-of-crypto",
+    "sourceName": "CoinDesk",
+    "body": "Democrats had an astoundingly good night, smashing all expectations. Is that actually bad news for the industry?\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "ae76d5a9-224f-4134-a84e-9cb462b590b3"
+  },
+  {
+    "slug": "stablecoin-growth-has-stalled-the-payments-boom-hasn-t",
+    "title": "Stablecoin growth has stalled. The payments boom hasn't",
+    "description": "Stablecoin supply has barely grown this year, even as payments using the tokens surge. Circle's latest earnings offer another example of the divergence between dollars outstanding and activity on blockchain networks.",
+    "publishedAt": "2026-11-08",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/business/2026/11/08/stablecoin-growth-has-stalled-the-payments-boom-hasn-t",
+    "sourceName": "CoinDesk",
+    "body": "Stablecoin supply has barely grown this year, even as payments using the tokens surge. Circle's latest earnings offer another example of the divergence between dollars outstanding and activity on blockchain networks.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "b8a24500-3399-43d3-a788-5dc7ab6a032a"
+  },
+  {
     "slug": "this-bitcoin-developer-s-idea-would-make-quantum-attacks-a-losing-bet",
     "title": "This Bitcoin Developer’s Idea Would Make Quantum Attacks a Losing Bet",
     "description": "Cory Fields wants future quantum attackers to post Bitcoin as collateral before touching vulnerable wallets, giving prepared owners a chance to recover their coins and collect a potentially costly penalty.",
@@ -856,27 +878,5 @@
     "sourceName": "Decrypt",
     "body": "Matt Corallo explains why patching four legacy bugs is about rebuilding muscle memory, just as much as it’s about Bitcoin maintenance.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://decrypt.co/?p=382568"
-  },
-  {
-    "slug": "bitmart-founder-says-security-team-severely-understaffed-after-new-hack",
-    "title": "BitMart founder says security team ‘severely understaffed’ after new hack",
-    "description": "The crypto exchange’s founder warned of security staffing shortages amid restructuring as analysts flagged suspicious transfers potentially linked to the Mercado Bitcoin hack.",
-    "publishedAt": "2026-11-04",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/bitmart-hack-security-staffing-crypto-exchange-restructuring?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "The crypto exchange’s founder warned of security staffing shortages amid restructuring as analysts flagged suspicious transfers potentially linked to the Mercado Bitcoin hack.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/bitmart-hack-security-staffing-crypto-exchange-restructuring"
-  },
-  {
-    "slug": "crypto-pacs-eye-2028-new-map-as-democrats-take-congress",
-    "title": "Crypto PACs eye 2028 ‘new map’ as Democrats take Congress",
-    "description": "Crypto super PACs spent more than $176 million on the midterms, but the Democratic sweep raises the prospect of tougher industry scrutiny.",
-    "publishedAt": "2026-11-04",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/crypto-superpac-midterms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "Crypto super PACs spent more than $176 million on the midterms, but the Democratic sweep raises the prospect of tougher industry scrutiny.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/crypto-superpac-midterms"
   }
 ]
