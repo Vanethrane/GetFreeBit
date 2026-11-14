@@ -1,5 +1,71 @@
 [
   {
+    "slug": "bitcoin-miners-pay-paraguay-350-million-a-year-but-ai-is-pushing-them-out",
+    "title": "Bitcoin miners pay Paraguay $350 million a year, but AI is pushing them out",
+    "description": "Contracts that sell power to a 4% slice of the world’s bitcoin mining at $44 a megawatt-hour expire on Dec. 31, 2027. Paraguay’s state utility calls the date final, and it has just signed a 15-year deal to power a…",
+    "publishedAt": "2026-11-13",
+    "readingMinutes": 1,
+    "sourceUrl": "https://www.coindesk.com/tech/2026/11/13/bitcoin-miners-pay-paraguay-usd350-million-a-year-but-ai-is-pushing-them-out",
+    "sourceName": "CoinDesk",
+    "body": "Contracts that sell power to a 4% slice of the world’s bitcoin mining at $44 a megawatt-hour expire on Dec. 31, 2027. Paraguay’s state utility calls the date final, and it has just signed a 15-year deal to power a Founders Fund-backed AI campus.\n\nSource: CoinDesk. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "22ee7c37-de83-49b3-bc27-2b545962ed14"
+  },
+  {
+    "slug": "openai-launches-ai-payments-in-chatgpt-with-visa-mastercard-and-amex",
+    "title": "OpenAI launches AI payments in ChatGPT with Visa, Mastercard and Amex",
+    "description": "OpenAI’s new payment wallet lets AI agents complete purchases using existing card networks, with plans to eventually allow preauthorized transactions.",
+    "publishedAt": "2026-11-13",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/openai-ai-payments-chatgpt-wallet-visa-mastercard-amex?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "OpenAI’s new payment wallet lets AI agents complete purchases using existing card networks, with plans to eventually allow preauthorized transactions.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/openai-ai-payments-chatgpt-wallet-visa-mastercard-amex"
+  },
+  {
+    "slug": "adam-back-makes-case-for-simpler-security-as-blockstream-launches-bitcoin-custod",
+    "title": "Adam Back makes case for simpler security as Blockstream launches Bitcoin custody system",
+    "description": "Blockstream’s new custody system, developed with Thales, uses dedicated hardware for transaction signing as Adam Back advocates for offline security to reduce cyber risks.",
+    "publishedAt": "2026-11-13",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/adam-back-simpler-security-blockstream-bitcoin-custody-system?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Blockstream’s new custody system, developed with Thales, uses dedicated hardware for transaction signing as Adam Back advocates for offline security to reduce cyber risks.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/adam-back-simpler-security-blockstream-bitcoin-custody-system"
+  },
+  {
+    "slug": "us-regulators-move-ahead-on-crypto-trust-charters-as-senate-scrutiny-grows",
+    "title": "US regulators move ahead on crypto trust charters as Senate scrutiny grows",
+    "description": "Coinbase’s trust company received final clearance as lawmakers seek records on crypto firms’ compliance and potential conflicts of interest.",
+    "publishedAt": "2026-11-13",
+    "readingMinutes": 1,
+    "sourceUrl": "https://cointelegraph.com/news/us-regulators-crypto-trust-charters-senate-scrutiny-grows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "sourceName": "Cointelegraph",
+    "body": "Coinbase’s trust company received final clearance as lawmakers seek records on crypto firms’ compliance and potential conflicts of interest.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://cointelegraph.com/news/us-regulators-crypto-trust-charters-senate-scrutiny-grows"
+  },
+  {
+    "slug": "jpmorgan-s-bitcoin-and-crypto-linked-holdings-approach-1-billion",
+    "title": "JPMorgan’s Bitcoin and Crypto-Linked Holdings Approach $1 Billion",
+    "description": "The bank’s Q3 13F shows roughly $981 million across Bitcoin ETFs, Strategy and Coinbase—likely over $1 billion counting Robinhood and miners.",
+    "publishedAt": "2026-11-13",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/383267/jpmorgan-bitcoin-crypto-linked-holdings-approach-1-billion",
+    "sourceName": "Decrypt",
+    "body": "The bank’s Q3 13F shows roughly $981 million across Bitcoin ETFs, Strategy and Coinbase—likely over $1 billion counting Robinhood and miners.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=383267"
+  },
+  {
+    "slug": "dormant-bitcoin-wallets-wake-up-after-16-years-moving-6-9-million",
+    "title": "Dormant Bitcoin Wallets Wake Up After 16 Years, Moving $6.9 Million",
+    "description": "Two Bitcoin mining rewards from September 2010 moved minutes apart. The coins are worth nearly 1.15 million times their original market value.",
+    "publishedAt": "2026-11-13",
+    "readingMinutes": 1,
+    "sourceUrl": "https://decrypt.co/383264/dormant-bitcoin-wallets-wake-up-after-16-years",
+    "sourceName": "Decrypt",
+    "body": "Two Bitcoin mining rewards from September 2010 moved minutes apart. The coins are worth nearly 1.15 million times their original market value.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
+    "externalId": "https://decrypt.co/?p=383264"
+  },
+  {
     "slug": "bitcoin-plunges-to-68-000-as-anthropic-ipo-frenzy-adds-to-market-jitters",
     "title": "Bitcoin plunges to $68,000 as Anthropic IPO frenzy adds to market jitters",
     "description": "Analysts see no direct link between Nvidia and bitcoin's decline, pointing instead to investor capital headed into Anthropic as well as a broader risk-off move.",
@@ -812,71 +878,5 @@
     "sourceName": "Cointelegraph",
     "body": "As US voters push back against new data centers, Bitcoin miners already expanding into AI could benefit from their existing facilities.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
     "externalId": "https://cointelegraph.com/news/us-data-center-restrictions-bitcoin-miners-edge-ai"
-  },
-  {
-    "slug": "expert-lists-key-conditions-for-bitcoin-to-rally-to-100-000",
-    "title": "Expert Lists Key Conditions for Bitcoin to Rally to $100,000",
-    "description": "The post Expert Lists Key Conditions for Bitcoin to Rally to $100,000 appeared first on Coinpedia Fintech News Although Bitcoin (BTC) has been trapped in a correction mode over the past six weeks, crypto analyst…",
-    "publishedAt": "2026-11-11",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/price-analysis/expert-lists-key-conditions-for-bitcoin-to-rally-to-100000/",
-    "sourceName": "Coinpedia",
-    "body": "The post Expert Lists Key Conditions for Bitcoin to Rally to $100,000 appeared first on Coinpedia Fintech News Although Bitcoin (BTC) has been trapped in a correction mode over the past six weeks, crypto analyst Michaël van de Poppe has revealed key conditions to be met for a rally towards $100,000 to happen. Poppe believes that Bitcoin&#8217;s price could rocket to $100,000 if it holds above the 200-day Moving Average (MA), which has &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=590433"
-  },
-  {
-    "slug": "israel-discount-bank-becomes-first-in-country-to-offer-bitcoin-and-ethereum-trad",
-    "title": "Israel Discount Bank Becomes First in Country to Offer Bitcoin and Ethereum Trading",
-    "description": "The post Israel Discount Bank Becomes First in Country to Offer Bitcoin and Ethereum Trading appeared first on Coinpedia Fintech News Israel Discount Bank, a $150 billion bank, has become the first in the country to…",
-    "publishedAt": "2026-11-11",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/news/israel-discount-bank-becomes-first-in-country-to-offer-bitcoin-and-ethereum-trading/",
-    "sourceName": "Coinpedia",
-    "body": "The post Israel Discount Bank Becomes First in Country to Offer Bitcoin and Ethereum Trading appeared first on Coinpedia Fintech News Israel Discount Bank, a $150 billion bank, has become the first in the country to offer Bitcoin and Ethereum trading through its mobile app. From November 26, customers can buy, hold, and sell both cryptocurrencies without using a separate exchange or wallet.&#160; This puts the bank ahead of rival Bank Leumi, which plans to launch &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=590431"
-  },
-  {
-    "slug": "deutsche-bank-goes-live-with-crypto-custody-after-a-five-year-buildup",
-    "title": "Deutsche Bank Goes Live With Crypto Custody After a Five-Year Buildup",
-    "description": "Deutsche Bank’s custody service now holds Bitcoin, Ethereum and three stablecoins for institutional and corporate clients in Europe.",
-    "publishedAt": "2026-11-11",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/383067/deutsche-bank-goes-live-with-crypto-custody-after-a-five-year-buildup",
-    "sourceName": "Decrypt",
-    "body": "Deutsche Bank’s custody service now holds Bitcoin, Ethereum and three stablecoins for institutional and corporate clients in Europe.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=383067"
-  },
-  {
-    "slug": "okxice-moves-ahead-with-tokenized-stocks-as-blue-chips-push-back",
-    "title": "OKXICE moves ahead with tokenized stocks as blue chips push back",
-    "description": "The Nov. 23 debut puts a new SEC exemption to the test as Nasdaq pursues its own tokenized stock plans after warning that trading across platforms could fragment liquidity.",
-    "publishedAt": "2026-11-11",
-    "readingMinutes": 1,
-    "sourceUrl": "https://cointelegraph.com/news/okxice-tokenized-stocks-blue-chips-push-back?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "sourceName": "Cointelegraph",
-    "body": "The Nov. 23 debut puts a new SEC exemption to the test as Nasdaq pursues its own tokenized stock plans after warning that trading across platforms could fragment liquidity.\n\nSource: Cointelegraph. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://cointelegraph.com/news/okxice-tokenized-stocks-blue-chips-push-back"
-  },
-  {
-    "slug": "bitcoin-faces-first-back-to-back-annual-losses-in-history-but-there-s-a-catch",
-    "title": "Bitcoin Faces First Back-to-Back Annual Losses in History, But There's a Catch",
-    "description": "Bitcoin is heading toward its first consecutive losing years, breaking an 18-year pattern. But there's some nuance in the data.",
-    "publishedAt": "2026-11-11",
-    "readingMinutes": 1,
-    "sourceUrl": "https://decrypt.co/383049/bitcoin-first-back-to-back-annual-losses-history",
-    "sourceName": "Decrypt",
-    "body": "Bitcoin is heading toward its first consecutive losing years, breaking an 18-year pattern. But there's some nuance in the data.\n\nSource: Decrypt. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://decrypt.co/?p=383049"
-  },
-  {
-    "slug": "bitcoin-santa-rally-or-year-end-slump-what-needs-to-happen-for-btc-to-break-out",
-    "title": "Bitcoin Santa Rally Or Year-End Slump? What Needs To Happen For BTC To Break Out",
-    "description": "The post Bitcoin Santa Rally Or Year-End Slump? What Needs To Happen For BTC To Break Out appeared first on Coinpedia Fintech News Bitcoin has fallen to its lowest level since August 20, and fear is back across the…",
-    "publishedAt": "2026-11-11",
-    "readingMinutes": 1,
-    "sourceUrl": "https://coinpedia.org/news/bitcoin-santa-rally-or-year-end-slump-what-needs-to-happen-for-btc-to-break-out/",
-    "sourceName": "Coinpedia",
-    "body": "The post Bitcoin Santa Rally Or Year-End Slump? What Needs To Happen For BTC To Break Out appeared first on Coinpedia Fintech News Bitcoin has fallen to its lowest level since August 20, and fear is back across the crypto market. Trader and analyst Tim Warren is not worried. He says the current pullback closely resembles early 2023, when Bitcoin dipped back to its 200-day moving average shortly before a new bull market began. Bitcoin Sits On A &#8230;\n\nSource: Coinpedia. This is a wire summary for GetFreeBit readers - verify the original report before making custody, trading, or tax decisions. Not financial advice.",
-    "externalId": "https://coinpedia.org/?p=590420"
   }
 ]
